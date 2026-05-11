@@ -1132,3 +1132,6 @@ ul { margin: 0; padding: 0; list-style: none; }
 .faq-item summary::after { content: "+"; font-size: 22px; font-weight: 300; color: var(--cyan); flex-shrink: 0; transition: transform 0.2s; }
 .faq-item[open] summary::after { transform: rotate(45deg); }
 .faq-item p { padding: 0 0 20px; margin: 0; color: var(--muted); line-height: 1.7; }
+
+/* Real logo image */
+.brand-logo { height: 38px; width: auto; display: block; }
