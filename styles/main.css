@@ -1121,3 +1121,14 @@ ul { margin: 0; padding: 0; list-style: none; }
 .section.teal .eyebrow { color: #7debf3; }
 .section.dark .eyebrow { color: #7debf3; }
 .cta-banner .eyebrow { color: #7debf3; }
+
+/* FAQ */
+.faq-list { display: flex; flex-direction: column; gap: 0; margin-top: 40px; }
+.faq-item { border-top: 1px solid var(--border-light); }
+.faq-item:last-child { border-bottom: 1px solid var(--border-light); }
+.faq-item summary { display: flex; justify-content: space-between; align-items: center; padding: 20px 0; cursor: pointer; list-style: none; gap: 16px; }
+.faq-item summary::-webkit-details-marker { display: none; }
+.faq-item summary h3 { font-size: 17px; font-weight: 600; margin: 0; color: var(--navy); }
+.faq-item summary::after { content: "+"; font-size: 22px; font-weight: 300; color: var(--cyan); flex-shrink: 0; transition: transform 0.2s; }
+.faq-item[open] summary::after { transform: rotate(45deg); }
+.faq-item p { padding: 0 0 20px; margin: 0; color: var(--muted); line-height: 1.7; }

@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>LeanAM MES — Manufacturing Execution Software für 3D-Druckhallen On-Premise</title>
-<meta name="description" content="LeanAM MES: On-Premise MES-Software für additive Fertigung. Steuert Bambu Lab ohne Cloud, verwaltet Aufträge, Maschinen und Material. DSGVO-konform, Made in Germany.">
+<meta name="description" content="LeanAM MES: On-Premise MES für 3D-Drucker — Auftragsmanagement, Bambu Lab ohne Cloud, Live-Telemetrie & Material-Tracking. DSGVO-konform, Made in Germany. Kostenlose Demo anfragen.">
 <link rel="canonical" href="https://leanam.com/mes/">
 
 <meta property="og:type" content="website">
@@ -35,16 +35,75 @@
       "name": "LeanAM MES",
       "url": "https://leanam.com/mes/",
       "applicationCategory": "BusinessApplication",
+      "applicationSubCategory": "Manufacturing Execution System",
       "operatingSystem": "Linux, Windows Server",
-      "description": "On-Premise Manufacturing Execution System für additive Fertigung. Steuert 3D-Drucker, verwaltet Aufträge und Material, liefert Live-Telemetrie.",
+      "description": "On-Premise Manufacturing Execution System für additive Fertigung. Steuert 3D-Drucker (inkl. Bambu Lab ohne Cloud), verwaltet Aufträge, Material und Dokumentation, liefert Live-Telemetrie.",
+      "featureList": "Auftragsmanagement, Live-Maschinenstatus, Slicer-Integration, Material-Tracking, Nutzer & Rollen, Kosten & Abrechnung, Alerting, Reporting & KPIs, ERP-Anbindung, Bambu Lab Local Mode",
+      "keywords": "MES additive Fertigung, 3D Druck MES, Bambu Lab ohne Cloud, On-Premise MES, Manufacturing Execution System 3D Drucker",
+      "inLanguage": "de",
       "offers": {
         "@type": "Offer",
+        "priceCurrency": "EUR",
+        "availability": "https://schema.org/InStock",
         "seller": {
           "@type": "Organization",
           "name": "LeanAM GmbH",
           "url": "https://leanam.com/"
         }
       }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Läuft LeanAM MES ohne Internet?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ja. LeanAM MES ist vollständig On-Premise und benötigt keine Internetverbindung. Alle Daten bleiben in Ihrem Netzwerk — kein Cloud-Zwang, kein Abo, keine externen Server."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Welche 3D-Drucker werden von LeanAM MES unterstützt?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "LeanAM MES unterstützt Bambu Lab (X1, X1C, P1S, P1P, A1, A1 Mini) im lokalen LAN-Modus ohne Bambu Cloud. Weitere Drucker werden über OPC UA, MQTT und REST angebunden — darunter Systeme von Ultimaker, Stratasys und generische FDM/SLS-Maschinen."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Ist LeanAM MES DSGVO-konform?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ja. Da LeanAM MES On-Premise betrieben wird, verlassen keine Produktions- oder Mitarbeiterdaten Ihr Unternehmen. Software und Support kommen aus Deutschland — DSGVO-konform per Design."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Wie lange dauert die Implementierung?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Eine Standardinstallation ist in 1–3 Tagen betriebsbereit. Bei komplexen ERP-Integrationen oder großen Maschinenflotten planen wir gemeinsam einen realistischen Zeitplan — typisch 2–6 Wochen bis zum Vollbetrieb."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Lässt sich LeanAM MES an SAP oder andere ERP-Systeme anbinden?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ja. LeanAM MES bietet Standard-Konnektoren für SAP, Microsoft Dynamics und ProAlpha sowie generische REST- und OPC-UA-Schnittstellen für andere ERP-, CAQ- und PLM-Systeme."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Gibt es eine Demo von LeanAM MES?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ja. Wir bieten eine 45-minütige Live-Demo mit Ihrem konkreten Use-Case — kostenlos und unverbindlich. Demo-Termin über das Kontaktformular anfragen."
+          }
+        }
+      ]
     }
   ]
 }
@@ -233,6 +292,42 @@
         <h4>Dokumentation</h4>
         <p>Druckprotokoll, Material­charge und Bilder werden archiviert — bereit für Audit und Versand.</p>
       </div>
+    </div>
+  </div>
+</section>
+
+<section class="section light" id="faq">
+  <div class="container" style="max-width: 800px;">
+    <div class="section-head">
+      <span class="eyebrow">FAQ</span>
+      <h2 class="h2">Häufige Fragen zu LeanAM MES</h2>
+      <p>Antworten auf die Fragen, die uns am häufigsten gestellt werden — von der Lizenzform bis zur Datensouveränität.</p>
+    </div>
+    <div class="faq-list">
+      <details class="faq-item" open>
+        <summary><h3>Läuft LeanAM MES ohne Internet?</h3></summary>
+        <p>Ja. LeanAM MES ist vollständig On-Premise und benötigt keine Internetverbindung. Alle Daten bleiben in Ihrem Netzwerk — kein Cloud-Zwang, kein Abo, keine externen Server.</p>
+      </details>
+      <details class="faq-item">
+        <summary><h3>Welche 3D-Drucker werden unterstützt?</h3></summary>
+        <p>LeanAM MES unterstützt Bambu Lab (X1, X1C, P1S, P1P, A1, A1 Mini) im lokalen LAN-Modus ohne Bambu Cloud. Weitere Drucker werden über OPC UA, MQTT und REST angebunden — darunter Systeme von Ultimaker, Stratasys und generische FDM/SLS-Maschinen.</p>
+      </details>
+      <details class="faq-item">
+        <summary><h3>Ist LeanAM MES DSGVO-konform?</h3></summary>
+        <p>Ja. Da LeanAM MES On-Premise betrieben wird, verlassen keine Produktions- oder Mitarbeiterdaten Ihr Unternehmen. Software und Support kommen aus Deutschland — DSGVO-konform per Design.</p>
+      </details>
+      <details class="faq-item">
+        <summary><h3>Wie lange dauert die Implementierung?</h3></summary>
+        <p>Eine Standardinstallation ist in 1–3 Tagen betriebsbereit. Bei komplexen ERP-Integrationen oder großen Maschinenflotten planen wir gemeinsam einen realistischen Zeitplan — typisch 2–6 Wochen bis zum Vollbetrieb.</p>
+      </details>
+      <details class="faq-item">
+        <summary><h3>Lässt sich LeanAM MES an SAP oder andere ERP-Systeme anbinden?</h3></summary>
+        <p>Ja. LeanAM MES bietet Standard-Konnektoren für SAP, Microsoft Dynamics und ProAlpha sowie generische REST- und OPC-UA-Schnittstellen für andere ERP-, CAQ- und PLM-Systeme.</p>
+      </details>
+      <details class="faq-item">
+        <summary><h3>Gibt es eine Demo von LeanAM MES?</h3></summary>
+        <p>Ja. Wir bieten eine 45-minütige Live-Demo mit Ihrem konkreten Use-Case — kostenlos und unverbindlich. <a href="kontakt.html" style="color: var(--cyan);">Demo-Termin über das Kontaktformular anfragen.</a></p>
+      </details>
     </div>
   </div>
 </section>
