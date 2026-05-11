@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LeanAM — Additive Manufacturing Software, Beratung & MES Made in Germany</title>
+<meta name="description" content="LeanAM: MES-Software für 3D-Druckhallen, Prozessberatung und Custom Engineering für additive Fertigung. On-Premise, DSGVO-konform, Made in Germany.">
+<link rel="canonical" href="https://leanam.com/">
+
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://leanam.com/">
+<meta property="og:title" content="LeanAM — Additive Manufacturing Software, Beratung & MES Made in Germany">
+<meta property="og:description" content="MES-Software für 3D-Druckhallen, Prozessberatung und Custom Engineering. On-Premise, DSGVO-konform, Made in Germany.">
+<meta property="og:locale" content="de_DE">
+<meta property="og:site_name" content="LeanAM">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="LeanAM — Additive Manufacturing Software & MES">
+<meta name="twitter:description" content="MES-Software für 3D-Druckhallen, Prozessberatung und Custom Engineering. On-Premise, DSGVO-konform, Made in Germany.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+<link rel="stylesheet" href="styles/main.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://leanam.com/#organization",
+      "name": "LeanAM GmbH",
+      "url": "https://leanam.com/",
+      "logo": "https://leanam.com/favicon.svg",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "customer support",
+        "email": "info@leanam.com",
+        "availableLanguage": "German"
+      },
+      "areaServed": "DE",
+      "description": "Software, Beratung und Entwicklung für additive Fertigung. Made in Germany."
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://leanam.com/#website",
+      "url": "https://leanam.com/",
+      "name": "LeanAM",
+      "publisher": { "@id": "https://leanam.com/#organization" },
+      "inLanguage": "de-DE"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://leanam.com/#webpage",
+      "url": "https://leanam.com/",
+      "name": "LeanAM — Additive Manufacturing Software, Beratung & MES Made in Germany",
+      "isPartOf": { "@id": "https://leanam.com/#website" },
+      "about": { "@id": "https://leanam.com/#organization" },
+      "description": "MES-Software für 3D-Druckhallen, Prozessberatung und Custom Engineering für additive Fertigung."
+    }
+  ]
+}
+</script>
+</head>
+<body data-screen-label="01 Startseite">
+
+<!-- ============ HEADER ============ -->
+<header class="site-header">
+  <div class="container nav">
+    <a href="index.html" class="brand">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M3 7l9-4 9 4-9 4-9-4z"></path>
+          <path d="M3 12l9 4 9-4"></path>
+          <path d="M3 17l9 4 9-4"></path>
+        </svg>
+      </span>
+      <span><strong>Lean</strong>AM</span>
+    </a>
+    <nav class="nav-links" aria-label="Hauptnavigation">
+      <a href="index.html" class="active">Start</a>
+      <a href="mes.html">LeanAM MES</a>
+      <a href="prozessberatung.html">Prozessberatung</a>
+      <a href="entwicklung.html">Entwicklung</a>
+      <a href="ueber-uns.html">Über uns</a>
+    </nav>
+    <div class="nav-right">
+      <div class="lang-switch">
+        <button class="active" type="button">DE</button>
+        <span class="sep">|</span>
+        <button type="button">EN</button>
+      </div>
+      <a href="kontakt.html" class="btn btn-primary btn-sm">
+        <span class="material-symbols-outlined">mail</span>
+        Kontakt
+      </a>
+    </div>
+    <button class="nav-toggle" aria-label="Navigation öffnen" aria-expanded="false" aria-controls="mobile-nav">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="mobile-nav" id="mobile-nav" hidden>
+    <nav aria-label="Mobile Navigation">
+      <a href="index.html" class="active">Start</a>
+      <a href="mes.html">LeanAM MES</a>
+      <a href="prozessberatung.html">Prozessberatung</a>
+      <a href="entwicklung.html">Entwicklung</a>
+      <a href="ueber-uns.html">Über uns</a>
+      <a href="kontakt.html" class="mobile-cta">Kontakt / Demo</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="hero">
+  <div class="container">
+    <div class="hero-grid">
+      <div>
+        <span class="eyebrow">Additive Manufacturing · Software · Beratung</span>
+        <h1 class="h1">
+          Additive Manufacturing
+          <span class="accent">strategisch nutzen</span>
+        </h1>
+        <p class="lead">
+          Profitabel, skalierbar, praxisnah. Wir helfen produzierenden Unternehmen, additive Fertigung als echten Wettbewerbsvorteil zu etablieren — von der Strategie über die Implementierung bis zum laufenden Betrieb.
+        </p>
+        <div class="cta-row">
+          <a href="kontakt.html" class="btn btn-primary">
+            Demo anfragen
+            <span class="material-symbols-outlined">arrow_forward</span>
+          </a>
+          <a href="mes.html" class="btn btn-outline-light">
+            LeanAM MES kennenlernen
+          </a>
+        </div>
+        <div class="badge-row">
+          <span class="badge"><span class="material-symbols-outlined">verified</span>Made in Germany</span>
+          <span class="badge"><span class="material-symbols-outlined">shield_lock</span>DSGVO-konform</span>
+          <span class="badge"><span class="material-symbols-outlined">cloud_off</span>On-Premise</span>
+        </div>
+      </div>
+      <div class="hero-card">
+        <h4>Was Sie bekommen</h4>
+        <ul class="checklist">
+          <li><span class="material-symbols-outlined">check_circle</span>Strategieberatung von der Make-or-Buy-Analyse bis zur Skalierung</li>
+          <li><span class="material-symbols-outlined">check_circle</span>LeanAM MES — eigene Manufacturing Execution Software</li>
+          <li><span class="material-symbols-outlined">check_circle</span>Bambu Lab lokal steuern — ohne Bambu Cloud</li>
+          <li><span class="material-symbols-outlined">check_circle</span>B2B Druckservice & Lohnfertigung in-house</li>
+          <li><span class="material-symbols-outlined">check_circle</span>Individuelle Software- und Prozessentwicklung</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ INTRO (white) ============ -->
+<section class="section light">
+  <div class="container">
+    <div class="split">
+      <div>
+        <span class="eyebrow">In-house Kompetenz</span>
+        <h2 class="h2">Additive Fertigung in-house — und in die Wertschöpfung integriert</h2>
+        <p class="body muted mt-2">
+          Wir bei LeanAM betreiben einen eigenen Maschinenpark und kennen die Realität additiver Fertigung aus dem täglichen Betrieb. Diese Erfahrung fließt in unsere Software ein — und in jedes Beratungsmandat. Kein abstraktes Whitepaper, sondern Lösungen, die sich am Hallenboden bewähren.
+        </p>
+        <p class="body muted mt-2">
+          Von der ersten Make-or-Buy-Analyse bis zur skalierten Serienproduktion: Wir begleiten Sie operativ, technisch und strategisch — und übernehmen, wo es sinnvoll ist, auch die Fertigung als B2B-Service.
+        </p>
+        <a href="ueber-uns.html" class="btn btn-outline-dark mt-4">
+          Mehr über uns
+          <span class="material-symbols-outlined">arrow_forward</span>
+        </a>
+      </div>
+      <div class="placeholder-image" aria-hidden="true">
+        <div class="ph-content">
+          <span class="material-symbols-outlined">precision_manufacturing</span>
+          <span class="label">Maschinenpark · Halle</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TEAL BANNER — 3 service cards ============ -->
+<section class="section teal">
+  <div class="container">
+    <div class="section-head center">
+      <span class="eyebrow" style="color: #7debf3;">Drei Säulen</span>
+      <h2 class="h2">Ihr Partner für strategische Prozessinnovation</h2>
+      <p>Wir verbinden Software, Beratung und operative Umsetzung — damit additive Fertigung in Ihrem Unternehmen messbaren Wert schafft.</p>
+    </div>
+    <div class="grid grid-3">
+      <div class="card card-cyan-top">
+        <div class="icon-circle"><span class="material-symbols-outlined">insights</span></div>
+        <h3 class="h3">Consulting</h3>
+        <p>Strategische Prozessberatung von der Potenzialanalyse über Business-Cases bis zur Roadmap. Wir bewerten, ob, wie und mit welchem ROI sich additive Fertigung in Ihrem Betrieb lohnt.</p>
+        <ul class="card-list">
+          <li><span class="material-symbols-outlined">check</span>Make-or-Buy-Analysen</li>
+          <li><span class="material-symbols-outlined">check</span>Technologie-Auswahl</li>
+          <li><span class="material-symbols-outlined">check</span>Wirtschaftlichkeitsbewertung</li>
+        </ul>
+      </div>
+      <div class="card card-cyan-top">
+        <div class="icon-circle"><span class="material-symbols-outlined">deployed_code</span></div>
+        <h3 class="h3">Implementierung</h3>
+        <p>Software-Entwicklung und Inbetriebnahme. Vom MES über Druckerintegration bis zur Anbindung an Ihr ERP — wir liefern produktiv einsetzbare Werkzeuge, keine PowerPoint-Folien.</p>
+        <ul class="card-list">
+          <li><span class="material-symbols-outlined">check</span>LeanAM MES On-Premise</li>
+          <li><span class="material-symbols-outlined">check</span>Bambu Lab ohne Cloud</li>
+          <li><span class="material-symbols-outlined">check</span>ERP-/CAQ-Integration</li>
+        </ul>
+      </div>
+      <div class="card card-cyan-top">
+        <div class="icon-circle"><span class="material-symbols-outlined">factory</span></div>
+        <h3 class="h3">B2B Services</h3>
+        <p>Druckservice, Lohnfertigung und Pilotreihen aus unserem eigenen Maschinenpark. Skalierbar von der Einzel­anwendung bis zur Kleinserie — mit dokumentierter Qualität.</p>
+        <ul class="card-list">
+          <li><span class="material-symbols-outlined">check</span>Druckservice & Prototypen</li>
+          <li><span class="material-symbols-outlined">check</span>Kleinserien-Fertigung</li>
+          <li><span class="material-symbols-outlined">check</span>Materialqualifizierung</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ WHY US (white) — checklist with cyan checks ============ -->
+<section class="section light">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Warum LeanAM?</span>
+      <h2 class="h2">Wir sind Praktiker — keine reinen Berater</h2>
+      <p>Acht klare Gründe, weshalb Industrie-Kunden uns Software, Beratung und Fertigung anvertrauen.</p>
+    </div>
+    <div class="checklist-grid">
+      <div class="check-item">
+        <span class="check-mark"><span class="material-symbols-outlined">check</span></span>
+        <div class="text">
+          <strong>Eigener Maschinenpark</strong>
+          <span>Wir kennen die Probleme, die wir lösen — aus dem täglichen Produktionsbetrieb.</span>
+        </div>
+      </div>
+      <div class="check-item">
+        <span class="check-mark"><span class="material-symbols-outlined">check</span></span>
+        <div class="text">
+          <strong>On-Premise statt Cloud-Zwang</strong>
+          <span>Ihre Fertigungs­daten verlassen Ihr Werk nicht. Keine Abos, keine Vendor-Lock-Ins.</span>
+        </div>
+      </div>
+      <div class="check-item">
+        <span class="check-mark"><span class="material-symbols-outlined">check</span></span>
+        <div class="text">
+          <strong>Made in Germany</strong>
+          <span>Entwicklung, Support und Beratung aus Deutschland. DSGVO-konform per Design.</span>
+        </div>
+      </div>
+      <div class="check-item">
+        <span class="check-mark"><span class="material-symbols-outlined">check</span></span>
+        <div class="text">
+          <strong>Software-Tiefe</strong>
+          <span>Eigenes Engineering-Team — keine Whitelabel-Lösungen, keine Abhängigkeit von Dritten.</span>
+        </div>
+      </div>
+      <div class="check-item">
+        <span class="check-mark"><span class="material-symbols-outlined">check</span></span>
+        <div class="text">
+          <strong>Branchen-Erfahrung</strong>
+          <span>Medizintechnik, Aerospace, Interior, Lehre & Forschung — wir kennen die Spielregeln.</span>
+        </div>
+      </div>
+      <div class="check-item">
+        <span class="check-mark"><span class="material-symbols-outlined">check</span></span>
+        <div class="text">
+          <strong>Strategie & Operations</strong>
+          <span>Wir denken vom Business-Case bis zur Maschine — und schließen die Lücke dazwischen.</span>
+        </div>
+      </div>
+      <div class="check-item">
+        <span class="check-mark"><span class="material-symbols-outlined">check</span></span>
+        <div class="text">
+          <strong>Skalierung im Fokus</strong>
+          <span>Vom ersten Anwendungsfall zur dokumentierten Serienfertigung — strukturiert, messbar.</span>
+        </div>
+      </div>
+      <div class="check-item">
+        <span class="check-mark"><span class="material-symbols-outlined">check</span></span>
+        <div class="text">
+          <strong>Ehrliche Beratung</strong>
+          <span>Wir sagen auch, wann sich AM nicht lohnt. Keine Verkaufslogik, sondern Wahrheitssuche.</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ UNSERE LEISTUNGEN (offwhite) ============ -->
+<section class="section offwhite">
+  <div class="container">
+    <div class="section-head center">
+      <span class="eyebrow">Unsere Leistungen</span>
+      <h2 class="h2">Detailliert. Operativ. Belastbar.</h2>
+      <p>Drei Schwerpunktbereiche, in denen wir Industrie-Kunden vom ersten Workshop bis zur dauerhaften Implementierung begleiten.</p>
+    </div>
+    <div class="grid grid-3">
+      <div class="service-detail">
+        <div class="icon-circle"><span class="material-symbols-outlined">analytics</span></div>
+        <span class="price-line">Strategie · Workshop · Roadmap</span>
+        <h3>Prozessberatung</h3>
+        <p>Wir analysieren Ihr Bauteilportfolio, identifizieren AM-taugliche Anwendungen und liefern eine umsetzbare Roadmap inkl. Wirtschaftlichkeitsrechnung.</p>
+        <ul>
+          <li><span class="material-symbols-outlined">check_circle</span>Make-or-Buy für additive Fertigung</li>
+          <li><span class="material-symbols-outlined">check_circle</span>Bauteil-Screening & Use-Case-Bewertung</li>
+          <li><span class="material-symbols-outlined">check_circle</span>Investitions- und ROI-Modelle</li>
+          <li><span class="material-symbols-outlined">check_circle</span>Lieferanten- & Technologie-Auswahl</li>
+        </ul>
+      </div>
+      <div class="service-detail">
+        <div class="icon-circle"><span class="material-symbols-outlined">terminal</span></div>
+        <span class="price-line">Software · MES · Integration</span>
+        <h3>LeanAM MES</h3>
+        <p>Unsere eigene MES-Software für 3D-Druckhallen — läuft bei Ihnen im Betrieb, keine Cloud, kein Abo. Steuert Bambu Lab und weitere Drucker direkt.</p>
+        <ul>
+          <li><span class="material-symbols-outlined">check_circle</span>Auftragsmanagement & Job-Routing</li>
+          <li><span class="material-symbols-outlined">check_circle</span>Bambu Lab lokal — ohne Bambu Cloud</li>
+          <li><span class="material-symbols-outlined">check_circle</span>Live-Maschinenstatus & Telemetrie</li>
+          <li><span class="material-symbols-outlined">check_circle</span>ERP- & CAQ-Anbindung</li>
+        </ul>
+      </div>
+      <div class="service-detail">
+        <div class="icon-circle"><span class="material-symbols-outlined">code_blocks</span></div>
+        <span class="price-line">Custom Engineering</span>
+        <h3>Entwicklung</h3>
+        <p>Sie haben einen Sonderprozess oder eine eigene Maschinenflotte? Wir entwickeln maßgeschneiderte Software, Schnittstellen und Automatisierungen für Ihren Stack.</p>
+        <ul>
+          <li><span class="material-symbols-outlined">check_circle</span>Custom Workflows & Automatisierung</li>
+          <li><span class="material-symbols-outlined">check_circle</span>OPC UA / REST / MQTT-Schnittstellen</li>
+          <li><span class="material-symbols-outlined">check_circle</span>Slicer- & Druckersteuerung</li>
+          <li><span class="material-symbols-outlined">check_circle</span>Monitoring, Alerting, Reporting</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ BRANCHEN (white) ============ -->
+<section class="section light">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Branchen</span>
+      <h2 class="h2">Wo wir Wertschöpfung schaffen</h2>
+      <p>Vier Bereiche, in denen wir tiefes Branchen-Know-how mitbringen — von regulierten Industrien bis zur akademischen Lehre.</p>
+    </div>
+    <div class="grid grid-4">
+      <a href="prozessberatung.html" class="industry-card">
+        <span class="industry-icon"><span class="material-symbols-outlined">monitor_heart</span></span>
+        <h4>Medizintechnik</h4>
+        <p>Patientenindividuelle Implantate, Bohrschablonen, Anatomiemodelle — mit dokumentierter Qualität für regulierte Märkte.</p>
+      </a>
+      <a href="prozessberatung.html" class="industry-card">
+        <span class="industry-icon"><span class="material-symbols-outlined">flight</span></span>
+        <h4>Luft- und Raumfahrt</h4>
+        <p>Leichtbau, funktionsintegrierte Bauteile und Ersatzteile mit anspruchsvollen Spezifikationen — für AS9100-nahe Prozesse.</p>
+      </a>
+      <a href="prozessberatung.html" class="industry-card">
+        <span class="industry-icon"><span class="material-symbols-outlined">chair</span></span>
+        <h4>Interior</h4>
+        <p>Individuelle Innenausbau-Komponenten, Designteile und kleinserien­fähige Produktionen für Yacht-, Bahn- und Automotive-Interior.</p>
+      </a>
+      <a href="prozessberatung.html" class="industry-card">
+        <span class="industry-icon"><span class="material-symbols-outlined">school</span></span>
+        <h4>Hochschulen</h4>
+        <p>Druckerflotten in Lehre und Forschung — wir liefern MES-Tooling, Nutzer­verwaltung und Abrechnung für Hochschul­druckhallen.</p>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ UNSER PROZESS (teal) ============ -->
+<section class="section teal">
+  <div class="container">
+    <div class="section-head center">
+      <span class="eyebrow" style="color: #7debf3;">Unser Prozess</span>
+      <h2 class="h2">In vier Schritten zur produktiven AM-Linie</h2>
+      <p>Strukturiertes Vorgehen — vom ersten Gespräch bis zur dauerhaften Wertschöpfung. Sie sehen jederzeit, wo wir stehen.</p>
+    </div>
+    <div class="steps">
+      <div class="step">
+        <div class="num-circle">1</div>
+        <h4>Analyse</h4>
+        <p>Wir prüfen Ihr Bauteilportfolio, Ihre Stückzahlen und Anforderungen — und identifizieren die Use-Cases mit dem höchsten Hebel.</p>
+      </div>
+      <div class="step">
+        <div class="num-circle">2</div>
+        <h4>Konzept</h4>
+        <p>Auswahl der passenden Technologie, Materialien und Maschinen. Wir entwerfen Prozess-Layout, IT-Architektur und Business-Case.</p>
+      </div>
+      <div class="step">
+        <div class="num-circle">3</div>
+        <h4>Implementierung</h4>
+        <p>Inbetriebnahme der Hardware, Roll-out der LeanAM-Software, Integration in ERP/CAQ und Schulung Ihres Teams — operativ, hands-on.</p>
+      </div>
+      <div class="step">
+        <div class="num-circle">4</div>
+        <h4>Skalierung</h4>
+        <p>Wir begleiten Sie in der Hochlaufphase, optimieren KPIs und übernehmen — wenn Sie möchten — Spitzenlasten als B2B-Service.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ÜBER LEANAM (white) ============ -->
+<section class="section light">
+  <div class="container">
+    <div class="split flip">
+      <div>
+        <span class="eyebrow">Über LeanAM</span>
+        <h2 class="h2">Software- und Prozess-Spezialisten für additive Fertigung</h2>
+        <p class="body muted mt-2">
+          LeanAM wurde von einem Team aus Maschinenbau-Ingenieuren und Software-Entwicklern gegründet, das jahrelang in der Industrie gesehen hat, woran AM-Projekte tatsächlich scheitern: an unzureichender Software, fehlender Strategie und mangelnder operativer Begleitung.
+        </p>
+        <p class="body muted mt-2">
+          Wir schließen diese Lücken — mit einer eigenen Plattform, mit ehrlicher Beratung und mit einem laufenden Druckbetrieb, der unsere Erkenntnisse jeden Tag in den Code zurückspielt.
+        </p>
+        <a href="ueber-uns.html" class="btn btn-outline-dark mt-4">
+          Team & Mission
+          <span class="material-symbols-outlined">arrow_forward</span>
+        </a>
+      </div>
+      <div class="placeholder-image" aria-hidden="true">
+        <div class="ph-content">
+          <span class="material-symbols-outlined">groups</span>
+          <span class="label">Team · Engineering</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ KONTAKT CTA (dark) ============ -->
+<section class="section dark cta-banner">
+  <div class="container">
+    <span class="eyebrow">Kontakt</span>
+    <h2 class="h2">Lassen Sie uns <span class="cyan">sprechen.</span></h2>
+    <p>30 Minuten, kostenlos und unverbindlich — wir hören zu, prüfen Ihren Use-Case und sagen ehrlich, ob und wie wir helfen können.</p>
+    <div class="cta-row" style="justify-content: center; display: flex; gap: 14px; flex-wrap: wrap;">
+      <a href="kontakt.html" class="btn btn-primary">
+        Demo anfragen
+        <span class="material-symbols-outlined">arrow_forward</span>
+      </a>
+      <a href="kontakt.html" class="btn btn-outline-light">
+        Erstgespräch buchen
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAQ (white) ============ -->
+<section class="section light">
+  <div class="container">
+    <div class="section-head center">
+      <span class="eyebrow">Häufige Fragen</span>
+      <h2 class="h2">FAQ</h2>
+      <p>Antworten auf die Fragen, die uns am häufigsten gestellt werden — von der Lizenzform bis zur Datensouveränität.</p>
+    </div>
+    <div class="faq-list">
+      <details class="faq" open>
+        <summary>Läuft LeanAM MES in der Cloud oder bei uns im Werk?</summary>
+        <div class="faq-body">
+          LeanAM MES läuft ausschließlich On-Premise — bei Ihnen im Betrieb. Keine Cloud, kein Abo, keine externe Datenhaltung. Sie behalten die volle Datenhoheit, auch in regulierten Branchen.
+        </div>
+      </details>
+      <details class="faq">
+        <summary>Können wir Bambu-Lab-Drucker ohne Bambu Cloud betreiben?</summary>
+        <div class="faq-body">
+          Ja. LeanAM MES steuert Bambu-Lab-Drucker direkt im lokalen Netzwerk — ohne Bambu Cloud, ohne Account-Zwang. So bleiben Druckdaten und Telemetrie vollständig in Ihrer Infrastruktur.
+        </div>
+      </details>
+      <details class="faq">
+        <summary>Welche Branchen betreuen Sie typischerweise?</summary>
+        <div class="faq-body">
+          Schwerpunkte sind Medizintechnik, Luft- und Raumfahrt, Interior-Industrie sowie Hochschulen und Forschungseinrichtungen. Darüber hinaus betreuen wir produzierende Mittelständler in Maschinen- und Anlagenbau.
+        </div>
+      </details>
+      <details class="faq">
+        <summary>Was kostet ein Erstgespräch?</summary>
+        <div class="faq-body">
+          Das Erstgespräch ist kostenlos und unverbindlich. In 30 Minuten klären wir, ob Ihr Use-Case zu unseren Stärken passt — und Sie bekommen eine ehrliche Einschätzung, auch wenn die Antwort &bdquo;noch nicht&ldquo; lautet.
+        </div>
+      </details>
+      <details class="faq">
+        <summary>Bieten Sie auch reine Druckservices an?</summary>
+        <div class="faq-body">
+          Ja. Über unseren B2B-Druckservice fertigen wir Prototypen, Kleinserien und Pilotreihen aus unserem eigenen Maschinenpark — mit dokumentierter Qualität und definierten Lieferzeiten.
+        </div>
+      </details>
+      <details class="faq">
+        <summary>Können Sie LeanAM MES an unser ERP anbinden?</summary>
+        <div class="faq-body">
+          Ja. Wir bieten Standard-Konnektoren für gängige ERP- und CAQ-Systeme (SAP, Microsoft Dynamics, ProAlpha u.&nbsp;a.) sowie generische Schnittstellen via REST, OPC UA und MQTT.
+        </div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <a href="index.html" class="brand">
+          <span class="brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M3 7l9-4 9 4-9 4-9-4z"></path>
+              <path d="M3 12l9 4 9-4"></path>
+              <path d="M3 17l9 4 9-4"></path>
+            </svg>
+          </span>
+          <span><strong>Lean</strong>AM</span>
+        </a>
+        <p>Software, Beratung und Entwicklung für additive Fertigung. Made in Germany — DSGVO-konform — On-Premise.</p>
+        <div class="badge-row">
+          <span class="badge"><span class="material-symbols-outlined">verified</span>Made in Germany</span>
+        </div>
+      </div>
+      <div>
+        <h5>Produkt</h5>
+        <ul>
+          <li><a href="mes.html">LeanAM MES</a></li>
+          <li><a href="mes.html">Bambu Lab Integration</a></li>
+          <li><a href="entwicklung.html">Custom Development</a></li>
+          <li><a href="kontakt.html">Demo anfragen</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Leistungen</h5>
+        <ul>
+          <li><a href="prozessberatung.html">Prozessberatung</a></li>
+          <li><a href="entwicklung.html">Entwicklung</a></li>
+          <li><a href="prozessberatung.html">B2B Druckservice</a></li>
+          <li><a href="prozessberatung.html">Implementierung</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Unternehmen</h5>
+        <ul>
+          <li><a href="ueber-uns.html">Über uns</a></li>
+          <li><a href="ueber-uns.html">Karriere</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+          <li><a href="kontakt.html">Standort</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 LeanAM GmbH · Alle Rechte vorbehalten.</span>
+      <div class="links">
+        <a href="impressum.html">Impressum</a>
+        <a href="datenschutz.html">Datenschutz</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="nav.js"></script>
+</body>
+</html>

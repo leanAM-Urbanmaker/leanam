@@ -1,0 +1,43 @@
+[build]
+  publish = "."
+
+[[redirects]]
+  from = "/index.html"
+  to = "/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/mes.html"
+  to = "/mes/"
+  status = 301
+
+[[redirects]]
+  from = "/prozessberatung.html"
+  to = "/prozessberatung/"
+  status = 301
+
+[[redirects]]
+  from = "/entwicklung.html"
+  to = "/entwicklung/"
+  status = 301
+
+[[redirects]]
+  from = "/ueber-uns.html"
+  to = "/ueber-uns/"
+  status = 301
+
+[[redirects]]
+  from = "/kontakt.html"
+  to = "/kontakt/"
+  status = 301
+
+[[redirects]]
+  from = "/impressum.html"
+  to = "/impressum/"
+  status = 301
+
+[[redirects]]
+  from = "/datenschutz.html"
+  to = "/datenschutz/"
+  status = 301
