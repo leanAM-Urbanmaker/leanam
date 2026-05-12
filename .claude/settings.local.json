@@ -1,0 +1,20 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git clone *)",
+      "PowerShell(git -C \"C:\\\\Users\\\\lAM-X1700\\\\LeanAM\" remote -v)",
+      "PowerShell(git -C \"C:\\\\Users\\\\lAM-X1700\\\\LeanAM\" config user.name)",
+      "PowerShell(git -C \"C:\\\\Users\\\\lAM-X1700\\\\LeanAM\" config user.email)",
+      "mcp__Claude_Preview__preview_start",
+      "mcp__Claude_in_Chrome__tabs_context_mcp",
+      "mcp__Claude_in_Chrome__computer",
+      "mcp__2a3df6ea-f75b-4d34-9b0f-b84a1eeb06e4__search_files",
+      "mcp__2a3df6ea-f75b-4d34-9b0f-b84a1eeb06e4__read_file_content",
+      "PowerShell($content = Get-Content \"C:\\\\Users\\\\lAM-X1700\\\\.claude\\\\projects\\\\C--Users-lAM-X1700-LeanAM\\\\de0e3733-d86b-4a23-9fe3-2d1fff97160f\\\\tool-results\\\\mcp-2a3df6ea-f75b-4d34-9b0f-b84a1eeb06e4-read_file_content-1778588591005.txt\" -Raw | ConvertFrom-Json; $text = $content.fileContent; Write-Output \"Total chars: $\\($text.Length\\)\"; Write-Output \"---CHUNK1---\"; Write-Output $text.Substring\\(0, [Math]::Min\\(8000, $text.Length\\)\\))",
+      "PowerShell($content = Get-Content \"C:\\\\Users\\\\lAM-X1700\\\\.claude\\\\projects\\\\C--Users-lAM-X1700-LeanAM\\\\de0e3733-d86b-4a23-9fe3-2d1fff97160f\\\\tool-results\\\\mcp-2a3df6ea-f75b-4d34-9b0f-b84a1eeb06e4-read_file_content-1778588591005.txt\" -Raw | ConvertFrom-Json; $text = $content.fileContent; Write-Output $text.Substring\\(8000, 8000\\))",
+      "WebSearch",
+      "WebFetch(domain:bambulab.com)",
+      "WebFetch(domain:wiki.bambulab.com)"
+    ]
+  }
+}
