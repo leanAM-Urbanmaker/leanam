@@ -381,23 +381,47 @@ input[type=range]::-moz-range-thumb {
 
         <p style="font-size:13px;font-weight:700;color:var(--mid-grey);letter-spacing:.08em;text-transform:uppercase;margin-bottom:14px;">Druckermodell wählen</p>
         <div class="printer-grid" id="printerGrid">
-          <div class="printer-card selected" data-printer="bambu-x1c" onclick="selectPrinter(this)">
+          <div class="printer-card selected" data-printer="bambu-a1mini" onclick="selectPrinter(this)">
             <div class="pc-icon">🖨️</div>
-            <h4>Bambu Lab X1C</h4>
-            <div class="pc-price">1.499 €</div>
-            <div class="pc-spec">350W · 256³ mm<br>Multi-Material</div>
+            <h4>Bambu Lab A1 Mini</h4>
+            <div class="pc-price">349 €</div>
+            <div class="pc-spec">57W · 180×180×180 mm<br>AMS Lite</div>
+          </div>
+          <div class="printer-card" data-printer="bambu-a1" onclick="selectPrinter(this)">
+            <div class="pc-icon">🖨️</div>
+            <h4>Bambu Lab A1</h4>
+            <div class="pc-price">449 €</div>
+            <div class="pc-spec">95W · 256×256×256 mm<br>AMS Lite</div>
+          </div>
+          <div class="printer-card" data-printer="bambu-p2s" onclick="selectPrinter(this)">
+            <div class="pc-icon">🖨️</div>
+            <h4>Bambu Lab P2S</h4>
+            <div class="pc-price">549 €</div>
+            <div class="pc-spec">50W · 256×256×256 mm<br>AMS 2 Pro</div>
           </div>
           <div class="printer-card" data-printer="bambu-p1s" onclick="selectPrinter(this)">
             <div class="pc-icon">🖨️</div>
             <h4>Bambu Lab P1S</h4>
-            <div class="pc-price">999 €</div>
-            <div class="pc-spec">350W · 256³ mm<br>Enclosed</div>
+            <div class="pc-price">599 €</div>
+            <div class="pc-spec">50W · 256×256×256 mm<br>AMS 2 Pro · Enclosed</div>
+          </div>
+          <div class="printer-card" data-printer="bambu-x2d" onclick="selectPrinter(this)">
+            <div class="pc-icon">🖨️</div>
+            <h4>Bambu Lab X2D</h4>
+            <div class="pc-price">629 €</div>
+            <div class="pc-spec">170W · 256×256×260 mm<br>AMS 2 Pro · Flagship</div>
+          </div>
+          <div class="printer-card" data-printer="bambu-h2d" onclick="selectPrinter(this)">
+            <div class="pc-icon">🖨️</div>
+            <h4>Bambu Lab H2D</h4>
+            <div class="pc-price">1.749 €</div>
+            <div class="pc-spec">200W · 325×320×325 mm<br>AMS 2 Pro/HT · Pro</div>
           </div>
           <div class="printer-card" data-printer="prusa-mk4" onclick="selectPrinter(this)">
             <div class="pc-icon">🖨️</div>
             <h4>Prusa MK4</h4>
             <div class="pc-price">799 €</div>
-            <div class="pc-spec">250W · 250×210×220 mm<br>Open Source</div>
+            <div class="pc-spec">120W · 250×210×220 mm<br>Open Source</div>
           </div>
           <div class="printer-card" data-printer="custom" onclick="selectPrinter(this)">
             <div class="pc-icon">⚙️</div>
@@ -857,15 +881,21 @@ input[type=range]::-moz-range-thumb {
 <script>
 /* ================================================================
    PRINTER PRESETS (Druckerdatenbank — vereinfacht nach Thesis 5.5)
+   Quellen: bambulab.com/de, wiki.bambulab.com (Stand Mai 2026)
+   Watt = Ø Verbrauch während Druckbetrieb (nicht Peak-Heizleistung)
    ================================================================ */
 const PRINTERS = {
-  'bambu-x1c': { name:'Bambu Lab X1C', price:1499, watt:350, maintYear:60, accessory:200 },
-  'bambu-p1s':  { name:'Bambu Lab P1S', price:999,  watt:350, maintYear:40, accessory:150 },
-  'prusa-mk4':  { name:'Prusa MK4',     price:799,  watt:250, maintYear:30, accessory:120 },
-  'custom':     { name:'Eigenes Modell', price:0,   watt:0,   maintYear:0,  accessory:0   }
+  'bambu-a1mini': { name:'Bambu Lab A1 Mini', price:349,  watt:57,  maintYear:20,  accessory:80,  buildVol:'180×180×180 mm', amsSupport:'AMS Lite' },
+  'bambu-a1':     { name:'Bambu Lab A1',      price:449,  watt:95,  maintYear:30,  accessory:100, buildVol:'256×256×256 mm', amsSupport:'AMS Lite' },
+  'bambu-p2s':    { name:'Bambu Lab P2S',     price:549,  watt:50,  maintYear:40,  accessory:120, buildVol:'256×256×256 mm', amsSupport:'AMS 2 Pro' },
+  'bambu-p1s':    { name:'Bambu Lab P1S',     price:599,  watt:50,  maintYear:50,  accessory:150, buildVol:'256×256×256 mm', amsSupport:'AMS 2 Pro' },
+  'bambu-x2d':    { name:'Bambu Lab X2D',     price:629,  watt:170, maintYear:70,  accessory:180, buildVol:'256×256×260 mm', amsSupport:'AMS 2 Pro' },
+  'bambu-h2d':    { name:'Bambu Lab H2D',     price:1749, watt:200, maintYear:100, accessory:250, buildVol:'325×320×325 mm', amsSupport:'AMS 2 Pro/HT' },
+  'prusa-mk4':    { name:'Prusa MK4',         price:799,  watt:120, maintYear:30,  accessory:120, buildVol:'250×210×220 mm', amsSupport:'—' },
+  'custom':       { name:'Eigenes Modell',    price:0,    watt:0,   maintYear:0,   accessory:0,   buildVol:'—', amsSupport:'—' }
 };
 
-let selectedPrinter = 'bambu-x1c';
+let selectedPrinter = 'bambu-a1mini';
 let selectedUC = 'b2b';
 let calcResult = {};
 let chartMain, chartCosts;
