@@ -1296,10 +1296,10 @@ function goStep2() {
 function showResults() {
   document.querySelectorAll('.wizard-step').forEach(s => s.classList.remove('active'));
   document.getElementById('wizardBody').style.display = 'none';
-  calculate();
-  renderResults();
   document.getElementById('resultsSection').classList.add('active');
   updateProgress(3);
+  calculate();
+  try { renderResults(); } catch(e) { console.error('renderResults:', e); }
   setTimeout(() => {
     document.getElementById('resultsSection').scrollIntoView({ behavior: 'smooth', block: 'start' });
   }, 50);
