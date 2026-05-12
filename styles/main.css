@@ -1135,3 +1135,17 @@ ul { margin: 0; padding: 0; list-style: none; }
 
 /* Real logo image */
 .brand-logo { height: 38px; width: auto; display: block; }
+
+/* Cloud comparison */
+.problem-comparison { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.comparison-col { border-radius: 12px; padding: 24px; }
+.comparison-col.bad { background: rgba(220,50,50,.06); border: 1px solid rgba(220,50,50,.18); }
+.comparison-col.good { background: rgba(0,200,180,.07); border: 1px solid rgba(0,200,180,.22); }
+.comp-head { display: flex; align-items: center; gap: 8px; font-weight: 700; font-size: 15px; margin-bottom: 16px; }
+.comparison-col.bad .comp-head { color: #c0392b; }
+.comparison-col.good .comp-head { color: #00b4a0; }
+.comparison-col ul { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 10px; }
+.comparison-col li { display: flex; align-items: flex-start; gap: 8px; font-size: 14px; line-height: 1.45; color: var(--muted); }
+.comparison-col.bad .material-symbols-outlined { color: #c0392b; font-size: 18px; flex-shrink: 0; margin-top: 1px; }
+.comparison-col.good .material-symbols-outlined { color: #00b4a0; font-size: 18px; flex-shrink: 0; margin-top: 1px; }
+@media (max-width: 640px) { .problem-comparison { grid-template-columns: 1fr; } }

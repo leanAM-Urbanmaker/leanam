@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>LeanAM MES — Manufacturing Execution Software für 3D-Druckhallen On-Premise</title>
-<meta name="description" content="LeanAM MES: On-Premise MES für 3D-Drucker — Auftragsmanagement, Bambu Lab ohne Cloud, Live-Telemetrie & Material-Tracking. DSGVO-konform, Made in Germany. Kostenlose Demo anfragen.">
+<title>Bambu Lab ohne Cloud & 3D-Drucker lokal verwalten — LeanAM MES</title>
+<meta name="description" content="LeanAM MES: 3D-Drucker Management Software — Bambu Lab ohne Cloud betreiben, Print Farm lokal verwalten, Aufträge steuern. On-Premise, DSGVO-konform, Made in Germany. Demo anfragen.">
 <link rel="canonical" href="https://leanam.com/mes/">
 
 <meta property="og:type" content="website">
@@ -158,48 +158,125 @@
       <span class="material-symbols-outlined">chevron_right</span>
       <span>LeanAM MES</span>
     </div>
-    <span class="eyebrow">Software · MES · On-Premise</span>
-    <h1>LeanAM MES — <span class="accent">Manufacturing Execution für die Druckhalle</span></h1>
-    <p class="lead">Läuft bei Ihnen im Betrieb — keine Cloud, kein Abo. Die einzige MES-Software, die Bambu-Lab-Drucker direkt im lokalen Netzwerk steuert. Ohne Bambu Cloud, ohne Account-Zwang.</p>
+    <span class="eyebrow">3D-Drucker Management · On-Premise · Print Farm Software</span>
+    <h1>3D-Drucker lokal verwalten — <span class="accent">Bambu Lab ohne Cloud.</span></h1>
+    <p class="lead">LeanAM MES ist die Management-Software für 3D-Drucker, die vollständig in Ihrem Netzwerk läuft. Bambu Lab, FDM, SLS — lokal gesteuert, ohne Cloud-Zwang, ohne dass Produktionsdaten Ihr Werk verlassen.</p>
     <div class="cta-row" style="display:flex;gap:14px;flex-wrap:wrap;margin-top:32px;">
       <a href="kontakt.html" class="btn btn-primary">Demo anfragen<span class="material-symbols-outlined">arrow_forward</span></a>
-      <a href="kontakt.html" class="btn btn-outline-light">Datenblatt herunterladen</a>
     </div>
     <div class="badge-row">
-      <span class="badge"><span class="material-symbols-outlined">cloud_off</span>On-Premise</span>
+      <span class="badge"><span class="material-symbols-outlined">cloud_off</span>Kein Cloud-Zwang</span>
       <span class="badge"><span class="material-symbols-outlined">shield_lock</span>DSGVO-konform</span>
-      <span class="badge"><span class="material-symbols-outlined">api</span>REST · OPC UA · MQTT</span>
+      <span class="badge"><span class="material-symbols-outlined">print</span>Bambu Lab · FDM · SLS</span>
+      <span class="badge"><span class="material-symbols-outlined">verified</span>Made in Germany</span>
     </div>
   </div>
 </section>
 
-<section class="section light">
+<section class="section light" id="cloud-problem">
+  <div class="container">
+    <div class="split">
+      <div>
+        <span class="eyebrow">Das Cloud-Problem</span>
+        <h2 class="h2">Warum Ihre 3D-Drucker nicht in die Cloud gehören.</h2>
+        <p class="body muted mt-2">
+          Moderne 3D-Drucker — allen voran Bambu Lab — senden Druckdaten, Kamera-Feeds und Maschinentelo­metrie standardmäßig über externe Cloud-Server. Für den Heimanwender praktisch. Für Unternehmen ein Problem.
+        </p>
+        <p class="body muted mt-2">
+          Produktionsdaten, CAD-Geometrien und Fertigungs­parameter sind Kernwissen. Sie gehören nicht auf Server in den USA oder China — schon gar nicht in regulierten Branchen wie Medizintechnik, Aerospace oder Defense.
+        </p>
+        <p class="body muted mt-2">
+          LeanAM MES löst das: Alle Daten bleiben in Ihrem Netzwerk. Kein externen Server, kein Bambu-Account-Zwang, kein Internetausfall stoppt die Produktion.
+        </p>
+      </div>
+      <div class="problem-comparison">
+        <div class="comparison-col bad">
+          <div class="comp-head"><span class="material-symbols-outlined">cloud</span>Mit Cloud</div>
+          <ul>
+            <li><span class="material-symbols-outlined">close</span>Druckdaten auf fremden Servern</li>
+            <li><span class="material-symbols-outlined">close</span>Kamera-Feed läuft über Cloud</li>
+            <li><span class="material-symbols-outlined">close</span>Abhängig von Internetverbindung</li>
+            <li><span class="material-symbols-outlined">close</span>DSGVO-Risiko bei Personenbezug</li>
+            <li><span class="material-symbols-outlined">close</span>Vendor-Lock-In durch Account-Zwang</li>
+          </ul>
+        </div>
+        <div class="comparison-col good">
+          <div class="comp-head"><span class="material-symbols-outlined">cloud_off</span>Mit LeanAM MES</div>
+          <ul>
+            <li><span class="material-symbols-outlined">check_circle</span>Alle Daten bleiben lokal</li>
+            <li><span class="material-symbols-outlined">check_circle</span>Kamera-Feed intern im LAN</li>
+            <li><span class="material-symbols-outlined">check_circle</span>Produktionsbetrieb offline-fähig</li>
+            <li><span class="material-symbols-outlined">check_circle</span>DSGVO-konform per Design</li>
+            <li><span class="material-symbols-outlined">check_circle</span>Kein Bambu-Account erforderlich</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section teal" id="bambu-lab">
+  <div class="container">
+    <div class="highlight">
+      <div class="placeholder-image" aria-hidden="true">
+        <div class="ph-content">
+          <span class="material-symbols-outlined">3d_rotation</span>
+          <span class="label">Bambu Lab · LAN Mode · ohne Cloud</span>
+        </div>
+      </div>
+      <div>
+        <span class="eyebrow" style="color: #7debf3;">Bambu Lab ohne Cloud betreiben</span>
+        <h2 class="h2"><span class="cyan">Bambu Lab lokal steuern</span> — LAN Mode, kein Account</h2>
+        <p>LeanAM MES kommuniziert direkt mit Bambu-Lab-Druckern über das lokale Netzwerk — ohne Bambu Cloud, ohne Bambu-Account-Pflicht. Der native MQTT-Stack wird lokal abgebildet: Kamera, Telemetrie, Druckstart, AMS — alles in Ihrem Netz.</p>
+        <ul class="feature-list">
+          <li><span class="material-symbols-outlined">check_circle</span>Direkter LAN-Mode für X1, X1C, P1S, P1P, A1, A1 Mini</li>
+          <li><span class="material-symbols-outlined">check_circle</span>Live-Kamera-Feed lokal — kein Cloud-Routing</li>
+          <li><span class="material-symbols-outlined">check_circle</span>AMS-Verwaltung & Filament-Tracking ohne Cloud</li>
+          <li><span class="material-symbols-outlined">check_circle</span>Firmware-Updates für ganze Bambu-Flotten zentral</li>
+          <li><span class="material-symbols-outlined">check_circle</span>Druckdaten verlassen Ihr Werk nicht</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section light" id="funktionen">
   <div class="container">
     <div class="section-head">
       <span class="eyebrow">Funktionsumfang</span>
-      <h2 class="h2">Alles, was Ihre Druckhalle braucht — in einer Plattform</h2>
-      <p>LeanAM MES bündelt Auftrags­steuerung, Maschinenanbindung und Reporting in einer modularen On-Premise-Lösung.</p>
+      <h2 class="h2">3D-Drucker Management Software — alle Funktionen lokal</h2>
+      <p>LeanAM MES ist die vollständige Print-Farm-Lösung: Auftragssteuerung, Maschinenüberwachung und Reporting — vollständig On-Premise, ohne Cloud-Abhängigkeit.</p>
     </div>
     <div class="grid grid-3">
       <div class="feature-card">
         <div class="icon-circle"><span class="material-symbols-outlined">queue</span></div>
         <h4>Auftragsmanagement</h4>
-        <p>Aufträge anlegen, priorisieren und automatisch auf passende Maschinen routen — inklusive Stücklisten, Materialvarianten und Lieferterminen.</p>
+        <p>Druckaufträge anlegen, priorisieren und automatisch auf freie Maschinen routen — inklusive Stücklisten, Materialvarianten und Lieferterminen.</p>
       </div>
       <div class="feature-card">
         <div class="icon-circle"><span class="material-symbols-outlined">monitor</span></div>
         <h4>Live-Maschinenstatus</h4>
-        <p>Sehen Sie Druckfortschritt, Temperaturen, Materialverbrauch und Restlaufzeit in Echtzeit für jede Maschine im Hallenüberblick.</p>
+        <p>Druckfortschritt, Temperaturen, Materialverbrauch und Restlaufzeit in Echtzeit — Hallenüberblick für jede Maschine Ihrer Print Farm.</p>
       </div>
       <div class="feature-card">
         <div class="icon-circle"><span class="material-symbols-outlined">build</span></div>
         <h4>Slicer-Integration</h4>
-        <p>Direkte Anbindung gängiger Slicer (PrusaSlicer, OrcaSlicer, Bambu Studio) — Profile zentral verwalten, Druckaufträge automatisiert generieren.</p>
+        <p>Direkte Anbindung von PrusaSlicer, OrcaSlicer und Bambu Studio — Profile zentral verwalten, Druckaufträge automatisch generieren.</p>
       </div>
       <div class="feature-card">
         <div class="icon-circle"><span class="material-symbols-outlined">inventory_2</span></div>
         <h4>Material-Tracking</h4>
-        <p>Spulen, Chargen und Verbräuche werden lückenlos dokumentiert — wichtig für regulierte Branchen und Materialqualifizierung.</p>
+        <p>Spulen, Chargen und Verbräuche lückenlos dokumentiert — wichtig für Materialqualifizierung und regulierte Branchen.</p>
+      </div>
+      <div class="feature-card">
+        <div class="icon-circle"><span class="material-symbols-outlined">notifications_active</span></div>
+        <h4>Alerting</h4>
+        <p>E-Mail- und Webhook-Benachrichtigungen bei Druckfehlern, Materialwechsel oder Stillständen — bevor der Schaden entsteht.</p>
+      </div>
+      <div class="feature-card">
+        <div class="icon-circle"><span class="material-symbols-outlined">analytics</span></div>
+        <h4>Reporting & KPIs</h4>
+        <p>OEE, Auslastung, Erstausschussquote und Druckzeiten — als lokale Dashboards oder Export für Ihre Reporting-Pipelines.</p>
       </div>
       <div class="feature-card">
         <div class="icon-circle"><span class="material-symbols-outlined">groups</span></div>
@@ -212,16 +289,6 @@
         <p>Kalkulation pro Auftrag, automatische Verrechnung bei Hochschulen oder internen Cost-Centers, Export nach SAP & Co.</p>
       </div>
       <div class="feature-card">
-        <div class="icon-circle"><span class="material-symbols-outlined">notifications_active</span></div>
-        <h4>Alerting</h4>
-        <p>E-Mail- und Webhook-Benachrichtigungen bei Druckfehlern, Materialwechsel oder Stillständen — bevor der Schaden entsteht.</p>
-      </div>
-      <div class="feature-card">
-        <div class="icon-circle"><span class="material-symbols-outlined">analytics</span></div>
-        <h4>Reporting & KPIs</h4>
-        <p>OEE, Erstausschuss­quote, Auslastung und mehr — als Dashboards oder Export für Ihre Reporting-Pipelines.</p>
-      </div>
-      <div class="feature-card">
         <div class="icon-circle"><span class="material-symbols-outlined">hub</span></div>
         <h4>ERP- & CAQ-Anbindung</h4>
         <p>Standard-Konnektoren für SAP, Dynamics, ProAlpha — sowie generische Schnittstellen via REST, OPC UA und MQTT.</p>
@@ -230,25 +297,29 @@
   </div>
 </section>
 
-<section class="section teal">
+<section class="section offwhite" id="drucker">
   <div class="container">
-    <div class="highlight">
-      <div class="placeholder-image" aria-hidden="true">
-        <div class="ph-content">
-          <span class="material-symbols-outlined">3d_rotation</span>
-          <span class="label">Bambu Lab · Local Mode</span>
-        </div>
+    <div class="section-head">
+      <span class="eyebrow">Kompatibilität</span>
+      <h2 class="h2">Welche 3D-Drucker werden unterstützt?</h2>
+      <p>LeanAM MES ist kein reines Bambu-Lab-Tool — der lokale Steuerungsansatz funktioniert mit allen gängigen FDM- und SLS-Systemen.</p>
+    </div>
+    <div class="grid grid-3">
+      <div class="feature-card">
+        <div class="icon-circle"><span class="material-symbols-outlined">print</span></div>
+        <h4>Bambu Lab (nativ)</h4>
+        <p>X1, X1C, P1S, P1P, A1, A1 Mini — direkter LAN-Mode ohne Bambu Cloud. Vollständige AMS- und Telemetrie-Integration.</p>
+        <span class="badge" style="margin-top:12px;display:inline-flex;">Tiefste Integration</span>
       </div>
-      <div>
-        <span class="eyebrow" style="color: #7debf3;">Bambu Lab Integration</span>
-        <h2 class="h2"><span class="cyan">Bambu Lab lokal steuern</span> — ohne Bambu Cloud</h2>
-        <p>Wir haben den nativen Bambu-Lab-Stack tief integriert. Drucker werden im LAN angesprochen, Kameras laufen lokal, Druckdaten verlassen Ihr Werk nicht. Eine echte Industrie-Integration — ohne Account-Zwang, ohne Internetabhängigkeit.</p>
-        <ul class="feature-list">
-          <li><span class="material-symbols-outlined">check_circle</span>Direkter LAN-Mode für X1/X1C/P1/A1-Serie</li>
-          <li><span class="material-symbols-outlined">check_circle</span>Live-Kamera-Feed ohne Cloud-Routing</li>
-          <li><span class="material-symbols-outlined">check_circle</span>AMS-Verwaltung & Material-Tracking</li>
-          <li><span class="material-symbols-outlined">check_circle</span>Firmware-Management für ganze Flotten</li>
-        </ul>
+      <div class="feature-card">
+        <div class="icon-circle"><span class="material-symbols-outlined">print</span></div>
+        <h4>FDM-Drucker (MQTT/OPC UA)</h4>
+        <p>Prusa, Ultimaker, Creality, Raise3D und weitere — Anbindung über MQTT, REST oder OPC UA. Herstellerunabhängige Protokoll-Schicht.</p>
+      </div>
+      <div class="feature-card">
+        <div class="icon-circle"><span class="material-symbols-outlined">print</span></div>
+        <h4>Industrie-Systeme (SLS/SLA)</h4>
+        <p>Stratasys, EOS, Formlabs und andere Industrieanlagen — über standardisierte Schnittstellen oder individuelle Treiber-Entwicklung.</p>
       </div>
     </div>
   </div>
@@ -258,19 +329,19 @@
   <div class="container">
     <div class="section-head">
       <span class="eyebrow">Workflow</span>
-      <h2 class="h2">Von der STL-Datei zum versendeten Bauteil</h2>
-      <p>So fließt ein Druckauftrag durch LeanAM MES — vollständig digital, dokumentiert und auditierbar.</p>
+      <h2 class="h2">Von der STL-Datei zum Bauteil — vollständig lokal</h2>
+      <p>So fließt ein Druckauftrag durch LeanAM MES — digital, dokumentiert, auditierbar. Kein Schritt berührt einen externen Server.</p>
     </div>
     <div class="workflow">
       <div class="workflow-step">
         <span class="ws-num">SCHRITT 01</span>
         <h4>Upload</h4>
-        <p>STL/3MF wird per Web-UI oder API hochgeladen — ERP-Auftrag wird automatisch verknüpft.</p>
+        <p>STL/3MF wird per Web-UI oder API hochgeladen — lokal gespeichert, ERP-Auftrag automatisch verknüpft.</p>
       </div>
       <div class="workflow-step">
         <span class="ws-num">SCHRITT 02</span>
         <h4>Slicing</h4>
-        <p>Profil wählen oder vom System vorschlagen lassen — Material und Maschine werden mit­geprüft.</p>
+        <p>Profil wählen oder vom System vorschlagen lassen — Material und Maschine werden geprüft, Slice-Job läuft lokal.</p>
       </div>
       <div class="workflow-step">
         <span class="ws-num">SCHRITT 03</span>
@@ -280,12 +351,12 @@
       <div class="workflow-step">
         <span class="ws-num">SCHRITT 04</span>
         <h4>Produktion</h4>
-        <p>Druck startet automatisch, Telemetrie läuft live mit. Bei Abweichungen wird sofort gewarnt.</p>
+        <p>Druck startet automatisch, Telemetrie läuft lokal mit. Bei Abweichungen wird sofort gewarnt.</p>
       </div>
       <div class="workflow-step">
         <span class="ws-num">SCHRITT 05</span>
         <h4>Dokumentation</h4>
-        <p>Druckprotokoll, Material­charge und Bilder werden archiviert — bereit für Audit und Versand.</p>
+        <p>Druckprotokoll, Materialcharge und Bilder werden lokal archiviert — bereit für Audit und Versand.</p>
       </div>
     </div>
   </div>
@@ -334,7 +405,6 @@
     <p>45 Minuten Live-Demo mit Ihrem Use-Case. Wir zeigen die Plattform an einem realen Maschinenpark — und beantworten Ihre IT- und Fachfragen.</p>
     <div class="cta-row" style="justify-content:center;display:flex;gap:14px;flex-wrap:wrap;">
       <a href="kontakt.html" class="btn btn-primary">Demo-Termin vereinbaren<span class="material-symbols-outlined">arrow_forward</span></a>
-      <a href="kontakt.html" class="btn btn-outline-light">Datenblatt anfordern</a>
     </div>
   </div>
 </section>
