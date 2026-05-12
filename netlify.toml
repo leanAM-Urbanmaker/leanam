@@ -41,3 +41,13 @@
   from = "/datenschutz.html"
   to = "/datenschutz/"
   status = 301
+
+[[redirects]]
+  from = "/wissen"
+  to = "/wissen/"
+  status = 301
+
+[[redirects]]
+  from = "/branchen"
+  to = "/wissen/"
+  status = 301

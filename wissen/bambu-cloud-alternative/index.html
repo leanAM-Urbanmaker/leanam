@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<meta name="theme-color" content="#0d1f2d">
+<title>Bambu Cloud Alternative: 3D-Drucker lokal betreiben ohne Bambu Cloud | leanAM</title>
+<meta name="description" content="Bambu Lab ohne Cloud betreiben: Alle Alternativen im Vergleich — MQTT lokal, Bambu Hanami und leanAM MES. Welche Lösung passt für Unternehmen, DSGVO und regulierte Branchen?">
+<link rel="canonical" href="https://leanam.com/wissen/bambu-cloud-alternative/">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://leanam.com/wissen/bambu-cloud-alternative/">
+<meta property="og:title" content="Bambu Cloud Alternative: Bambu Lab lokal betreiben | leanAM">
+<meta property="og:description" content="Bambu Lab ohne Cloud: MQTT lokal, Bambu Hanami oder leanAM MES? Ehrlicher Vergleich aller Optionen für Unternehmen.">
+<meta property="og:image" content="https://leanam.com/images/favicon-512.png">
+<meta property="og:locale" content="de_DE">
+<meta property="og:site_name" content="leanAM">
+<link rel="preload" as="font" type="font/woff2" href="/fonts/montserrat-latin.woff2" crossorigin>
+<link rel="preload" as="image" href="/images/logo.webp" fetchpriority="high">
+<link rel="stylesheet" href="/styles/main.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Start", "item": "https://leanam.com/" },
+        { "@type": "ListItem", "position": 2, "name": "Wissen", "item": "https://leanam.com/wissen/" },
+        { "@type": "ListItem", "position": 3, "name": "Bambu Cloud Alternative", "item": "https://leanam.com/wissen/bambu-cloud-alternative/" }
+      ]
+    },
+    {
+      "@type": "Article",
+      "url": "https://leanam.com/wissen/bambu-cloud-alternative/",
+      "headline": "Bambu Cloud Alternative: Bambu Lab lokal betreiben ohne Cloud-Zwang",
+      "description": "Alle Optionen im Vergleich: MQTT lokal, Bambu Hanami und leanAM MES. Welche Lösung passt für Unternehmen, DSGVO und regulierte Branchen?",
+      "author": { "@type": "Organization", "name": "leanAM", "url": "https://leanam.com/" },
+      "publisher": { "@type": "Organization", "name": "leanAM", "url": "https://leanam.com/" },
+      "datePublished": "2026-05-12",
+      "dateModified": "2026-05-12",
+      "inLanguage": "de"
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Kann man Bambu Lab Drucker ohne Cloud betreiben?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Ja. Bambu Lab Drucker unterstützen MQTT über das lokale Netzwerk. Damit lassen sich Drucker vollständig ohne Bambu Cloud steuern — entweder mit Community-Tools wie Bambu Hanami oder mit professionellen MES-Lösungen wie leanAM MES." }
+        },
+        {
+          "@type": "Question",
+          "name": "Ist Bambu Cloud DSGVO-konform?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Die Bambu Cloud speichert Druckdaten auf Servern von Bambu Network Technology in China. Für Unternehmen in regulierten Branchen (Medtech, Aerospace, Defense) oder mit DSGVO-Anforderungen ist das problematisch, da personenbezogene und produktionsbezogene Daten in Drittländer übertragen werden." }
+        },
+        {
+          "@type": "Question",
+          "name": "Was ist der Unterschied zwischen Bambu Hanami und leanAM MES?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Bambu Hanami ist ein Open-Source-Community-Projekt für technisch versierte Nutzer. leanAM MES ist eine industrietaugliche MES-Software mit Auftragsverwaltung, Materialverfolgung, Reporting und professionellem Support — gedacht für produzierende Unternehmen mit mehreren Maschinen und internen Compliance-Anforderungen." }
+        },
+        {
+          "@type": "Question",
+          "name": "Welche Bambu Lab Modelle werden ohne Cloud unterstützt?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Alle aktuellen Bambu Lab FDM-Drucker mit LAN-Modus: X1 Carbon, X1E, P1S, P1P und A1 (Mini). Voraussetzung ist aktivierter LAN-Modus im Drucker-Menü." }
+        }
+      ]
+    }
+  ]
+}
+</script>
+<link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+</head>
+<body data-screen-label="Wissen Bambu Cloud Alternative">
+
+<header class="site-header">
+  <div class="container nav">
+    <a href="/index.html" class="brand"><img src="/images/logo.webp" alt="leanAM" class="brand-logo" width="110" height="38" fetchpriority="high"></a>
+    <nav class="nav-links" aria-label="Hauptnavigation">
+      <a href="/index.html">Start</a>
+      <a href="/mes.html">leanAM MES</a>
+      <a href="/prozessberatung.html">Prozessberatung</a>
+      <a href="/entwicklung.html">Entwicklung</a>
+      <a href="/ueber-uns.html">Über uns</a>
+      <a href="/wissen/" class="active">Wissen</a>
+    </nav>
+    <div class="nav-right">
+      <div class="lang-switch"><button class="active" type="button">DE</button><span class="sep">|</span><button type="button">EN</button></div>
+      <a href="/kontakt.html" class="btn btn-primary btn-sm"><span class="material-symbols-outlined">mail</span>Kontakt</a>
+    </div>
+    <button class="nav-toggle" aria-label="Navigation öffnen" aria-expanded="false" aria-controls="mobile-nav">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="mobile-nav" id="mobile-nav" hidden>
+    <nav aria-label="Mobile Navigation">
+      <a href="/index.html">Start</a>
+      <a href="/mes.html">leanAM MES</a>
+      <a href="/prozessberatung.html">Prozessberatung</a>
+      <a href="/entwicklung.html">Entwicklung</a>
+      <a href="/ueber-uns.html">Über uns</a>
+      <a href="/wissen/" class="active">Wissen</a>
+      <a href="/kontakt.html" class="mobile-cta">Kontakt / Demo</a>
+    </nav>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="container">
+    <div class="breadcrumb"><a href="/index.html">Start</a><span class="material-symbols-outlined">chevron_right</span><a href="/wissen/">Wissen</a><span class="material-symbols-outlined">chevron_right</span><span>Bambu Cloud Alternative</span></div>
+    <span class="eyebrow">Vergleich · MQTT · DSGVO</span>
+    <h1>Bambu Cloud Alternative: <span class="accent">Drucker lokal betreiben.</span></h1>
+    <p class="lead">Bambu Lab ohne Cloud ist technisch möglich — und für Unternehmen oft die einzig sinnvolle Option. Alle Alternativen im ehrlichen Vergleich: Was funktioniert, was hat Grenzen, und ab wann braucht man ein richtiges MES.</p>
+  </div>
+</section>
+
+<section class="section light">
+  <div class="container">
+    <div class="split">
+      <div>
+        <span class="eyebrow">Das Problem</span>
+        <h2 class="h2">Warum die Bambu Cloud für Unternehmen nicht ausreicht.</h2>
+        <p class="body muted mt-2">
+          Bambu Lab hat den FDM-Markt mit hoher Druckqualität und einfachem Setup aufgemischt. Aber das Standardmodell setzt auf Cloud-Konnektivität: Druckjobs, Kameradaten, Gerätestatus — alles läuft über Server von Bambu Network Technology in China.
+        </p>
+        <p class="body muted mt-2">
+          Für Privatnutzer kein Problem. Für Unternehmen in der EU dagegen entstehen konkrete Risiken: Produktionsdaten verlassen das Firmennetz, DSGVO-relevante Informationen gehen in Drittstaaten, und die Verfügbarkeit der eigenen Maschinen hängt von einem externen Dienst ab.
+        </p>
+        <p class="body muted mt-2">
+          In regulierten Branchen — Medizintechnik, Aerospace, Defense — ist Cloud-basiertes Drucken oft schlicht nicht genehmigungsfähig. Und selbst ohne Regulierung: Wer 10 oder 20 Bambu-Drucker produktiv betreibt, braucht mehr als eine Smartphone-App.
+        </p>
+      </div>
+      <div>
+        <div class="feature-card" style="background:var(--navy-light, #1a2f3f);border:1px solid rgba(0,212,232,0.2);">
+          <h3 style="margin-bottom:16px;font-size:16px;text-transform:uppercase;letter-spacing:.08em;opacity:.7;">Typische Probleme mit Bambu Cloud</h3>
+          <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:12px;">
+            <li style="display:flex;gap:12px;align-items:flex-start;"><span class="material-symbols-outlined" style="color:#f87171;flex-shrink:0;margin-top:2px;">cancel</span><span>Produktionsdaten auf chinesischen Servern (DSGVO-Risiko)</span></li>
+            <li style="display:flex;gap:12px;align-items:flex-start;"><span class="material-symbols-outlined" style="color:#f87171;flex-shrink:0;margin-top:2px;">cancel</span><span>Abhängigkeit von Bambu-Dienstverfügbarkeit</span></li>
+            <li style="display:flex;gap:12px;align-items:flex-start;"><span class="material-symbols-outlined" style="color:#f87171;flex-shrink:0;margin-top:2px;">cancel</span><span>Kein Multi-User-Management, keine Rollentrennung</span></li>
+            <li style="display:flex;gap:12px;align-items:flex-start;"><span class="material-symbols-outlined" style="color:#f87171;flex-shrink:0;margin-top:2px;">cancel</span><span>Kein Auftragstracking, keine Kostenzuweisung</span></li>
+            <li style="display:flex;gap:12px;align-items:flex-start;"><span class="material-symbols-outlined" style="color:#f87171;flex-shrink:0;margin-top:2px;">cancel</span><span>Keine ERP/MES-Integration möglich</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section offwhite">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Vergleich</span>
+      <h2 class="h2">Alle Bambu Cloud Alternativen im Überblick</h2>
+      <p>Drei Wege, Bambu Lab Drucker ohne Cloud zu betreiben — mit unterschiedlichem Aufwand, Funktionsumfang und Eignung für Unternehmenseinsatz.</p>
+    </div>
+
+    <div class="comparison-table-wrap" style="overflow-x:auto;margin-top:32px;">
+      <table style="width:100%;border-collapse:collapse;font-size:15px;min-width:640px;">
+        <thead>
+          <tr style="background:var(--navy);color:var(--white);">
+            <th style="padding:14px 16px;text-align:left;font-weight:600;width:28%;">Kriterium</th>
+            <th style="padding:14px 16px;text-align:center;font-weight:600;width:24%;">Bambu Cloud</th>
+            <th style="padding:14px 16px;text-align:center;font-weight:600;width:24%;">MQTT / Hanami</th>
+            <th style="padding:14px 16px;text-align:center;font-weight:600;width:24%;color:var(--cyan);">leanAM MES</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr style="border-bottom:1px solid #e5e7eb;">
+            <td style="padding:12px 16px;font-weight:500;">Einrichtungsaufwand</td>
+            <td style="padding:12px 16px;text-align:center;">Sehr gering</td>
+            <td style="padding:12px 16px;text-align:center;">Mittel–Hoch</td>
+            <td style="padding:12px 16px;text-align:center;font-weight:600;">Gering</td>
+          </tr>
+          <tr style="border-bottom:1px solid #e5e7eb;background:#f9fafb;">
+            <td style="padding:12px 16px;font-weight:500;">DSGVO-konform (EU)</td>
+            <td style="padding:12px 16px;text-align:center;color:#ef4444;">✗</td>
+            <td style="padding:12px 16px;text-align:center;color:#22c55e;">✓</td>
+            <td style="padding:12px 16px;text-align:center;color:#22c55e;font-weight:600;">✓</td>
+          </tr>
+          <tr style="border-bottom:1px solid #e5e7eb;">
+            <td style="padding:12px 16px;font-weight:500;">Daten bleiben lokal</td>
+            <td style="padding:12px 16px;text-align:center;color:#ef4444;">✗</td>
+            <td style="padding:12px 16px;text-align:center;color:#22c55e;">✓</td>
+            <td style="padding:12px 16px;text-align:center;color:#22c55e;font-weight:600;">✓ On-Premise</td>
+          </tr>
+          <tr style="border-bottom:1px solid #e5e7eb;background:#f9fafb;">
+            <td style="padding:12px 16px;font-weight:500;">Multi-Drucker-Management</td>
+            <td style="padding:12px 16px;text-align:center;">Begrenzt</td>
+            <td style="padding:12px 16px;text-align:center;">Basis</td>
+            <td style="padding:12px 16px;text-align:center;font-weight:600;">Vollständig</td>
+          </tr>
+          <tr style="border-bottom:1px solid #e5e7eb;">
+            <td style="padding:12px 16px;font-weight:500;">Auftragsverwaltung</td>
+            <td style="padding:12px 16px;text-align:center;color:#ef4444;">✗</td>
+            <td style="padding:12px 16px;text-align:center;color:#ef4444;">✗</td>
+            <td style="padding:12px 16px;text-align:center;color:#22c55e;font-weight:600;">✓</td>
+          </tr>
+          <tr style="border-bottom:1px solid #e5e7eb;background:#f9fafb;">
+            <td style="padding:12px 16px;font-weight:500;">Materialverfolgung</td>
+            <td style="padding:12px 16px;text-align:center;">Basis</td>
+            <td style="padding:12px 16px;text-align:center;color:#ef4444;">✗</td>
+            <td style="padding:12px 16px;text-align:center;color:#22c55e;font-weight:600;">✓</td>
+          </tr>
+          <tr style="border-bottom:1px solid #e5e7eb;">
+            <td style="padding:12px 16px;font-weight:500;">Reporting & Auslastung</td>
+            <td style="padding:12px 16px;text-align:center;">Eingeschränkt</td>
+            <td style="padding:12px 16px;text-align:center;color:#ef4444;">✗</td>
+            <td style="padding:12px 16px;text-align:center;color:#22c55e;font-weight:600;">✓</td>
+          </tr>
+          <tr style="border-bottom:1px solid #e5e7eb;background:#f9fafb;">
+            <td style="padding:12px 16px;font-weight:500;">ERP / MES-Integration</td>
+            <td style="padding:12px 16px;text-align:center;color:#ef4444;">✗</td>
+            <td style="padding:12px 16px;text-align:center;">Aufwändig</td>
+            <td style="padding:12px 16px;text-align:center;color:#22c55e;font-weight:600;">✓ API</td>
+          </tr>
+          <tr style="border-bottom:1px solid #e5e7eb;">
+            <td style="padding:12px 16px;font-weight:500;">Technischer Support</td>
+            <td style="padding:12px 16px;text-align:center;">Bambu Lab</td>
+            <td style="padding:12px 16px;text-align:center;">Community</td>
+            <td style="padding:12px 16px;text-align:center;font-weight:600;">Professionell (DE)</td>
+          </tr>
+          <tr style="background:#f9fafb;">
+            <td style="padding:12px 16px;font-weight:500;">Geeignet für Produktion</td>
+            <td style="padding:12px 16px;text-align:center;color:#f59e0b;">Bedingt</td>
+            <td style="padding:12px 16px;text-align:center;color:#f59e0b;">Bedingt</td>
+            <td style="padding:12px 16px;text-align:center;color:#22c55e;font-weight:600;">✓ Ja</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<section class="section light">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Die Optionen im Detail</span>
+      <h2 class="h2">Was steckt hinter den Alternativen?</h2>
+    </div>
+    <div class="grid grid-3" style="margin-top:32px;">
+      <div class="feature-card">
+        <div style="display:flex;align-items:center;gap:12px;margin-bottom:16px;">
+          <span class="material-symbols-outlined" style="color:#f59e0b;font-size:28px;">wifi</span>
+          <h3 style="margin:0;">Bambu Cloud (Standard)</h3>
+        </div>
+        <p class="muted" style="font-size:15px;">Der einfachste Weg: Drucker mit Bambu-Account verbinden, fertig. Gut für Einzelnutzer und Kleinbetriebe ohne Compliance-Anforderungen.</p>
+        <p class="muted" style="font-size:15px;margin-top:12px;"><strong>Grenzen:</strong> Daten gehen auf Bambu-Server (China), kein Offline-Betrieb, kein echtes Produktionsmanagement. Für EU-Unternehmen mit DSGVO-Pflichten nicht empfehlenswert.</p>
+      </div>
+      <div class="feature-card">
+        <div style="display:flex;align-items:center;gap:12px;margin-bottom:16px;">
+          <span class="material-symbols-outlined" style="color:#7debf3;font-size:28px;">terminal</span>
+          <h3 style="margin:0;">MQTT lokal / Bambu Hanami</h3>
+        </div>
+        <p class="muted" style="font-size:15px;">Bambu Lab Drucker senden ihren Status via MQTT ins lokale Netz. Community-Projekte wie Bambu Hanami nutzen das, um eine eigene Oberfläche zu bauen — ohne Cloud.</p>
+        <p class="muted" style="font-size:15px;margin-top:12px;"><strong>Grenzen:</strong> Kein Support, keine Auftragsverwaltung, kein Reporting. Für Entwickler und Bastler geeignet — nicht für Unternehmen mit Produktionsverantwortung.</p>
+      </div>
+      <div class="feature-card" style="border:2px solid var(--cyan);">
+        <div style="display:flex;align-items:center;gap:12px;margin-bottom:16px;">
+          <span class="material-symbols-outlined" style="color:var(--cyan);font-size:28px;">factory</span>
+          <h3 style="margin:0;color:var(--cyan);">leanAM MES</h3>
+        </div>
+        <p class="muted" style="font-size:15px;">Nutzt das gleiche MQTT-Protokoll lokal — aber baut darüber eine vollständige MES-Schicht: Auftragsverwaltung, Materialverfolgung, Reporting, Benutzerverwaltung und API-Anbindung.</p>
+        <p class="muted" style="font-size:15px;margin-top:12px;"><strong>Vorteile:</strong> On-Premise, DSGVO-konform, kein Vendor-Lock-In, professioneller Support aus Deutschland. Für Unternehmen mit mehr als 3 Druckern der einzige Weg, der skaliert.</p>
+        <a href="/mes.html" class="btn btn-primary" style="margin-top:16px;display:inline-flex;align-items:center;gap:8px;font-size:14px;">Mehr zu leanAM MES<span class="material-symbols-outlined">arrow_forward</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section offwhite">
+  <div class="container">
+    <div class="split">
+      <div>
+        <span class="eyebrow">Technischer Hintergrund</span>
+        <h2 class="h2">Wie funktioniert Bambu Lab ohne Cloud?</h2>
+        <p class="body muted mt-2">
+          Alle aktuellen Bambu Lab FDM-Drucker (X1 Carbon, X1E, P1S, P1P, A1, A1 Mini) haben einen integrierten MQTT-Broker, der im LAN-Modus aktiviert werden kann. Über diesen Broker sendet der Drucker kontinuierlich Statusdaten: Druckfortschritt, Temperaturen, Materialverbrauch, Fehlerstatus.
+        </p>
+        <p class="body muted mt-2">
+          Ein lokales System, das sich mit diesem Broker verbindet, kann die gleichen Informationen empfangen wie die Bambu Cloud — ohne dass ein Bit das Firmennetz verlässt. Druckjobs können ebenfalls lokal übermittelt werden, sofern der LAN-Modus im Drucker-Menü aktiviert ist.
+        </p>
+        <p class="body muted mt-2">
+          leanAM MES implementiert genau dieses Protokoll — ergänzt um eine MES-Schicht, die industrietaugliches Auftrags- und Ressourcenmanagement ermöglicht.
+        </p>
+      </div>
+      <div>
+        <div class="feature-card">
+          <h3 style="margin-bottom:16px;font-size:16px;">Voraussetzungen für lokalen Betrieb</h3>
+          <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:10px;">
+            <li style="display:flex;gap:10px;align-items:flex-start;"><span class="material-symbols-outlined" style="color:var(--cyan);flex-shrink:0;font-size:20px;">check_circle</span><span>Drucker: X1C, X1E, P1S, P1P, A1 oder A1 Mini</span></li>
+            <li style="display:flex;gap:10px;align-items:flex-start;"><span class="material-symbols-outlined" style="color:var(--cyan);flex-shrink:0;font-size:20px;">check_circle</span><span>LAN-Modus im Drucker-Menü aktiviert</span></li>
+            <li style="display:flex;gap:10px;align-items:flex-start;"><span class="material-symbols-outlined" style="color:var(--cyan);flex-shrink:0;font-size:20px;">check_circle</span><span>Drucker und Server im gleichen Netzwerk</span></li>
+            <li style="display:flex;gap:10px;align-items:flex-start;"><span class="material-symbols-outlined" style="color:var(--cyan);flex-shrink:0;font-size:20px;">check_circle</span><span>Lokaler Server (Windows, Linux) für leanAM MES</span></li>
+            <li style="display:flex;gap:10px;align-items:flex-start;"><span class="material-symbols-outlined" style="color:var(--cyan);flex-shrink:0;font-size:20px;">check_circle</span><span>Keine Internetverbindung der Drucker notwendig</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section teal">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow" style="color:#7debf3;">FAQ</span>
+      <h2 class="h2">Häufige Fragen zur Bambu Cloud Alternative</h2>
+    </div>
+    <div style="max-width:800px;margin:0 auto;display:flex;flex-direction:column;gap:4px;">
+      <details style="background:rgba(255,255,255,0.07);border-radius:8px;overflow:hidden;">
+        <summary style="padding:18px 20px;cursor:pointer;font-weight:600;list-style:none;display:flex;justify-content:space-between;align-items:center;">Kann man Bambu Lab Drucker ohne Cloud betreiben?</summary>
+        <p style="padding:0 20px 18px;margin:0;opacity:.85;line-height:1.7;">Ja. Bambu Lab Drucker unterstützen MQTT über das lokale Netzwerk. Damit lassen sich Drucker vollständig ohne Bambu Cloud steuern — entweder mit Community-Tools wie Bambu Hanami oder mit professionellen MES-Lösungen wie leanAM MES.</p>
+      </details>
+      <details style="background:rgba(255,255,255,0.07);border-radius:8px;overflow:hidden;">
+        <summary style="padding:18px 20px;cursor:pointer;font-weight:600;list-style:none;display:flex;justify-content:space-between;align-items:center;">Ist Bambu Cloud DSGVO-konform?</summary>
+        <p style="padding:0 20px 18px;margin:0;opacity:.85;line-height:1.7;">Die Bambu Cloud speichert Druckdaten auf Servern von Bambu Network Technology in China. Für Unternehmen in regulierten Branchen oder mit DSGVO-Anforderungen ist das problematisch, da Daten in Drittländer übertragen werden. Eine lokale Lösung ist hier der sichere Weg.</p>
+      </details>
+      <details style="background:rgba(255,255,255,0.07);border-radius:8px;overflow:hidden;">
+        <summary style="padding:18px 20px;cursor:pointer;font-weight:600;list-style:none;display:flex;justify-content:space-between;align-items:center;">Was ist der Unterschied zwischen Bambu Hanami und leanAM MES?</summary>
+        <p style="padding:0 20px 18px;margin:0;opacity:.85;line-height:1.7;">Bambu Hanami ist ein Open-Source-Community-Projekt für technisch versierte Nutzer ohne Support. leanAM MES ist eine industrietaugliche MES-Software mit Auftragsverwaltung, Materialverfolgung, Reporting und professionellem Support — für produzierende Unternehmen mit Compliance-Anforderungen.</p>
+      </details>
+      <details style="background:rgba(255,255,255,0.07);border-radius:8px;overflow:hidden;">
+        <summary style="padding:18px 20px;cursor:pointer;font-weight:600;list-style:none;display:flex;justify-content:space-between;align-items:center;">Welche Bambu Lab Modelle werden lokal unterstützt?</summary>
+        <p style="padding:0 20px 18px;margin:0;opacity:.85;line-height:1.7;">Alle aktuellen FDM-Modelle mit LAN-Modus: X1 Carbon, X1E, P1S, P1P, A1 und A1 Mini. Voraussetzung ist der aktivierte LAN-Modus im Drucker-Menü.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<section class="section light">
+  <div class="container" style="text-align:center;max-width:700px;margin:0 auto;">
+    <span class="eyebrow">Nächster Schritt</span>
+    <h2 class="h2">Bambu Lab lokal betreiben — wir zeigen wie.</h2>
+    <p>Kostenlose Demo: Wir zeigen leanAM MES live mit echten Bambu Lab Druckern, komplett ohne Cloud, auf Ihrem Server oder unserer Demo-Instanz.</p>
+    <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;margin-top:24px;">
+      <a href="/kontakt.html" class="btn btn-primary" style="display:inline-flex;align-items:center;gap:8px;">Demo anfragen<span class="material-symbols-outlined">arrow_forward</span></a>
+      <a href="/mes.html" class="btn btn-outline" style="display:inline-flex;align-items:center;gap:8px;">leanAM MES ansehen</a>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <a href="/index.html" class="brand"><img src="/images/logo.webp" alt="leanAM" class="brand-logo" width="110" height="38" loading="lazy"></a>
+        <p>Software, Beratung und Entwicklung für additive Fertigung. Made in Germany — DSGVO-konform — On-Premise.</p>
+        <p style="margin-top:8px; font-size:13px; opacity:0.6;">Eine Marke von <a href="https://urbanmaker.de/" target="_blank" rel="noopener noreferrer" style="color:var(--cyan);text-decoration:none;">Urbanmaker</a></p>
+      </div>
+      <div><h5>Produkt</h5><ul><li><a href="/mes.html">leanAM MES</a></li><li><a href="/mes.html">Bambu Lab Integration</a></li><li><a href="/entwicklung.html">Custom Development</a></li><li><a href="/kontakt.html">Demo anfragen</a></li></ul></div>
+      <div><h5>Wissen</h5><ul><li><a href="/wissen/bambu-cloud-alternative/">Bambu Cloud Alternative</a></li><li><a href="/wissen/make-or-buy-3d-druck/">Make or Buy 3D-Druck</a></li><li><a href="/branchen/medizintechnik/">Medizintechnik</a></li><li><a href="/wissen/">Alle Artikel</a></li></ul></div>
+      <div><h5>Unternehmen</h5><ul><li><a href="/ueber-uns.html">Über uns</a></li><li><a href="/kontakt.html">Kontakt</a></li><li><a href="https://urbanmaker.de/" target="_blank" rel="noopener noreferrer">Urbanmaker</a></li><li><a href="/impressum.html">Impressum</a></li></ul></div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 leanAM · Eine Marke von Urbanmaker · Alle Rechte vorbehalten.</span>
+      <div class="links"><a href="/impressum.html">Impressum</a><a href="/datenschutz.html">Datenschutz</a></div>
+    </div>
+  </div>
+</footer>
+<script src="/nav.js" defer></script>
+</body>
+</html>

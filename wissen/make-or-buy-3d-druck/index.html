@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<meta name="theme-color" content="#0d1f2d">
+<title>Make or Buy 3D-Druck: Wann lohnt eigener 3D-Druck im Unternehmen? | leanAM</title>
+<meta name="description" content="Entscheidungsmatrix für produzierende Unternehmen: Ab wann rechnet sich eine eigene Drucklinie gegenüber externem Dienstleister? Kostenvergleich, Kriterien und Praxis-Leitfaden.">
+<link rel="canonical" href="https://leanam.com/wissen/make-or-buy-3d-druck/">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://leanam.com/wissen/make-or-buy-3d-druck/">
+<meta property="og:title" content="Make or Buy 3D-Druck: Wann lohnt eigener 3D-Druck? | leanAM">
+<meta property="og:description" content="Entscheidungsmatrix: Ab wann rechnet sich eigener 3D-Druck gegenüber externem Dienstleister? Kostenvergleich und Praxis-Leitfaden.">
+<meta property="og:image" content="https://leanam.com/images/favicon-512.png">
+<meta property="og:locale" content="de_DE">
+<meta property="og:site_name" content="leanAM">
+<link rel="preload" as="font" type="font/woff2" href="/fonts/montserrat-latin.woff2" crossorigin>
+<link rel="preload" as="image" href="/images/logo.webp" fetchpriority="high">
+<link rel="stylesheet" href="/styles/main.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Start", "item": "https://leanam.com/" },
+        { "@type": "ListItem", "position": 2, "name": "Wissen", "item": "https://leanam.com/wissen/" },
+        { "@type": "ListItem", "position": 3, "name": "Make or Buy 3D-Druck", "item": "https://leanam.com/wissen/make-or-buy-3d-druck/" }
+      ]
+    },
+    {
+      "@type": "Article",
+      "url": "https://leanam.com/wissen/make-or-buy-3d-druck/",
+      "headline": "Make or Buy 3D-Druck: Wann lohnt eigener 3D-Druck im Unternehmen?",
+      "description": "Entscheidungsmatrix für produzierende Unternehmen: Ab wann rechnet sich eine eigene Drucklinie?",
+      "author": { "@type": "Organization", "name": "leanAM", "url": "https://leanam.com/" },
+      "publisher": { "@type": "Organization", "name": "leanAM", "url": "https://leanam.com/" },
+      "datePublished": "2026-05-12",
+      "dateModified": "2026-05-12",
+      "inLanguage": "de"
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Ab wann lohnt sich 3D-Druck im eigenen Haus?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Als Faustregel gilt: Ab ca. 800–1.200 Druckstunden pro Jahr amortisiert sich ein professioneller FDM-Drucker gegenüber externen Dienstleistern — abhängig von Bauteilkomplexität, Materialkosten und Lieferzeiten. Entscheidend ist auch: Wer IP-Schutz, kurze Iterationszyklen oder Serienproduktion benötigt, sollte früher insourcen." }
+        },
+        {
+          "@type": "Question",
+          "name": "Was kostet 3D-Druck beim externen Dienstleister?",
+          "acceptedAnswer": { "@type": "Answer", "text": "FDM-Druck bei Dienstleistern liegt je nach Volumen zwischen 2 und 15 € pro Druckstunde (inkl. Handling). Industrielle SLS/MJF-Teile kosten oft 20–80 € pro Teil. Bei regelmäßigem Bedarf ab ca. 50 Druckjobs pro Monat wird eigene Kapazität schnell günstiger." }
+        },
+        {
+          "@type": "Question",
+          "name": "Welche versteckten Kosten entstehen beim Insourcing?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Neben Maschinenkosten (4.000–20.000 € pro FDM-Drucker) entstehen Kosten für Material-Handling, Nachbearbeitung, Wartung (ca. 8–12% der Maschinenkosten p.a.), Software (MES/Slicing) und vor allem: Personalzeit für Bedienung, Qualitätsprüfung und Fehlerbehandlung. Wer das unterschätzt, hat keine echte Make-or-Buy-Kalkulation gemacht." }
+        }
+      ]
+    }
+  ]
+}
+</script>
+<link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+</head>
+<body data-screen-label="Wissen Make or Buy">
+
+<header class="site-header">
+  <div class="container nav">
+    <a href="/index.html" class="brand"><img src="/images/logo.webp" alt="leanAM" class="brand-logo" width="110" height="38" fetchpriority="high"></a>
+    <nav class="nav-links" aria-label="Hauptnavigation">
+      <a href="/index.html">Start</a>
+      <a href="/mes.html">leanAM MES</a>
+      <a href="/prozessberatung.html">Prozessberatung</a>
+      <a href="/entwicklung.html">Entwicklung</a>
+      <a href="/ueber-uns.html">Über uns</a>
+      <a href="/wissen/" class="active">Wissen</a>
+    </nav>
+    <div class="nav-right">
+      <div class="lang-switch"><button class="active" type="button">DE</button><span class="sep">|</span><button type="button">EN</button></div>
+      <a href="/kontakt.html" class="btn btn-primary btn-sm"><span class="material-symbols-outlined">mail</span>Kontakt</a>
+    </div>
+    <button class="nav-toggle" aria-label="Navigation öffnen" aria-expanded="false" aria-controls="mobile-nav">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="mobile-nav" id="mobile-nav" hidden>
+    <nav aria-label="Mobile Navigation">
+      <a href="/index.html">Start</a>
+      <a href="/mes.html">leanAM MES</a>
+      <a href="/prozessberatung.html">Prozessberatung</a>
+      <a href="/entwicklung.html">Entwicklung</a>
+      <a href="/ueber-uns.html">Über uns</a>
+      <a href="/wissen/" class="active">Wissen</a>
+      <a href="/kontakt.html" class="mobile-cta">Kontakt / Demo</a>
+    </nav>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="container">
+    <div class="breadcrumb"><a href="/index.html">Start</a><span class="material-symbols-outlined">chevron_right</span><a href="/wissen/">Wissen</a><span class="material-symbols-outlined">chevron_right</span><span>Make or Buy 3D-Druck</span></div>
+    <span class="eyebrow">Entscheidungshilfe · Kostenvergleich · Strategie</span>
+    <h1>Make or Buy 3D-Druck: <span class="accent">Wann lohnt sich eine eigene Drucklinie?</span></h1>
+    <p class="lead">Die ehrliche Kalkulation — mit allen Kosten, die Maschinenhersteller gerne verschweigen. Entscheidungsmatrix, Faustregeln und was Unternehmen unterschätzen, die zum ersten Mal 3D-Druck insourcen.</p>
+  </div>
+</section>
+
+<section class="section light">
+  <div class="container">
+    <div class="split">
+      <div>
+        <span class="eyebrow">Warum die Frage falsch gestellt wird</span>
+        <h2 class="h2">Make or Buy ist keine Einmalfrage.</h2>
+        <p class="body muted mt-2">
+          Die meisten Unternehmen stellen die Make-or-Buy-Frage einmal — und kaufen dann einfach eine Maschine. Drei Monate später steht der Drucker im Weg, weil niemand Zeit hat, ihn zu betreiben, weil Materialeinkauf vergessen wurde, oder weil die erwarteten Use Cases sich als undurchführbar herausgestellt haben.
+        </p>
+        <p class="body muted mt-2">
+          Make or Buy ist eine strukturierte Entscheidung, die Auslastung, Use-Case-Qualität, interne Kapazitäten und Total Cost of Ownership gegenüberstellt — nicht nur den Maschinenpreis versus den Dienstleister-Angebotspreis.
+        </p>
+        <p class="body muted mt-2">
+          Diese Seite gibt die Entscheidungsmatrix, die wir in unseren Beratungsprojekten nutzen — nach über 40 Projekten mit produzierenden Unternehmen.
+        </p>
+      </div>
+      <div>
+        <div class="feature-card" style="background:var(--navy-light,#1a2f3f);border:1px solid rgba(0,212,232,0.2);">
+          <h3 style="margin-bottom:16px;font-size:16px;text-transform:uppercase;letter-spacing:.08em;opacity:.7;">Die häufigsten Fehler beim Insourcing</h3>
+          <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:12px;">
+            <li style="display:flex;gap:12px;align-items:flex-start;"><span class="material-symbols-outlined" style="color:#f87171;flex-shrink:0;margin-top:2px;">warning</span><span>Maschinenkosten ja, Personalkosten nein — Betrieb kostet Zeit</span></li>
+            <li style="display:flex;gap:12px;align-items:flex-start;"><span class="material-symbols-outlined" style="color:#f87171;flex-shrink:0;margin-top:2px;">warning</span><span>Auslastung überschätzt: 30% Auslastung ist typisch für Einstieg</span></li>
+            <li style="display:flex;gap:12px;align-items:flex-start;"><span class="material-symbols-outlined" style="color:#f87171;flex-shrink:0;margin-top:2px;">warning</span><span>Falsches Verfahren für den Use Case (FDM ≠ SLS ≠ Resin)</span></li>
+            <li style="display:flex;gap:12px;align-items:flex-start;"><span class="material-symbols-outlined" style="color:#f87171;flex-shrink:0;margin-top:2px;">warning</span><span>Kein Wartungsbudget eingeplant</span></li>
+            <li style="display:flex;gap:12px;align-items:flex-start;"><span class="material-symbols-outlined" style="color:#f87171;flex-shrink:0;margin-top:2px;">warning</span><span>Software und Integration ignoriert</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section offwhite">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Entscheidungsmatrix</span>
+      <h2 class="h2">Wann ist Make die richtige Antwort?</h2>
+      <p>Bewerten Sie Ihren Use Case entlang dieser sieben Kriterien. Je mehr davon zutreffen, desto stärker spricht die Kalkulation für eigene Kapazität.</p>
+    </div>
+    <div class="grid grid-3" style="margin-top:32px;gap:20px;">
+      <div class="feature-card">
+        <span class="material-symbols-outlined" style="color:var(--cyan);font-size:28px;margin-bottom:12px;display:block;">repeat</span>
+        <h3 style="margin-bottom:8px;">Hohe Wiederholrate</h3>
+        <p class="muted" style="font-size:15px;">Mehr als 30–50 Druckjobs pro Monat machen Inhouse-Kapazität wirtschaftlich. Sporadischer Bedarf gehört zum Dienstleister.</p>
+      </div>
+      <div class="feature-card">
+        <span class="material-symbols-outlined" style="color:var(--cyan);font-size:28px;margin-bottom:12px;display:block;">schedule</span>
+        <h3 style="margin-bottom:8px;">Kurze Durchlaufzeiten</h3>
+        <p class="muted" style="font-size:15px;">Wer Prototypen innerhalb von 24 Stunden braucht, kann keine 5-Tage-Dienstleisterlogistik verwenden. Geschwindigkeit erzwingt Inhouse.</p>
+      </div>
+      <div class="feature-card">
+        <span class="material-symbols-outlined" style="color:var(--cyan);font-size:28px;margin-bottom:12px;display:block;">lock</span>
+        <h3 style="margin-bottom:8px;">Schutz von IP & Daten</h3>
+        <p class="muted" style="font-size:15px;">Wer CAD-Daten von Kernprodukten nicht extern geben will, hat keine echte Buy-Option. IP-Schutz ist ein klares Insourcing-Argument.</p>
+      </div>
+      <div class="feature-card">
+        <span class="material-symbols-outlined" style="color:var(--cyan);font-size:28px;margin-bottom:12px;display:block;">science</span>
+        <h3 style="margin-bottom:8px;">Iteratives Entwickeln</h3>
+        <p class="muted" style="font-size:15px;">Produktentwicklung lebt von schnellen Iterationen. Wer täglich Geometrien anpasst und druckt, braucht den Drucker am Arbeitsplatz — nicht 200 km entfernt.</p>
+      </div>
+      <div class="feature-card">
+        <span class="material-symbols-outlined" style="color:var(--cyan);font-size:28px;margin-bottom:12px;display:block;">inventory</span>
+        <h3 style="margin-bottom:8px;">Standardisierbare Teile</h3>
+        <p class="muted" style="font-size:15px;">Vorrichtungen, Halter, Endeffektoren — Teile, die sich wiederholen und standardisieren lassen, sind ideal für interne Serienproduktion.</p>
+      </div>
+      <div class="feature-card">
+        <span class="material-symbols-outlined" style="color:var(--cyan);font-size:28px;margin-bottom:12px;display:block;">trending_up</span>
+        <h3 style="margin-bottom:8px;">Skalierungsplan</h3>
+        <p class="muted" style="font-size:15px;">Wer in 24 Monaten eine Drucklinie betreiben will, sollte heute intern Kompetenz aufbauen — nicht auf externes Know-how angewiesen sein, wenn es kritisch wird.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section light">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">TCO-Vergleich</span>
+      <h2 class="h2">Was kostet 3D-Druck wirklich — Make vs. Buy?</h2>
+      <p>Alle Zahlen basieren auf FDM-Druck mit Hochleistungsprinter (Bambu Lab P1S / X1C Klasse) vs. typischem deutschen FDM-Dienstleister.</p>
+    </div>
+    <div class="comparison-table-wrap" style="overflow-x:auto;margin-top:32px;">
+      <table style="width:100%;border-collapse:collapse;font-size:15px;min-width:560px;">
+        <thead>
+          <tr style="background:var(--navy);color:var(--white);">
+            <th style="padding:14px 16px;text-align:left;font-weight:600;">Kostenblock</th>
+            <th style="padding:14px 16px;text-align:center;font-weight:600;">Buy (Dienstleister)</th>
+            <th style="padding:14px 16px;text-align:center;font-weight:600;color:var(--cyan);">Make (Inhouse)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr style="border-bottom:1px solid #e5e7eb;">
+            <td style="padding:12px 16px;font-weight:500;">Druckpreis pro Stunde</td>
+            <td style="padding:12px 16px;text-align:center;">3–12 € (ohne Handling)</td>
+            <td style="padding:12px 16px;text-align:center;font-weight:600;">0,40–0,80 € (Material)</td>
+          </tr>
+          <tr style="border-bottom:1px solid #e5e7eb;background:#f9fafb;">
+            <td style="padding:12px 16px;font-weight:500;">Rüst- & Handlingkosten</td>
+            <td style="padding:12px 16px;text-align:center;">15–40 € pro Auftrag</td>
+            <td style="padding:12px 16px;text-align:center;font-weight:600;">15–30 min Personal</td>
+          </tr>
+          <tr style="border-bottom:1px solid #e5e7eb;">
+            <td style="padding:12px 16px;font-weight:500;">Lieferzeit</td>
+            <td style="padding:12px 16px;text-align:center;">2–7 Tage</td>
+            <td style="padding:12px 16px;text-align:center;font-weight:600;">Druckzeit + 1h</td>
+          </tr>
+          <tr style="border-bottom:1px solid #e5e7eb;background:#f9fafb;">
+            <td style="padding:12px 16px;font-weight:500;">Investition (5 Drucker)</td>
+            <td style="padding:12px 16px;text-align:center;">—</td>
+            <td style="padding:12px 16px;text-align:center;font-weight:600;">35.000–60.000 €</td>
+          </tr>
+          <tr style="border-bottom:1px solid #e5e7eb;">
+            <td style="padding:12px 16px;font-weight:500;">Wartung p.a. (5 Drucker)</td>
+            <td style="padding:12px 16px;text-align:center;">—</td>
+            <td style="padding:12px 16px;text-align:center;font-weight:600;">3.000–6.000 €</td>
+          </tr>
+          <tr style="background:#f9fafb;">
+            <td style="padding:12px 16px;font-weight:500;"><strong>Break-Even (typisch)</strong></td>
+            <td style="padding:12px 16px;text-align:center;">—</td>
+            <td style="padding:12px 16px;text-align:center;font-weight:600;color:var(--cyan);">14–24 Monate</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p style="font-size:13px;opacity:0.6;margin-top:12px;">Richtwerte auf Basis von FDM. SLS, MJF und andere Verfahren haben deutlich andere TCO-Profile.</p>
+  </div>
+</section>
+
+<section class="section offwhite">
+  <div class="container">
+    <div class="split">
+      <div>
+        <span class="eyebrow">Wenn Make die Antwort ist</span>
+        <h2 class="h2">Was nach der Kaufentscheidung kommt.</h2>
+        <p class="body muted mt-2">
+          Der Kauf einer Maschine ist der einfachste Teil. Was danach kommt, entscheidet über Erfolg oder Frust: Wie werden Aufträge verwaltet? Wer kann welchen Job starten? Wie wird Materialverbrauch erfasst? Wie lässt sich Auslastung reporten?
+        </p>
+        <p class="body muted mt-2">
+          Ab drei Druckern wird das ohne Software zur Vollzeitaufgabe. Ab fünf Maschinen ist ein Manufacturing Execution System kein Luxus, sondern Voraussetzung für wirtschaftlichen Betrieb.
+        </p>
+        <p class="body muted mt-2">
+          leanAM begleitet Unternehmen von der Make-or-Buy-Analyse bis zur laufenden Drucklinie — mit eigenem Produktionsbetrieb als Referenz.
+        </p>
+        <div style="display:flex;gap:16px;flex-wrap:wrap;margin-top:24px;">
+          <a href="/prozessberatung.html" class="btn btn-primary" style="display:inline-flex;align-items:center;gap:8px;">Prozessberatung<span class="material-symbols-outlined">arrow_forward</span></a>
+          <a href="/mes.html" class="btn btn-outline" style="display:inline-flex;align-items:center;gap:8px;">leanAM MES ansehen</a>
+        </div>
+      </div>
+      <div>
+        <div class="feature-card">
+          <h3 style="margin-bottom:16px;">Was leanAM in der Make-Phase liefert</h3>
+          <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:12px;">
+            <li style="display:flex;gap:10px;align-items:flex-start;"><span class="material-symbols-outlined" style="color:var(--cyan);flex-shrink:0;font-size:20px;">check_circle</span><span>Use-Case-Qualifizierung: Was wirklich mit AM machbar ist</span></li>
+            <li style="display:flex;gap:10px;align-items:flex-start;"><span class="material-symbols-outlined" style="color:var(--cyan);flex-shrink:0;font-size:20px;">check_circle</span><span>Maschinenauswahl: Verfahren, Hersteller, Konfiguration</span></li>
+            <li style="display:flex;gap:10px;align-items:flex-start;"><span class="material-symbols-outlined" style="color:var(--cyan);flex-shrink:0;font-size:20px;">check_circle</span><span>Business Case: Vollständige TCO-Kalkulation</span></li>
+            <li style="display:flex;gap:10px;align-items:flex-start;"><span class="material-symbols-outlined" style="color:var(--cyan);flex-shrink:0;font-size:20px;">check_circle</span><span>MES-Implementierung: Software für Auftrag & Betrieb</span></li>
+            <li style="display:flex;gap:10px;align-items:flex-start;"><span class="material-symbols-outlined" style="color:var(--cyan);flex-shrink:0;font-size:20px;">check_circle</span><span>Schulung: Bediener, QS, Prozessverantwortliche</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section teal">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow" style="color:#7debf3;">FAQ</span>
+      <h2 class="h2">Häufige Fragen zur Make-or-Buy-Entscheidung</h2>
+    </div>
+    <div style="max-width:800px;margin:0 auto;display:flex;flex-direction:column;gap:4px;">
+      <details style="background:rgba(255,255,255,0.07);border-radius:8px;overflow:hidden;">
+        <summary style="padding:18px 20px;cursor:pointer;font-weight:600;list-style:none;">Ab wann lohnt sich eigener 3D-Druck?</summary>
+        <p style="padding:0 20px 18px;margin:0;opacity:.85;line-height:1.7;">Als Faustregel: Ab ca. 800–1.200 Druckstunden pro Jahr amortisiert sich ein professioneller FDM-Drucker. Entscheidend sind auch: IP-Schutz, kurze Iterationszyklen und Skalierungspläne — diese erzwingen früher ins Insourcing als die reine Kostenkalkulation.</p>
+      </details>
+      <details style="background:rgba(255,255,255,0.07);border-radius:8px;overflow:hidden;">
+        <summary style="padding:18px 20px;cursor:pointer;font-weight:600;list-style:none;">Was kostet 3D-Druck beim externen Dienstleister?</summary>
+        <p style="padding:0 20px 18px;margin:0;opacity:.85;line-height:1.7;">FDM bei Dienstleistern liegt je nach Volumen zwischen 3 und 12 € pro Druckstunde (exkl. Handling). Industrielle SLS/MJF-Teile kosten oft 20–80 € pro Teil. Ab ca. 50 Druckjobs monatlich wird eigene Kapazität schnell günstiger.</p>
+      </details>
+      <details style="background:rgba(255,255,255,0.07);border-radius:8px;overflow:hidden;">
+        <summary style="padding:18px 20px;cursor:pointer;font-weight:600;list-style:none;">Welche versteckten Kosten entstehen beim Insourcing?</summary>
+        <p style="padding:0 20px 18px;margin:0;opacity:.85;line-height:1.7;">Neben Maschinenkosten (4.000–20.000 € pro FDM-Drucker) entstehen Kosten für Material-Handling, Nachbearbeitung, Wartung (ca. 8–12% der Maschinenkosten p.a.), Software und Personalzeit für Bedienung und Qualitätsprüfung. Wer das unterschätzt, hat keine echte Make-or-Buy-Kalkulation.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <a href="/index.html" class="brand"><img src="/images/logo.webp" alt="leanAM" class="brand-logo" width="110" height="38" loading="lazy"></a>
+        <p>Software, Beratung und Entwicklung für additive Fertigung. Made in Germany — DSGVO-konform — On-Premise.</p>
+        <p style="margin-top:8px; font-size:13px; opacity:0.6;">Eine Marke von <a href="https://urbanmaker.de/" target="_blank" rel="noopener noreferrer" style="color:var(--cyan);text-decoration:none;">Urbanmaker</a></p>
+      </div>
+      <div><h5>Produkt</h5><ul><li><a href="/mes.html">leanAM MES</a></li><li><a href="/mes.html">Bambu Lab Integration</a></li><li><a href="/entwicklung.html">Custom Development</a></li><li><a href="/kontakt.html">Demo anfragen</a></li></ul></div>
+      <div><h5>Wissen</h5><ul><li><a href="/wissen/bambu-cloud-alternative/">Bambu Cloud Alternative</a></li><li><a href="/wissen/make-or-buy-3d-druck/">Make or Buy 3D-Druck</a></li><li><a href="/branchen/medizintechnik/">Medizintechnik</a></li><li><a href="/wissen/">Alle Artikel</a></li></ul></div>
+      <div><h5>Unternehmen</h5><ul><li><a href="/ueber-uns.html">Über uns</a></li><li><a href="/kontakt.html">Kontakt</a></li><li><a href="https://urbanmaker.de/" target="_blank" rel="noopener noreferrer">Urbanmaker</a></li><li><a href="/impressum.html">Impressum</a></li></ul></div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 leanAM · Eine Marke von Urbanmaker · Alle Rechte vorbehalten.</span>
+      <div class="links"><a href="/impressum.html">Impressum</a><a href="/datenschutz.html">Datenschutz</a></div>
+    </div>
+  </div>
+</footer>
+<script src="/nav.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<meta name="theme-color" content="#0d1f2d">
+<title>Wissen: Additive Fertigung & 3D-Druck im Unternehmen | leanAM</title>
+<meta name="description" content="Praxiswissen zu additiver Fertigung, MES-Software, Bambu Lab ohne Cloud und 3D-Druck-Strategien für Unternehmen. Ehrlich, technisch, ohne Buzzwords.">
+<link rel="canonical" href="https://leanam.com/wissen/">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://leanam.com/wissen/">
+<meta property="og:title" content="Wissen: Additive Fertigung & 3D-Druck im Unternehmen | leanAM">
+<meta property="og:description" content="Praxiswissen zu additiver Fertigung, MES-Software, Bambu Lab ohne Cloud und 3D-Druck-Strategien für Unternehmen.">
+<meta property="og:image" content="https://leanam.com/images/favicon-512.png">
+<meta property="og:locale" content="de_DE">
+<meta property="og:site_name" content="leanAM">
+<link rel="preload" as="font" type="font/woff2" href="/fonts/montserrat-latin.woff2" crossorigin>
+<link rel="preload" as="image" href="/images/logo.webp" fetchpriority="high">
+<link rel="stylesheet" href="/styles/main.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Start", "item": "https://leanam.com/" },
+        { "@type": "ListItem", "position": 2, "name": "Wissen", "item": "https://leanam.com/wissen/" }
+      ]
+    },
+    {
+      "@type": "CollectionPage",
+      "url": "https://leanam.com/wissen/",
+      "name": "Wissen: Additive Fertigung & 3D-Druck im Unternehmen",
+      "description": "Praxiswissen zu additiver Fertigung, MES-Software und 3D-Druck-Strategien für produzierende Unternehmen.",
+      "publisher": { "@type": "Organization", "name": "leanAM", "url": "https://leanam.com/" }
+    }
+  ]
+}
+</script>
+<link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+</head>
+<body data-screen-label="Wissen Hub">
+
+<header class="site-header">
+  <div class="container nav">
+    <a href="/index.html" class="brand"><img src="/images/logo.webp" alt="leanAM" class="brand-logo" width="110" height="38" fetchpriority="high"></a>
+    <nav class="nav-links" aria-label="Hauptnavigation">
+      <a href="/index.html">Start</a>
+      <a href="/mes.html">leanAM MES</a>
+      <a href="/prozessberatung.html">Prozessberatung</a>
+      <a href="/entwicklung.html">Entwicklung</a>
+      <a href="/ueber-uns.html">Über uns</a>
+      <a href="/wissen/" class="active">Wissen</a>
+    </nav>
+    <div class="nav-right">
+      <div class="lang-switch"><button class="active" type="button">DE</button><span class="sep">|</span><button type="button">EN</button></div>
+      <a href="/kontakt.html" class="btn btn-primary btn-sm"><span class="material-symbols-outlined">mail</span>Kontakt</a>
+    </div>
+    <button class="nav-toggle" aria-label="Navigation öffnen" aria-expanded="false" aria-controls="mobile-nav">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="mobile-nav" id="mobile-nav" hidden>
+    <nav aria-label="Mobile Navigation">
+      <a href="/index.html">Start</a>
+      <a href="/mes.html">leanAM MES</a>
+      <a href="/prozessberatung.html">Prozessberatung</a>
+      <a href="/entwicklung.html">Entwicklung</a>
+      <a href="/ueber-uns.html">Über uns</a>
+      <a href="/wissen/" class="active">Wissen</a>
+      <a href="/kontakt.html" class="mobile-cta">Kontakt / Demo</a>
+    </nav>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="container">
+    <div class="breadcrumb"><a href="/index.html">Start</a><span class="material-symbols-outlined">chevron_right</span><span>Wissen</span></div>
+    <span class="eyebrow">Guides · Vergleiche · Entscheidungshilfen</span>
+    <h1>Wissen für additive Fertigung — <span class="accent">aus der Praxis.</span></h1>
+    <p class="lead">Kein Marketing-Content. Technische Guides, ehrliche Vergleiche und Entscheidungshilfen für produzierende Unternehmen, die AM ernsthaft einsetzen wollen.</p>
+  </div>
+</section>
+
+<section class="section light">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Bambu Lab & MES</span>
+      <h2 class="h2">Software & Infrastruktur</h2>
+      <p>Wie man 3D-Drucker lokal betreibt, verwaltet und in den Wertstrom integriert — ohne Cloud-Abhängigkeit.</p>
+    </div>
+    <div class="grid grid-3">
+      <a href="/wissen/bambu-cloud-alternative/" class="feature-card" style="text-decoration:none;color:inherit;display:block;">
+        <span class="material-symbols-outlined" style="font-size:32px;color:var(--cyan);margin-bottom:12px;display:block;">cloud_off</span>
+        <h3 style="margin-bottom:8px;">Bambu Cloud Alternative</h3>
+        <p class="muted" style="font-size:15px;margin:0 0 16px;">Alle Optionen im Vergleich: Bambu Cloud, MQTT lokal, leanAM MES. Für wen lohnt sich welche Lösung?</p>
+        <span style="color:var(--cyan);font-size:14px;font-weight:600;">Vergleich lesen →</span>
+      </a>
+      <a href="/mes.html" class="feature-card" style="text-decoration:none;color:inherit;display:block;">
+        <span class="material-symbols-outlined" style="font-size:32px;color:var(--cyan);margin-bottom:12px;display:block;">dashboard</span>
+        <h3 style="margin-bottom:8px;">Was ist ein MES für 3D-Druck?</h3>
+        <p class="muted" style="font-size:15px;margin:0 0 16px;">Manufacturing Execution Systems für Druckfarmen: Aufgaben, Nutzen und warum generische MES-Software nicht reicht.</p>
+        <span style="color:var(--cyan);font-size:14px;font-weight:600;">leanAM MES ansehen →</span>
+      </a>
+      <div class="feature-card" style="opacity:0.5;">
+        <span class="material-symbols-outlined" style="font-size:32px;color:var(--cyan);margin-bottom:12px;display:block;">settings_ethernet</span>
+        <h3 style="margin-bottom:8px;">Bambu Lab lokal einrichten</h3>
+        <p class="muted" style="font-size:15px;margin:0 0 16px;">Schritt-für-Schritt: MQTT-Setup, Netzwerkkonfiguration und Anbindung an lokale Systeme.</p>
+        <span style="color:var(--cyan);font-size:14px;font-weight:600;">Demnächst</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section offwhite">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Strategie & Entscheidung</span>
+      <h2 class="h2">AM im Unternehmen einführen</h2>
+      <p>Entscheidungshilfen für Produktionsleiter, die AM strukturiert angehen wollen — ohne Buzzwords.</p>
+    </div>
+    <div class="grid grid-3">
+      <a href="/wissen/make-or-buy-3d-druck/" class="feature-card" style="text-decoration:none;color:inherit;display:block;">
+        <span class="material-symbols-outlined" style="font-size:32px;color:var(--cyan);margin-bottom:12px;display:block;">balance</span>
+        <h3 style="margin-bottom:8px;">Make or Buy: Wann lohnt eigener 3D-Druck?</h3>
+        <p class="muted" style="font-size:15px;margin:0 0 16px;">Entscheidungsmatrix mit konkreten Kostenvergleichen. Ab wann rechnet sich eine eigene Drucklinie wirklich?</p>
+        <span style="color:var(--cyan);font-size:14px;font-weight:600;">Guide lesen →</span>
+      </a>
+      <div class="feature-card" style="opacity:0.5;">
+        <span class="material-symbols-outlined" style="font-size:32px;color:var(--cyan);margin-bottom:12px;display:block;">calculate</span>
+        <h3 style="margin-bottom:8px;">Druckfarm-Rechner</h3>
+        <p class="muted" style="font-size:15px;margin:0 0 16px;">Maschinenanzahl, Auslastung, Materialkosten — Rohkalkulation für den Business Case.</p>
+        <span style="color:var(--cyan);font-size:14px;font-weight:600;">Demnächst</span>
+      </div>
+      <div class="feature-card" style="opacity:0.5;">
+        <span class="material-symbols-outlined" style="font-size:32px;color:var(--cyan);margin-bottom:12px;display:block;">route</span>
+        <h3 style="margin-bottom:8px;">Roadmap: 0 auf Drucklinie in 12 Monaten</h3>
+        <p class="muted" style="font-size:15px;margin:0 0 16px;">Phasenplan von Use-Case-Identifikation bis Serienproduktion. Was wann angegangen werden muss.</p>
+        <span style="color:var(--cyan);font-size:14px;font-weight:600;">Demnächst</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section light">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Branchen</span>
+      <h2 class="h2">AM in regulierten Umgebungen</h2>
+      <p>DSGVO, MDR, ITAR — regulierte Branchen haben besondere Anforderungen an Datenhoheit und Prozessdokumentation.</p>
+    </div>
+    <div class="grid grid-3">
+      <a href="/branchen/medizintechnik/" class="feature-card" style="text-decoration:none;color:inherit;display:block;">
+        <span class="material-symbols-outlined" style="font-size:32px;color:var(--cyan);margin-bottom:12px;display:block;">medical_services</span>
+        <h3 style="margin-bottom:8px;">3D-Druck in der Medizintechnik</h3>
+        <p class="muted" style="font-size:15px;margin:0 0 16px;">MDR, ISO 13485, DSGVO: Was regulierte Medtech-Umgebungen an AM-Software fordern — und wie leanAM das löst.</p>
+        <span style="color:var(--cyan);font-size:14px;font-weight:600;">Landingpage →</span>
+      </a>
+      <div class="feature-card" style="opacity:0.5;">
+        <span class="material-symbols-outlined" style="font-size:32px;color:var(--cyan);margin-bottom:12px;display:block;">flight</span>
+        <h3 style="margin-bottom:8px;">3D-Druck in Aerospace</h3>
+        <p class="muted" style="font-size:15px;margin:0 0 16px;">Rückverfolgbarkeit, Materialzertifizierung und Qualitätsdokumentation für Luftfahrtkomponenten.</p>
+        <span style="color:var(--cyan);font-size:14px;font-weight:600;">Demnächst</span>
+      </div>
+      <div class="feature-card" style="opacity:0.5;">
+        <span class="material-symbols-outlined" style="font-size:32px;color:var(--cyan);margin-bottom:12px;display:block;">build</span>
+        <h3 style="margin-bottom:8px;">3D-Druck für Ersatzteile & MRO</h3>
+        <p class="muted" style="font-size:15px;margin:0 0 16px;">Digitale Ersatzteilbibliothek, Bedarfsdruck statt Lager: wie AM Wartungsprozesse verändert.</p>
+        <span style="color:var(--cyan);font-size:14px;font-weight:600;">Demnächst</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section teal">
+  <div class="container" style="text-align:center;max-width:700px;margin:0 auto;">
+    <span class="eyebrow" style="color:#7debf3;">Beratung</span>
+    <h2 class="h2">Frage direkt — statt lang zu recherchieren.</h2>
+    <p>Wir beantworten technische Fragen zu AM-Software, Bambu Lab Integration und Prozessaufbau auch ohne Kaufabsicht. Kostenlos, ohne CRM-Lauf.</p>
+    <a href="/kontakt.html" class="btn btn-primary mt-4" style="margin-top:24px;display:inline-flex;align-items:center;gap:8px;">
+      Frage stellen<span class="material-symbols-outlined">arrow_forward</span>
+    </a>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <a href="/index.html" class="brand"><img src="/images/logo.webp" alt="leanAM" class="brand-logo" width="110" height="38" loading="lazy"></a>
+        <p>Software, Beratung und Entwicklung für additive Fertigung. Made in Germany — DSGVO-konform — On-Premise.</p>
+        <p style="margin-top:8px; font-size:13px; opacity:0.6;">Eine Marke von <a href="https://urbanmaker.de/" target="_blank" rel="noopener noreferrer" style="color:var(--cyan);text-decoration:none;">Urbanmaker</a></p>
+      </div>
+      <div><h5>Produkt</h5><ul><li><a href="/mes.html">leanAM MES</a></li><li><a href="/mes.html">Bambu Lab Integration</a></li><li><a href="/entwicklung.html">Custom Development</a></li><li><a href="/kontakt.html">Demo anfragen</a></li></ul></div>
+      <div><h5>Wissen</h5><ul><li><a href="/wissen/bambu-cloud-alternative/">Bambu Cloud Alternative</a></li><li><a href="/wissen/make-or-buy-3d-druck/">Make or Buy 3D-Druck</a></li><li><a href="/branchen/medizintechnik/">Medizintechnik</a></li><li><a href="/wissen/">Alle Artikel</a></li></ul></div>
+      <div><h5>Unternehmen</h5><ul><li><a href="/ueber-uns.html">Über uns</a></li><li><a href="/kontakt.html">Kontakt</a></li><li><a href="https://urbanmaker.de/" target="_blank" rel="noopener noreferrer">Urbanmaker</a></li><li><a href="/impressum.html">Impressum</a></li></ul></div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 leanAM · Eine Marke von Urbanmaker · Alle Rechte vorbehalten.</span>
+      <div class="links"><a href="/impressum.html">Impressum</a><a href="/datenschutz.html">Datenschutz</a></div>
+    </div>
+  </div>
+</footer>
+
+<script src="/nav.js" defer></script>
+</body>
+</html>
