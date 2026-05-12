@@ -1149,3 +1149,113 @@ ul { margin: 0; padding: 0; list-style: none; }
 .comparison-col.bad .material-symbols-outlined { color: #c0392b; font-size: 18px; flex-shrink: 0; margin-top: 1px; }
 .comparison-col.good .material-symbols-outlined { color: #00b4a0; font-size: 18px; flex-shrink: 0; margin-top: 1px; }
 @media (max-width: 640px) { .problem-comparison { grid-template-columns: 1fr; } }
+
+/* ============================================================
+   MOBILE FINE-TUNING  ≤ 768px / ≤ 480px
+   ============================================================ */
+
+/* Prevent horizontal overflow on all pages */
+html, body { overflow-x: hidden; }
+
+/* ---------- Tablet (≤ 768px) ---------- */
+@media (max-width: 768px) {
+  /* Nav contact button hidden earlier */
+  .nav-right .btn { display: none; }
+
+  /* Section heads less bottom margin */
+  .section-head { margin-bottom: 40px; }
+
+  /* CTA banner: stack buttons */
+  .cta-banner .cta-row {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .cta-banner .cta-row .btn {
+    justify-content: center;
+  }
+
+  /* Footer bottom: stack on smaller tablets */
+  .footer-bottom {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .footer-bottom .links { justify-content: center; }
+}
+
+/* ---------- Mobile (≤ 480px) ---------- */
+@media (max-width: 480px) {
+
+  /* Hero: CTA buttons full-width stacked */
+  .hero .cta-row {
+    flex-direction: column;
+    gap: 12px;
+  }
+  .hero .cta-row .btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  /* Hero card: tighter padding */
+  .hero-card {
+    padding: 22px 18px;
+  }
+
+  /* Badges: smaller gap */
+  .badge-row { gap: 8px; }
+  .badge { font-size: 11px; padding: 5px 10px; }
+
+  /* Cards */
+  .card { padding: 22px 18px; }
+
+  /* Service detail */
+  .service-detail { padding: 26px 20px; }
+
+  /* Section heads */
+  .section-head { margin-bottom: 32px; }
+
+  /* FAQ: tighter padding on small screens */
+  .faq summary {
+    padding: 18px 18px;
+    font-size: 15px;
+    gap: 16px;
+  }
+  .faq .faq-body { padding: 0 18px 18px; }
+
+  /* Steps: reduce circle size */
+  .step .num-circle {
+    width: 48px;
+    height: 48px;
+    font-size: 20px;
+    margin-bottom: 16px;
+  }
+
+  /* Contact block */
+  .contact-block { padding: 22px 18px; }
+
+  /* Workflow steps */
+  .workflow-step { padding: 18px 16px; }
+
+  /* btn-sm: bigger tap target on mobile */
+  .btn-sm { padding: 12px 18px; }
+
+  /* Highlight callout */
+  .highlight { padding: 28px 20px; gap: 28px; }
+
+  /* Industry cards */
+  .industry-card { padding: 22px 18px; }
+
+  /* Footer grid: tighter gap */
+  .site-footer { padding: 56px 0 24px; }
+  .footer-grid { gap: 28px; margin-bottom: 40px; }
+
+  /* Checklist-grid: tighter gap */
+  .checklist-grid { gap: 18px 0; }
+
+  /* Page hero breadcrumb: wrappable */
+  .page-hero .breadcrumb { flex-wrap: wrap; }
+
+  /* Stats: 2-col already, but tighten gap */
+  .stats { gap: 20px; margin-top: 36px; }
+  .stat-num { font-size: 34px; }
+}
