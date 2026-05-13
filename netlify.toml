@@ -1,53 +1,54 @@
 [build]
   publish = "."
 
-[[redirects]]
-  from = "/index.html"
-  to = "/"
-  status = 301
-  force = true
+# ── 301 Redirects ──────────────────────────────────────────────────────────────
 
+# /index.html → canonical root
 [[redirects]]
-  from = "/mes.html"
-  to = "/mes/"
+  from   = "/index.html"
+  to     = "/"
   status = 301
+  force  = true
 
+# Old calculator URL → new MES sub-page
 [[redirects]]
-  from = "/prozessberatung.html"
-  to = "/prozessberatung/"
-  status = 301
-
-[[redirects]]
-  from = "/entwicklung.html"
-  to = "/entwicklung/"
+  from   = "/druckfarm-rechner.html"
+  to     = "/mes/druckfarm-rechner.html"
   status = 301
 
-[[redirects]]
-  from = "/ueber-uns.html"
-  to = "/ueber-uns/"
-  status = 301
+# ── Security & Cache Headers ───────────────────────────────────────────────────
 
-[[redirects]]
-  from = "/kontakt.html"
-  to = "/kontakt/"
-  status = 301
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options        = "SAMEORIGIN"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy        = "strict-origin-when-cross-origin"
+    Permissions-Policy     = "camera=(), microphone=(), geolocation=()"
 
-[[redirects]]
-  from = "/impressum.html"
-  to = "/impressum/"
-  status = 301
+# Long cache for fingerprinted/static assets
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
 
-[[redirects]]
-  from = "/datenschutz.html"
-  to = "/datenschutz/"
-  status = 301
+[[headers]]
+  for = "/*.css"
+  [headers.values]
+    Cache-Control = "public, max-age=86400"
 
+# /wissen and /branchen → clean-URL directory pages
 [[redirects]]
-  from = "/wissen"
-  to = "/wissen/"
+  from   = "/wissen"
+  to     = "/wissen/"
   status = 301
 
 [[redirects]]
-  from = "/branchen"
-  to = "/wissen/"
+  from   = "/branchen"
+  to     = "/wissen/"
   status = 301
+
+[[headers]]
+  for = "/*.js"
+  [headers.values]
+    Cache-Control = "public, max-age=86400"

@@ -14,7 +14,12 @@
       "PowerShell($content = Get-Content \"C:\\\\Users\\\\lAM-X1700\\\\.claude\\\\projects\\\\C--Users-lAM-X1700-LeanAM\\\\de0e3733-d86b-4a23-9fe3-2d1fff97160f\\\\tool-results\\\\mcp-2a3df6ea-f75b-4d34-9b0f-b84a1eeb06e4-read_file_content-1778588591005.txt\" -Raw | ConvertFrom-Json; $text = $content.fileContent; Write-Output $text.Substring\\(8000, 8000\\))",
       "WebSearch",
       "WebFetch(domain:bambulab.com)",
-      "WebFetch(domain:wiki.bambulab.com)"
+      "WebFetch(domain:wiki.bambulab.com)",
+      "WebFetch(domain:leanam.com)",
+      "mcp__1119c0f4-8d82-4707-b305-0f36b6e10982__netlify-project-services-reader",
+      "Bash(Test-Path \"C:\\\\Users\\\\lAM-X1700\\\\LeanAM\\\\sitemap.xml\")",
+      "Bash(Test-Path \"C:\\\\Users\\\\lAM-X1700\\\\LeanAM\\\\robots.txt\")",
+      "Bash(Test-Path \"C:\\\\Users\\\\lAM-X1700\\\\LeanAM\\\\netlify.toml\")"
     ]
   }
 }
