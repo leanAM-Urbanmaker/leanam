@@ -77,7 +77,7 @@
 }
 
 /* ---------- Reset ---------- */
-*, *::before, *::after { box-sizing: border-box; }
+*, *::before, *::after { box-sizing: border-box; border-radius: 0 !important; }
 html { scroll-behavior: smooth; }
 body {
   margin: 0;
