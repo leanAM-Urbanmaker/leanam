@@ -125,7 +125,7 @@
 .hero-badge {
   display: flex; align-items: center; gap: 6px;
   background: rgba(255,255,255,.07); border: 1px solid rgba(255,255,255,.1);
-  border-radius: 20px; padding: 5px 12px;
+  border-radius: 0; padding: 5px 12px;
   font-size: 12px; color: var(--light-grey); font-weight: 500;
 }
 .hero-badge .material-symbols-outlined { font-size: 14px; color: var(--cyan); }
@@ -151,7 +151,7 @@
 .ps.active { color: var(--cyan); }
 .ps.done   { color: var(--light-grey); }
 .ps-num {
-  width: 28px; height: 28px; border-radius: 50%;
+  width: 28px; height: 28px; border-radius: 0;
   display: grid; place-items: center;
   font-size: 12px; font-weight: 700;
   background: rgba(255,255,255,.08);
@@ -221,7 +221,7 @@
   margin-top: 10px;
 }
 .pc-btn {
-  width: 26px; height: 26px; border-radius: 50%;
+  width: 26px; height: 26px; border-radius: 0;
   border: 1.5px solid var(--border-light);
   background: none; cursor: pointer;
   font-size: 16px; line-height: 1;
@@ -241,7 +241,7 @@
 .farm-summary {
   background: rgba(0,212,232,.06);
   border: 1px solid rgba(0,212,232,.2);
-  border-radius: 8px;
+  border-radius: 0;
   padding: 10px 16px;
   display: flex; align-items: center; gap: 8px;
   font-size: 13px; font-weight: 600; color: var(--navy);
@@ -265,19 +265,19 @@
 
 input[type=range] {
   -webkit-appearance: none; appearance: none;
-  width: 100%; height: 6px; border-radius: 3px; cursor: pointer;
+  width: 100%; height: 6px; border-radius: 0; cursor: pointer;
   background: linear-gradient(to right, var(--cyan) 0%, var(--cyan) var(--pct, 60%), rgba(0,0,0,.1) var(--pct, 60%), rgba(0,0,0,.1) 100%);
   --pct: 60%;
 }
 input[type=range]::-webkit-slider-thumb {
   -webkit-appearance: none; appearance: none;
-  width: 20px; height: 20px; border-radius: 50%;
+  width: 20px; height: 20px; border-radius: 0;
   background: var(--cyan); border: 3px solid #fff;
   box-shadow: 0 1px 6px rgba(0,0,0,.2); cursor: grab;
 }
 input[type=range]:active::-webkit-slider-thumb { cursor: grabbing; }
 input[type=range]::-moz-range-thumb {
-  width: 20px; height: 20px; border-radius: 50%;
+  width: 20px; height: 20px; border-radius: 0;
   background: var(--cyan); border: 3px solid #fff;
   box-shadow: 0 1px 6px rgba(0,0,0,.2); cursor: grab;
 }
@@ -308,7 +308,7 @@ input[type=range]::-moz-range-thumb {
 .input-block { display: flex; flex-direction: column; gap: 4px; }
 .input-block label { font-size: 12px; font-weight: 600; color: var(--mid-grey); }
 .input-block input, .input-block select {
-  border: 1.5px solid var(--border-light); border-radius: 8px;
+  border: 1.5px solid var(--border-light); border-radius: 0;
   padding: 9px 12px; font-size: 14px; font-family: inherit;
   color: var(--navy); background: var(--white);
   transition: border-color .2s;
@@ -337,7 +337,7 @@ input[type=range]::-moz-range-thumb {
 /* ── Info row ── */
 .info-row {
   display: flex; align-items: flex-start; gap: 8px;
-  background: rgba(0,212,232,.06); border-radius: 8px;
+  background: rgba(0,212,232,.06); border-radius: 0;
   padding: 10px 14px; font-size: 12px; color: var(--mid-grey);
   line-height: 1.5; margin-top: 20px;
 }
@@ -380,7 +380,7 @@ input[type=range]::-moz-range-thumb {
 .btn-adjust {
   display: flex; align-items: center; gap: 6px;
   background: none; border: 1.5px solid var(--border-light);
-  border-radius: 8px; padding: 8px 16px;
+  border-radius: 0; padding: 8px 16px;
   font-size: 13px; font-weight: 600; color: var(--mid-grey);
   cursor: pointer; font-family: inherit; flex-shrink: 0;
   transition: border-color .2s, color .2s;
@@ -450,7 +450,7 @@ input[type=range]::-moz-range-thumb {
 .mes-saving {
   background: rgba(255,255,255,.07);
   border: 1px solid rgba(255,255,255,.1);
-  border-radius: 10px; padding: 14px 20px; flex: 1; min-width: 120px;
+  border-radius: 0; padding: 14px 20px; flex: 1; min-width: 120px;
 }
 .ms-val { font-size: clamp(22px,3vw,30px); font-weight: 800; color: var(--cyan); }
 .ms-label { font-size: 11px; color: var(--light-grey); margin-top: 4px; }
@@ -466,7 +466,7 @@ input[type=range]::-moz-range-thumb {
 .pdf-preview-label .lock-badge {
   display: flex; align-items: center; gap: 5px;
   background: rgba(0,212,232,.08); border: 1px solid rgba(0,212,232,.2);
-  border-radius: 20px; padding: 4px 10px;
+  border-radius: 0; padding: 4px 10px;
   font-size: 11px; color: var(--navy); font-weight: 700;
 }
 .pdf-preview-label .lock-badge .material-symbols-outlined { font-size: 13px; color: var(--cyan); }
@@ -475,8 +475,8 @@ input[type=range]::-moz-range-thumb {
   overflow-x: auto; padding-bottom: 8px;
 }
 .pdf-pages::-webkit-scrollbar { height: 4px; }
-.pdf-pages::-webkit-scrollbar-track { background: var(--border-light); border-radius: 2px; }
-.pdf-pages::-webkit-scrollbar-thumb { background: var(--cyan); border-radius: 2px; }
+.pdf-pages::-webkit-scrollbar-track { background: var(--border-light); border-radius: 0; }
+.pdf-pages::-webkit-scrollbar-thumb { background: var(--cyan); border-radius: 0; }
 .pdf-page {
   flex-shrink: 0;
   width: 210px;
@@ -485,7 +485,7 @@ input[type=range]::-moz-range-thumb {
 .pdf-page-inner {
   width: 210px; height: 297px;
   background: #0a1628;
-  border-radius: 6px;
+  border-radius: 0;
   overflow: hidden;
   box-shadow: 0 8px 32px rgba(0,0,0,.22);
   position: relative;
@@ -511,7 +511,7 @@ input[type=range]::-moz-range-thumb {
   display: grid; grid-template-columns: 1fr 1fr; gap: 6px; margin-bottom: 10px;
 }
 .pp-kpi-box {
-  background: rgba(255,255,255,.07); border-radius: 4px; padding: 7px 8px;
+  background: rgba(255,255,255,.07); border-radius: 0; padding: 7px 8px;
 }
 .pp-kpi-val { font-size: 11px; font-weight: 800; color: var(--cyan); margin-bottom: 2px; }
 .pp-kpi-label { font-size: 7px; color: rgba(255,255,255,.4); }
@@ -533,14 +533,14 @@ input[type=range]::-moz-range-thumb {
   display: flex; justify-content: space-between; align-items: center;
 }
 .pp-fake-line {
-  height: 5px; border-radius: 3px; background: rgba(255,255,255,.5);
+  height: 5px; border-radius: 0; background: rgba(255,255,255,.5);
 }
 
 /* Locked pages */
 .pp-locked {
   width: 210px; height: 297px;
   background: #0a1628;
-  border-radius: 6px;
+  border-radius: 0;
   overflow: hidden;
   box-shadow: 0 8px 32px rgba(0,0,0,.22);
   position: relative;
@@ -567,8 +567,8 @@ input[type=range]::-moz-range-thumb {
   display: flex; justify-content: space-between; align-items: center;
   border-bottom: 1px solid rgba(255,255,255,.05); padding-bottom: 5px;
 }
-.pp-fake-td-l { height: 5px; background: rgba(255,255,255,.18); border-radius: 3px; }
-.pp-fake-td-r { height: 5px; background: rgba(0,212,232,.3); border-radius: 3px; }
+.pp-fake-td-l { height: 5px; background: rgba(255,255,255,.18); border-radius: 0; }
+.pp-fake-td-r { height: 5px; background: rgba(0,212,232,.3); border-radius: 0; }
 .pp-lock-overlay {
   position: absolute; inset: 0; z-index: 4;
   background: rgba(10,22,40,.6);
@@ -618,7 +618,7 @@ input[type=range]::-moz-range-thumb {
 @media(max-width:480px){ .form-row-2 { grid-template-columns: 1fr; } }
 .lead-form input {
   width: 100%; box-sizing: border-box;
-  border: 1.5px solid var(--border-light); border-radius: 8px;
+  border: 1.5px solid var(--border-light); border-radius: 0;
   padding: 12px 14px; font-size: 14px; font-family: inherit; color: var(--navy);
   background: var(--offwhite);
   transition: border-color .2s, background .2s;
@@ -1028,9 +1028,9 @@ input[type=range]::-moz-range-thumb {
             </div>
             <div class="pp-fade">
               <div class="pp-fade-rows">
-                <div class="pp-fake-line" style="width:75%;height:4px;background:rgba(255,255,255,.2);border-radius:3px;"></div>
-                <div class="pp-fake-line" style="width:55%;height:4px;background:rgba(255,255,255,.15);border-radius:3px;"></div>
-                <div class="pp-fake-line" style="width:65%;height:4px;background:rgba(255,255,255,.15);border-radius:3px;"></div>
+                <div class="pp-fake-line" style="width:75%;height:4px;background:rgba(255,255,255,.2);border-radius: 0;"></div>
+                <div class="pp-fake-line" style="width:55%;height:4px;background:rgba(255,255,255,.15);border-radius: 0;"></div>
+                <div class="pp-fake-line" style="width:65%;height:4px;background:rgba(255,255,255,.15);border-radius: 0;"></div>
               </div>
             </div>
           </div>
@@ -1073,8 +1073,8 @@ input[type=range]::-moz-range-thumb {
                 <div class="pp-fake-tr"><div class="pp-fake-td-l" style="width:80px;"></div><div class="pp-fake-td-r" style="width:42px;"></div></div>
                 <div class="pp-fake-tr"><div class="pp-fake-td-l" style="width:105px;"></div><div class="pp-fake-td-r" style="width:48px;"></div></div>
                 <div class="pp-fake-tr"><div class="pp-fake-td-l" style="width:95px;"></div><div class="pp-fake-td-r" style="width:40px;"></div></div>
-                <div style="margin-top:12px;height:36px;background:rgba(0,212,232,.15);border-radius:4px;"></div>
-                <div style="margin-top:8px;height:20px;background:rgba(0,212,232,.08);border-radius:4px;"></div>
+                <div style="margin-top:12px;height:36px;background:rgba(0,212,232,.15);border-radius: 0;"></div>
+                <div style="margin-top:8px;height:20px;background:rgba(0,212,232,.08);border-radius: 0;"></div>
               </div>
             </div>
             <div class="pp-lock-overlay">

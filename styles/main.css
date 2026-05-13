@@ -70,8 +70,8 @@
   --border-light: #e3eaef;
   --shadow-card: 0 6px 24px rgba(10, 22, 40, 0.06), 0 1px 2px rgba(10, 22, 40, 0.04);
   --shadow-card-hover: 0 12px 40px rgba(10, 22, 40, 0.10), 0 2px 4px rgba(10, 22, 40, 0.06);
-  --radius: 6px;
-  --radius-lg: 12px;
+  --radius: 0px;
+  --radius-lg: 0px;
   --maxw: 1240px;
   --gutter: clamp(20px, 4vw, 48px);
 }
@@ -235,7 +235,7 @@ ul { margin: 0; padding: 0; list-style: none; }
 .brand-mark {
   width: 32px; height: 32px;
   display: grid; place-items: center;
-  border-radius: 6px;
+  border-radius: 0;
   background: var(--cyan);
   color: var(--navy);
 }
@@ -308,7 +308,7 @@ ul { margin: 0; padding: 0; list-style: none; }
   width: 22px;
   height: 2px;
   background: var(--white);
-  border-radius: 2px;
+  border-radius: 0;
   transition: transform 0.2s ease, opacity 0.2s ease;
   transform-origin: center;
 }
@@ -474,7 +474,7 @@ ul { margin: 0; padding: 0; list-style: none; }
 .card.dark, .card.dark h3, .card.dark h4 { color: var(--white); }
 .card .icon-circle {
   width: 52px; height: 52px;
-  border-radius: 12px;
+  border-radius: 0;
   display: grid; place-items: center;
   background: var(--cyan-softer);
   color: var(--cyan);
@@ -579,7 +579,7 @@ ul { margin: 0; padding: 0; list-style: none; }
 .check-item .check-mark {
   flex: 0 0 auto;
   width: 28px; height: 28px;
-  border-radius: 50%;
+  border-radius: 0;
   background: var(--cyan);
   display: grid; place-items: center;
   color: var(--navy);
@@ -616,7 +616,7 @@ ul { margin: 0; padding: 0; list-style: none; }
 }
 .step .num-circle {
   width: 56px; height: 56px;
-  border-radius: 50%;
+  border-radius: 0;
   background: var(--cyan);
   color: var(--white);
   display: grid; place-items: center;
@@ -659,7 +659,7 @@ ul { margin: 0; padding: 0; list-style: none; }
 }
 .industry-card .industry-icon {
   width: 44px; height: 44px;
-  border-radius: 10px;
+  border-radius: 0;
   background: var(--navy);
   color: var(--cyan);
   display: grid; place-items: center;
@@ -796,7 +796,7 @@ ul { margin: 0; padding: 0; list-style: none; }
 }
 .service-detail .icon-circle {
   width: 48px; height: 48px;
-  border-radius: 10px;
+  border-radius: 0;
   background: var(--navy);
   color: var(--cyan);
   display: grid; place-items: center;
@@ -863,7 +863,7 @@ ul { margin: 0; padding: 0; list-style: none; }
 .badge {
   display: inline-flex; align-items: center; gap: 6px;
   padding: 6px 12px;
-  border-radius: 999px;
+  border-radius: 0;
   background: rgba(0, 212, 232, 0.10);
   border: 1px solid var(--cyan-soft);
   color: var(--cyan);
@@ -917,7 +917,7 @@ ul { margin: 0; padding: 0; list-style: none; }
 .feature-card:hover { border-color: var(--cyan); transform: translateY(-2px); box-shadow: var(--shadow-card-hover); }
 .feature-card .icon-circle {
   width: 44px; height: 44px;
-  border-radius: 10px;
+  border-radius: 0;
   background: var(--cyan-softer);
   color: var(--cyan);
   display: grid; place-items: center;
@@ -1056,7 +1056,7 @@ ul { margin: 0; padding: 0; list-style: none; }
 }
 .contact-block .icon-circle {
   width: 44px; height: 44px;
-  border-radius: 10px;
+  border-radius: 0;
   background: var(--cyan-softer);
   color: var(--cyan);
   display: grid; place-items: center;
@@ -1149,7 +1149,7 @@ ul { margin: 0; padding: 0; list-style: none; }
 
 /* Cloud comparison */
 .problem-comparison { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
-.comparison-col { border-radius: 12px; padding: 24px; }
+.comparison-col { border-radius: 0; padding: 24px; }
 .comparison-col.bad { background: rgba(220,50,50,.06); border: 1px solid rgba(220,50,50,.18); }
 .comparison-col.good { background: rgba(0,200,180,.07); border: 1px solid rgba(0,200,180,.22); }
 .comp-head { display: flex; align-items: center; gap: 8px; font-weight: 700; font-size: 15px; margin-bottom: 16px; }
