@@ -106,7 +106,7 @@ ul { margin: 0; padding: 0; list-style: none; }
 .section { padding: clamp(64px, 9vw, 120px) 0; }
 .section-sm { padding: clamp(48px, 7vw, 88px) 0; }
 .section.dark { background: var(--navy); color: var(--white); }
-.section.teal { background: var(--teal-2); color: var(--white); position: relative; }
+.section.teal { background: var(--teal-2); color: var(--navy); position: relative; }
 .section.teal::before {
   content: '';
   position: absolute; inset: 0;
@@ -1128,8 +1128,17 @@ ul { margin: 0; padding: 0; list-style: none; }
   font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
 }
 .section.offwhite { background: #f7f9fb; color: #0a1628; }
-.section.teal .section-head p { color: #b0c8d0; }
-.section.teal .eyebrow { color: #7debf3; }
+.section.teal .section-head p { color: var(--navy); }
+.section.teal .eyebrow { color: var(--navy); }
+.section.teal h1, .section.teal h2, .section.teal h3, .section.teal h4, .section.teal h5 { color: var(--navy); }
+.section.teal .step h4 { color: var(--navy); }
+.section.teal .step p { color: var(--navy); }
+.section.teal .highlight p { color: var(--navy); }
+.section.teal .highlight .feature-list li { color: var(--navy); }
+.section.teal .check-item .text strong { color: var(--navy); }
+.section.teal .check-item .text span { color: var(--navy); }
+.section.teal .muted-on-dark { color: var(--mid-grey); }
+.section.teal .card-list li { color: var(--navy); }
 .section.dark .eyebrow { color: #7debf3; }
 .cta-banner .eyebrow { color: #7debf3; }
 
