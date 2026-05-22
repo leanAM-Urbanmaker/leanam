@@ -838,17 +838,18 @@ ul { margin: 0; padding: 0; list-style: none; }
   font-family: inherit;
   font-size: 15px;
   padding: 14px 16px;
-  background: var(--navy);
-  color: var(--white);
-  border: 2px solid var(--navy-3);
+  background: #f7f9fb;
+  color: var(--navy);
+  border: 2px solid var(--border-light);
   border-radius: var(--radius);
   transition: border-color 0.15s ease;
 }
-.field input::placeholder, .field textarea::placeholder { color: rgba(176, 200, 208, 0.5); }
+.field input::placeholder, .field textarea::placeholder { color: rgba(10, 22, 40, 0.35); }
 .field input:focus, .field textarea:focus, .field select:focus {
   outline: none;
   border-color: var(--cyan);
   box-shadow: 0 0 0 3px rgba(0, 212, 232, 0.15);
+  background: var(--white);
 }
 .field textarea { min-height: 140px; resize: vertical; }
 .field-checkbox {
@@ -1048,22 +1049,22 @@ ul { margin: 0; padding: 0; list-style: none; }
 
 .contact-info { display: flex; flex-direction: column; gap: 28px; }
 .contact-block {
-  background: var(--navy);
-  color: var(--white);
+  background: #f7f9fb;
+  color: var(--navy);
   border-radius: var(--radius-lg);
   padding: 28px;
-  border: 1px solid var(--cyan-soft);
+  border: 1px solid var(--border-light);
 }
 .contact-block .icon-circle {
   width: 44px; height: 44px;
   border-radius: 0;
-  background: var(--cyan-softer);
+  background: rgba(0, 212, 232, 0.12);
   color: var(--cyan);
   display: grid; place-items: center;
   margin-bottom: 16px;
 }
-.contact-block h4 { color: var(--white); font-size: 16px; margin-bottom: 8px; }
-.contact-block p, .contact-block a { color: var(--light-grey); font-size: 14px; line-height: 1.6; }
+.contact-block h4 { color: var(--navy); font-size: 16px; margin-bottom: 8px; }
+.contact-block p, .contact-block a { color: var(--mid-grey); font-size: 14px; line-height: 1.6; }
 .contact-block a:hover { color: var(--cyan); }
 
 /* ---------- Workflow timeline (mes / entwicklung) ---------- */
