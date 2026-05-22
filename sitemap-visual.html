@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>leanAM — Sitemap</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body {
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    background: #0a1628;
+    color: #fff;
+    min-height: 100vh;
+    overflow-x: auto;
+  }
+  body { padding: 48px 48px 64px; min-width: 1400px; }
+
+  .header { text-align: center; margin-bottom: 52px; }
+  .header .eyebrow { font-size: 12px; font-weight: 600; letter-spacing: .2em; text-transform: uppercase; color: #00d4e8; margin-bottom: 10px; display: block; }
+  .header h1 { font-size: 32px; font-weight: 800; letter-spacing: -.02em; }
+
+  /* ── Root ── */
+  .tree { display: flex; flex-direction: column; align-items: center; }
+  .root {
+    background: #00d4e8; color: #0a1628;
+    padding: 14px 40px; font-weight: 800; font-size: 16px;
+    letter-spacing: .04em; display: inline-flex; align-items: center; gap: 10px;
+  }
+  .v-stem { width: 2px; height: 36px; background: #00d4e8; }
+
+  /* ── Main row ── */
+  .main-row {
+    display: flex; align-items: flex-start;
+    position: relative; width: 100%;
+    justify-content: center;
+  }
+  /* horizontal bar across top of all cols */
+  .main-row::before {
+    content: '';
+    position: absolute; top: 0;
+    left: calc(80px); right: calc(80px);
+    height: 2px; background: rgba(0,212,232,.35);
+  }
+
+  /* ── Column ── */
+  .col { display: flex; flex-direction: column; align-items: center; flex: 1; min-width: 148px; max-width: 180px; padding: 0 8px; }
+  .col-stem { width: 2px; height: 28px; background: rgba(0,212,232,.35); }
+
+  /* ── Node card ── */
+  .node {
+    width: 100%; background: #0f1d33;
+    border: 1px solid rgba(0,212,232,.22);
+    padding: 14px 12px; text-align: center;
+  }
+  .node:hover { border-color: #00d4e8; }
+  .node .ico { font-size: 22px; display: block; margin-bottom: 7px; }
+  .node .lbl { font-size: 13px; font-weight: 700; color: #fff; display: block; line-height: 1.3; }
+  .node .url { font-size: 10px; color: #00d4e8; display: block; margin-top: 4px; opacity: .8; word-break: break-all; }
+  .node .dsc { font-size: 10px; color: #7ba5b5; display: block; margin-top: 5px; line-height: 1.45; }
+
+  .node.core   { border-color: #00d4e8; background: rgba(0,212,232,.07); }
+  .node.tool   { border-color: rgba(0,212,232,.5); background: rgba(0,212,232,.04); }
+  .node.dim    { border-color: rgba(255,255,255,.1); opacity: .55; }
+
+  /* ── Sub node ── */
+  .sub-stem { width: 2px; height: 18px; background: rgba(0,212,232,.25); }
+  .sub-node {
+    width: 100%; background: #15263f;
+    border: 1px solid rgba(0,212,232,.18);
+    padding: 8px 10px; text-align: center; margin-top: 0;
+  }
+  .sub-node.gap { margin-top: 14px; }
+  .sub-node .lbl { font-size: 11px; font-weight: 600; color: #b0c8d0; display: block; line-height: 1.35; }
+  .sub-node .url { font-size: 9px; color: #00d4e8; display: block; margin-top: 3px; opacity: .7; word-break: break-all; }
+  .sub-node.dim  { border-color: rgba(255,255,255,.08); opacity: .5; }
+
+  /* ── Redirect ── */
+  .redirect {
+    margin-top: 44px; display: inline-flex; align-items: center; gap: 14px;
+    background: rgba(255,193,7,.07); border: 1px solid rgba(255,193,7,.3);
+    padding: 11px 22px; font-size: 12px; color: #ffc107;
+  }
+  .redirect strong { font-weight: 700; }
+
+  /* ── Legend ── */
+  .legend {
+    display: flex; gap: 28px; justify-content: center;
+    margin-top: 36px; flex-wrap: wrap;
+  }
+  .legend-item { display: flex; align-items: center; gap: 8px; font-size: 11px; color: #7ba5b5; }
+  .legend-box { width: 14px; height: 14px; border: 1px solid; flex-shrink: 0; }
+
+  /* ── Stats ── */
+  .stats {
+    display: flex; gap: 0; justify-content: center;
+    margin-top: 52px; padding-top: 32px;
+    border-top: 1px solid rgba(255,255,255,.07); flex-wrap: wrap;
+  }
+  .stat { text-align: center; padding: 0 36px; }
+  .stat + .stat { border-left: 1px solid rgba(255,255,255,.07); }
+  .stat .num { font-size: 36px; font-weight: 800; color: #00d4e8; line-height: 1; }
+  .stat .lbl { font-size: 10px; color: #7ba5b5; margin-top: 6px; letter-spacing: .1em; text-transform: uppercase; }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <span class="eyebrow">Seitenstruktur</span>
+  <h1>leanAM — Sitemap</h1>
+</div>
+
+<div class="tree">
+
+  <div class="root">🌐 leanam.com</div>
+  <div class="v-stem"></div>
+
+  <div class="main-row">
+
+    <!-- Home -->
+    <div class="col">
+      <div class="col-stem"></div>
+      <div class="node core">
+        <span class="ico">🏠</span>
+        <span class="lbl">Homepage</span>
+        <span class="url">/</span>
+        <span class="dsc">Hero · Leistungen · Prozess · CTA</span>
+      </div>
+    </div>
+
+    <!-- MES -->
+    <div class="col">
+      <div class="col-stem"></div>
+      <div class="node core">
+        <span class="ico">⚙️</span>
+        <span class="lbl">leanAM MES</span>
+        <span class="url">/mes.html</span>
+        <span class="dsc">Hauptprodukt · Features · FAQ</span>
+      </div>
+      <div class="sub-stem"></div>
+      <div class="sub-node" style="border-color:rgba(0,212,232,.45);background:rgba(0,212,232,.04);">
+        <span class="lbl">🧮 Druckfarm-Rechner</span>
+        <span class="url">/mes/druckfarm-rechner.html</span>
+      </div>
+    </div>
+
+    <!-- Prozessberatung -->
+    <div class="col">
+      <div class="col-stem"></div>
+      <div class="node">
+        <span class="ico">📋</span>
+        <span class="lbl">Prozessberatung</span>
+        <span class="url">/prozessberatung.html</span>
+        <span class="dsc">Consulting · Roadmap · Make-or-Buy</span>
+      </div>
+    </div>
+
+    <!-- Entwicklung -->
+    <div class="col">
+      <div class="col-stem"></div>
+      <div class="node">
+        <span class="ico">🔧</span>
+        <span class="lbl">Entwicklung</span>
+        <span class="url">/entwicklung.html</span>
+        <span class="dsc">Custom Software · Schnittstellen</span>
+      </div>
+    </div>
+
+    <!-- Wissen -->
+    <div class="col">
+      <div class="col-stem"></div>
+      <div class="node">
+        <span class="ico">📚</span>
+        <span class="lbl">Wissen</span>
+        <span class="url">/wissen/</span>
+        <span class="dsc">Content-Hub · SEO-Artikel</span>
+      </div>
+      <div class="sub-stem"></div>
+      <div class="sub-node">
+        <span class="lbl">Bambu ohne Cloud</span>
+        <span class="url">/wissen/bambu-cloud-alternative/</span>
+      </div>
+      <div class="sub-stem"></div>
+      <div class="sub-node">
+        <span class="lbl">Make-or-Buy 3D-Druck</span>
+        <span class="url">/wissen/make-or-buy-3d-druck/</span>
+      </div>
+    </div>
+
+    <!-- Branchen -->
+    <div class="col">
+      <div class="col-stem"></div>
+      <div class="node">
+        <span class="ico">🏭</span>
+        <span class="lbl">Branchen</span>
+        <span class="url">/branchen/</span>
+        <span class="dsc">Branchenspezifische Landingpages</span>
+      </div>
+      <div class="sub-stem"></div>
+      <div class="sub-node">
+        <span class="lbl">Medizintechnik</span>
+        <span class="url">/branchen/medizintechnik/</span>
+      </div>
+    </div>
+
+    <!-- Über uns -->
+    <div class="col">
+      <div class="col-stem"></div>
+      <div class="node">
+        <span class="ico">👥</span>
+        <span class="lbl">Über uns</span>
+        <span class="url">/ueber-uns.html</span>
+        <span class="dsc">Team · Mission · Werte</span>
+      </div>
+    </div>
+
+    <!-- Kontakt -->
+    <div class="col">
+      <div class="col-stem"></div>
+      <div class="node core">
+        <span class="ico">📬</span>
+        <span class="lbl">Kontakt</span>
+        <span class="url">/kontakt.html</span>
+        <span class="dsc">Demo anfragen · Formular</span>
+      </div>
+    </div>
+
+    <!-- Rechtliches -->
+    <div class="col">
+      <div class="col-stem" style="background:rgba(255,255,255,.15);"></div>
+      <div class="node dim">
+        <span class="ico">⚖️</span>
+        <span class="lbl">Rechtliches</span>
+        <span class="url">noindex</span>
+      </div>
+      <div class="sub-stem" style="background:rgba(255,255,255,.1);"></div>
+      <div class="sub-node dim">
+        <span class="lbl">Impressum</span>
+        <span class="url">/impressum.html</span>
+      </div>
+      <div class="sub-stem" style="background:rgba(255,255,255,.1);"></div>
+      <div class="sub-node dim">
+        <span class="lbl">Datenschutz</span>
+        <span class="url">/datenschutz.html</span>
+      </div>
+    </div>
+
+  </div><!-- /main-row -->
+
+  <!-- Redirect -->
+  <div class="redirect">
+    <span>🔀</span>
+    <span><strong>301 Redirect:</strong> /druckfarm-rechner.html</span>
+    <span style="font-size:18px;">→</span>
+    <span>/mes/druckfarm-rechner.html</span>
+  </div>
+
+  <!-- Legend -->
+  <div class="legend">
+    <div class="legend-item">
+      <div class="legend-box" style="background:rgba(0,212,232,.07);border-color:#00d4e8;"></div>
+      Kernseite / CTA
+    </div>
+    <div class="legend-item">
+      <div class="legend-box" style="background:rgba(0,212,232,.04);border-color:rgba(0,212,232,.45);"></div>
+      Tool / Lead-Gen
+    </div>
+    <div class="legend-item">
+      <div class="legend-box" style="background:#0f1d33;border-color:rgba(0,212,232,.22);"></div>
+      Standardseite
+    </div>
+    <div class="legend-item">
+      <div class="legend-box" style="background:#0f1d33;border-color:rgba(255,255,255,.1);opacity:.55;"></div>
+      Rechtliches (noindex)
+    </div>
+  </div>
+
+  <!-- Stats -->
+  <div class="stats">
+    <div class="stat"><div class="num">6</div><div class="lbl">Kernseiten</div></div>
+    <div class="stat"><div class="num">1</div><div class="lbl">Tools</div></div>
+    <div class="stat"><div class="num">3</div><div class="lbl">Content / SEO</div></div>
+    <div class="stat"><div class="num">1</div><div class="lbl">Branchen</div></div>
+    <div class="stat"><div class="num">2</div><div class="lbl">Rechtliches</div></div>
+    <div class="stat"><div class="num">14</div><div class="lbl">Seiten gesamt</div></div>
+  </div>
+
+</div>
+</body>
+</html>
