@@ -1,7 +1,4 @@
-# 301 Redirects – leanAM Relaunch
-
-# Old calculator URL → new MES sub-page
-/druckfarm-rechner.html   /mes/druckfarm-rechner.html   301
-
-# Trailing-slash normalisation (Netlify handles most cases, belt+suspenders)
-/index.html               /                              301
+/index.html / 301
+/druckfarm-rechner.html /mes/druckfarm-rechner.html 301
+/wissen /wissen/ 301
+/branchen /wissen/ 301
