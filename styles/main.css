@@ -1153,10 +1153,22 @@ ul { margin: 0; padding: 0; list-style: none; }
 .section.teal .check-item .text span { color: var(--navy); }
 .section.teal .check-mark { color: var(--navy); }
 
-/* Highlight / feature blocks */
+/* .cyan utility class */
+.section.teal .cyan { color: var(--navy) !important; }
+
+/* Highlight callout box */
+.section.teal .highlight { background: rgba(255,255,255,0.30); border-color: rgba(255,255,255,0.6); }
 .section.teal .section-head p { color: var(--navy); }
 .section.teal .highlight p { color: var(--navy); }
+.section.teal .highlight h2 .cyan { color: var(--navy); }
 .section.teal .highlight .feature-list li { color: var(--navy); }
+.section.teal .highlight .feature-list li .material-symbols-outlined { color: var(--navy); }
+.section.teal .feature-list li { color: var(--navy); }
+.section.teal .feature-list li .material-symbols-outlined { color: var(--navy); }
+
+/* Placeholder image inside teal */
+.section.teal .placeholder-image { background: rgba(255,255,255,0.20); border-color: rgba(255,255,255,0.4); color: var(--navy); }
+
 .section.teal .muted-on-dark { color: rgba(10,22,40,0.65); }
 
 /* Button: navy on teal so it stands out */
