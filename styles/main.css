@@ -1133,6 +1133,7 @@ ul { margin: 0; padding: 0; list-style: none; }
 .section.teal h1, .section.teal h2, .section.teal h3, .section.teal h4, .section.teal h5 { color: var(--navy); }
 .section.teal .step h4 { color: var(--navy); }
 .section.teal .step p { color: var(--navy); }
+.section.teal .step .num-circle { background: var(--navy); color: var(--white); box-shadow: 0 0 0 6px rgba(10,22,40,0.12); }
 .section.teal .highlight p { color: var(--navy); }
 .section.teal .highlight .feature-list li { color: var(--navy); }
 .section.teal .check-item .text strong { color: var(--navy); }
