@@ -1103,8 +1103,10 @@ input[type=range]::-moz-range-thumb {
       </div>
 
       <div id="leadFormWrap">
-        <form class="lead-form" id="leadForm" name="druckfarm-leads" method="POST" data-netlify="true" onsubmit="handleLeadSubmit(event)">
-          <input type="hidden" name="form-name" value="druckfarm-leads">
+        <form class="lead-form" id="leadForm" name="druckfarm-leads" action="https://api.web3forms.com/submit" method="POST" onsubmit="handleLeadSubmit(event)">
+          <input type="hidden" name="access_key" value="c30aecf0-fbf3-49b8-b605-2b04861417f8">
+          <input type="hidden" name="subject" value="Druckfarm-Rechner Lead — leanAM">
+          <input type="checkbox" name="botcheck" style="display:none;">
           <input type="hidden" name="calc_data" id="hiddenCalcData">
           <div class="form-row-2">
             <input type="text" name="name" placeholder="Ihr Name *" required>
@@ -1136,6 +1138,15 @@ input[type=range]::-moz-range-thumb {
   </div>
 </div>
 
+
+<section class="section light" style="padding: 32px 0;">
+  <div class="container" style="max-width: 720px; text-align: center;">
+    <p style="font-size: 13px; color: var(--mid-grey); line-height: 1.7;">
+      Die Berechnungen basieren auf branchenüblichen Richtwerten und dienen der Orientierung. Individuelle Ergebnisse können je nach Betriebsbedingungen, Auslastung und Materialkosten abweichen. Keine Gewähr für Vollständigkeit oder Richtigkeit der Schätzwerte. Die Ergebnisse ersetzen keine individuelle Wirtschaftlichkeitsberechnung.
+    </p>
+  </div>
+</section>
+
 <!-- ════════════ FOOTER ════════════ -->
 <footer class="site-footer">
   <div class="container">
@@ -1149,7 +1160,7 @@ input[type=range]::-moz-range-thumb {
         <ul>
           <li><a href="../mes.html">leanAM MES</a></li>
           <li><a href="../mes/druckfarm-rechner.html">Druckfarm-Rechner</a></li>
-          <li><a href="../mes.html">Bambu Lab Integration</a></li>
+          <li><a href="../mes.html">3D-Drucker Integration</a></li>
           <li><a href="../entwicklung.html">Custom Development</a></li>
           <li><a href="../kontakt.html">Demo anfragen</a></li>
         </ul>
@@ -1178,6 +1189,7 @@ input[type=range]::-moz-range-thumb {
       <div class="links">
         <a href="../impressum.html">Impressum</a>
         <a href="../datenschutz.html">Datenschutz</a>
+        <a href="../agb.html">AGB</a>
       </div>
     </div>
   </div>
@@ -1639,7 +1651,7 @@ function renderCharts() {
 function handleLeadSubmit(e) {
   e.preventDefault();
   const form = e.target;
-  fetch('/', {
+  fetch('https://api.web3forms.com/submit', {
     method: 'POST',
     headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
     body: new URLSearchParams(new FormData(form)).toString()
