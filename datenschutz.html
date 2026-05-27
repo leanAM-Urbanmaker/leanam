@@ -4,52 +4,53 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="robots" content="noindex, follow">
-<meta name="theme-color" content="#0d1f2d">
+<meta name="theme-color" content="#0A1628">
 <title>Datenschutzerklärung — leanAM</title>
 <meta name="description" content="Datenschutzerklärung der URBANMAKER UG (haftungsbeschränkt) gemäß DSGVO.">
 <link rel="canonical" href="https://leanam.com/datenschutz.html">
-<link rel="preload" as="font" type="font/woff2" href="fonts/montserrat-latin.woff2" crossorigin>
-<link rel="preload" as="image" href="images/logo.webp" fetchpriority="high">
-<link rel="stylesheet" href="styles/main.css">
+<link rel="preload" as="font" type="font/woff2" href="fonts/inter-latin.woff2" crossorigin>
+<link rel="preload" as="font" type="font/woff2" href="fonts/jetbrains-mono-latin.woff2" crossorigin>
+<link rel="preload" as="image" href="images/leanam-logo.png" fetchpriority="high">
+<link rel="stylesheet" href="styles/leanam-system.css">
 <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16.png">
 <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
 </head>
 <body>
 
-<header class="site-header">
-  <div class="container nav">
-    <a href="index.html" class="brand"><img src="images/logo.webp" alt="leanAM" class="brand-logo" width="110" height="38" fetchpriority="high"></a>
-    <nav class="nav-links" aria-label="Hauptnavigation">
+<header class="lam-header">
+  <div class="lam-header__inner">
+    <a href="index.html" class="lam-header__logo">
+      <img src="images/leanam-logo.png" alt="leanAM" height="38" loading="eager">
+    </a>
+    <nav class="lam-header__nav" aria-label="Hauptnavigation">
       <a href="index.html">Start</a>
       <a href="mes.html">leanAM MES</a>
       <a href="prozessberatung.html">Prozessberatung</a>
       <a href="entwicklung.html">Entwicklung</a>
       <a href="ueber-uns.html">Über uns</a>
-      <a href="/wissen/">Wissen</a>
     </nav>
-    <div class="nav-right">
-      <div class="lang-switch">
+    <div class="lam-header__right">
+      <span class="lam-header__lang">
         <button class="active" type="button">DE</button>
         <span class="sep">|</span>
         <button type="button">EN</button>
-      </div>
-      <a href="kontakt.html" class="btn btn-primary btn-sm">
-        <span class="material-symbols-outlined">mail</span>Kontakt
+      </span>
+      <a href="kontakt.html" class="lam-btn lam-btn--primary">
+        <span class="material-icons">mail</span>Kontakt
       </a>
     </div>
     <button class="nav-toggle" aria-label="Navigation öffnen" aria-expanded="false" aria-controls="mobile-nav">
       <span></span><span></span><span></span>
     </button>
   </div>
-  <div class="mobile-nav" id="mobile-nav" hidden>
+  <div class="lam-mobile-nav" id="mobile-nav" hidden>
     <nav aria-label="Mobile Navigation">
       <a href="index.html">Start</a>
       <a href="mes.html">leanAM MES</a>
       <a href="prozessberatung.html">Prozessberatung</a>
       <a href="entwicklung.html">Entwicklung</a>
       <a href="ueber-uns.html">Über uns</a>
-      <a href="/wissen/">Wissen</a>
       <a href="kontakt.html" class="mobile-cta">Kontakt / Demo</a>
     </nav>
   </div>
@@ -59,7 +60,7 @@
   <div class="container">
     <div class="breadcrumb">
       <a href="index.html">Start</a>
-      <span class="material-symbols-outlined">chevron_right</span>
+      <span class="material-icons">chevron_right</span>
       <span>Datenschutz</span>
     </div>
     <span class="eyebrow">Rechtliches</span>
@@ -77,8 +78,8 @@
       Geringhoffstraße 48<br>
       48163 Münster<br>
       Deutschland<br><br>
-      Telefon: <a href="tel:+4925022294180" style="color: var(--cyan);">+49 (0) 250 222 941 80</a><br>
-      E-Mail: <a href="mailto:hq@leanam.com" style="color: var(--cyan);">hq@leanAM.com</a>
+      Telefon: <a href="tel:+4925022294180" style="color: var(--lam-cyan);">+49 (0) 250 222 941 80</a><br>
+      E-Mail: <a href="mailto:hq@leanam.com" style="color: var(--lam-cyan);">hq@leanAM.com</a>
     </p>
 
     <h2 class="h2" style="font-size: 24px; margin-top: 48px;">2. Hosting — Cloudflare Pages</h2>
@@ -86,7 +87,7 @@
       Diese Website wird über <strong>Cloudflare Pages</strong> gehostet (Cloudflare, Inc., 101 Townsend St., San Francisco, CA 94107, USA). Beim Aufruf der Website werden dabei automatisch technische Verbindungsdaten (IP-Adresse, Browser, Betriebssystem, Datum/Uhrzeit) in Server-Log-Files erfasst.
     </p>
     <p class="body mt-2">
-      Cloudflare verarbeitet diese Daten auf Basis geeigneter Garantien gemäß Art. 46 DSGVO (EU-Standardvertragsklauseln). Cloudflare ist zudem unter dem EU-US Data Privacy Framework zertifiziert (<a href="https://www.dataprivacyframework.gov/" target="_blank" rel="noopener noreferrer" style="color: var(--cyan);">https://www.dataprivacyframework.gov/</a>), wodurch ein angemessenes Datenschutzniveau für Übermittlungen in die USA anerkannt wird. Weitere Informationen entnehmen Sie der Datenschutzerklärung von Cloudflare: <a href="https://www.cloudflare.com/privacypolicy/" target="_blank" rel="noopener noreferrer" style="color: var(--cyan);">https://www.cloudflare.com/privacypolicy/</a>
+      Cloudflare verarbeitet diese Daten auf Basis geeigneter Garantien gemäß Art. 46 DSGVO (EU-Standardvertragsklauseln). Cloudflare ist zudem unter dem EU-US Data Privacy Framework zertifiziert (<a href="https://www.dataprivacyframework.gov/" target="_blank" rel="noopener noreferrer" style="color: var(--lam-cyan);">https://www.dataprivacyframework.gov/</a>), wodurch ein angemessenes Datenschutzniveau für Übermittlungen in die USA anerkannt wird. Weitere Informationen entnehmen Sie der Datenschutzerklärung von Cloudflare: <a href="https://www.cloudflare.com/privacypolicy/" target="_blank" rel="noopener noreferrer" style="color: var(--lam-cyan);">https://www.cloudflare.com/privacypolicy/</a>
     </p>
     <p class="body mt-2">
       Rechtsgrundlage: Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an einer zuverlässigen und sicheren Bereitstellung der Website).
@@ -100,11 +101,11 @@
       Spacedev (Web3Forms)<br>
       Aditya Dhanraj<br>
       Indien<br>
-      Web: <a href="https://web3forms.com" target="_blank" rel="noopener noreferrer" style="color: var(--cyan);">https://web3forms.com</a><br>
-      Datenschutz: <a href="https://web3forms.com/privacy" target="_blank" rel="noopener noreferrer" style="color: var(--cyan);">https://web3forms.com/privacy</a>
+      Web: <a href="https://web3forms.com" target="_blank" rel="noopener noreferrer" style="color: var(--lam-cyan);">https://web3forms.com</a><br>
+      Datenschutz: <a href="https://web3forms.com/privacy" target="_blank" rel="noopener noreferrer" style="color: var(--lam-cyan);">https://web3forms.com/privacy</a>
     </p>
     <p class="body mt-4">
-      Wenn Sie das Kontaktformular absenden, werden die von Ihnen eingegebenen Daten (Name, E-Mail-Adresse, Nachricht und ggf. weitere freiwillige Angaben) zur Verarbeitung und Weiterleitung an unsere E-Mail-Adresse <a href="mailto:hq@leanam.com" style="color: var(--cyan);">hq@leanAM.com</a> an Web3Forms übertragen. Hierbei werden die Daten in ein Drittland (Indien) übermittelt, für das kein Angemessenheitsbeschluss der Europäischen Kommission vorliegt.
+      Wenn Sie das Kontaktformular absenden, werden die von Ihnen eingegebenen Daten (Name, E-Mail-Adresse, Nachricht und ggf. weitere freiwillige Angaben) zur Verarbeitung und Weiterleitung an unsere E-Mail-Adresse <a href="mailto:hq@leanam.com" style="color: var(--lam-cyan);">hq@leanAM.com</a> an Web3Forms übertragen. Hierbei werden die Daten in ein Drittland (Indien) übermittelt, für das kein Angemessenheitsbeschluss der Europäischen Kommission vorliegt.
     </p>
     <p class="body mt-2">
       Rechtsgrundlage für die Verarbeitung ist Art. 6 Abs. 1 lit. b DSGVO (Anbahnung und Erfüllung eines Vertragsverhältnisses) sowie Art. 6 Abs. 1 lit. f DSGVO (unser berechtigtes Interesse an einer effizienten Anfragebearbeitung). Die Übermittlung in das Drittland stützen wir auf Art. 49 Abs. 1 lit. b DSGVO (Erforderlichkeit für die Durchführung vorvertraglicher Maßnahmen auf Anfrage der betroffenen Person). Soweit mit dem Anbieter ergänzend Standardvertragsklauseln (SCC, Art. 46 Abs. 2 lit. c DSGVO) abgeschlossen wurden, gelten diese ebenfalls.
@@ -120,7 +121,7 @@
 
     <h2 class="h2" style="font-size: 24px; margin-top: 48px;">5. Schriften — selbst gehostet</h2>
     <p class="body mt-4">
-      Diese Website lädt Schriftarten (Montserrat, Inter, JetBrains Mono) von eigenen Servern — es findet keine Verbindung zu externen Schriftanbieter-Servern (z.&nbsp;B. Google Fonts CDN) statt.
+      Diese Website lädt Schriftarten (Inter, JetBrains Mono) von eigenen Servern — es findet keine Verbindung zu externen Schriftanbieter-Servern (z.&nbsp;B. Google Fonts CDN) statt.
     </p>
 
     <h2 class="h2" style="font-size: 24px; margin-top: 48px;">6. Ihre Rechte</h2>
@@ -134,7 +135,7 @@
       <li>Recht auf Widerspruch gegen die Verarbeitung (Art. 21 DSGVO)</li>
     </ul>
     <p class="body mt-2">
-      Zur Geltendmachung Ihrer Rechte wenden Sie sich bitte an: <a href="mailto:hq@leanam.com" style="color: var(--cyan);">hq@leanAM.com</a>
+      Zur Geltendmachung Ihrer Rechte wenden Sie sich bitte an: <a href="mailto:hq@leanam.com" style="color: var(--lam-cyan);">hq@leanAM.com</a>
     </p>
     <p class="body mt-2">
       Außerdem steht Ihnen ein Beschwerderecht bei der zuständigen Datenschutz-Aufsichtsbehörde zu. Zuständige Aufsichtsbehörde für die URBANMAKER UG (haftungsbeschränkt):
@@ -144,38 +145,37 @@
       Nordrhein-Westfalen (LDI NRW)<br>
       Kavalleriestraße 2–4<br>
       40213 Düsseldorf<br>
-      Telefon: <a href="tel:+4921138424-0" style="color: var(--cyan);">+49 (0) 211 38424-0</a><br>
-      E-Mail: <a href="mailto:poststelle@ldi.nrw.de" style="color: var(--cyan);">poststelle@ldi.nrw.de</a><br>
-      Web: <a href="https://www.ldi.nrw.de" target="_blank" rel="noopener noreferrer" style="color: var(--cyan);">https://www.ldi.nrw.de</a>
+      Telefon: <a href="tel:+4921138424-0" style="color: var(--lam-cyan);">+49 (0) 211 38424-0</a><br>
+      E-Mail: <a href="mailto:poststelle@ldi.nrw.de" style="color: var(--lam-cyan);">poststelle@ldi.nrw.de</a><br>
+      Web: <a href="https://www.ldi.nrw.de" target="_blank" rel="noopener noreferrer" style="color: var(--lam-cyan);">https://www.ldi.nrw.de</a>
     </p>
 
-    <p class="body" style="font-size: 13px; border-top: 1px solid var(--border-light); padding-top: 24px; margin-top: 48px; opacity: 0.7;">
+    <p class="body" style="font-size: 13px; border-top: 1px solid var(--lam-line); padding-top: 24px; margin-top: 48px; opacity: 0.7;">
       Stand: Mai 2026
     </p>
 
   </div>
 </section>
 
-<footer class="site-footer">
-  <div class="container">
-    <div class="footer-grid">
+<footer class="lam-footer">
+  <div class="lam-footer__inner">
+    <div class="lam-footer__grid">
       <div>
-        <a href="index.html" class="brand"><img src="images/logo.webp" alt="leanAM" class="brand-logo" width="110" height="38" loading="lazy"></a>
-        <p>Software, Beratung und Entwicklung für additive Fertigung. Made in Germany — DSGVO-konform — On-Premise.</p>
+        <a href="index.html"><img src="images/leanam-logo.png" alt="leanAM" height="34" loading="lazy"></a>
+        <p class="lam-footer__tagline">Software, Beratung und Entwicklung für additive Fertigung.<br>Made in Germany — DSGVO-konform — On-Premise.</p>
       </div>
       <div>
-        <h5>Produkt</h5>
-        <ul>
+        <span class="lam-footer__col-title">Produkt</span>
+        <ul class="lam-footer__list">
           <li><a href="mes.html">leanAM MES</a></li>
           <li><a href="mes/druckfarm-rechner.html">Druckfarm-Rechner</a></li>
-          <li><a href="mes.html">3D-Drucker Integration</a></li>
           <li><a href="entwicklung.html">Custom Development</a></li>
           <li><a href="kontakt.html">Demo anfragen</a></li>
         </ul>
       </div>
       <div>
-        <h5>Leistungen</h5>
-        <ul>
+        <span class="lam-footer__col-title">Leistungen</span>
+        <ul class="lam-footer__list">
           <li><a href="prozessberatung.html">Prozessberatung</a></li>
           <li><a href="entwicklung.html">Entwicklung</a></li>
           <li><a href="prozessberatung.html">B2B Druckservice</a></li>
@@ -183,8 +183,8 @@
         </ul>
       </div>
       <div>
-        <h5>Unternehmen</h5>
-        <ul>
+        <span class="lam-footer__col-title">Unternehmen</span>
+        <ul class="lam-footer__list">
           <li><a href="ueber-uns.html">Über uns</a></li>
           <li><a href="ueber-uns.html">Karriere</a></li>
           <li><a href="kontakt.html">Kontakt</a></li>
@@ -192,9 +192,9 @@
         </ul>
       </div>
     </div>
-    <div class="footer-bottom">
-      <span>© 2026 URBANMAKER UG (haftungsbeschränkt) · leanAM ist eine Marke der URBANMAKER UG · Münster, Deutschland</span>
-      <div class="links">
+    <div class="lam-footer__bottom">
+      <span class="lam-footer__copy">© 2026 URBANMAKER UG (haftungsbeschränkt) · leanAM ist eine Marke der URBANMAKER UG · Münster, Deutschland</span>
+      <div class="lam-footer__legal">
         <a href="impressum.html">Impressum</a>
         <a href="datenschutz.html">Datenschutz</a>
         <a href="agb.html">AGB</a>
