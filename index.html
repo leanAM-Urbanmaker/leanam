@@ -524,6 +524,10 @@
 .lc-submit:disabled{opacity:.45;cursor:not-allowed}
 .lc-privacy{font-size:11px;color:rgba(255,255,255,.28);margin-top:10px;line-height:1.5;text-align:center}
 .lc-privacy a{color:rgba(111,216,241,.55);text-decoration:none}
+.lc-consent{display:flex;align-items:flex-start;gap:10px;margin:14px 0 4px}
+.lc-consent input[type=checkbox]{flex-shrink:0;width:16px;height:16px;margin-top:2px;accent-color:#6FD8F1;cursor:pointer}
+.lc-consent label{font-size:11px;color:rgba(255,255,255,.38);line-height:1.55;cursor:pointer}
+.lc-consent a{color:rgba(111,216,241,.55);text-decoration:none}
 /* Success */
 #lc-success{text-align:center;padding:48px 24px}
 .lc-success__icon{font-size:38px;color:#6FD8F1;display:block;margin-bottom:14px}
@@ -620,8 +624,12 @@
             <input class="lc-form__input" id="lc-email" name="email" type="email" placeholder="max@muster.de" autocomplete="email" required>
           </div>
 
+          <div class="lc-consent">
+            <input type="checkbox" id="lc-consent" name="consent" required>
+            <label for="lc-consent">Ich stimme zu, dass meine Angaben zur Bearbeitung meiner Anfrage gespeichert und genutzt werden. Weitere Informationen in der <a href="/datenschutz.html">Datenschutzerklärung.</a></label>
+          </div>
           <button class="lc-submit" id="lc-submit" type="submit">Ergebnis freischalten →</button>
-          <p class="lc-privacy">Kein Spam. Keine Weitergabe. <a href="datenschutz.html">Datenschutz</a></p>
+          <p class="lc-privacy">Kein Spam. Keine Weitergabe. Datenverarbeitung über Web3Forms.</p>
         </form>
 
         <div id="lc-success" hidden>
