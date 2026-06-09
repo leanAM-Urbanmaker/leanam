@@ -702,7 +702,7 @@ input[type=range]::-moz-range-thumb {
     <div class="hero-badges">
       <span class="hero-badge"><span class="material-symbols-outlined">timer</span>Ca. 2 Minuten</span>
       <span class="hero-badge"><span class="material-symbols-outlined">picture_as_pdf</span>Kostenloser PDF-Report</span>
-      <span class="hero-badge"><span class="material-symbols-outlined">lock</span>DSGVO-konform</span>
+      <span class="hero-badge"><span class="material-symbols-outlined">lock</span>Datensouverän</span>
       <span class="hero-badge"><span class="material-symbols-outlined">science</span>Wissenschaftliches Kostenmodell</span>
     </div>
   </div>
@@ -1121,7 +1121,7 @@ input[type=range]::-moz-range-thumb {
             PDF jetzt herunterladen
           </button>
           <div class="lead-trust">
-            <span class="trust-item"><span class="material-symbols-outlined">lock</span>DSGVO-konform</span>
+            <span class="trust-item"><span class="material-symbols-outlined">lock</span>Datensouverän</span>
             <span class="trust-item"><span class="material-symbols-outlined">block</span>Kein Spam</span>
             <span class="trust-item"><span class="material-symbols-outlined">check_circle</span>Kostenlos</span>
           </div>
@@ -1155,7 +1155,7 @@ input[type=range]::-moz-range-thumb {
     <div class="lam-footer__grid">
       <div>
         <a href="../index.html"><img src="../images/leanam-logo.png" alt="leanAM" height="34" loading="lazy"></a>
-        <p class="lam-footer__tagline">Software, Beratung und Entwicklung für additive Fertigung.<br>Made in Germany — DSGVO-konform — On-Premise.</p>
+        <p class="lam-footer__tagline">Software, Beratung und Entwicklung für additive Fertigung.<br>Made in Germany — Datensouverän — On-Premise.</p>
       </div>
       <div>
         <span class="lam-footer__col-title">Produkt</span>
@@ -1801,7 +1801,7 @@ function generatePDF(form) {
   doc.text(`Mit leanAM MES reduzieren Sie den Verwaltungsaufwand um ~40%.`, 24, y3 + 20);
   doc.text(`Ihr Einsparpotenzial: ${fmt(r.mesZeitJahr)} h/Jahr = ${fmtEur(r.mesGeldJahr)}/Jahr.`, 24, y3 + 29);
   doc.setTextColor(...cyan); doc.setFont('helvetica','bold');
-  doc.text('On-Premise · DSGVO-konform · Kein Bambu-Cloud-Zwang', 24, y3 + 39);
+  doc.text('On-Premise · Datensouverän · Kein Bambu-Cloud-Zwang', 24, y3 + 39);
 
   const y4 = y3 + 62;
   doc.setFillColor(...cyan); doc.roundedRect(15, y4, 180, 30, 4, 4, 'F');
