@@ -1194,6 +1194,8 @@ ul { margin: 0; padding: 0; list-style: none; }
 .contact-block p  { font-size: 14px; color: var(--lam-muted); line-height: 1.6; margin: 0; }
 .contact-block a  { color: var(--lam-cyan); transition: opacity .2s; }
 .contact-block a:hover { opacity: .8; }
+.contact-block a.btn-primary { color: var(--lam-ink); }
+.contact-block a.btn-outline { color: var(--lam-ink-2); }
 
 /* Form (kontakt) */
 .form { display: flex; flex-direction: column; gap: 16px; }
