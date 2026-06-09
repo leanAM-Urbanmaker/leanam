@@ -63,7 +63,7 @@
         {
           "@type": "Question",
           "name": "Welche Bambu Lab Modelle werden ohne Cloud unterstützt?",
-          "acceptedAnswer": { "@type": "Answer", "text": "Alle aktuellen Bambu Lab FDM-Drucker mit LAN-Modus: X1 Carbon, X1E, P1S, P1P und A1 (Mini). Voraussetzung ist aktivierter LAN-Modus im Drucker-Menü." }
+          "acceptedAnswer": { "@type": "Answer", "text": "Alle aktuellen Bambu Lab FFF-Drucker mit LAN-Modus: X1 Carbon, X1E, P1S, P1P und A1 (Mini). Voraussetzung ist aktivierter LAN-Modus im Drucker-Menü." }
         }
       ]
     }
@@ -130,7 +130,7 @@
         <span class="eyebrow">Das Problem</span>
         <h2 class="h2">Warum die Bambu Cloud für Unternehmen nicht ausreicht.</h2>
         <p class="body muted mt-2">
-          Bambu Lab hat den FDM-Markt mit hoher Druckqualität und einfachem Setup aufgemischt. Aber das Standardmodell setzt auf Cloud-Konnektivität: Druckjobs, Kameradaten, Gerätestatus — alles läuft über Server von Bambu Network Technology in China.
+          Bambu Lab hat den FFF-Markt mit hoher Druckqualität und einfachem Setup aufgemischt. Aber das Standardmodell setzt auf Cloud-Konnektivität: Druckjobs, Kameradaten, Gerätestatus — alles läuft über Server von Bambu Network Technology in China.
         </p>
         <p class="body muted mt-2">
           Für Privatnutzer kein Problem. Für Unternehmen in der EU dagegen entstehen konkrete Risiken: Produktionsdaten verlassen das Firmennetz, DSGVO-relevante Informationen gehen in Drittstaaten, und die Verfügbarkeit der eigenen Maschinen hängt von einem externen Dienst ab.
@@ -283,7 +283,7 @@
         <span class="eyebrow">Technischer Hintergrund</span>
         <h2 class="h2">Wie funktioniert Bambu Lab ohne Cloud?</h2>
         <p class="body muted mt-2">
-          Alle aktuellen Bambu Lab FDM-Drucker (X1 Carbon, X1E, P1S, P1P, A1, A1 Mini) haben einen integrierten MQTT-Broker, der im LAN-Modus aktiviert werden kann. Über diesen Broker sendet der Drucker kontinuierlich Statusdaten: Druckfortschritt, Temperaturen, Materialverbrauch, Fehlerstatus.
+          Alle aktuellen Bambu Lab FFF-Drucker (X1 Carbon, X1E, P1S, P1P, A1, A1 Mini) haben einen integrierten MQTT-Broker, der im LAN-Modus aktiviert werden kann. Über diesen Broker sendet der Drucker kontinuierlich Statusdaten: Druckfortschritt, Temperaturen, Materialverbrauch, Fehlerstatus.
         </p>
         <p class="body muted mt-2">
           Ein lokales System, das sich mit diesem Broker verbindet, kann die gleichen Informationen empfangen wie die Bambu Cloud — ohne dass ein Bit das Firmennetz verlässt. Druckjobs können ebenfalls lokal übermittelt werden, sofern der LAN-Modus im Drucker-Menü aktiviert ist.
@@ -329,7 +329,7 @@
       </details>
       <details style="background:rgba(255,255,255,0.07);border-radius:0;overflow:hidden;">
         <summary style="padding:18px 20px;cursor:pointer;font-weight:600;list-style:none;display:flex;justify-content:space-between;align-items:center;">Welche Bambu Lab Modelle werden lokal unterstützt?</summary>
-        <p style="padding:0 20px 18px;margin:0;opacity:.85;line-height:1.7;">Alle aktuellen FDM-Modelle mit LAN-Modus: X1 Carbon, X1E, P1S, P1P, A1 und A1 Mini. Voraussetzung ist der aktivierte LAN-Modus im Drucker-Menü.</p>
+        <p style="padding:0 20px 18px;margin:0;opacity:.85;line-height:1.7;">Alle aktuellen FFF-Modelle mit LAN-Modus: X1 Carbon, X1E, P1S, P1P, A1 und A1 Mini. Voraussetzung ist der aktivierte LAN-Modus im Drucker-Menü.</p>
       </details>
     </div>
   </div>

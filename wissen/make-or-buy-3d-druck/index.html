@@ -48,17 +48,17 @@
         {
           "@type": "Question",
           "name": "Ab wann lohnt sich 3D-Druck im eigenen Haus?",
-          "acceptedAnswer": { "@type": "Answer", "text": "Als Faustregel gilt: Ab ca. 800–1.200 Druckstunden pro Jahr amortisiert sich ein professioneller FDM-Drucker gegenüber externen Dienstleistern — abhängig von Bauteilkomplexität, Materialkosten und Lieferzeiten. Entscheidend ist auch: Wer IP-Schutz, kurze Iterationszyklen oder Serienproduktion benötigt, sollte früher insourcen." }
+          "acceptedAnswer": { "@type": "Answer", "text": "Als Faustregel gilt: Ab ca. 800–1.200 Druckstunden pro Jahr amortisiert sich ein professioneller FFF-Drucker gegenüber externen Dienstleistern — abhängig von Bauteilkomplexität, Materialkosten und Lieferzeiten. Entscheidend ist auch: Wer IP-Schutz, kurze Iterationszyklen oder Serienproduktion benötigt, sollte früher insourcen." }
         },
         {
           "@type": "Question",
           "name": "Was kostet 3D-Druck beim externen Dienstleister?",
-          "acceptedAnswer": { "@type": "Answer", "text": "FDM-Druck bei Dienstleistern liegt je nach Volumen zwischen 2 und 15 € pro Druckstunde (inkl. Handling). Industrielle SLS/MJF-Teile kosten oft 20–80 € pro Teil. Bei regelmäßigem Bedarf ab ca. 50 Druckjobs pro Monat wird eigene Kapazität schnell günstiger." }
+          "acceptedAnswer": { "@type": "Answer", "text": "FFF-Druck bei Dienstleistern liegt je nach Volumen zwischen 2 und 15 € pro Druckstunde (inkl. Handling). Industrielle SLS/MJF-Teile kosten oft 20–80 € pro Teil. Bei regelmäßigem Bedarf ab ca. 50 Druckjobs pro Monat wird eigene Kapazität schnell günstiger." }
         },
         {
           "@type": "Question",
           "name": "Welche versteckten Kosten entstehen beim Insourcing?",
-          "acceptedAnswer": { "@type": "Answer", "text": "Neben Maschinenkosten (4.000–20.000 € pro FDM-Drucker) entstehen Kosten für Material-Handling, Nachbearbeitung, Wartung (ca. 8–12% der Maschinenkosten p.a.), Software (MES/Slicing) und vor allem: Personalzeit für Bedienung, Qualitätsprüfung und Fehlerbehandlung. Wer das unterschätzt, hat keine echte Make-or-Buy-Kalkulation gemacht." }
+          "acceptedAnswer": { "@type": "Answer", "text": "Neben Maschinenkosten (4.000–20.000 € pro FFF-Drucker) entstehen Kosten für Material-Handling, Nachbearbeitung, Wartung (ca. 8–12% der Maschinenkosten p.a.), Software (MES/Slicing) und vor allem: Personalzeit für Bedienung, Qualitätsprüfung und Fehlerbehandlung. Wer das unterschätzt, hat keine echte Make-or-Buy-Kalkulation gemacht." }
         }
       ]
     }
@@ -140,7 +140,7 @@
           <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:12px;">
             <li style="display:flex;gap:12px;align-items:flex-start;"><span class="material-symbols-outlined" style="color:#f87171;flex-shrink:0;margin-top:2px;">warning</span><span>Maschinenkosten ja, Personalkosten nein — Betrieb kostet Zeit</span></li>
             <li style="display:flex;gap:12px;align-items:flex-start;"><span class="material-symbols-outlined" style="color:#f87171;flex-shrink:0;margin-top:2px;">warning</span><span>Auslastung überschätzt: 30% Auslastung ist typisch für Einstieg</span></li>
-            <li style="display:flex;gap:12px;align-items:flex-start;"><span class="material-symbols-outlined" style="color:#f87171;flex-shrink:0;margin-top:2px;">warning</span><span>Falsches Verfahren für den Use Case (FDM ≠ SLS ≠ Resin)</span></li>
+            <li style="display:flex;gap:12px;align-items:flex-start;"><span class="material-symbols-outlined" style="color:#f87171;flex-shrink:0;margin-top:2px;">warning</span><span>Falsches Verfahren für den Use Case (FFF ≠ SLS ≠ Resin)</span></li>
             <li style="display:flex;gap:12px;align-items:flex-start;"><span class="material-symbols-outlined" style="color:#f87171;flex-shrink:0;margin-top:2px;">warning</span><span>Kein Wartungsbudget eingeplant</span></li>
             <li style="display:flex;gap:12px;align-items:flex-start;"><span class="material-symbols-outlined" style="color:#f87171;flex-shrink:0;margin-top:2px;">warning</span><span>Software und Integration ignoriert</span></li>
           </ul>
@@ -197,7 +197,7 @@
     <div class="section-head">
       <span class="eyebrow">TCO-Vergleich</span>
       <h2 class="h2">Was kostet 3D-Druck wirklich — Make vs. Buy?</h2>
-      <p>Alle Zahlen basieren auf FDM-Druck mit Hochleistungsprinter (Bambu Lab P1S / X1C Klasse) vs. typischem deutschen FDM-Dienstleister.</p>
+      <p>Alle Zahlen basieren auf FFF-Druck mit Hochleistungsdruckern (Mittelklasse) vs. typischem deutschen FFF-Dienstleister.</p>
     </div>
     <div class="comparison-table-wrap" style="overflow-x:auto;margin-top:32px;">
       <table style="width:100%;border-collapse:collapse;font-size:15px;min-width:560px;">
@@ -242,7 +242,7 @@
         </tbody>
       </table>
     </div>
-    <p style="font-size:13px;opacity:0.6;margin-top:12px;">Richtwerte auf Basis von FDM. SLS, MJF und andere Verfahren haben deutlich andere TCO-Profile.</p>
+    <p style="font-size:13px;opacity:0.6;margin-top:12px;">Richtwerte auf Basis von FFF. SLS, MJF und andere Verfahren haben deutlich andere TCO-Profile.</p>
   </div>
 </section>
 
@@ -291,15 +291,15 @@
     <div style="max-width:800px;margin:0 auto;display:flex;flex-direction:column;gap:4px;">
       <details style="background:rgba(255,255,255,0.07);border-radius:0;overflow:hidden;">
         <summary style="padding:18px 20px;cursor:pointer;font-weight:600;list-style:none;">Ab wann lohnt sich eigener 3D-Druck?</summary>
-        <p style="padding:0 20px 18px;margin:0;opacity:.85;line-height:1.7;">Als Faustregel: Ab ca. 800–1.200 Druckstunden pro Jahr amortisiert sich ein professioneller FDM-Drucker. Entscheidend sind auch: IP-Schutz, kurze Iterationszyklen und Skalierungspläne — diese erzwingen früher ins Insourcing als die reine Kostenkalkulation.</p>
+        <p style="padding:0 20px 18px;margin:0;opacity:.85;line-height:1.7;">Als Faustregel: Ab ca. 800–1.200 Druckstunden pro Jahr amortisiert sich ein professioneller FFF-Drucker. Entscheidend sind auch: IP-Schutz, kurze Iterationszyklen und Skalierungspläne — diese erzwingen früher ins Insourcing als die reine Kostenkalkulation.</p>
       </details>
       <details style="background:rgba(255,255,255,0.07);border-radius:0;overflow:hidden;">
         <summary style="padding:18px 20px;cursor:pointer;font-weight:600;list-style:none;">Was kostet 3D-Druck beim externen Dienstleister?</summary>
-        <p style="padding:0 20px 18px;margin:0;opacity:.85;line-height:1.7;">FDM bei Dienstleistern liegt je nach Volumen zwischen 3 und 12 € pro Druckstunde (exkl. Handling). Industrielle SLS/MJF-Teile kosten oft 20–80 € pro Teil. Ab ca. 50 Druckjobs monatlich wird eigene Kapazität schnell günstiger.</p>
+        <p style="padding:0 20px 18px;margin:0;opacity:.85;line-height:1.7;">FFF bei Dienstleistern liegt je nach Volumen zwischen 3 und 12 € pro Druckstunde (exkl. Handling). Industrielle SLS/MJF-Teile kosten oft 20–80 € pro Teil. Ab ca. 50 Druckjobs monatlich wird eigene Kapazität schnell günstiger.</p>
       </details>
       <details style="background:rgba(255,255,255,0.07);border-radius:0;overflow:hidden;">
         <summary style="padding:18px 20px;cursor:pointer;font-weight:600;list-style:none;">Welche versteckten Kosten entstehen beim Insourcing?</summary>
-        <p style="padding:0 20px 18px;margin:0;opacity:.85;line-height:1.7;">Neben Maschinenkosten (4.000–20.000 € pro FDM-Drucker) entstehen Kosten für Material-Handling, Nachbearbeitung, Wartung (ca. 8–12% der Maschinenkosten p.a.), Software und Personalzeit für Bedienung und Qualitätsprüfung. Wer das unterschätzt, hat keine echte Make-or-Buy-Kalkulation.</p>
+        <p style="padding:0 20px 18px;margin:0;opacity:.85;line-height:1.7;">Neben Maschinenkosten (4.000–20.000 € pro FFF-Drucker) entstehen Kosten für Material-Handling, Nachbearbeitung, Wartung (ca. 8–12% der Maschinenkosten p.a.), Software und Personalzeit für Bedienung und Qualitätsprüfung. Wer das unterschätzt, hat keine echte Make-or-Buy-Kalkulation.</p>
       </details>
     </div>
   </div>
