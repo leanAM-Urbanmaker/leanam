@@ -694,10 +694,14 @@
   document.getElementById('lc-form').addEventListener('submit', function(e){
     e.preventDefault();
     var btn = document.getElementById('lc-submit');
-    var name  = document.getElementById('lc-name').value.trim();
-    var firma = document.getElementById('lc-firma').value.trim();
-    var email = document.getElementById('lc-email').value.trim();
-    if(!name || !firma || !email){ return; }
+    var name    = document.getElementById('lc-name').value.trim();
+    var firma   = document.getElementById('lc-firma').value.trim();
+    var email   = document.getElementById('lc-email').value.trim();
+    var consent = document.getElementById('lc-consent').checked;
+    if(!name || !firma || !email || !consent){
+      this.reportValidity();
+      return;
+    }
 
     btn.disabled = true;
     btn.textContent = 'Wird gesendet…';
@@ -722,7 +726,7 @@
     })
     .catch(function(){
       btn.disabled    = false;
-      btn.textContent = 'Bericht anfordern';
+      btn.textContent = 'Auswertung anfordern';
     });
   });
 
