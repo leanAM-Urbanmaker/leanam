@@ -572,22 +572,13 @@
           </div>
         </div>
 
-        <div class="lc-results">
-          <div class="lc-res-row">
-            <span class="lc-res-label">Verwaltungsaufwand heute</span>
-            <span class="lc-res-val lc-res-val--white" id="lc-out-aufwand">—</span>
-          </div>
-          <div class="lc-res-row" style="margin-bottom:0">
-            <span class="lc-res-label">Davon mit leanAM MES automatisierbar</span>
-            <span class="lc-res-val" id="lc-out-auto">—</span>
-          </div>
-        </div>
-
-        <div class="lc-gated" id="lc-gated">
-          <div class="lc-gated__label">Einsparpotenzial pro Jahr</div>
+        <div class="lc-gated" id="lc-gated" style="margin-top:28px">
+          <div class="lc-gated__label">Einsparpotenzial mit leanAM MES</div>
           <div class="lc-gated__val" id="lc-out-potenzial">—</div>
           <div class="lc-gated__sub" id="lc-out-tage">—</div>
         </div>
+
+        <p style="margin:16px 0 0;font-size:12.5px;color:rgba(255,255,255,.42);line-height:1.6">Wie sich diese Zahl zusammensetzt — und welche Stellschrauben in Ihrem Betrieb den größten Hebel haben — zeigen wir Ihnen in der individuellen Auswertung.</p>
 
       </div>
 
@@ -601,8 +592,8 @@
           <input type="hidden" name="calc_data" id="lc-calc-data" value="">
           <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off">
 
-          <p class="lc-form-title">Vollständige Kalkulation als Bericht</p>
-          <p class="lc-form-sub">Wir senden Ihnen die Aufschlüsselung Ihrer Zahlen mit allen Annahmen und den größten Stellschrauben per E-Mail — kostenlos, kein Verkaufsgespräch.</p>
+          <p class="lc-form-title">Individuelle Auswertung anfordern</p>
+          <p class="lc-form-sub">Wir prüfen Ihre Angaben und senden Ihnen eine persönliche Einschätzung für Ihren Betrieb per E-Mail — kostenlos, kein Verkaufsgespräch.</p>
 
           <div class="lc-form__field">
             <label class="lc-form__label" for="lc-name">Name *</label>
@@ -621,47 +612,37 @@
             <input type="checkbox" id="lc-consent" name="consent" required>
             <label for="lc-consent">Ich stimme zu, dass meine Angaben zur Bearbeitung meiner Anfrage gespeichert und genutzt werden. Weitere Informationen in der <a href="/datenschutz.html">Datenschutzerklärung.</a></label>
           </div>
-          <button class="lc-submit" id="lc-submit" type="submit">Bericht anfordern</button>
+          <button class="lc-submit" id="lc-submit" type="submit">Auswertung anfordern</button>
           <p class="lc-privacy">Kein Spam. Keine Weitergabe. Datenverarbeitung über Web3Forms.</p>
         </form>
 
         <div id="lc-success" hidden>
           <span class="material-icons lc-success__icon">check_circle</span>
-          <p class="lc-success__title">Bericht ist unterwegs!</p>
-          <p class="lc-success__body">Wir schicken Ihnen die vollständige Auswertung gleich per E-Mail. Möchten Sie die Zahlen direkt besprechen?</p>
+          <p class="lc-success__title">Anfrage ist eingegangen!</p>
+          <p class="lc-success__body">Wir erstellen Ihre individuelle Auswertung und melden uns innerhalb eines Werktags per E-Mail. Möchten Sie die Zahlen direkt besprechen?</p>
           <a href="kontakt.html" class="lc-success__cta">Erstgespräch buchen</a>
         </div>
 
       </div>
     </div>
 
-    <p style="text-align:center;max-width:720px;margin:20px auto 0;font-size:11px;color:rgba(255,255,255,.28);line-height:1.6">Basisannahmen: 12 min manueller Aufwand je Druckauftrag (Dateihandling, Maschinenzuordnung, Statusverfolgung, Dokumentation) · 10 min je Maschine und Arbeitstag (Status- und Materialprüfung) · 48 Produktionswochen · 250 Arbeitstage · Automatisierungsgrad 65 %. Richtwerte aus Projekterfahrung; keine Gewähr.</p>
+    <p style="text-align:center;max-width:720px;margin:20px auto 0;font-size:11px;color:rgba(255,255,255,.28);line-height:1.6">Vereinfachtes Modell auf Basis von Erfahrungswerten aus Industrieprojekten. Erste Orientierung — die individuelle Auswertung berücksichtigt Ihre konkreten Abläufe. Keine Gewähr.</p>
   </div>
 
 <script>
 (function(){
   'use strict';
   var anzahl = 5, jobsWoche = 25, satz = 45;
-
-  // Annahmen (siehe Fußnote)
-  var MIN_JE_AUFTRAG      = 12;   // min manueller Aufwand je Druckauftrag
-  var MIN_JE_MASCHINE_TAG = 10;   // min Status-/Materialprüfung je Maschine/Tag
-  var WOCHEN              = 48;   // Produktionswochen/Jahr
-  var TAGE                = 250;  // Arbeitstage/Jahr
-  var AUTOMATISIERUNG     = 0.65; // mit MES automatisierbarer Anteil
+  var k1 = 9.6, k2 = 41.67, k3 = 0.65;
 
   function fmt(n){ return n.toLocaleString('de-DE'); }
 
   function calc(){
-    var hAuftraege = jobsWoche * WOCHEN * MIN_JE_AUFTRAG / 60;
-    var hMaschinen = anzahl * (MIN_JE_MASCHINE_TAG / 60) * TAGE;
-    var aufwand    = hAuftraege + hMaschinen;
-    var auto       = aufwand * AUTOMATISIERUNG;
-    var potenzial  = auto * satz;
-    var tage       = auto / 8;
+    var aufwand   = jobsWoche * k1 + anzahl * k2;
+    var auto      = aufwand * k3;
+    var potenzial = auto * satz;
+    var tage      = auto / 8;
 
-    document.getElementById('lc-out-aufwand').textContent = fmt(Math.round(aufwand)) + ' h/Jahr';
-    document.getElementById('lc-out-auto').textContent = fmt(Math.round(auto)) + ' h/Jahr';
     document.getElementById('lc-out-tage').textContent = 'entspricht ' + fmt(Math.round(tage)) + ' Arbeitstagen pro Jahr';
     document.getElementById('lc-out-potenzial').textContent =
       '€ ' + fmt(Math.round(potenzial));
@@ -736,7 +717,7 @@
         document.getElementById('lc-success').hidden = false;
       } else {
         btn.disabled    = false;
-        btn.textContent = 'Bericht anfordern';
+        btn.textContent = 'Auswertung anfordern';
       }
     })
     .catch(function(){
