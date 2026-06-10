@@ -480,22 +480,22 @@
 .lc-panel{padding:36px 32px;background:#102542}
 .lc-panel--right{background:#0A1628;border-left:1px solid rgba(111,216,241,.12)}
 @media(max-width:719px){.lc-panel--right{border-left:none;border-top:1px solid rgba(111,216,241,.12)}}
-.lc-label{display:block;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:#6FD8F1;margin-bottom:10px;font-family:'JetBrains Mono',monospace}
+.lc-label{display:block;font-size:13px;letter-spacing:.1em;text-transform:uppercase;color:#6FD8F1;margin-bottom:10px;font-family:'JetBrains Mono',monospace}
 .lc-field{margin-bottom:24px}
 .lc-counter{display:flex;align-items:center}
-.lc-counter__btn{width:40px;height:40px;background:rgba(111,216,241,.08);border:1px solid rgba(111,216,241,.18);color:#6FD8F1;font-size:20px;line-height:1;cursor:pointer;transition:background .15s;flex-shrink:0}
+.lc-counter__btn{width:48px;height:48px;background:rgba(111,216,241,.08);border:1px solid rgba(111,216,241,.18);color:#6FD8F1;font-size:22px;line-height:1;cursor:pointer;transition:background .15s;flex-shrink:0}
 .lc-counter__btn:hover{background:rgba(111,216,241,.20)}
 .lc-counter__btn:first-child{border-radius:6px 0 0 6px}
 .lc-counter__btn:last-child{border-radius:0 6px 6px 0}
-.lc-counter__val{width:56px;height:40px;background:rgba(255,255,255,.04);border-top:1px solid rgba(111,216,241,.18);border-bottom:1px solid rgba(111,216,241,.18);border-left:none;border-right:none;color:#fff;font-size:16px;text-align:center;font-family:'JetBrains Mono',monospace;-moz-appearance:textfield}
+.lc-counter__val{width:64px;height:48px;background:rgba(255,255,255,.04);border-top:1px solid rgba(111,216,241,.18);border-bottom:1px solid rgba(111,216,241,.18);border-left:none;border-right:none;color:#fff;font-size:17px;text-align:center;font-family:'JetBrains Mono',monospace;-moz-appearance:textfield}
 .lc-counter__val::-webkit-inner-spin-button,.lc-counter__val::-webkit-outer-spin-button{-webkit-appearance:none}
 .lc-pills{display:flex;flex-wrap:wrap;gap:6px}
-.lc-pill{padding:8px 14px;background:rgba(111,216,241,.06);border:1px solid rgba(111,216,241,.14);border-radius:6px;color:rgba(255,255,255,.55);font-size:13px;cursor:pointer;transition:all .15s;font-family:'JetBrains Mono',monospace}
+.lc-pill{padding:12px 16px;background:rgba(111,216,241,.06);border:1px solid rgba(111,216,241,.14);border-radius:6px;color:rgba(255,255,255,.55);font-size:14px;cursor:pointer;transition:all .15s;font-family:'JetBrains Mono',monospace}
 .lc-pill:hover{background:rgba(111,216,241,.14);color:#fff}
 .lc-pill.lc-active{background:rgba(111,216,241,.16);border-color:#6FD8F1;color:#6FD8F1}
 .lc-erloes-wrap{display:flex;align-items:center;gap:8px}
 .lc-erloes-sym{color:#6FD8F1;font-family:'JetBrains Mono',monospace;font-size:16px}
-.lc-erloes-input{width:100px;height:40px;background:rgba(255,255,255,.04);border:1px solid rgba(111,216,241,.18);border-radius:6px;color:#fff;font-size:16px;text-align:right;padding:0 12px;font-family:'JetBrains Mono',monospace;-moz-appearance:textfield}
+.lc-erloes-input{width:110px;height:48px;background:rgba(255,255,255,.04);border:1px solid rgba(111,216,241,.18);border-radius:6px;color:#fff;font-size:17px;text-align:right;padding:0 12px;font-family:'JetBrains Mono',monospace;-moz-appearance:textfield}
 .lc-erloes-input::-webkit-inner-spin-button,.lc-erloes-input::-webkit-outer-spin-button{-webkit-appearance:none}
 .lc-erloes-input:focus{outline:none;border-color:#6FD8F1}
 .lc-results{margin-top:28px;padding-top:22px;border-top:1px solid rgba(111,216,241,.12)}
@@ -505,17 +505,13 @@
 .lc-res-val--white{color:#fff}
 .lc-gated{position:relative;margin-top:20px;padding:18px 20px;background:rgba(111,216,241,.04);border:1px solid rgba(111,216,241,.14);border-radius:10px;overflow:hidden}
 .lc-gated__label{font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.35);margin-bottom:8px;font-family:'JetBrains Mono',monospace}
-.lc-gated__val{font-family:'JetBrains Mono',monospace;font-size:30px;font-weight:700;color:#6FD8F1;transition:filter .4s}
-.lc-gated__val.lc-blurred{filter:blur(7px);user-select:none;pointer-events:none}
-.lc-lock{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;background:rgba(6,14,28,.55);backdrop-filter:blur(3px);gap:5px;transition:opacity .35s}
-.lc-lock.lc-gone{opacity:0;pointer-events:none}
-.lc-lock__icon{font-size:22px;color:#6FD8F1}
-.lc-lock__text{font-size:12px;color:rgba(255,255,255,.5);text-align:center;line-height:1.4}
+.lc-gated__val{font-family:'JetBrains Mono',monospace;font-size:32px;font-weight:700;color:#6FD8F1}
+.lc-gated__sub{font-size:12.5px;color:rgba(255,255,255,.45);margin-top:6px}
 /* Form */
 .lc-form-title{font-size:15px;font-weight:700;color:#fff;margin:0 0 4px}
 .lc-form-sub{font-size:13px;color:rgba(255,255,255,.45);margin:0 0 24px;line-height:1.55}
 .lc-form__field{margin-bottom:16px}
-.lc-form__label{display:block;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.4);margin-bottom:6px}
+.lc-form__label{display:block;font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:rgba(255,255,255,.45);margin-bottom:6px}
 .lc-form__input{width:100%;padding:10px 14px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.10);border-radius:6px;color:#fff;font-size:14px;box-sizing:border-box;transition:border-color .15s;font-family:inherit}
 .lc-form__input::placeholder{color:rgba(255,255,255,.22)}
 .lc-form__input:focus{outline:none;border-color:#6FD8F1}
@@ -538,9 +534,9 @@
 </style>
   <div class="lam-section__inner">
     <div class="lam-section-header">
-      <div class="lam-eyebrow">// SCHNELL-KALKULATOR</div>
-      <h2 class="lam-h2">Was könnte Ihre Druckfarm leisten?</h2>
-      <p class="lam-lede" style="margin-top:18px">Drei Angaben — erste Einschätzung. Das Jahrespotenzial erhalten Sie kostenlos per E-Mail.</p>
+      <div class="lam-eyebrow">// EINSPAR-RECHNER</div>
+      <h2 class="lam-h2">Wie viel Zeit kostet Sie manuelle Druckfarm-Verwaltung?</h2>
+      <p class="lam-lede" style="margin-top:18px">Drei Angaben — Ergebnis sofort sichtbar. Die vollständige Aufschlüsselung mit allen Annahmen senden wir Ihnen kostenlos per E-Mail.</p>
     </div>
 
     <div class="lc-card">
@@ -549,51 +545,48 @@
       <div class="lc-panel">
 
         <div class="lc-field">
-          <span class="lc-label">Anzahl Drucker</span>
+          <span class="lc-label">Anzahl Drucker / Maschinen</span>
           <div class="lc-counter">
             <button class="lc-counter__btn" id="lc-minus" type="button" aria-label="Drucker verringern">−</button>
-            <input class="lc-counter__val" id="lc-anzahl" type="number" min="1" max="200" value="3" readonly aria-label="Druckeranzahl">
+            <input class="lc-counter__val" id="lc-anzahl" type="number" min="1" max="200" value="5" readonly aria-label="Druckeranzahl">
             <button class="lc-counter__btn" id="lc-plus" type="button" aria-label="Drucker erhöhen">+</button>
           </div>
         </div>
 
         <div class="lc-field">
-          <span class="lc-label">Ø Druckzeit pro Bauteil</span>
-          <div class="lc-pills" id="lc-pills" role="group" aria-label="Druckzeit wählen">
-            <button class="lc-pill" data-h="1" type="button">1 h</button>
-            <button class="lc-pill lc-active" data-h="3" type="button">3 h</button>
-            <button class="lc-pill" data-h="6" type="button">6 h</button>
-            <button class="lc-pill" data-h="12" type="button">12 h</button>
-            <button class="lc-pill" data-h="24" type="button">24 h</button>
+          <span class="lc-label">Druckaufträge pro Woche</span>
+          <div class="lc-pills" id="lc-pills" role="group" aria-label="Druckaufträge pro Woche wählen">
+            <button class="lc-pill" data-j="10" type="button">10</button>
+            <button class="lc-pill lc-active" data-j="25" type="button">25</button>
+            <button class="lc-pill" data-j="50" type="button">50</button>
+            <button class="lc-pill" data-j="100" type="button">100</button>
+            <button class="lc-pill" data-j="200" type="button">200</button>
           </div>
         </div>
 
         <div class="lc-field">
-          <span class="lc-label">Erlös / Einsparung pro Bauteil</span>
+          <span class="lc-label">Interner Stundensatz</span>
           <div class="lc-erloes-wrap">
             <span class="lc-erloes-sym">€</span>
-            <input class="lc-erloes-input" id="lc-erloes" type="number" min="0" max="999999" value="25" aria-label="Erlös pro Bauteil in Euro">
+            <input class="lc-erloes-input" id="lc-satz" type="number" min="0" max="999" value="45" aria-label="Interner Stundensatz in Euro">
           </div>
         </div>
 
         <div class="lc-results">
           <div class="lc-res-row">
-            <span class="lc-res-label">Bauteile / Jahr (Flotte)</span>
-            <span class="lc-res-val" id="lc-out-bauteile">—</span>
+            <span class="lc-res-label">Verwaltungsaufwand heute</span>
+            <span class="lc-res-val lc-res-val--white" id="lc-out-aufwand">—</span>
           </div>
           <div class="lc-res-row" style="margin-bottom:0">
-            <span class="lc-res-label">Var. Stückkosten (Mat. + Energie)</span>
-            <span class="lc-res-val lc-res-val--white" id="lc-out-stueck">—</span>
+            <span class="lc-res-label">Davon mit leanAM MES automatisierbar</span>
+            <span class="lc-res-val" id="lc-out-auto">—</span>
           </div>
         </div>
 
         <div class="lc-gated" id="lc-gated">
-          <div class="lc-gated__label">Jahrespotenzial</div>
-          <div class="lc-gated__val lc-blurred" id="lc-out-potenzial">€&nbsp;000.000</div>
-          <div class="lc-lock" id="lc-lock">
-            <span class="material-icons lc-lock__icon">lock</span>
-            <span class="lc-lock__text">Formular rechts ausfüllen<br>→ Ergebnis wird freigeschaltet</span>
-          </div>
+          <div class="lc-gated__label">Einsparpotenzial pro Jahr</div>
+          <div class="lc-gated__val" id="lc-out-potenzial">—</div>
+          <div class="lc-gated__sub" id="lc-out-tage">—</div>
         </div>
 
       </div>
@@ -603,79 +596,83 @@
 
         <form id="lc-form" novalidate>
           <input type="hidden" name="access_key" value="c30aecf0-fbf3-49b8-b605-2b04861417f8">
-          <input type="hidden" name="subject" value="Mini-Rechner Lead — leanAM">
-          <input type="hidden" name="from_name" value="leanAM Schnell-Kalkulator">
+          <input type="hidden" name="subject" value="Einspar-Rechner Lead — leanAM">
+          <input type="hidden" name="from_name" value="leanAM Einspar-Rechner">
           <input type="hidden" name="calc_data" id="lc-calc-data" value="">
           <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off">
 
-          <p class="lc-form-title">Jahrespotenzial freischalten</p>
-          <p class="lc-form-sub">Wir senden Ihnen die vollständige Kalkulation per E-Mail — kostenlos, kein Verkaufsgespräch.</p>
+          <p class="lc-form-title">Vollständige Kalkulation als Bericht</p>
+          <p class="lc-form-sub">Wir senden Ihnen die Aufschlüsselung Ihrer Zahlen mit allen Annahmen und den größten Stellschrauben per E-Mail — kostenlos, kein Verkaufsgespräch.</p>
 
           <div class="lc-form__field">
             <label class="lc-form__label" for="lc-name">Name *</label>
-            <input class="lc-form__input" id="lc-name" name="name" type="text" placeholder="Max Mustermann" autocomplete="name" required>
+            <input class="lc-form__input" id="lc-name" name="name" type="text" placeholder="Vor- und Nachname" autocomplete="name" required>
           </div>
           <div class="lc-form__field">
             <label class="lc-form__label" for="lc-firma">Unternehmen *</label>
-            <input class="lc-form__input" id="lc-firma" name="company" type="text" placeholder="Muster GmbH" autocomplete="organization" required>
+            <input class="lc-form__input" id="lc-firma" name="company" type="text" placeholder="Ihr Unternehmen" autocomplete="organization" required>
           </div>
           <div class="lc-form__field">
             <label class="lc-form__label" for="lc-email">E-Mail *</label>
-            <input class="lc-form__input" id="lc-email" name="email" type="email" placeholder="max@muster.de" autocomplete="email" required>
+            <input class="lc-form__input" id="lc-email" name="email" type="email" placeholder="ihre@email.com" autocomplete="email" required>
           </div>
 
           <div class="lc-consent">
             <input type="checkbox" id="lc-consent" name="consent" required>
             <label for="lc-consent">Ich stimme zu, dass meine Angaben zur Bearbeitung meiner Anfrage gespeichert und genutzt werden. Weitere Informationen in der <a href="/datenschutz.html">Datenschutzerklärung.</a></label>
           </div>
-          <button class="lc-submit" id="lc-submit" type="submit">Ergebnis freischalten →</button>
+          <button class="lc-submit" id="lc-submit" type="submit">Bericht anfordern</button>
           <p class="lc-privacy">Kein Spam. Keine Weitergabe. Datenverarbeitung über Web3Forms.</p>
         </form>
 
         <div id="lc-success" hidden>
           <span class="material-icons lc-success__icon">check_circle</span>
-          <p class="lc-success__title">Kalkulation ist unterwegs!</p>
-          <p class="lc-success__body">Wir schicken Ihnen die vollständige Auswertung gleich per E-Mail. Möchten Sie das Ergebnis direkt besprechen?</p>
-          <a href="kontakt.html" class="lc-success__cta">Erstgespräch buchen <span class="material-icons" style="font-size:16px;vertical-align:middle">arrow_forward</span></a>
+          <p class="lc-success__title">Bericht ist unterwegs!</p>
+          <p class="lc-success__body">Wir schicken Ihnen die vollständige Auswertung gleich per E-Mail. Möchten Sie die Zahlen direkt besprechen?</p>
+          <a href="kontakt.html" class="lc-success__cta">Erstgespräch buchen</a>
         </div>
 
       </div>
     </div>
 
-    <p style="text-align:center;max-width:720px;margin:20px auto 0;font-size:11px;color:rgba(255,255,255,.28);line-height:1.6">Basisannahmen: 16 h/Tag · 250 Tage/Jahr · 70 % Auslastung · PETG 30 €/kg · 80 g/Bauteil · 120 W∅ · 0,30 €/kWh. Keine Gewähr; keine Rechts- oder Steuerberatung.</p>
+    <p style="text-align:center;max-width:720px;margin:20px auto 0;font-size:11px;color:rgba(255,255,255,.28);line-height:1.6">Basisannahmen: 12 min manueller Aufwand je Druckauftrag (Dateihandling, Maschinenzuordnung, Statusverfolgung, Dokumentation) · 10 min je Maschine und Arbeitstag (Status- und Materialprüfung) · 48 Produktionswochen · 250 Arbeitstage · Automatisierungsgrad 65 %. Richtwerte aus Projekterfahrung; keine Gewähr.</p>
   </div>
 
 <script>
 (function(){
   'use strict';
-  var anzahl = 3, druckH = 3, erloes = 25;
+  var anzahl = 5, jobsWoche = 25, satz = 45;
+
+  // Annahmen (siehe Fußnote)
+  var MIN_JE_AUFTRAG      = 12;   // min manueller Aufwand je Druckauftrag
+  var MIN_JE_MASCHINE_TAG = 10;   // min Status-/Materialprüfung je Maschine/Tag
+  var WOCHEN              = 48;   // Produktionswochen/Jahr
+  var TAGE                = 250;  // Arbeitstage/Jahr
+  var AUTOMATISIERUNG     = 0.65; // mit MES automatisierbarer Anteil
 
   function fmt(n){ return n.toLocaleString('de-DE'); }
 
   function calc(){
-    var belegung   = druckH + 20/60;          // Druckzeit + 20 min Rüstzeit
-    var prodH      = 16 * 250 * 0.70;         // 2.800 h/Jahr pro Drucker
-    var bauteile   = Math.floor(prodH / belegung) * anzahl;
-    var mat        = 0.080 * 30;              // 80 g * 30 €/kg
-    var energie    = (120/1000) * druckH * 0.30; // 120 W * h * 0,30 €/kWh
-    var stueck     = mat + energie;
-    var potenzial  = (erloes - stueck) * bauteile;
+    var hAuftraege = jobsWoche * WOCHEN * MIN_JE_AUFTRAG / 60;
+    var hMaschinen = anzahl * (MIN_JE_MASCHINE_TAG / 60) * TAGE;
+    var aufwand    = hAuftraege + hMaschinen;
+    var auto       = aufwand * AUTOMATISIERUNG;
+    var potenzial  = auto * satz;
+    var tage       = auto / 8;
 
-    document.getElementById('lc-out-bauteile').textContent = fmt(bauteile);
-    document.getElementById('lc-out-stueck').textContent   =
-      '€ ' + stueck.toFixed(2).replace('.', ',');
+    document.getElementById('lc-out-aufwand').textContent = fmt(Math.round(aufwand)) + ' h/Jahr';
+    document.getElementById('lc-out-auto').textContent = fmt(Math.round(auto)) + ' h/Jahr';
+    document.getElementById('lc-out-tage').textContent = 'entspricht ' + fmt(Math.round(tage)) + ' Arbeitstagen pro Jahr';
     document.getElementById('lc-out-potenzial').textContent =
-      (potenzial < 0 ? '− ' : '') +
-      '€ ' + fmt(Math.abs(Math.round(potenzial)));
+      '€ ' + fmt(Math.round(potenzial));
 
     document.getElementById('lc-calc-data').value =
-      'Drucker: '            + anzahl +
-      ' | Druckzeit: '       + druckH + ' h' +
-      ' | Erloes/Bauteil: '  + erloes + ' EUR' +
-      ' | Bauteile/Jahr: '   + fmt(bauteile) +
-      ' | Var.Stueckkosten: '+ stueck.toFixed(2).replace('.', ',') + ' EUR' +
-      ' | Jahrespotenzial: ' + (potenzial < 0 ? '-' : '') +
-        fmt(Math.abs(Math.round(potenzial))) + ' EUR';
+      'Drucker: ' + anzahl +
+      ' | Auftraege/Woche: ' + jobsWoche +
+      ' | Stundensatz: ' + satz + ' EUR' +
+      ' | Verwaltungsaufwand: ' + fmt(Math.round(aufwand)) + ' h/Jahr' +
+      ' | Automatisierbar: ' + fmt(Math.round(auto)) + ' h/Jahr' +
+      ' | Einsparpotenzial: ' + fmt(Math.round(potenzial)) + ' EUR/Jahr';
   }
 
   // Counter
@@ -694,7 +691,7 @@
     }
   });
 
-  // Druckzeit-Pills
+  // Auftrags-Pills
   document.getElementById('lc-pills').addEventListener('click', function(e){
     var btn = e.target.closest('.lc-pill');
     if(!btn) return;
@@ -702,13 +699,13 @@
       p.classList.remove('lc-active');
     });
     btn.classList.add('lc-active');
-    druckH = parseFloat(btn.dataset.h);
+    jobsWoche = parseFloat(btn.dataset.j);
     calc();
   });
 
-  // Erlös-Eingabe
-  document.getElementById('lc-erloes').addEventListener('input', function(){
-    erloes = parseFloat(this.value) || 0;
+  // Stundensatz-Eingabe
+  document.getElementById('lc-satz').addEventListener('input', function(){
+    satz = parseFloat(this.value) || 0;
     calc();
   });
 
@@ -737,16 +734,14 @@
       if(data.success){
         document.getElementById('lc-form').hidden    = true;
         document.getElementById('lc-success').hidden = false;
-        document.getElementById('lc-out-potenzial').classList.remove('lc-blurred');
-        document.getElementById('lc-lock').classList.add('lc-gone');
       } else {
         btn.disabled    = false;
-        btn.textContent = 'Ergebnis freischalten →';
+        btn.textContent = 'Bericht anfordern';
       }
     })
     .catch(function(){
       btn.disabled    = false;
-      btn.textContent = 'Ergebnis freischalten →';
+      btn.textContent = 'Bericht anfordern';
     });
   });
 
