@@ -1,0 +1,200 @@
+<!-- Unser Prozess · Variant D · standalone HTML
+     Drop directly into an HTML page, an Astro/MDX file, a CMS HTML block,
+     or anywhere you can paste markup. Self-contained: includes its own
+     scoped CSS and Google Font links. -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+<section class="lam-prozess" aria-labelledby="lam-prozess-h">
+  <div class="lam-prozess__inner">
+    <header class="lam-prozess__head">
+      <div class="lam-prozess__eyebrow">// UNSER PROZESS</div>
+      <h2 id="lam-prozess-h" class="lam-prozess__title">
+        Von der ersten Analyse zur skalierenden AM-Linie.
+      </h2>
+      <p class="lam-prozess__lede">
+        Strukturiertes Vorgehen — vom ersten Gespräch bis zur dauerhaften Wertschöpfung. Sie sehen jederzeit, wo wir stehen.
+      </p>
+    </header>
+
+    <div class="lam-prozess__axis" aria-hidden="true">
+      <span>T0 · Kickoff</span>
+      <span class="lam-prozess__axis-line"></span>
+      <span>T+ Wochen &rarr;</span>
+    </div>
+
+    <div class="lam-prozess__bars" aria-hidden="true">
+      <span class="lam-prozess__bar lam-prozess__bar--0"></span>
+      <span class="lam-prozess__bar lam-prozess__bar--1"></span>
+      <span class="lam-prozess__bar lam-prozess__bar--2"></span>
+      <span class="lam-prozess__bar lam-prozess__bar--3"></span>
+    </div>
+
+    <ol class="lam-prozess__phases">
+      <li class="lam-prozess__phase">
+        <div class="lam-prozess__phase-meta">
+          <span class="lam-prozess__phase-code">PHASE_01</span>
+          <span class="lam-prozess__phase-duration">1–2 Wochen</span>
+        </div>
+        <h3 class="lam-prozess__phase-title">Analyse</h3>
+        <p class="lam-prozess__phase-body">Wir prüfen Ihr Bauteilportfolio, Ihre Stückzahlen und Anforderungen — und identifizieren die Use-Cases mit dem höchsten Hebel.</p>
+        <ul class="lam-prozess__deliverables">
+          <li>Bauteil-Screening</li>
+          <li>Use-Case-Matrix</li>
+          <li>Business-Case v0</li>
+        </ul>
+      </li>
+      <li class="lam-prozess__phase">
+        <div class="lam-prozess__phase-meta">
+          <span class="lam-prozess__phase-code">PHASE_02</span>
+          <span class="lam-prozess__phase-duration">3–6 Wochen</span>
+        </div>
+        <h3 class="lam-prozess__phase-title">Konzept</h3>
+        <p class="lam-prozess__phase-body">Auswahl der passenden Technologie, Materialien und Maschinen. Wir entwerfen Prozess-Layout, IT-Architektur und Business-Case.</p>
+        <ul class="lam-prozess__deliverables">
+          <li>Technologie- &amp; Materialwahl</li>
+          <li>Prozess- &amp; IT-Layout</li>
+          <li>Investitionsplanung</li>
+        </ul>
+      </li>
+      <li class="lam-prozess__phase">
+        <div class="lam-prozess__phase-meta">
+          <span class="lam-prozess__phase-code">PHASE_03</span>
+          <span class="lam-prozess__phase-duration">8–16 Wochen</span>
+        </div>
+        <h3 class="lam-prozess__phase-title">Implementierung</h3>
+        <p class="lam-prozess__phase-body">Inbetriebnahme der Hardware, Roll-out der leanAM-Software, Integration in ERP/CAQ und Schulung Ihres Teams — operativ, hands-on.</p>
+        <ul class="lam-prozess__deliverables">
+          <li>Hardware-Inbetriebnahme</li>
+          <li>Software &amp; ERP/CAQ</li>
+          <li>Team-Enablement</li>
+        </ul>
+      </li>
+      <li class="lam-prozess__phase">
+        <div class="lam-prozess__phase-meta">
+          <span class="lam-prozess__phase-code">PHASE_04</span>
+          <span class="lam-prozess__phase-duration">fortlaufend</span>
+        </div>
+        <h3 class="lam-prozess__phase-title">Skalierung</h3>
+        <p class="lam-prozess__phase-body">Wir begleiten Sie in der Hochlaufphase, optimieren KPIs und übernehmen — wenn Sie möchten — Spitzenlasten als B2B-Service.</p>
+        <ul class="lam-prozess__deliverables">
+          <li>KPI-Tuning</li>
+          <li>Ramp-up Support</li>
+          <li>B2B-Overflow optional</li>
+        </ul>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<style>
+  .lam-prozess{
+    --ink:#0A1628; --cyan:#6FD8F1; --cyan-deep:#1FA9D6;
+    --paper:#F4F8FB;
+    --muted:rgba(244,248,251,.7); --muted-2:rgba(244,248,251,.5);
+    --line:rgba(111,216,241,.15);
+    background:var(--ink); color:var(--paper);
+    padding:clamp(64px,8vw,96px) clamp(20px,5vw,80px) clamp(80px,10vw,120px);
+    font-family:'Inter',system-ui,sans-serif; position:relative; overflow:hidden;
+  }
+  .lam-prozess__inner{max-width:1320px; margin:0 auto;}
+  .lam-prozess__head{text-align:center; margin-bottom:clamp(48px,6vw,72px);}
+  .lam-prozess__eyebrow{
+    font-family:'JetBrains Mono',ui-monospace,monospace;
+    font-size:11px; font-weight:600; letter-spacing:.28em;
+    color:var(--cyan); text-transform:uppercase; margin-bottom:18px;
+  }
+  .lam-prozess__title{
+    font-size:clamp(32px,5vw,56px); font-weight:700;
+    line-height:1.05; letter-spacing:-0.02em;
+    margin:0 auto 18px; max-width:880px;
+  }
+  .lam-prozess__lede{
+    font-size:clamp(15px,1.4vw,17px);
+    color:rgba(244,248,251,.65); line-height:1.55;
+    max-width:620px; margin:0 auto;
+  }
+  .lam-prozess__axis{
+    display:flex; align-items:center;
+    font-family:'JetBrains Mono',ui-monospace,monospace; font-size:11px;
+    color:rgba(111,216,241,.7); margin-bottom:18px; padding:0 4px;
+  }
+  .lam-prozess__axis-line{
+    flex:1; height:1px; margin:0 14px;
+    background:linear-gradient(90deg,rgba(111,216,241,.4),rgba(111,216,241,.1));
+  }
+  .lam-prozess__bars{
+    display:grid; grid-template-columns:10fr 25fr 40fr 25fr;
+    gap:4px; margin-bottom:8px;
+  }
+  .lam-prozess__bar{height:10px; border-radius: 0; display:block;}
+  .lam-prozess__bar--0{background:rgba(111,216,241,.35);}
+  .lam-prozess__bar--1{background:rgba(111,216,241,.55);}
+  .lam-prozess__bar--2{background:rgba(111,216,241,.85);}
+  .lam-prozess__bar--3{background:linear-gradient(90deg,var(--cyan),rgba(111,216,241,.15));}
+
+  .lam-prozess__phases{
+    list-style:none; padding:0; margin:0;
+    display:grid; grid-template-columns:10fr 25fr 40fr 25fr; gap:4px;
+  }
+  .lam-prozess__phase{
+    background:rgba(255,255,255,.03);
+    border:1px solid var(--line); border-radius: 0;
+    padding:24px 22px 26px; backdrop-filter:blur(8px);
+  }
+  .lam-prozess__phase-meta{
+    display:flex; align-items:baseline; justify-content:space-between;
+    margin-bottom:18px;
+  }
+  .lam-prozess__phase-code{
+    font-family:'JetBrains Mono',ui-monospace,monospace;
+    font-size:12px; color:var(--cyan); letter-spacing:.1em;
+  }
+  .lam-prozess__phase-duration{
+    font-family:'JetBrains Mono',ui-monospace,monospace;
+    font-size:11px; color:var(--muted-2);
+  }
+  .lam-prozess__phase-title{
+    font-size:22px; font-weight:600; margin:0 0 12px; letter-spacing:-0.01em;
+  }
+  .lam-prozess__phase-body{
+    font-size:13.5px; color:var(--muted); line-height:1.55; margin:0 0 18px;
+  }
+  .lam-prozess__deliverables{
+    list-style:none; padding:0; margin:0;
+    display:flex; flex-direction:column; gap:6px;
+  }
+  .lam-prozess__deliverables li{
+    font-size:12px; color:rgba(244,248,251,.85);
+    display:flex; align-items:center; gap:8px;
+  }
+  .lam-prozess__deliverables li::before{
+    content:""; width:4px; height:4px; border-radius: 0;
+    background:var(--cyan); flex-shrink:0;
+  }
+  @media (max-width:1100px){
+    .lam-prozess__bars{display:none;}
+    .lam-prozess__axis{display:none;}
+    .lam-prozess__phases{grid-template-columns:1fr 1fr;}
+  }
+  @media (max-width:720px){
+    .lam-prozess__phases{
+      grid-template-columns:1fr; position:relative; padding-left:24px;
+    }
+    .lam-prozess__phases::before{
+      content:""; position:absolute; left:8px; top:8px; bottom:8px; width:2px;
+      background:linear-gradient(180deg,var(--cyan),rgba(111,216,241,.1));
+    }
+    .lam-prozess__phase{position:relative;}
+    .lam-prozess__phase::before{
+      content:""; position:absolute; left:-22px; top:28px;
+      width:10px; height:10px; border-radius: 0; background:var(--cyan);
+      box-shadow:0 0 0 4px var(--ink), 0 0 0 5px rgba(111,216,241,.3);
+    }
+  }
+  @media (prefers-reduced-motion:reduce){
+    .lam-prozess *{animation:none!important; transition:none!important;}
+  }
+</style>

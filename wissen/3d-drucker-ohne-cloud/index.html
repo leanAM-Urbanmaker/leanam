@@ -131,7 +131,7 @@
     <div class="breadcrumb"><a href="/index.html">Start</a><span class="material-symbols-outlined">chevron_right</span><a href="/wissen/">Wissen</a><span class="material-symbols-outlined">chevron_right</span><span>3D-Drucker ohne Cloud</span></div>
     <span class="eyebrow">Wissen · On-Premise · Datenhoheit</span>
     <h1>3D-Drucker ohne Cloud — <span class="accent">Datenhoheit in der additiven Fertigung.</span></h1>
-    <p class="lead">Cloud-basierte Druckerverwaltung ist für Privatnutzer komfortabel — für produzierende Unternehmen entsteht damit ein Bündel aus Compliance-, Verfügbarkeits- und Datenrisiken. Wir zeigen, welche Optionen es für den On-Premise-Betrieb gibt, welche Grenzen die jeweiligen Ansätze haben und ab wann ein vollwertiges MES sinnvoll wird.</p>
+    <p class="lead">Cloud-basierte Druckerverwaltung ist für Privatnutzer komfortabel. Für produzierende Unternehmen entstehen damit Compliance- und Verfügbarkeitsrisiken. Dieser Artikel zeigt, welche Optionen es für den On-Premise-Betrieb gibt, wo deren Grenzen liegen und ab wann ein MES sinnvoll wird.</p>
   </div>
 </section>
 
@@ -143,10 +143,10 @@
         <span class="eyebrow">Das Problem</span>
         <h2 class="h2">Warum cloud-basierte Druckersteuerung in der Industrie kritisch ist.</h2>
         <p class="body muted mt-2">
-          Viele aktuelle 3D-Drucker setzen ab Werk auf Cloud-Konnektivität: Druckjobs, Statusdaten, Kamera-Streams und Materialinformationen werden an die Server des jeweiligen Herstellers übertragen — teils innerhalb der EU, teils außerhalb, abhängig von Hersteller, Region und vertraglichen Rahmenbedingungen.
+          Viele aktuelle 3D-Drucker setzen ab Werk auf Cloud-Konnektivität: Druckjobs, Statusdaten, Kamera-Streams und Materialinformationen werden an die Server des jeweiligen Herstellers übertragen. Wo diese Daten verarbeitet werden, hängt von Hersteller, Region und vertraglichen Rahmenbedingungen ab.
         </p>
         <p class="body muted mt-2">
-          Für Privatanwender ist das unkritisch. Für produzierende Unternehmen entstehen daraus konkrete Anforderungen an Datenhoheit, Auftragsverwaltung und Verfügbarkeit, die ein reines Cloud-Modell selten erfüllt. In regulierten Branchen — Medizintechnik, Luft- und Raumfahrt, Verteidigungstechnik — sind cloud-gebundene Produktionsdaten oft schlicht nicht zulässig.
+          Für Privatanwender ist das unkritisch. Für produzierende Unternehmen entstehen daraus konkrete Anforderungen an Datenhoheit, Auftragsverwaltung und Verfügbarkeit, die ein reines Cloud-Modell selten erfüllt. In regulierten Branchen wie Medizintechnik, Luft- und Raumfahrt oder Verteidigungstechnik sind cloud-gebundene Produktionsdaten oft nicht zulässig.
         </p>
       </div>
       <div>
@@ -266,7 +266,7 @@
           <span class="material-symbols-outlined" style="color:#7debf3;font-size:28px;">terminal</span>
           <h3 style="margin:0;">Community- und Open-Source-Lösungen</h3>
         </div>
-        <p class="muted" style="font-size:15px;">Werkzeuge wie OctoPrint, Mainsail oder Klipper ermöglichen den Betrieb ohne Anbieter-Cloud. Sie erfordern eigenes Betriebs-Know-how, bieten keinen kommerziellen Support und keine Standard-Schnittstellen zu ERP- oder CAQ-Systemen. Für Entwicklungs- und Pilotumgebungen sinnvoll — für Serienproduktion mit Dokumentationspflicht nicht ausreichend.</p>
+        <p class="muted" style="font-size:15px;">Werkzeuge wie OctoPrint, Mainsail oder Klipper ermöglichen den Betrieb ohne Anbieter-Cloud. Sie erfordern eigenes Betriebs-Know-how, bieten keinen kommerziellen Support und keine Standard-Schnittstellen zu ERP- oder CAQ-Systemen. Für Entwicklungs- und Pilotumgebungen sind sie sinnvoll, für Serienproduktion mit Dokumentationspflicht reichen sie nicht aus.</p>
         <p class="muted" style="font-size:15px;margin-top:12px;"><strong>Hinweis zu Firmware-Restriktionen:</strong> Einige Hersteller (u. a. Bambu Lab, Prusa, Ultimaker) haben Authentifizierungs- und Autorisierungsmechanismen integriert, die den direkten Drittsoftware-Zugriff einschränken. Der Funktionsumfang sollte vor einer Investitionsentscheidung im Einzelfall geprüft werden.</p>
       </div>
       <div class="feature-card" style="border:2px solid var(--cyan);">
@@ -289,7 +289,7 @@
         <span class="eyebrow">Technischer Hintergrund</span>
         <h2 class="h2">Wie funktioniert herstellerübergreifender On-Premise-Betrieb?</h2>
         <p class="body muted mt-2">
-          Viele moderne 3D-Drucker bieten Schnittstellen für die lokale Kommunikation: MQTT-Broker, REST-APIs, OctoPrint-kompatible Endpoints oder herstellerspezifische SDKs. Über diese Schnittstellen lassen sich Statusdaten erfassen — Druckfortschritt, Temperaturen, Materialverbrauch, Fehlerzustände — ohne dass die Informationen das Firmennetz verlassen.
+          Viele moderne 3D-Drucker bieten Schnittstellen für die lokale Kommunikation: MQTT-Broker, REST-APIs, OctoPrint-kompatible Endpoints oder herstellerspezifische SDKs. Über diese Schnittstellen lassen sich Statusdaten wie Druckfortschritt, Temperaturen, Materialverbrauch und Fehlerzustände erfassen, ohne dass die Informationen das Firmennetz verlassen.
         </p>
         <p class="body muted mt-2">
           Welche Operationen lokal möglich sind, hängt vom konkreten Drucker, der eingesetzten Firmware-Version und der Autorisierungs-Architektur des Herstellers ab. Lese-Zugriffe sind in der Regel breit verfügbar; aktive Steuerbefehle sind bei einigen Herstellern an herstellereigene Autorisierungsmechanismen gebunden.
@@ -324,11 +324,11 @@
     <div style="max-width:800px;margin:0 auto;display:flex;flex-direction:column;gap:4px;">
       <details style="background:rgba(255,255,255,0.07);border-radius:0;overflow:hidden;">
         <summary style="padding:18px 20px;cursor:pointer;font-weight:600;list-style:none;display:flex;justify-content:space-between;align-items:center;">Welche 3D-Drucker lassen sich ohne Cloud betreiben?</summary>
-        <p style="padding:0 20px 18px;margin:0;opacity:.85;line-height:1.7;">Die Mehrzahl moderner FFF-, SLS- und SLA-Drucker bietet zumindest Lese-Schnittstellen für den lokalen Betrieb. Vollständige Steuerung ohne Hersteller-Cloud ist modell- und firmwareabhängig und sollte vor der Beschaffung geprüft werden. leanAM MES unterstützt Drucker führender Hersteller (u. a. Bambu Lab, Prusa, Ultimaker, Formlabs, EOS) — den genauen Funktionsumfang klären wir im Discovery-Workshop.</p>
+        <p style="padding:0 20px 18px;margin:0;opacity:.85;line-height:1.7;">Die Mehrzahl moderner FFF-, SLS- und SLA-Drucker bietet zumindest Lese-Schnittstellen für den lokalen Betrieb. Vollständige Steuerung ohne Hersteller-Cloud ist modell- und firmwareabhängig und sollte vor der Beschaffung geprüft werden. leanAM MES unterstützt Drucker führender Hersteller (u. a. Bambu Lab, Prusa, Ultimaker, Formlabs, EOS). Den genauen Funktionsumfang klären wir im Discovery-Workshop.</p>
       </details>
       <details style="background:rgba(255,255,255,0.07);border-radius:0;overflow:hidden;">
         <summary style="padding:18px 20px;cursor:pointer;font-weight:600;list-style:none;display:flex;justify-content:space-between;align-items:center;">Sind cloud-gebundene Druckerlösungen DSGVO-relevant?</summary>
-        <p style="padding:0 20px 18px;margin:0;opacity:.85;line-height:1.7;">Wenn personenbezogene Daten (z. B. Benutzer-Accounts, IP-Adressen, Auftragszuordnungen zu Mitarbeitenden) durch die Cloud verarbeitet werden, gelten die üblichen DSGVO-Anforderungen: Rechtsgrundlage, Auftragsverarbeitungsvertrag, Drittlandtransfer-Bewertung. Welche Daten konkret übertragen werden und wo sie verarbeitet werden, regelt die Datenschutzerklärung des jeweiligen Anbieters. Eine pauschale Aussage „cloud-basiert = nicht datenschutzkonform" ist unzutreffend — die Bewertung muss im Einzelfall erfolgen.</p>
+        <p style="padding:0 20px 18px;margin:0;opacity:.85;line-height:1.7;">Wenn personenbezogene Daten (z. B. Benutzer-Accounts, IP-Adressen, Auftragszuordnungen zu Mitarbeitenden) durch die Cloud verarbeitet werden, gelten die üblichen DSGVO-Anforderungen: Rechtsgrundlage, Auftragsverarbeitungsvertrag, Drittlandtransfer-Bewertung. Welche Daten konkret übertragen werden und wo sie verarbeitet werden, regelt die Datenschutzerklärung des jeweiligen Anbieters. Eine pauschale Aussage „cloud-basiert = nicht datenschutzkonform" ist unzutreffend. Die Bewertung muss im Einzelfall erfolgen.</p>
       </details>
       <details style="background:rgba(255,255,255,0.07);border-radius:0;overflow:hidden;">
         <summary style="padding:18px 20px;cursor:pointer;font-weight:600;list-style:none;display:flex;justify-content:space-between;align-items:center;">Was ist der Unterschied zwischen Community-Tools und einem MES?</summary>
@@ -351,7 +351,7 @@
   <div class="container" style="text-align:center;max-width:700px;margin:0 auto;">
     <span class="eyebrow">Nächster Schritt</span>
     <h2 class="h2">Maschinenpark cloud-unabhängig betreiben — <span class="cyan">wir zeigen wie.</span></h2>
-    <p>In einer kostenfreien Demo zeigen wir leanAM MES live mit echten Druckern und ergänzenden Anlagen — On-Premise, ohne Cloud-Zwang, auf Ihrem Server oder unserer Demo-Instanz. Im Anschluss erhalten Sie eine konkrete Einschätzung, welche Optionen für Ihren Maschinenpark sinnvoll sind.</p>
+    <p>In einer kostenfreien Demo zeigen wir leanAM MES live mit angebundenen Druckern und ergänzenden Anlagen, On-Premise auf Ihrem Server oder unserer Demo-Instanz. Im Anschluss erhalten Sie eine konkrete Einschätzung, welche Optionen für Ihren Maschinenpark sinnvoll sind.</p>
     <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;margin-top:24px;">
       <a href="https://calendly.com/hq-leanam/30min" target="_blank" rel="noopener" class="btn btn-primary" style="display:inline-flex;align-items:center;gap:8px;">Demo anfragen</a>
       <a href="/mes.html" class="btn btn-outline" style="display:inline-flex;align-items:center;gap:8px;">leanAM MES ansehen</a>
