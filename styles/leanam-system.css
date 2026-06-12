@@ -300,6 +300,8 @@ ul { margin: 0; padding: 0; list-style: none; }
   letter-spacing: 0.08em;
   white-space: nowrap;
 }
+.lam-header__lang a { color: inherit; text-decoration: none; }
+.lam-header__lang a:hover { color: var(--lam-paper); }
 .lam-header__lang .active { color: var(--lam-paper); }
 .lam-header__lang .sep { color: var(--lam-muted-3); margin: 0 4px; }
 

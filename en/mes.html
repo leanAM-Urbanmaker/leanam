@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<meta name="theme-color" content="#0A1628">
+<title>On-premise MES for multi-vendor printer fleets — leanAM MES</title>
+<meta name="description" content="leanAM MES: production management software for 3D printers and machines from any manufacturer — fully on-premise, no forced cloud, Made in Germany. Request a demo.">
+<link rel="canonical" href="https://leanam.com/en/mes.html">
+<link rel="alternate" hreflang="de" href="https://leanam.com/mes.html">
+<link rel="alternate" hreflang="en" href="https://leanam.com/en/mes.html">
+<link rel="alternate" hreflang="x-default" href="https://leanam.com/mes.html">
+
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://leanam.com/en/mes.html">
+<meta property="og:title" content="leanAM MES — Manufacturing Execution Software for 3D print farms">
+<meta property="og:description" content="Multi-vendor on-premise MES for additive manufacturing. Order management, live telemetry, local data storage. Made in Germany.">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://leanam.com/images/favicon-512.png">
+<meta property="og:site_name" content="leanAM">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="leanAM MES — On-premise MES for 3D print farms">
+<meta name="twitter:description" content="Multi-vendor MES for additive manufacturing — on-premise, no forced cloud, Made in Germany.">
+<meta name="twitter:image" content="https://leanam.com/images/favicon-512.png">
+
+<link rel="preload" as="font" type="font/woff2" href="/fonts/inter-latin.woff2" crossorigin>
+<link rel="preload" as="font" type="font/woff2" href="/fonts/jetbrains-mono-latin.woff2" crossorigin>
+<link rel="preload" as="image" href="/images/leanam-logo.png" fetchpriority="high">
+<link rel="stylesheet" href="/styles/leanam-system.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://leanam.com/en/index.html" },
+        { "@type": "ListItem", "position": 2, "name": "leanAM MES", "item": "https://leanam.com/en/mes.html" }
+      ]
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "leanAM MES",
+      "url": "https://leanam.com/en/mes.html",
+      "applicationCategory": "BusinessApplication",
+      "applicationSubCategory": "Manufacturing Execution System",
+      "operatingSystem": "Linux, Windows Server",
+      "description": "On-premise Manufacturing Execution System for additive manufacturing. Controls 3D printers from different manufacturers across vendors, manages orders, material and documentation, and delivers live telemetry.",
+      "featureList": "Order management, live machine status, slicer integration, material tracking, users & roles, costing & billing, alerting, reporting & KPIs, ERP integration, LAN-mode printer control",
+      "keywords": "MES additive manufacturing, 3D printing MES, on-premise MES, manufacturing execution system 3D printer, multi-vendor MES",
+      "inLanguage": "en",
+      "offers": {
+        "@type": "Offer",
+        "priceCurrency": "EUR",
+        "availability": "https://schema.org/InStock",
+        "seller": {
+          "@type": "Organization",
+          "name": "leanAM",
+          "url": "https://leanam.com/"
+        }
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Does leanAM MES run without internet access?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. leanAM MES is fully on-premise and requires no internet connection. All data stays inside your network — no forced cloud, no subscription, no external servers."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which 3D printers does leanAM MES support?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "leanAM MES supports several ways of controlling machines directly on the local network, without an external cloud and without mandatory accounts. Print data stays entirely within your infrastructure. Whether and to what extent your production environment can be supported is something we can review in a conversation — feel free to get in touch: https://leanam.com/en/kontakt.html"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does our production data stay in-house?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. leanAM MES runs fully on-premise — all production and machine data remains inside your network. No external servers, no cloud routing, no data sharing. Software and support come from Germany."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How long does implementation take?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A basic installation without ERP integration is typically ready for use within 1–3 working days. For ERP/CAQ integration or large machine fleets, we work out a realistic schedule together — typically 2–6 weeks to full operation."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can leanAM MES be connected to SAP or other ERP systems?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "leanAM MES provides open interfaces (REST, OPC UA, MQTT) that enable integration with ERP, CAQ and PLM systems. Where technically feasible, custom connectors can be developed for your existing system. We are happy to discuss the details: https://leanam.com/en/kontakt.html"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is there a demo of leanAM MES?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. We offer a 45-minute live demo built around your specific use case — free of charge and without obligation. Request a demo appointment via the contact form."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+<link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+</head>
+<body data-screen-label="02 leanAM MES">
+
+<header class="lam-header">
+  <div class="lam-header__inner">
+    <a href="/en/index.html" class="lam-header__logo">
+      <img src="/images/leanam-logo.png" alt="leanAM" height="38" loading="eager">
+    </a>
+    <nav class="lam-header__nav" aria-label="Main navigation">
+      <a href="/en/index.html">Home</a>
+      <a href="/en/mes.html" class="active">leanAM MES</a>
+      <a href="/en/prozessberatung.html">Consulting</a>
+      <a href="/en/entwicklung.html">Development</a>
+      <a href="/en/ueber-uns.html">About us</a>
+    </nav>
+    <div class="lam-header__right">
+      <span class="lam-header__lang">
+        <a href="/mes.html">DE</a>
+        <span class="sep">|</span>
+        <a href="/en/mes.html" class="active">EN</a>
+      </span>
+      <a href="/en/kontakt.html" class="lam-btn lam-btn--primary">
+        <span class="material-icons">mail</span>Contact
+      </a>
+    </div>
+    <button class="nav-toggle" aria-label="Open navigation" aria-expanded="false" aria-controls="mobile-nav">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="lam-mobile-nav" id="mobile-nav" hidden>
+    <nav aria-label="Mobile navigation">
+      <a href="/en/index.html">Home</a>
+      <a href="/en/mes.html" class="active">leanAM MES</a>
+      <a href="/en/prozessberatung.html">Consulting</a>
+      <a href="/en/entwicklung.html">Development</a>
+      <a href="/en/ueber-uns.html">About us</a>
+      <a href="/en/kontakt.html" class="mobile-cta">Contact / Demo</a>
+    </nav>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="container">
+    <div class="breadcrumb">
+      <a href="/en/index.html">Home</a>
+      <span class="material-symbols-outlined">chevron_right</span>
+      <span>leanAM MES</span>
+    </div>
+    <span class="eyebrow">3D Printer Management · On-Premise · Print Farm Software</span>
+    <h1>Manage 3D printers locally — <span class="accent">independent of the manufacturer's cloud.</span></h1>
+    <p class="lead">leanAM MES is the production management software for the most diverse machines, running entirely inside your network. Across vendors and processes — controlled locally, with no forced cloud and no production data ever leaving your plant. Even if you operate multiple sites.</p>
+    <div class="cta-row" style="display:flex;gap:14px;flex-wrap:wrap;margin-top:32px;">
+      <a href="https://calendly.com/hq-leanam/30min" target="_blank" rel="noopener" class="btn btn-primary">Request a demo<span class="material-symbols-outlined">arrow_forward</span></a>
+    </div>
+    <div class="badge-row">
+      <span class="badge"><span class="material-symbols-outlined">cloud_off</span>No forced cloud</span>
+      <span class="badge"><span class="material-symbols-outlined">shield_lock</span>Data-sovereign</span>
+<span class="badge"><span class="material-symbols-outlined">verified</span>Made in Germany</span>
+    </div>
+  </div>
+</section>
+
+<section class="section light" id="cloud-problem">
+  <div class="container">
+    <div class="split">
+      <div>
+        <span class="eyebrow">The Cloud Problem</span>
+        <h2 class="h2">Why your 3D printers don't belong in the cloud.</h2>
+        <p class="body muted mt-2">
+          Modern 3D printers from many manufacturers send print data, camera feeds and machine telemetry through external cloud servers by default. Convenient for home users. A problem for companies.
+        </p>
+        <p class="body muted mt-2">
+          Production data, CAD geometries and manufacturing parameters are core knowledge. They do not belong on servers in the US or China — least of all in industries with documentation and data protection requirements.
+        </p>
+        <p class="body muted mt-2">
+          leanAM MES solves this: all data stays inside your network. No external server, no mandatory manufacturer account, no internet outage ever stops production.
+        </p>
+      </div>
+      <div class="problem-comparison">
+        <div class="comparison-col bad">
+          <div class="comp-head"><span class="material-symbols-outlined">cloud</span>With the cloud</div>
+          <ul>
+            <li><span class="material-symbols-outlined">close</span>Print data on third-party servers</li>
+            <li><span class="material-symbols-outlined">close</span>Camera feed routed through the cloud</li>
+            <li><span class="material-symbols-outlined">close</span>Dependent on an internet connection</li>
+            <li><span class="material-symbols-outlined">close</span>GDPR risk when personal data is involved</li>
+            <li><span class="material-symbols-outlined">close</span>Vendor lock-in through mandatory accounts</li>
+          </ul>
+        </div>
+        <div class="comparison-col good">
+          <div class="comp-head"><span class="material-symbols-outlined">cloud_off</span>With leanAM MES</div>
+          <ul>
+            <li><span class="material-symbols-outlined">check_circle</span>All data stays local</li>
+            <li><span class="material-symbols-outlined">check_circle</span>Camera feed stays inside the LAN</li>
+            <li><span class="material-symbols-outlined">check_circle</span>Production runs offline-capable</li>
+            <li><span class="material-symbols-outlined">check_circle</span>Data-sovereign operation</li>
+            <li><span class="material-symbols-outlined">check_circle</span>No manufacturer account required</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section teal" id="lokale-druckersteuerung">
+  <div class="container">
+    <div class="highlight">
+      <div style="min-height:480px;display:flex;align-items:stretch;">
+        <div class="lam-lan-graphic" style="width:100%;height:100%;background:#0C1B30;border:1px solid rgba(111,216,241,.15);display:flex;align-items:center;justify-content:center;padding:24px;box-sizing:border-box;">
+  <svg viewBox="0 0 820 660" style="width:100%;height:auto;display:block;" role="img" aria-label="Network topology: leanAM MES controls FFF, SLA and SLS printers, a CNC mill, a laser cutter and a robot arm across three sites on the local network, without any cloud.">
+    <defs>
+      <pattern id="lanGrid" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0V32" fill="none" stroke="#6FD8F1" stroke-width="1" opacity="0.05"></path></pattern>
+      <style>
+        @keyframes lanFlow { to { stroke-dashoffset: -16; } }
+        .lam-lan-graphic .flow { stroke-dasharray: 5 6; animation: lanFlow 1s linear infinite; }
+        @media (prefers-reduced-motion: reduce){ .lam-lan-graphic .flow{ animation:none; } }
+      </style>
+    </defs>
+    <rect x="0" y="0" width="820" height="660" fill="url(#lanGrid)"></rect>
+
+    <g transform="translate(44,24)" opacity="0.55">
+      <path d="M30 34 a16 16 0 0 1 4 -31 a20 20 0 0 1 37 6 a14 14 0 0 1 -2 27 Z" fill="none" stroke="rgba(244,248,251,.5)" stroke-width="1.5"></path>
+      <line x1="8" y1="40" x2="74" y2="-2" stroke="rgba(244,248,251,.5)" stroke-width="1.5"></line>
+    </g>
+    <text x="82" y="84" text-anchor="middle" fill="rgba(244,248,251,.32)" font-family="'JetBrains Mono', monospace" font-size="10" letter-spacing="0.16em">// NO CLOUD</text>
+    <line x1="120" y1="64" x2="320" y2="270" stroke="rgba(244,248,251,.32)" stroke-width="1.25" stroke-dasharray="2 5"></line>
+    <g transform="translate(212,162)"><line x1="-6" y1="-6" x2="6" y2="6" stroke="rgba(244,248,251,.5)" stroke-width="1.5"></line><line x1="6" y1="-6" x2="-6" y2="6" stroke="rgba(244,248,251,.5)" stroke-width="1.5"></line></g>
+
+    <path d="M340 300 C 250 300, 230 286, 158 286" fill="none" stroke="#6FD8F1" stroke-width="1.5" class="flow" opacity="0.85"></path>
+    <path d="M340 342 C 250 342, 230 396, 158 396" fill="none" stroke="#6FD8F1" stroke-width="1.5" class="flow" opacity="0.85"></path>
+    <path d="M474 274 C 545 200, 565 116, 638 116" fill="none" stroke="#6FD8F1" stroke-width="1.5" class="flow" opacity="0.85"></path>
+    <path d="M482 290 C 552 244, 565 226, 638 226" fill="none" stroke="#6FD8F1" stroke-width="1.5" class="flow" opacity="0.85"></path>
+    <path d="M474 356 C 545 430, 565 466, 638 466" fill="none" stroke="#6FD8F1" stroke-width="1.5" class="flow" opacity="0.85"></path>
+    <path d="M482 348 C 552 470, 565 566, 638 566" fill="none" stroke="#6FD8F1" stroke-width="1.5" class="flow" opacity="0.85"></path>
+
+    <rect x="24" y="212" width="252" height="240" fill="none" stroke="rgba(111,216,241,.18)" stroke-width="1.25" stroke-dasharray="3 5"></rect>
+  <rect x="34" y="202" width="96.8" height="19" fill="#0C1B30"></rect>
+  <text x="38" y="216" fill="#6FD8F1" font-family="'JetBrains Mono', monospace" font-size="10" letter-spacing="0.1em">// SITE 01</text>
+    <rect x="556" y="40" width="244" height="240" fill="none" stroke="rgba(111,216,241,.18)" stroke-width="1.25" stroke-dasharray="3 5"></rect>
+  <rect x="566" y="30" width="96.8" height="19" fill="#0C1B30"></rect>
+  <text x="570" y="44" fill="#6FD8F1" font-family="'JetBrains Mono', monospace" font-size="10" letter-spacing="0.1em">// SITE 02</text>
+    <rect x="556" y="392" width="244" height="240" fill="none" stroke="rgba(111,216,241,.18)" stroke-width="1.25" stroke-dasharray="3 5"></rect>
+  <rect x="566" y="382" width="96.8" height="19" fill="#0C1B30"></rect>
+  <text x="570" y="396" fill="#6FD8F1" font-family="'JetBrains Mono', monospace" font-size="10" letter-spacing="0.1em">// SITE 03</text>
+
+    <g transform="translate(340,266)">
+      <rect x="0" y="0" width="140" height="108" fill="rgba(111,216,241,.06)" stroke="#6FD8F1" stroke-width="1.5"></rect>
+      <rect x="0" y="0" width="140" height="26" fill="#6FD8F1"></rect>
+      <text x="70" y="17.5" text-anchor="middle" fill="#0A1628" font-family="'JetBrains Mono', monospace" font-weight="600" font-size="12" letter-spacing="0.1em">leanAM MES</text>
+      <g><rect x="16" y="44" width="108" height="10" fill="none" stroke="rgba(111,216,241,.5)" stroke-width="1"></rect><circle cx="25" cy="49" r="2" fill="#6FD8F1"></circle><circle cx="33" cy="49" r="2" fill="#6FD8F1" fill-opacity="0.4"></circle></g><g><rect x="16" y="62" width="108" height="10" fill="none" stroke="rgba(111,216,241,.5)" stroke-width="1"></rect><circle cx="25" cy="67" r="2" fill="#6FD8F1"></circle><circle cx="33" cy="67" r="2" fill="#6FD8F1" fill-opacity="0.4"></circle></g><g><rect x="16" y="80" width="108" height="10" fill="none" stroke="rgba(111,216,241,.5)" stroke-width="1"></rect><circle cx="25" cy="85" r="2" fill="#6FD8F1"></circle><circle cx="33" cy="85" r="2" fill="#6FD8F1" fill-opacity="0.4"></circle></g>
+      <text x="70" y="130" text-anchor="middle" fill="rgba(244,248,251,.5)" font-family="'JetBrains Mono', monospace" font-size="10" letter-spacing="0.08em">On-premise · Your server</text>
+    </g>
+
+    <g transform="translate(74,250)">
+    <rect x="0" y="0" width="84" height="72" fill="rgba(255,255,255,.03)" stroke="rgba(111,216,241,.5)" stroke-width="1.25"></rect>
+  <line x1="10" y1="20" x2="74" y2="20" stroke="#6FD8F1" stroke-width="1.5"></line>
+  <rect x="38" y="15" width="11" height="9" fill="#6FD8F1"></rect>
+  <line x1="42" y1="24" x2="42" y2="42" stroke="#6FD8F1" stroke-width="1"></line>
+  <line x1="12" y1="56" x2="72" y2="56" stroke="rgba(111,216,241,.5)" stroke-width="1.5"></line>
+  <rect x="34" y="42" width="16" height="14" fill="#6FD8F1" fill-opacity="0.35"></rect>
+    <circle cx="74" cy="62" r="2.5" fill="#6FD8F1"><animate attributeName="opacity" values="1;0.2;1" dur="2.4s" begin="0s" repeatCount="indefinite"></animate></circle>
+    <text x="42" y="88" text-anchor="middle" fill="rgba(244,248,251,.5)" font-family="'JetBrains Mono', monospace" font-size="9" letter-spacing="0.03em">FFF PRINTER</text>
+  </g>
+    <g transform="translate(74,360)">
+    <rect x="0" y="0" width="84" height="72" fill="rgba(255,255,255,.03)" stroke="rgba(111,216,241,.5)" stroke-width="1.25"></rect>
+  <rect x="14" y="44" width="56" height="14" fill="#6FD8F1" fill-opacity="0.15"></rect>
+  <line x1="14" y1="44" x2="70" y2="44" stroke="rgba(111,216,241,.5)" stroke-width="1.5"></line>
+  <line x1="42" y1="12" x2="42" y2="24" stroke="rgba(111,216,241,.5)" stroke-width="1.5"></line>
+  <line x1="26" y1="24" x2="58" y2="24" stroke="#6FD8F1" stroke-width="1.5"></line>
+  <rect x="36" y="24" width="12" height="20" fill="#6FD8F1" fill-opacity="0.35"></rect>
+  <rect x="14" y="60" width="56" height="3" fill="#6FD8F1"></rect>
+  <path d="M58 30 l5 -5 m-5 5 l-5 -5" stroke="#6FD8F1" stroke-width="1" fill="none" opacity="0.7"></path>
+    <circle cx="74" cy="62" r="2.5" fill="#6FD8F1"><animate attributeName="opacity" values="1;0.2;1" dur="2.4s" begin="0.4s" repeatCount="indefinite"></animate></circle>
+    <text x="42" y="88" text-anchor="middle" fill="rgba(244,248,251,.5)" font-family="'JetBrains Mono', monospace" font-size="9" letter-spacing="0.03em">SLA PRINTER</text>
+  </g>
+    <g transform="translate(638,80)">
+    <rect x="0" y="0" width="84" height="72" fill="rgba(255,255,255,.03)" stroke="rgba(111,216,241,.5)" stroke-width="1.25"></rect>
+  <rect x="34" y="11" width="16" height="8" fill="#6FD8F1"></rect>
+  <path d="M38 19 L46 19 L48 23 L36 23 Z" fill="#6FD8F1" fill-opacity="0.5"></path>
+  <line x1="42" y1="23" x2="50" y2="50" stroke="#6FD8F1" stroke-width="1.5" opacity="0.9"><animate attributeName="x2" values="34;58;34" dur="3.2s" repeatCount="indefinite"></animate></line>
+  <rect x="12" y="50" width="60" height="10" fill="#6FD8F1" fill-opacity="0.12"></rect>
+  <line x1="12" y1="50" x2="72" y2="50" stroke="rgba(111,216,241,.5)" stroke-width="1.5"></line>
+  <circle cx="18" cy="55" r="0.9" fill="#6FD8F1" fill-opacity="0.4"></circle><circle cx="28" cy="55" r="0.9" fill="#6FD8F1" fill-opacity="0.4"></circle><circle cx="38" cy="55" r="0.9" fill="#6FD8F1" fill-opacity="0.4"></circle><circle cx="48" cy="55" r="0.9" fill="#6FD8F1" fill-opacity="0.4"></circle><circle cx="58" cy="55" r="0.9" fill="#6FD8F1" fill-opacity="0.4"></circle><circle cx="66" cy="55" r="0.9" fill="#6FD8F1" fill-opacity="0.4"></circle>
+  <circle cx="50" cy="50" r="3" fill="#6FD8F1"><animate attributeName="cx" values="34;58;34" dur="3.2s" repeatCount="indefinite"></animate></circle>
+    <circle cx="74" cy="62" r="2.5" fill="#6FD8F1"><animate attributeName="opacity" values="1;0.2;1" dur="2.4s" begin="0.8s" repeatCount="indefinite"></animate></circle>
+    <text x="42" y="88" text-anchor="middle" fill="rgba(244,248,251,.5)" font-family="'JetBrains Mono', monospace" font-size="9" letter-spacing="0.03em">SLS PRINTER</text>
+  </g>
+    <g transform="translate(638,190)">
+    <rect x="0" y="0" width="84" height="72" fill="rgba(255,255,255,.03)" stroke="rgba(111,216,241,.5)" stroke-width="1.25"></rect>
+  <rect x="14" y="44" width="56" height="14" fill="#6FD8F1" fill-opacity="0.15"></rect>
+  <line x1="14" y1="44" x2="70" y2="44" stroke="rgba(111,216,241,.5)" stroke-width="1.5"></line>
+  <line x1="10" y1="22" x2="74" y2="22" stroke="rgba(111,216,241,.5)" stroke-width="1.5"></line>
+  <rect x="36" y="17" width="12" height="9" fill="#6FD8F1"></rect>
+  <line x1="42" y1="26" x2="42" y2="44" stroke="#6FD8F1" stroke-width="1.5"></line>
+  <line x1="24" y1="51" x2="60" y2="51" stroke="#6FD8F1" stroke-width="1" stroke-dasharray="2 3" opacity="0.6"></line>
+  <circle cx="42" cy="44" r="2" fill="#6FD8F1"></circle>
+  <circle cx="46" cy="41" r="0.9" fill="#6FD8F1" fill-opacity="0.7"></circle>
+  <circle cx="38" cy="40" r="0.9" fill="#6FD8F1" fill-opacity="0.7"></circle>
+    <circle cx="74" cy="62" r="2.5" fill="#6FD8F1"><animate attributeName="opacity" values="1;0.2;1" dur="2.4s" begin="1.2s" repeatCount="indefinite"></animate></circle>
+    <text x="42" y="88" text-anchor="middle" fill="rgba(244,248,251,.5)" font-family="'JetBrains Mono', monospace" font-size="9" letter-spacing="0.03em">LASER CUTTER</text>
+  </g>
+    <g transform="translate(638,430)">
+    <rect x="0" y="0" width="84" height="72" fill="rgba(255,255,255,.03)" stroke="rgba(111,216,241,.5)" stroke-width="1.25"></rect>
+  <line x1="16" y1="14" x2="16" y2="34" stroke="rgba(111,216,241,.5)" stroke-width="1.5"></line>
+  <line x1="68" y1="14" x2="68" y2="34" stroke="rgba(111,216,241,.5)" stroke-width="1.5"></line>
+  <rect x="12" y="11" width="60" height="7" fill="#6FD8F1" fill-opacity="0.5"></rect>
+  <rect x="37" y="18" width="12" height="15" fill="#6FD8F1"></rect>
+  <path d="M40 33 L46 33 L43 45 Z" fill="#6FD8F1"></path>
+  <rect x="28" y="48" width="28" height="9" fill="#6FD8F1" fill-opacity="0.3"></rect>
+  <line x1="12" y1="57" x2="72" y2="57" stroke="rgba(111,216,241,.5)" stroke-width="1.5"></line>
+  <circle cx="34" cy="46" r="1.1" fill="#6FD8F1" fill-opacity="0.7"></circle>
+  <circle cx="52" cy="45" r="1.1" fill="#6FD8F1" fill-opacity="0.7"></circle>
+    <circle cx="74" cy="62" r="2.5" fill="#6FD8F1"><animate attributeName="opacity" values="1;0.2;1" dur="2.4s" begin="1.6s" repeatCount="indefinite"></animate></circle>
+    <text x="42" y="88" text-anchor="middle" fill="rgba(244,248,251,.5)" font-family="'JetBrains Mono', monospace" font-size="9" letter-spacing="0.03em">CNC MILL</text>
+  </g>
+    <g transform="translate(638,530)">
+    <rect x="0" y="0" width="84" height="72" fill="rgba(255,255,255,.03)" stroke="rgba(111,216,241,.5)" stroke-width="1.25"></rect>
+  <line x1="12" y1="60" x2="72" y2="60" stroke="rgba(111,216,241,.5)" stroke-width="1.5"></line>
+  <rect x="30" y="50" width="24" height="10" fill="#6FD8F1" fill-opacity="0.3"></rect>
+  <line x1="42" y1="50" x2="28" y2="30" stroke="#6FD8F1" stroke-width="3" stroke-linecap="round"></line>
+  <line x1="28" y1="30" x2="54" y2="20" stroke="#6FD8F1" stroke-width="3" stroke-linecap="round"></line>
+  <circle cx="42" cy="50" r="3.5" fill="#6FD8F1"></circle>
+  <circle cx="28" cy="30" r="3" fill="#0A1628" stroke="#6FD8F1" stroke-width="1.5"></circle>
+  <path d="M54 20 l7 -3 m-7 3 l6 4" stroke="#6FD8F1" stroke-width="1.5" fill="none" stroke-linecap="round"></path>
+    <circle cx="74" cy="62" r="2.5" fill="#6FD8F1"><animate attributeName="opacity" values="1;0.2;1" dur="2.4s" begin="2s" repeatCount="indefinite"></animate></circle>
+    <text x="42" y="88" text-anchor="middle" fill="rgba(244,248,251,.5)" font-family="'JetBrains Mono', monospace" font-size="9" letter-spacing="0.03em">ROBOT ARM</text>
+  </g>
+  </svg>
+</div>
+      </div>
+      <div>
+        <span class="eyebrow">Local Printer Control</span>
+        <h2 class="h2"><span class="cyan">Direct control on the LAN</span> — no forced cloud, no account</h2>
+        <p>leanAM MES communicates with your printers directly over the local network — without an external cloud and without mandatory manufacturer accounts. A wide range of manufacturers and models is supported — via vendor-specific protocols as well as open standards such as MQTT and OPC UA.</p>
+<ul class="feature-list">
+          <li><span class="material-symbols-outlined">check_circle</span>Direct LAN mode — no cloud as a middleman</li>
+          <li><span class="material-symbols-outlined">check_circle</span>Live camera feed kept local — no cloud routing</li>
+          <li><span class="material-symbols-outlined">check_circle</span>Material management & filament tracking without the cloud</li>
+          <li><span class="material-symbols-outlined">check_circle</span>Centralized firmware updates for entire printer fleets</li>
+          <li><span class="material-symbols-outlined">check_circle</span>Print data never leaves your plant</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section light" id="funktionen">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Feature Set</span>
+      <h2 class="h2">3D printer management software — <span class="cyan">every feature runs locally</span></h2>
+      <p>leanAM MES is the complete print farm solution: order control, machine monitoring and reporting — fully on-premise, with no cloud dependency.</p>
+    </div>
+    <div class="grid grid-3">
+      <div class="feature-card">
+        <div class="icon-circle"><span class="material-symbols-outlined">queue</span></div>
+        <h4>Order management</h4>
+        <p>Create and prioritize print jobs and route them automatically to available machines — including BOMs, material variants and delivery dates.</p>
+      </div>
+      <div class="feature-card">
+        <div class="icon-circle"><span class="material-symbols-outlined">monitor</span></div>
+        <h4>Live machine status</h4>
+        <p>Print progress, temperatures, material consumption and remaining runtime in real time — a shop-floor overview for every machine in your print farm.</p>
+      </div>
+      <div class="feature-card">
+        <div class="icon-circle"><span class="material-symbols-outlined">build</span></div>
+        <h4>Slicer integration</h4>
+        <p>Integration with common slicer software — manage print profiles centrally and generate print jobs automatically.</p>
+      </div>
+      <div class="feature-card">
+        <div class="icon-circle"><span class="material-symbols-outlined">inventory_2</span></div>
+        <h4>Material tracking</h4>
+        <p>Spools, batches and consumption documented end to end — essential for material qualification and regulated industries.</p>
+      </div>
+      <div class="feature-card">
+        <div class="icon-circle"><span class="material-symbols-outlined">notifications_active</span></div>
+        <h4>Alerting</h4>
+        <p>Email and webhook notifications on print failures, material changes or downtime — before damage occurs.</p>
+      </div>
+      <div class="feature-card">
+        <div class="icon-circle"><span class="material-symbols-outlined">analytics</span></div>
+        <h4>Reporting & KPIs</h4>
+        <p>OEE, utilization, first-pass scrap rate and print times — as local dashboards or exports for your reporting pipelines.</p>
+      </div>
+      <div class="feature-card">
+        <div class="icon-circle"><span class="material-symbols-outlined">groups</span></div>
+        <h4>Users & roles</h4>
+        <p>Who is allowed to operate which machine? Role-based access control protects expensive or safety-critical equipment — ideal for universities, multi-tenant environments and plants with rotating operator teams.</p>
+      </div>
+      <div class="feature-card">
+        <div class="icon-circle"><span class="material-symbols-outlined">euro</span></div>
+        <h4>Costing & billing</h4>
+        <p>Per-order costing, automatic charging for universities or internal cost centers, export to SAP and others.</p>
+      </div>
+      <div class="feature-card">
+        <div class="icon-circle"><span class="material-symbols-outlined">hub</span></div>
+        <h4>ERP & CAQ integration</h4>
+        <p>Open interfaces via REST, OPC UA and MQTT — custom connectors for your system where technically feasible.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section light">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Workflow</span>
+      <h2 class="h2">From STL file to finished part — <span class="cyan">fully local</span></h2>
+      <p>This is how a print job flows through leanAM MES — digital, documented, auditable. Not a single step touches an external server.</p>
+    </div>
+    <div class="workflow">
+      <div class="workflow-step">
+        <span class="ws-num">STEP 01</span>
+        <h4>Upload</h4>
+        <p>STL/3MF is uploaded via web UI or API — stored locally, with the ERP order linked automatically.</p>
+      </div>
+      <div class="workflow-step">
+        <span class="ws-num">STEP 02</span>
+        <h4>Slicing</h4>
+        <p>Pick a profile or let the system suggest one — material and machine are validated, and the slice job runs locally.</p>
+      </div>
+      <div class="workflow-step">
+        <span class="ws-num">STEP 03</span>
+        <h4>Routing</h4>
+        <p>The job is routed to the next available machine — even across multiple shop-floor sites.</p>
+      </div>
+      <div class="workflow-step">
+        <span class="ws-num">STEP 04</span>
+        <h4>Production</h4>
+        <p>Printing starts automatically while telemetry is logged locally. Any deviation triggers an immediate alert.</p>
+      </div>
+      <div class="workflow-step">
+        <span class="ws-num">STEP 05</span>
+        <h4>Documentation</h4>
+        <p>Print log, material batch and images are archived locally — ready for audit and shipment.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section light" id="faq">
+  <div class="container" style="max-width: 800px;">
+    <div class="section-head">
+      <span class="eyebrow">FAQ</span>
+      <h2 class="h2">Frequently asked questions about leanAM MES</h2>
+      <p>Answers to the questions we hear most often — from licensing model to data sovereignty.</p>
+    </div>
+    <div class="faq-list">
+      <details class="faq-item" open>
+        <summary><h3>Does leanAM MES run without internet access?</h3></summary>
+        <p>Yes. leanAM MES is fully on-premise and requires no internet connection. All data stays inside your network — no forced cloud, no subscription, no external servers.</p>
+      </details>
+      <details class="faq-item">
+        <summary><h3>Which 3D printers are supported?</h3></summary>
+        <p>leanAM MES supports several ways of controlling machines directly on the local network, without an external cloud and without mandatory accounts. Print data stays entirely within your infrastructure. Whether and to what extent your production environment can be supported is something we can review in a conversation. <a href="/en/kontakt.html" style="color:var(--cyan);text-decoration:underline;">Contact us</a></p>
+      </details>
+      <details class="faq-item">
+        <summary><h3>Does our production data stay in-house?</h3></summary>
+        <p>Yes. leanAM MES runs fully on-premise — all production and machine data remains inside your network. No external servers, no cloud routing, no data sharing. Software and support come from Germany.</p>
+      </details>
+      <details class="faq-item">
+        <summary><h3>How long does implementation take?</h3></summary>
+        <p>A basic installation without ERP integration is typically ready for use within 1–3 working days. For more complex environments — ERP/CAQ integration, large machine fleets or specific compliance requirements — we work out a realistic schedule together. We typically plan 2–6 weeks to full operation.</p>
+      </details>
+      <details class="faq-item">
+        <summary><h3>Can leanAM MES be connected to SAP or other ERP systems?</h3></summary>
+        <p>leanAM MES provides open interfaces (REST, OPC UA, MQTT) that enable integration with ERP, CAQ and PLM systems. Where technically feasible, custom connectors can be developed for your existing system. We are happy to discuss which integration makes sense for your environment. <a href="/en/kontakt.html" style="color:var(--cyan);text-decoration:underline;">Contact us</a></p>
+      </details>
+      <details class="faq-item">
+        <summary><h3>Is there a demo of leanAM MES?</h3></summary>
+        <p>Yes. We offer a 45-minute live demo built around your specific use case — free of charge and without obligation. <a href="/en/kontakt.html" style="color: var(--cyan);">Request a demo appointment via the contact form.</a></p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<section class="section light" id="roi-rechner">
+  <div class="container">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center;">
+      <div>
+        <span class="eyebrow">Free Tool</span>
+        <h2 class="h2">Is your <span style="color:var(--cyan);">print farm profitable?</span></h2>
+        <p style="color:var(--mid-grey);margin:16px 0 24px;font-size:16px;">Calculate ROI, break-even and annual profit in 2 minutes — for any printer mix of FFF systems from different manufacturers. Includes MES savings potential and a free PDF report.</p>
+        <ul class="feature-list" style="margin-bottom:28px;">
+          <li><span class="material-symbols-outlined">check_circle</span>Combine multiple printer models</li>
+          <li><span class="material-symbols-outlined">check_circle</span>Break-even & ROI at the push of a button</li>
+          <li><span class="material-symbols-outlined">check_circle</span>MES savings potential shown directly</li>
+          <li><span class="material-symbols-outlined">check_circle</span>PDF report — free and instant</li>
+        </ul>
+        <a href="/mes/druckfarm-rechner.html" class="btn btn-primary">
+          Calculate now for free
+          <span class="material-symbols-outlined">calculate</span>
+        </a>
+      </div>
+      <div style="background:var(--navy);border-radius:var(--radius-lg);padding:32px;color:white;">
+        <div style="font-size:12px;font-weight:700;color:var(--cyan);letter-spacing:.1em;text-transform:uppercase;margin-bottom:20px;">Sample calculation — 10 FFF printers (mid-range)</div>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:20px;">
+          <div style="background:rgba(255,255,255,.07);border-radius:0;padding:14px 16px;">
+            <div style="font-size:24px;font-weight:800;color:var(--cyan);">+€34,200</div>
+            <div style="font-size:11px;color:rgba(255,255,255,.5);margin-top:4px;">Annual profit</div>
+          </div>
+          <div style="background:rgba(255,255,255,.07);border-radius:0;padding:14px 16px;">
+            <div style="font-size:24px;font-weight:800;color:white;">7 mo.</div>
+            <div style="font-size:11px;color:rgba(255,255,255,.5);margin-top:4px;">Break-even</div>
+          </div>
+          <div style="background:rgba(255,255,255,.07);border-radius:0;padding:14px 16px;">
+            <div style="font-size:24px;font-weight:800;color:#00b894;">+187%</div>
+            <div style="font-size:11px;color:rgba(255,255,255,.5);margin-top:4px;">ROI after 3 years</div>
+          </div>
+          <div style="background:rgba(255,255,255,.07);border-radius:0;padding:14px 16px;">
+            <div style="font-size:24px;font-weight:800;color:white;">€5,990</div>
+            <div style="font-size:11px;color:rgba(255,255,255,.5);margin-top:4px;">Investment</div>
+          </div>
+        </div>
+        <div style="font-size:11px;color:rgba(255,255,255,.35);text-align:center;">Sample values · Run your own calculation with your real data</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section dark cta-banner">
+  <div class="container">
+    <span class="eyebrow">Demo</span>
+    <h2 class="h2">See leanAM MES <span class="cyan">in action.</span></h2>
+    <p>A 45-minute live demo built around your use case. We show the platform on a real machine fleet — and answer your IT and domain questions.</p>
+    <div class="cta-row" style="justify-content:center;display:flex;gap:14px;flex-wrap:wrap;">
+      <a href="/en/kontakt.html" class="btn btn-primary">Book a demo appointment<span class="material-symbols-outlined">arrow_forward</span></a>
+    </div>
+  </div>
+</section>
+
+<footer class="lam-footer">
+  <div class="lam-footer__inner">
+    <div class="lam-footer__grid">
+      <div>
+        <a href="/en/index.html"><img src="/images/leanam-logo.png" alt="leanAM" height="34" loading="lazy"></a>
+        <p class="lam-footer__tagline">Software, consulting and development for additive manufacturing.<br>Made in Germany — Data-sovereign — On-premise.</p>
+      </div>
+      <div>
+        <span class="lam-footer__col-title">Product</span>
+        <ul class="lam-footer__list">
+          <li><a href="/en/mes.html">leanAM MES</a></li>
+          <li><a href="/mes/druckfarm-rechner.html">Print Farm Calculator</a></li>
+          <li><a href="/en/entwicklung.html">Custom Development</a></li>
+          <li><a href="https://calendly.com/hq-leanam/30min" target="_blank" rel="noopener">Request a demo</a></li>
+        </ul>
+      </div>
+      <div>
+        <span class="lam-footer__col-title">Services</span>
+        <ul class="lam-footer__list">
+          <li><a href="/en/prozessberatung.html">Process Consulting</a></li>
+          <li><a href="/en/entwicklung.html">Development</a></li>
+          <li><a href="/en/prozessberatung.html">B2B Print Service</a></li>
+          <li><a href="/en/prozessberatung.html">Implementation</a></li>
+        </ul>
+      </div>
+      <div>
+        <span class="lam-footer__col-title">Company</span>
+        <ul class="lam-footer__list">
+          <li><a href="/en/ueber-uns.html">About us</a></li>
+          <li><a href="/en/ueber-uns.html">Careers</a></li>
+          <li><a href="/en/kontakt.html">Contact</a></li>
+          <li><a href="/en/kontakt.html">Location</a></li>
+        </ul>
+      </div>
+    </div>
+    <p style="font-size:11px;color:rgba(255,255,255,.25);line-height:1.6;padding-top:16px;border-top:1px solid rgba(111,216,241,.08);margin-bottom:16px;">Third-party brand and product names (e.g. Bambu Lab, Prusa, Ultimaker) are the property of their respective owners. They are mentioned solely to describe compatibility. No official partnerships or authorizations exist unless expressly stated otherwise.</p>
+    <div class="lam-footer__bottom">
+      <span class="lam-footer__copy">© 2026 URBANMAKER UG (haftungsbeschränkt) · leanAM is a trademark of URBANMAKER UG · Münster, Germany</span>
+      <div class="lam-footer__legal">
+        <a href="/impressum.html">Imprint</a>
+        <a href="/datenschutz.html">Privacy Policy</a>
+        <a href="/agb.html">Terms</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="/nav.js" defer></script>
+</body>
+</html>

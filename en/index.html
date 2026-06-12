@@ -1,0 +1,900 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<meta name="theme-color" content="#0A1628">
+<title>leanAM — Additive Manufacturing Software, Consulting &amp; MES Made in Germany</title>
+<meta name="description" content="leanAM: MES software for modern manufacturing environments, process consulting and custom engineering for additive manufacturing. On-premise, data-sovereign, Made in Germany.">
+<link rel="canonical" href="https://leanam.com/en/index.html">
+<link rel="alternate" hreflang="de" href="https://leanam.com/">
+<link rel="alternate" hreflang="en" href="https://leanam.com/en/index.html">
+<link rel="alternate" hreflang="x-default" href="https://leanam.com/">
+
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://leanam.com/en/index.html">
+<meta property="og:title" content="leanAM — Additive Manufacturing Software, Consulting &amp; MES Made in Germany">
+<meta property="og:description" content="MES software for modern manufacturing environments, process consulting and custom engineering. On-premise, data-sovereign, Made in Germany.">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://leanam.com/images/favicon-512.png">
+<meta property="og:site_name" content="leanAM">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="leanAM — Additive Manufacturing Software &amp; MES">
+<meta name="twitter:description" content="MES software for modern manufacturing environments, process consulting and custom engineering. On-premise, data-sovereign, Made in Germany.">
+<meta name="twitter:image" content="https://leanam.com/images/favicon-512.png">
+
+<meta name="robots" content="index, follow">
+<meta name="author" content="URBANMAKER UG (haftungsbeschränkt)">
+<meta name="geo.region" content="DE">
+<meta name="geo.placename" content="Germany">
+
+<link rel="preload" as="font" type="font/woff2" href="/fonts/inter-latin.woff2" crossorigin>
+<link rel="preload" as="font" type="font/woff2" href="/fonts/jetbrains-mono-latin.woff2" crossorigin>
+<link rel="preload" as="image" href="/images/leanam-logo.png" fetchpriority="high">
+<link rel="stylesheet" href="/styles/leanam-system.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://leanam.com/#organization",
+      "name": "leanAM",
+      "url": "https://leanam.com/",
+      "logo": "https://leanam.com/images/leanam-logo.png",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "customer support",
+        "email": "hq@leanAM.com",
+        "availableLanguage": ["German", "English"]
+      },
+      "areaServed": "DE",
+      "description": "Software, consulting and development for additive manufacturing. Made in Germany."
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://leanam.com/#website",
+      "url": "https://leanam.com/",
+      "name": "leanAM",
+      "publisher": { "@id": "https://leanam.com/#organization" },
+      "inLanguage": "de-DE"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://leanam.com/en/index.html#webpage",
+      "url": "https://leanam.com/en/index.html",
+      "name": "leanAM — Additive Manufacturing Software, Consulting &amp; MES Made in Germany",
+      "isPartOf": { "@id": "https://leanam.com/#website" },
+      "about": { "@id": "https://leanam.com/#organization" },
+      "inLanguage": "en-US",
+      "description": "MES software for modern manufacturing environments, process consulting and custom engineering for additive manufacturing."
+    }
+  ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Does leanAM MES run in the cloud or on-site at our plant?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "leanAM MES runs exclusively on-premise — at your facility. No cloud, no subscription, no external data storage. You retain full data sovereignty, including in regulated industries."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can we operate 3D printers without the manufacturer's cloud?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. leanAM MES supports several ways of controlling machines directly on the local network, without an external cloud and without mandatory accounts. Print data stays entirely within your infrastructure. Whether and to what extent your production environment can be supported is something we can review in a conversation — feel free to get in touch: https://leanam.com/en/kontakt.html"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Which industries do you typically serve?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Our focus areas are medical technology, aerospace, the interior industry and universities. Beyond that, we serve mid-sized manufacturers in mechanical and plant engineering."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What does an initial consultation cost?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The initial consultation is free of charge and non-binding. In 30 minutes we clarify whether your use case matches our strengths — and you get an honest assessment."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What if our AM project is stuck between IT, production and management?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "That is exactly why we developed our AM Interface Advisory service. We mediate between the stakeholders as a neutral technical authority."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can you connect leanAM MES to our ERP?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. We offer standard connectors for common ERP and CAQ systems (SAP, Microsoft Dynamics, ProAlpha) as well as generic interfaces via REST, OPC UA and MQTT."
+      }
+    }
+  ]
+}
+</script>
+
+<link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+</head>
+<body>
+
+<!-- ============ HEADER ============ -->
+<header class="lam-header">
+  <div class="lam-header__inner">
+    <a href="/en/index.html" class="lam-header__logo">
+      <img src="/images/leanam-logo.png" alt="leanAM" style="height:38px;width:auto;display:block" fetchpriority="high">
+    </a>
+    <nav class="lam-header__nav" aria-label="Main navigation">
+      <a href="/en/index.html" class="active">Home</a>
+      <a href="/en/mes.html">leanAM MES</a>
+      <a href="/en/prozessberatung.html">Consulting</a>
+      <a href="/en/entwicklung.html">Development</a>
+      <a href="/en/ueber-uns.html">About us</a>
+    </nav>
+    <div class="lam-header__right">
+      <div class="lam-header__lang">
+        <a href="/index.html">DE</a><span class="sep">|</span><a href="/en/index.html" class="active">EN</a>
+      </div>
+      <a href="/en/kontakt.html" class="lam-btn lam-btn--primary">
+        <span class="material-icons">mail</span>Contact
+      </a>
+    </div>
+    <button class="nav-toggle" aria-label="Open navigation" aria-expanded="false" aria-controls="mobile-nav">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="lam-mobile-nav" id="mobile-nav" hidden>
+    <nav aria-label="Mobile navigation">
+      <a href="/en/index.html" class="active">Home</a>
+      <a href="/en/mes.html">leanAM MES</a>
+      <a href="/en/prozessberatung.html">Consulting</a>
+      <a href="/en/entwicklung.html">Development</a>
+      <a href="/en/ueber-uns.html">About us</a>
+      <a href="/en/kontakt.html" class="mobile-cta">Contact / Demo</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="lam-hero" aria-label="Hero">
+  <svg class="lam-hero__grid-overlay" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <pattern id="heroGrid" width="56" height="56" patternUnits="userSpaceOnUse">
+        <path d="M56 0H0V56" fill="none" stroke="#6FD8F1" stroke-width="1"/>
+      </pattern>
+    </defs>
+    <rect width="100%" height="100%" fill="url(#heroGrid)"/>
+  </svg>
+  <div class="lam-hero__inner">
+    <div>
+      <div class="lam-eyebrow">// ADDITIVE MANUFACTURING · SOFTWARE · CONSULTING</div>
+      <h1 class="lam-hero__h1">
+        Additive Manufacturing<br>
+        <span class="lam-hero__accent">as a strategic asset.</span>
+      </h1>
+      <p class="lam-hero__lede">
+        Profitable, scalable, hands-on. We help manufacturing companies establish additive manufacturing as a genuine competitive advantage — from strategy through implementation to ongoing operations.
+      </p>
+      <div class="lam-hero__cta-row">
+        <a href="https://calendly.com/hq-leanam/30min" target="_blank" rel="noopener" class="lam-btn lam-btn--primary">Request a demo <span class="material-icons">arrow_forward</span></a>
+        <a href="/en/mes.html" class="lam-btn lam-btn--ghost">Discover leanAM MES</a>
+      </div>
+      <div class="lam-hero__pills">
+        <div class="lam-pill"><span class="material-icons">verified</span>Made in Germany</div>
+        <div class="lam-pill"><span class="material-icons">shield_lock</span>Data-sovereign</div>
+        <div class="lam-pill"><span class="material-icons">cloud_off</span>On-Premise</div>
+      </div>
+    </div>
+    <div class="lam-hero__card" aria-hidden="true">
+      <div class="lam-hero__card-title">// WHAT YOU GET</div>
+      <div class="lam-hero__card-item">
+        <span class="material-icons">check_circle</span>
+        Strategic consulting from make-or-buy to scaling
+      </div>
+      <div class="lam-hero__card-item">
+        <span class="material-icons">check_circle</span>
+        leanAM MES — our own manufacturing execution software
+      </div>
+      <div class="lam-hero__card-item">
+        <span class="material-icons">check_circle</span>
+        Centralized control of machines from different manufacturers
+      </div>
+      <div class="lam-hero__card-item">
+        <span class="material-icons">check_circle</span>
+        No forced cloud — full data control on the shop floor
+      </div>
+      <div class="lam-hero__card-item">
+        <span class="material-icons">check_circle</span>
+        Tailored process development across software &amp; hardware
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ DREI SÄULEN ============ -->
+<section class="lam-section lam-pillars">
+  <div class="lam-section__inner">
+    <div class="lam-section-header">
+      <div class="lam-eyebrow">// THREE PILLARS</div>
+      <h2 class="lam-h2">Your partner for strategic process innovation.</h2>
+      <p class="lam-lede" style="margin-top:18px">We combine software, consulting and operational execution — so that additive manufacturing creates measurable value in your company.</p>
+    </div>
+    <div class="lam-pillars__grid">
+      <div class="lam-pillars__card">
+        <div class="lam-icon-tile"><span class="material-icons">insights</span></div>
+        <span class="lam-pillars__kicker">Strategy · Workshop · Roadmap</span>
+        <h3 class="lam-pillars__title">Consulting</h3>
+        <p class="lam-pillars__body">Strategic process consulting from potential analysis through business cases to the roadmap. We assess whether, how and with what ROI additive manufacturing pays off in your operation.</p>
+        <ul class="lam-pillars__list">
+          <li><span class="material-icons">check</span>Make-or-buy analyses</li>
+          <li><span class="material-icons">check</span>Technology selection</li>
+          <li><span class="material-icons">check</span>Economic viability assessment</li>
+        </ul>
+      </div>
+      <div class="lam-pillars__card">
+        <div class="lam-icon-tile"><span class="material-icons">deployed_code</span></div>
+        <span class="lam-pillars__kicker">Software · MES · Integration</span>
+        <h3 class="lam-pillars__title">Implementation</h3>
+        <p class="lam-pillars__body">Process development and commissioning. From a tailored MES through printer integration to connecting your ERP — we deliver tools that are ready for production, not PowerPoint slides.</p>
+        <ul class="lam-pillars__list">
+          <li><span class="material-icons">check</span>leanAM MES on-premise</li>
+          <li><span class="material-icons">check</span>Vendor-independent printer connectivity, without cloud</li>
+          <li><span class="material-icons">check</span>ERP/CAQ integration</li>
+        </ul>
+      </div>
+      <div class="lam-pillars__card">
+        <div class="lam-icon-tile"><span class="material-icons">factory</span></div>
+        <span class="lam-pillars__kicker">Service · Contract manufacturing · Pilot runs</span>
+        <h3 class="lam-pillars__title">B2B Services</h3>
+        <p class="lam-pillars__body">Print services, contract manufacturing and pilot runs from our own machine park. We scale with you from single applications to small-batch production — and reliably absorb production peaks. After the ramp-up we stay at your side — with ongoing service and support.</p>
+        <ul class="lam-pillars__list">
+          <li><span class="material-icons">check</span>Service &amp; support beyond the setup</li>
+          <li><span class="material-icons">check</span>Print services &amp; prototypes</li>
+          <li><span class="material-icons">check</span>Small-batch production</li>
+          <li><span class="material-icons">check</span>Material qualification and hardware qualification</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ WARUM LEANAM ============ -->
+<section class="lam-section lam-warum">
+  <div class="lam-section__inner">
+    <div class="lam-section-header">
+      <div class="lam-eyebrow">// WHY LEANAM</div>
+      <h2 class="lam-h2">We are practitioners — <span class="cyan">not just consultants.</span></h2>
+      <p class="lam-lede" style="margin-top:18px">Eight clear reasons why industrial customers trust us with software, consulting and manufacturing.</p>
+    </div>
+    <div class="lam-warum__grid">
+      <div class="lam-warum__cell">
+        <span class="lam-warum__num">01</span>
+        <h3 class="lam-warum__title">Over 14 years of AM experience</h3>
+        <p class="lam-warum__body">From fundamental research to process-reliable series production.</p>
+      </div>
+      <div class="lam-warum__cell">
+        <span class="lam-warum__num">02</span>
+        <h3 class="lam-warum__title">On-premise instead of forced cloud</h3>
+        <p class="lam-warum__body">Your manufacturing data never leaves your plant — even across multiple sites.</p>
+      </div>
+      <div class="lam-warum__cell">
+        <span class="lam-warum__num">03</span>
+        <h3 class="lam-warum__title">Made in Germany</h3>
+        <p class="lam-warum__body">Development, support and consulting from Germany. Operations with full data sovereignty.</p>
+      </div>
+      <div class="lam-warum__cell">
+        <span class="lam-warum__num">04</span>
+        <h3 class="lam-warum__title">Industry experience</h3>
+        <p class="lam-warum__body">Medical technology, aerospace, interior, teaching &amp; research — we deliver what the industry demands.</p>
+      </div>
+      <div class="lam-warum__cell">
+        <span class="lam-warum__num">05</span>
+        <h3 class="lam-warum__title">Strategy &amp; operations</h3>
+        <p class="lam-warum__body">From business case to machine — and we close the gap in between.</p>
+      </div>
+      <div class="lam-warum__cell">
+        <span class="lam-warum__num">06</span>
+        <h3 class="lam-warum__title">Interface expertise</h3>
+        <p class="lam-warum__body">We mediate between IT, production and management when AM projects get stuck between worlds.</p>
+      </div>
+      <div class="lam-warum__cell">
+        <span class="lam-warum__num">07</span>
+        <h3 class="lam-warum__title">Focused on scaling</h3>
+        <p class="lam-warum__body">From the first use case to documented series production — structured, measurable.</p>
+      </div>
+      <div class="lam-warum__cell">
+        <span class="lam-warum__num">08</span>
+        <h3 class="lam-warum__title">Honest advice</h3>
+        <p class="lam-warum__body">We also tell you when AM is not worth it. No sales logic — a search for the truth.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ UNSERE LEISTUNGEN ============ -->
+<section class="lam-section lam-leistungen">
+  <div class="lam-section__inner">
+    <div class="lam-section-header">
+      <div class="lam-eyebrow">// OUR SERVICES</div>
+      <h2 class="lam-h2">Detailed. Operational. Dependable.</h2>
+      <p class="lam-lede" style="margin-top:18px">Three focus areas in which we accompany industrial customers from the first workshop to lasting implementation.</p>
+    </div>
+    <div class="lam-leistungen__grid">
+      <div class="lam-leistungen__card">
+        <div class="lam-leistungen__head">
+          <div class="lam-icon-tile lam-icon-tile--sm"><span class="material-icons">analytics</span></div>
+          <span class="lam-leistungen__kicker">STRATEGY · WORKSHOP · ROADMAP</span>
+        </div>
+        <h3 class="lam-leistungen__title">Process Consulting</h3>
+        <p class="lam-leistungen__body">We analyze your part portfolio, identify AM-suitable applications and deliver an actionable roadmap including an economic viability calculation.</p>
+        <ul class="lam-leistungen__list">
+          <li><span class="material-icons">check_circle</span>Make-or-buy for additive manufacturing</li>
+          <li><span class="material-icons">check_circle</span>Part screening &amp; use-case evaluation</li>
+          <li><span class="material-icons">check_circle</span>Investment and ROI models</li>
+          <li><span class="material-icons">check_circle</span>Supplier &amp; technology selection</li>
+          <li><span class="material-icons">check_circle</span>Stakeholder mediation during AM adoption</li>
+        </ul>
+        <a href="/en/prozessberatung.html" class="lam-leistungen__more">Learn more <span class="material-icons">arrow_forward</span></a>
+      </div>
+      <div class="lam-leistungen__card">
+        <div class="lam-leistungen__head">
+          <div class="lam-icon-tile lam-icon-tile--sm"><span class="material-icons">terminal</span></div>
+          <span class="lam-leistungen__kicker">SOFTWARE · MES · INTEGRATION</span>
+        </div>
+        <h3 class="lam-leistungen__title">leanAM MES</h3>
+        <p class="lam-leistungen__body">Our own MES software for modern manufacturing environments — runs at your facility, without cloud and without subscription. Controls 3D printers, milling and laser machines as well as robotics across manufacturers.</p>
+        <ul class="lam-leistungen__list">
+          <li><span class="material-icons">check_circle</span>Order management &amp; job routing</li>
+          <li><span class="material-icons">check_circle</span>Not just for 3D printers</li>
+          <li><span class="material-icons">check_circle</span>Live machine status &amp; telemetry</li>
+          <li><span class="material-icons">check_circle</span>ERP &amp; CAQ connectivity</li>
+        </ul>
+        <a href="/en/mes.html" class="lam-leistungen__more">Learn more <span class="material-icons">arrow_forward</span></a>
+      </div>
+      <div class="lam-leistungen__card">
+        <div class="lam-leistungen__head">
+          <div class="lam-icon-tile lam-icon-tile--sm"><span class="material-icons">code_blocks</span></div>
+          <span class="lam-leistungen__kicker">CUSTOM ENGINEERING</span>
+        </div>
+        <h3 class="lam-leistungen__title">Development</h3>
+        <p class="lam-leistungen__body">You have a special process or your own machine fleet? We develop tailored software, interfaces and automation for your stack.</p>
+        <ul class="lam-leistungen__list">
+          <li><span class="material-icons">check_circle</span>Custom workflows &amp; automation</li>
+          <li><span class="material-icons">check_circle</span>OPC UA / REST / MQTT interfaces</li>
+          <li><span class="material-icons">check_circle</span>Slicer &amp; printer control</li>
+          <li><span class="material-icons">check_circle</span>Monitoring, alerting, reporting</li>
+        </ul>
+        <a href="/en/entwicklung.html" class="lam-leistungen__more">Learn more <span class="material-icons">arrow_forward</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ UNSER PROZESS (Engineering Timeline) ============ -->
+<section class="lam-prozess" aria-labelledby="lam-prozess-h">
+  <div class="lam-prozess__inner">
+    <header class="lam-prozess__head">
+      <div class="lam-prozess__eyebrow">// OUR PROCESS</div>
+      <h2 id="lam-prozess-h" class="lam-prozess__title">
+        From the first analysis to a scaling AM line.
+      </h2>
+      <p class="lam-prozess__lede">
+        A structured approach — from the first conversation to lasting value creation. You can see where we stand at any time.
+      </p>
+    </header>
+    <div class="lam-prozess__axis" aria-hidden="true">
+      <span>T0 · Kickoff</span>
+      <span class="lam-prozess__axis-line"></span>
+      <span>T+ weeks &rarr;</span>
+    </div>
+    <div class="lam-prozess__bars" aria-hidden="true">
+      <span class="lam-prozess__bar lam-prozess__bar--0"></span>
+      <span class="lam-prozess__bar lam-prozess__bar--1"></span>
+      <span class="lam-prozess__bar lam-prozess__bar--2"></span>
+      <span class="lam-prozess__bar lam-prozess__bar--3"></span>
+    </div>
+    <ol class="lam-prozess__phases">
+      <li class="lam-prozess__phase">
+        <div class="lam-prozess__phase-meta">
+          <span class="lam-prozess__phase-code">PHASE_01</span>
+          <span class="lam-prozess__phase-duration">1–2 weeks</span>
+        </div>
+        <h3 class="lam-prozess__phase-title">Analysis</h3>
+        <p class="lam-prozess__phase-body">We review your part portfolio, your volumes and requirements — and identify the use cases with the highest leverage.</p>
+        <ul class="lam-prozess__deliverables">
+          <li>Part screening</li>
+          <li>Use-case matrix</li>
+          <li>Business case</li>
+        </ul>
+      </li>
+      <li class="lam-prozess__phase">
+        <div class="lam-prozess__phase-meta">
+          <span class="lam-prozess__phase-code">PHASE_02</span>
+          <span class="lam-prozess__phase-duration">3–6 weeks</span>
+        </div>
+        <h3 class="lam-prozess__phase-title">Concept</h3>
+        <p class="lam-prozess__phase-body">Selection of the right technology, materials and machines. We design the process layout, IT architecture and business case.</p>
+        <ul class="lam-prozess__deliverables">
+          <li>Technology &amp; material selection</li>
+          <li>Process &amp; IT layout</li>
+          <li>Investment planning</li>
+        </ul>
+      </li>
+      <li class="lam-prozess__phase">
+        <div class="lam-prozess__phase-meta">
+          <span class="lam-prozess__phase-code">PHASE_03</span>
+          <span class="lam-prozess__phase-duration">8–16 weeks</span>
+        </div>
+        <h3 class="lam-prozess__phase-title">Implementation</h3>
+        <p class="lam-prozess__phase-body">Commissioning of the hardware, roll-out of the leanAM software, integration into ERP/CAQ and training of your team — operational, hands-on.</p>
+        <ul class="lam-prozess__deliverables">
+          <li>Hardware commissioning</li>
+          <li>Software &amp; ERP/CAQ</li>
+          <li>Team enablement</li>
+        </ul>
+      </li>
+      <li class="lam-prozess__phase">
+        <div class="lam-prozess__phase-meta">
+          <span class="lam-prozess__phase-code">PHASE_04</span>
+          <span class="lam-prozess__phase-duration">ongoing</span>
+        </div>
+        <h3 class="lam-prozess__phase-title">Scaling</h3>
+        <p class="lam-prozess__phase-body">We accompany you through the ramp-up phase, optimize KPIs and — if you wish — absorb peak loads as a B2B service.</p>
+        <ul class="lam-prozess__deliverables">
+          <li>KPI tuning</li>
+          <li>Ramp-up support</li>
+          <li>B2B overflow optional</li>
+        </ul>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- ============ MINI-RECHNER ============ -->
+<section class="lam-section lam-rechner" id="rechner">
+<style>
+/* ── Mini-Rechner — lc- prefix ──────────────────────────────────────── */
+.lc-card{display:grid;grid-template-columns:1fr 1fr;gap:0;background:rgba(111,216,241,.10);border:1px solid rgba(111,216,241,.18);border-radius:16px;overflow:hidden;max-width:900px;margin:0 auto}
+@media(max-width:719px){.lc-card{grid-template-columns:1fr}}
+.lc-panel{padding:36px 32px;background:#102542}
+.lc-panel--right{background:#0A1628;border-left:1px solid rgba(111,216,241,.12)}
+@media(max-width:719px){.lc-panel--right{border-left:none;border-top:1px solid rgba(111,216,241,.12)}}
+.lc-label{display:block;font-size:13px;letter-spacing:.1em;text-transform:uppercase;color:#6FD8F1;margin-bottom:10px;font-family:'JetBrains Mono',monospace}
+.lc-field{margin-bottom:24px}
+.lc-counter{display:flex;align-items:center}
+.lc-counter__btn{width:48px;height:48px;background:rgba(111,216,241,.08);border:1px solid rgba(111,216,241,.18);color:#6FD8F1;font-size:22px;line-height:1;cursor:pointer;transition:background .15s;flex-shrink:0}
+.lc-counter__btn:hover{background:rgba(111,216,241,.20)}
+.lc-counter__btn:first-child{border-radius:6px 0 0 6px}
+.lc-counter__btn:last-child{border-radius:0 6px 6px 0}
+.lc-counter__val{width:64px;height:48px;background:rgba(255,255,255,.04);border-top:1px solid rgba(111,216,241,.18);border-bottom:1px solid rgba(111,216,241,.18);border-left:none;border-right:none;color:#fff;font-size:17px;text-align:center;font-family:'JetBrains Mono',monospace;-moz-appearance:textfield}
+.lc-counter__val::-webkit-inner-spin-button,.lc-counter__val::-webkit-outer-spin-button{-webkit-appearance:none}
+.lc-pills{display:flex;flex-wrap:wrap;gap:6px}
+.lc-pill{padding:12px 16px;background:rgba(111,216,241,.06);border:1px solid rgba(111,216,241,.14);border-radius:6px;color:rgba(255,255,255,.55);font-size:14px;cursor:pointer;transition:all .15s;font-family:'JetBrains Mono',monospace}
+.lc-pill:hover{background:rgba(111,216,241,.14);color:#fff}
+.lc-pill.lc-active{background:rgba(111,216,241,.16);border-color:#6FD8F1;color:#6FD8F1}
+.lc-erloes-wrap{display:flex;align-items:center;gap:8px}
+.lc-erloes-sym{color:#6FD8F1;font-family:'JetBrains Mono',monospace;font-size:16px}
+.lc-erloes-input{width:110px;height:48px;background:rgba(255,255,255,.04);border:1px solid rgba(111,216,241,.18);border-radius:6px;color:#fff;font-size:17px;text-align:right;padding:0 12px;font-family:'JetBrains Mono',monospace;-moz-appearance:textfield}
+.lc-erloes-input::-webkit-inner-spin-button,.lc-erloes-input::-webkit-outer-spin-button{-webkit-appearance:none}
+.lc-erloes-input:focus{outline:none;border-color:#6FD8F1}
+.lc-results{margin-top:28px;padding-top:22px;border-top:1px solid rgba(111,216,241,.12)}
+.lc-res-row{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:14px}
+.lc-res-label{font-size:12px;color:rgba(255,255,255,.5);letter-spacing:.04em}
+.lc-res-val{font-family:'JetBrains Mono',monospace;font-size:20px;color:#6FD8F1}
+.lc-res-val--white{color:#fff}
+.lc-gated{position:relative;margin-top:20px;padding:18px 20px;background:rgba(111,216,241,.04);border:1px solid rgba(111,216,241,.14);border-radius:10px;overflow:hidden}
+.lc-gated__label{font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.35);margin-bottom:8px;font-family:'JetBrains Mono',monospace}
+.lc-gated__val{font-family:'JetBrains Mono',monospace;font-size:32px;font-weight:700;color:#6FD8F1}
+.lc-gated__sub{font-size:12.5px;color:rgba(255,255,255,.45);margin-top:6px}
+/* Form */
+.lc-form-title{font-size:15px;font-weight:700;color:#fff;margin:0 0 4px}
+.lc-form-sub{font-size:13px;color:rgba(255,255,255,.45);margin:0 0 24px;line-height:1.55}
+.lc-form__field{margin-bottom:16px}
+.lc-form__label{display:block;font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:rgba(255,255,255,.45);margin-bottom:6px}
+.lc-form__input{width:100%;padding:10px 14px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.10);border-radius:6px;color:#fff;font-size:14px;box-sizing:border-box;transition:border-color .15s;font-family:inherit}
+.lc-form__input::placeholder{color:rgba(255,255,255,.22)}
+.lc-form__input:focus{outline:none;border-color:#6FD8F1}
+.lc-submit{width:100%;padding:12px 16px;background:#6FD8F1;border:none;border-radius:6px;color:#0A1628;font-size:14px;font-weight:700;cursor:pointer;transition:opacity .2s;letter-spacing:.04em;margin-top:8px;font-family:inherit}
+.lc-submit:hover{opacity:.88}
+.lc-submit:disabled{opacity:.45;cursor:not-allowed}
+.lc-privacy{font-size:11px;color:rgba(255,255,255,.28);margin-top:10px;line-height:1.5;text-align:center}
+.lc-privacy a{color:rgba(111,216,241,.55);text-decoration:none}
+.lc-consent{display:flex;align-items:flex-start;gap:10px;margin:14px 0 4px}
+.lc-consent input[type=checkbox]{flex-shrink:0;width:16px;height:16px;margin-top:2px;accent-color:#6FD8F1;cursor:pointer}
+.lc-consent label{font-size:11px;color:rgba(255,255,255,.38);line-height:1.55;cursor:pointer}
+.lc-consent a{color:rgba(111,216,241,.55);text-decoration:none}
+/* Success */
+#lc-success{text-align:center;padding:48px 24px}
+.lc-success__icon{font-size:38px;color:#6FD8F1;display:block;margin-bottom:14px}
+.lc-success__title{font-size:18px;font-weight:700;color:#fff;margin:0 0 10px}
+.lc-success__body{font-size:14px;color:rgba(255,255,255,.5);line-height:1.65;margin:0 0 24px}
+.lc-success__cta{display:inline-flex;align-items:center;gap:6px;padding:11px 22px;background:#6FD8F1;border-radius:6px;color:#0A1628;font-weight:700;font-size:14px;text-decoration:none}
+.lc-success__cta:hover{opacity:.88}
+</style>
+  <div class="lam-section__inner">
+    <div class="lam-section-header">
+      <div class="lam-eyebrow">// SAVINGS CALCULATOR</div>
+      <h2 class="lam-h2">How much time does manual print-farm management cost you?</h2>
+      <p class="lam-lede" style="margin-top:18px">Three inputs — the result is visible immediately. We will send you the full breakdown with all assumptions by e-mail, free of charge.</p>
+    </div>
+
+    <div class="lc-card">
+
+      <!-- LINKS: Rechner-Eingaben + freie Ergebnisse -->
+      <div class="lc-panel">
+
+        <div class="lc-field">
+          <span class="lc-label">Number of printers / machines</span>
+          <div class="lc-counter">
+            <button class="lc-counter__btn" id="lc-minus" type="button" aria-label="Decrease printers">−</button>
+            <input class="lc-counter__val" id="lc-anzahl" type="number" min="1" max="200" value="5" readonly aria-label="Number of printers">
+            <button class="lc-counter__btn" id="lc-plus" type="button" aria-label="Increase printers">+</button>
+          </div>
+        </div>
+
+        <div class="lc-field">
+          <span class="lc-label">Print jobs per week</span>
+          <div class="lc-pills" id="lc-pills" role="group" aria-label="Select print jobs per week">
+            <button class="lc-pill" data-j="10" type="button">10</button>
+            <button class="lc-pill lc-active" data-j="25" type="button">25</button>
+            <button class="lc-pill" data-j="50" type="button">50</button>
+            <button class="lc-pill" data-j="100" type="button">100</button>
+            <button class="lc-pill" data-j="200" type="button">200</button>
+          </div>
+        </div>
+
+        <div class="lc-field">
+          <span class="lc-label">Internal hourly rate</span>
+          <div class="lc-erloes-wrap">
+            <span class="lc-erloes-sym">€</span>
+            <input class="lc-erloes-input" id="lc-satz" type="number" min="0" max="999" value="45" aria-label="Internal hourly rate in euros">
+          </div>
+        </div>
+
+        <div class="lc-gated" id="lc-gated" style="margin-top:28px">
+          <div class="lc-gated__label">Savings potential with leanAM MES</div>
+          <div class="lc-gated__val" id="lc-out-potenzial">—</div>
+          <div class="lc-gated__sub" id="lc-out-tage">—</div>
+        </div>
+
+        <p style="margin:16px 0 0;font-size:12.5px;color:rgba(255,255,255,.42);line-height:1.6">How this figure is composed — and which levers have the greatest impact in your operation — is what we show you in the individual assessment.</p>
+
+      </div>
+
+      <!-- RECHTS: Lead-Formular / Erfolg -->
+      <div class="lc-panel lc-panel--right">
+
+        <form id="lc-form" novalidate>
+          <input type="hidden" name="access_key" value="c30aecf0-fbf3-49b8-b605-2b04861417f8">
+          <input type="hidden" name="subject" value="Einspar-Rechner Lead — leanAM">
+          <input type="hidden" name="from_name" value="leanAM Einspar-Rechner">
+          <input type="hidden" name="calc_data" id="lc-calc-data" value="">
+          <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off">
+
+          <p class="lc-form-title">Request your individual assessment</p>
+          <p class="lc-form-sub">We review your inputs and send you a personal assessment for your operation by e-mail — free of charge, no sales pitch.</p>
+
+          <div class="lc-form__field">
+            <label class="lc-form__label" for="lc-name">Name *</label>
+            <input class="lc-form__input" id="lc-name" name="name" type="text" placeholder="First and last name" autocomplete="name" required>
+          </div>
+          <div class="lc-form__field">
+            <label class="lc-form__label" for="lc-firma">Company *</label>
+            <input class="lc-form__input" id="lc-firma" name="company" type="text" placeholder="Your company" autocomplete="organization" required>
+          </div>
+          <div class="lc-form__field">
+            <label class="lc-form__label" for="lc-email">E-mail *</label>
+            <input class="lc-form__input" id="lc-email" name="email" type="email" placeholder="your@email.com" autocomplete="email" required>
+          </div>
+
+          <div class="lc-consent">
+            <input type="checkbox" id="lc-consent" name="consent" required>
+            <label for="lc-consent">I agree that my details may be stored and used to process my request. Further information in the <a href="/datenschutz.html">privacy policy (German).</a></label>
+          </div>
+          <button class="lc-submit" id="lc-submit" type="submit">Request assessment</button>
+          <p class="lc-privacy">No spam. No data sharing. Data processed via Web3Forms.</p>
+        </form>
+
+        <div id="lc-success" hidden>
+          <span class="material-icons lc-success__icon">check_circle</span>
+          <p class="lc-success__title">Request received!</p>
+          <p class="lc-success__body">We are preparing your individual assessment and will get back to you by e-mail within one business day. Would you like to discuss the numbers directly?</p>
+          <a href="https://calendly.com/hq-leanam/leanam-erstgesprach-30-min" target="_blank" rel="noopener" class="lc-success__cta">Book an initial consultation</a>
+        </div>
+
+      </div>
+    </div>
+
+    <p style="text-align:center;max-width:720px;margin:20px auto 0;font-size:11px;color:rgba(255,255,255,.28);line-height:1.6">Simplified model based on empirical values from industrial projects. Initial orientation only — the individual assessment takes your specific workflows into account. No guarantee.</p>
+  </div>
+
+<script>
+(function(){
+  'use strict';
+  var anzahl = 5, jobsWoche = 25, satz = 45;
+  var k1 = 9.6, k2 = 41.67, k3 = 0.65;
+
+  function fmt(n){ return n.toLocaleString('en-US'); }
+
+  function calc(){
+    var aufwand   = jobsWoche * k1 + anzahl * k2;
+    var auto      = aufwand * k3;
+    var potenzial = auto * satz;
+    var tage      = auto / 8;
+
+    document.getElementById('lc-out-tage').textContent = 'equals ' + fmt(Math.round(tage)) + ' working days per year';
+    document.getElementById('lc-out-potenzial').textContent =
+      '€ ' + fmt(Math.round(potenzial));
+
+    document.getElementById('lc-calc-data').value =
+      'Drucker: ' + anzahl +
+      ' | Auftraege/Woche: ' + jobsWoche +
+      ' | Stundensatz: ' + satz + ' EUR' +
+      ' | Verwaltungsaufwand: ' + fmt(Math.round(aufwand)) + ' h/year' +
+      ' | Automatisierbar: ' + fmt(Math.round(auto)) + ' h/year' +
+      ' | Einsparpotenzial: ' + fmt(Math.round(potenzial)) + ' EUR/Jahr';
+  }
+
+  // Counter
+  document.getElementById('lc-minus').addEventListener('click', function(){
+    if(anzahl > 1){
+      anzahl--;
+      document.getElementById('lc-anzahl').value = anzahl;
+      calc();
+    }
+  });
+  document.getElementById('lc-plus').addEventListener('click', function(){
+    if(anzahl < 200){
+      anzahl++;
+      document.getElementById('lc-anzahl').value = anzahl;
+      calc();
+    }
+  });
+
+  // Auftrags-Pills
+  document.getElementById('lc-pills').addEventListener('click', function(e){
+    var btn = e.target.closest('.lc-pill');
+    if(!btn) return;
+    document.querySelectorAll('.lc-pill').forEach(function(p){
+      p.classList.remove('lc-active');
+    });
+    btn.classList.add('lc-active');
+    jobsWoche = parseFloat(btn.dataset.j);
+    calc();
+  });
+
+  // Stundensatz-Eingabe
+  document.getElementById('lc-satz').addEventListener('input', function(){
+    satz = parseFloat(this.value) || 0;
+    calc();
+  });
+
+  // Formular absenden
+  document.getElementById('lc-form').addEventListener('submit', function(e){
+    e.preventDefault();
+    var btn = document.getElementById('lc-submit');
+    var name    = document.getElementById('lc-name').value.trim();
+    var firma   = document.getElementById('lc-firma').value.trim();
+    var email   = document.getElementById('lc-email').value.trim();
+    var consent = document.getElementById('lc-consent').checked;
+    if(!name || !firma || !email || !consent){
+      this.reportValidity();
+      return;
+    }
+
+    btn.disabled = true;
+    btn.textContent = 'Sending…';
+
+    var payload = {};
+    new FormData(this).forEach(function(v, k){ payload[k] = v; });
+
+    fetch('https://api.web3forms.com/submit', {
+      method:  'POST',
+      headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+      body:    JSON.stringify(payload)
+    })
+    .then(function(r){ return r.json(); })
+    .then(function(data){
+      if(data.success){
+        document.getElementById('lc-form').hidden    = true;
+        document.getElementById('lc-success').hidden = false;
+      } else {
+        btn.disabled    = false;
+        btn.textContent = 'Request assessment';
+      }
+    })
+    .catch(function(){
+      btn.disabled    = false;
+      btn.textContent = 'Request assessment';
+    });
+  });
+
+  calc();
+})();
+</script>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section class="lam-section lam-faq">
+  <div class="lam-section__inner">
+    <div class="lam-faq__grid">
+      <div>
+        <div class="lam-eyebrow">// FREQUENT QUESTIONS</div>
+        <h2 class="lam-faq__left-title">FAQ</h2>
+        <p class="lam-faq__left-body">Answers to the questions we are asked most often — from licensing model to data sovereignty.</p>
+      </div>
+      <div class="lam-faq__accordion" role="list">
+
+        <div class="lam-faq__item" role="listitem">
+          <button class="lam-faq__btn is-open" aria-expanded="true" data-faq>
+            <span class="lam-faq__btn-label"><span class="lam-faq__num">01</span>Does leanAM MES run in the cloud or on-site at our plant?</span>
+            <span class="material-icons lam-faq__icon">add</span>
+          </button>
+          <div class="lam-faq__body is-open">
+            <div class="lam-faq__body-inner">leanAM MES runs exclusively on-premise — at your facility. No cloud, no subscription, no external data storage. You retain full data sovereignty, including in regulated industries.</div>
+          </div>
+        </div>
+
+        <div class="lam-faq__item" role="listitem">
+          <button class="lam-faq__btn" aria-expanded="false" data-faq>
+            <span class="lam-faq__btn-label"><span class="lam-faq__num">02</span>Can we operate 3D printers without the manufacturer's cloud?</span>
+            <span class="material-icons lam-faq__icon">add</span>
+          </button>
+          <div class="lam-faq__body">
+            <div class="lam-faq__body-inner">Yes. leanAM MES supports several ways of controlling machines directly on the local network, without an external cloud and without mandatory accounts. Print data stays entirely within your infrastructure. Whether and to what extent your production environment can be supported is something we can review in a conversation. <a href="/en/kontakt.html" style="color:var(--lam-cyan);text-decoration:underline;">Feel free to get in touch with us.</a></div>
+          </div>
+        </div>
+
+        <div class="lam-faq__item" role="listitem">
+          <button class="lam-faq__btn" aria-expanded="false" data-faq>
+            <span class="lam-faq__btn-label"><span class="lam-faq__num">03</span>Which industries do you typically serve?</span>
+            <span class="material-icons lam-faq__icon">add</span>
+          </button>
+          <div class="lam-faq__body">
+            <div class="lam-faq__body-inner">Our focus areas are medical technology, aerospace, the interior industry and universities. Beyond that, we serve mid-sized manufacturers in mechanical and plant engineering.</div>
+          </div>
+        </div>
+
+        <div class="lam-faq__item" role="listitem">
+          <button class="lam-faq__btn" aria-expanded="false" data-faq>
+            <span class="lam-faq__btn-label"><span class="lam-faq__num">04</span>What does an initial consultation cost?</span>
+            <span class="material-icons lam-faq__icon">add</span>
+          </button>
+          <div class="lam-faq__body">
+            <div class="lam-faq__body-inner">The initial consultation is free of charge and non-binding. In 30 minutes we clarify whether your use case matches our strengths — and you get an honest assessment.</div>
+          </div>
+        </div>
+
+        <div class="lam-faq__item" role="listitem">
+          <button class="lam-faq__btn" aria-expanded="false" data-faq>
+            <span class="lam-faq__btn-label"><span class="lam-faq__num">05</span>What if our AM project is stuck between IT, production and management?</span>
+            <span class="material-icons lam-faq__icon">add</span>
+          </button>
+          <div class="lam-faq__body">
+            <div class="lam-faq__body-inner">That is exactly why we developed our "AM Interface Advisory" service. We mediate between the stakeholders as a neutral technical authority, make points of conflict visible and jointly develop workable governance rules.</div>
+          </div>
+        </div>
+
+        <div class="lam-faq__item" role="listitem">
+          <button class="lam-faq__btn" aria-expanded="false" data-faq>
+            <span class="lam-faq__btn-label"><span class="lam-faq__num">06</span>Can you connect leanAM MES to our ERP?</span>
+            <span class="material-icons lam-faq__icon">add</span>
+          </button>
+          <div class="lam-faq__body">
+            <div class="lam-faq__body-inner">Yes. We offer standard connectors for common ERP and CAQ systems (SAP, Microsoft Dynamics, ProAlpha) as well as generic interfaces via REST, OPC UA and MQTT.</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ KONTAKT CTA ============ -->
+<section class="lam-section lam-cta">
+  <div class="lam-cta__inner">
+    <div class="lam-eyebrow">// CONTACT</div>
+    <h2 class="lam-cta__h2">
+      Let's<br>
+      <span class="lam-cta__accent">talk.</span>
+    </h2>
+    <p class="lam-cta__body">30 minutes, free of charge and non-binding — we listen, review your use case and tell you honestly whether and how we can help.</p>
+    <div class="lam-cta__btns">
+      <a href="https://calendly.com/hq-leanam/30min" target="_blank" rel="noopener" class="lam-btn lam-btn--primary">Request a demo <span class="material-icons">arrow_forward</span></a>
+      <a href="https://calendly.com/hq-leanam/leanam-erstgesprach-30-min" target="_blank" rel="noopener" class="lam-btn lam-btn--ghost"><span class="material-icons">event</span>Book an initial consultation</a>
+    </div>
+    <div class="lam-cta__meta">
+      <span>// MÜNSTER, DE</span>
+      <span>// MON–FRI · 09:00–18:00 CET</span>
+      <span>// HQ@LEANAM.COM</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="lam-footer">
+  <div class="lam-footer__inner">
+    <div class="lam-footer__grid">
+      <div>
+        <a href="/en/index.html">
+          <img src="/images/leanam-logo.png" alt="leanAM" style="height:36px;width:auto;display:block;margin-bottom:20px" loading="lazy">
+        </a>
+        <p class="lam-footer__tagline">Software, consulting and development for additive manufacturing. Made in Germany — Data-sovereign — On-Premise.</p>
+        <div class="lam-pill" style="display:inline-flex;margin-top:8px"><span class="material-icons">verified</span>Made in Germany</div>
+      </div>
+      <div>
+        <span class="lam-footer__col-title">// Product</span>
+        <ul class="lam-footer__list">
+          <li><a href="/en/mes.html">leanAM MES</a></li>
+          <li><a href="/mes/druckfarm-rechner.html">Print Farm Calculator</a></li>
+          <li><a href="/en/mes.html">3D Printer Integration</a></li>
+          <li><a href="/en/entwicklung.html">Custom Development</a></li>
+          <li><a href="https://calendly.com/hq-leanam/30min" target="_blank" rel="noopener">Request a demo</a></li>
+        </ul>
+      </div>
+      <div>
+        <span class="lam-footer__col-title">// Services</span>
+        <ul class="lam-footer__list">
+          <li><a href="/en/prozessberatung.html">Process Consulting</a></li>
+          <li><a href="/en/entwicklung.html">Development</a></li>
+          <li><a href="/en/prozessberatung.html">B2B Print Services</a></li>
+          <li><a href="/en/prozessberatung.html">Implementation</a></li>
+        </ul>
+      </div>
+      <div>
+        <span class="lam-footer__col-title">// Company</span>
+        <ul class="lam-footer__list">
+          <li><a href="/en/ueber-uns.html">About us</a></li>
+          <li><a href="/en/ueber-uns.html">Careers</a></li>
+          <li><a href="/en/kontakt.html">Contact</a></li>
+          <li><a href="/en/kontakt.html">Location</a></li>
+        </ul>
+      </div>
+    </div>
+    <p style="font-size:11px;color:rgba(255,255,255,.25);line-height:1.6;padding-top:16px;border-top:1px solid rgba(111,216,241,.08);margin-bottom:16px;">Third-party brand and product names (e.g. Bambu Lab, Prusa, Ultimaker) are the property of their respective owners. They are mentioned solely to describe compatibility. No official partnerships or authorizations exist unless expressly stated otherwise.</p>
+    <div class="lam-footer__bottom">
+      <span class="lam-footer__copy">© 2026 URBANMAKER UG (haftungsbeschränkt) · leanAM is a brand of URBANMAKER UG · Münster, Germany</span>
+      <div class="lam-footer__legal">
+        <a href="/impressum.html">Imprint</a>
+        <a href="/datenschutz.html">Privacy Policy</a>
+        <a href="/agb.html">Terms</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="/nav.js" defer></script>
+<script>
+  /* FAQ accordion */
+  document.querySelectorAll('[data-faq]').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      var isOpen = btn.classList.contains('is-open');
+      var body = btn.nextElementSibling;
+      btn.classList.toggle('is-open', !isOpen);
+      btn.setAttribute('aria-expanded', String(!isOpen));
+      body.classList.toggle('is-open', !isOpen);
+    });
+  });
+</script>
+</body>
+</html>
