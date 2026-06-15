@@ -145,10 +145,10 @@
         <span class="eyebrow">Das Problem</span>
         <h2 class="h2">Warum cloud-basierte Druckersteuerung in der Industrie kritisch ist.</h2>
         <p class="body muted mt-2">
-          Viele aktuelle 3D-Drucker setzen ab Werk auf Cloud-Konnektivität: Druckjobs, Statusdaten, Kamera-Streams und Materialinformationen werden an die Server des jeweiligen Herstellers übertragen. Wo diese Daten verarbeitet werden, hängt von Hersteller, Region und vertraglichen Rahmenbedingungen ab.
+          Viele aktuelle 3D-Drucker setzen ab Werk auf Cloud-Konnektivität. Druckjobs, Statusdaten, Kamera-Streams und Materialinformationen wandern an die Server des jeweiligen Herstellers. Wo diese Daten verarbeitet werden, hängt von Hersteller, Region und vertraglichen Rahmenbedingungen ab.
         </p>
         <p class="body muted mt-2">
-          Für Privatanwender ist das unkritisch. Für produzierende Unternehmen entstehen daraus konkrete Anforderungen an Datenhoheit, Auftragsverwaltung und Verfügbarkeit, die ein reines Cloud-Modell selten erfüllt. In regulierten Branchen wie Medizintechnik, Luft- und Raumfahrt oder Verteidigungstechnik sind cloud-gebundene Produktionsdaten oft nicht zulässig.
+          Für Privatanwender ist das unkritisch. Im produzierenden Umfeld entstehen daraus aber Anforderungen an Datenhoheit, Auftragsverwaltung und Verfügbarkeit, die ein reines Cloud-Modell selten erfüllt. In regulierten Branchen wie Medizintechnik, Luft- und Raumfahrt oder Verteidigungstechnik sind cloud-gebundene Produktionsdaten oft gar nicht zulässig.
         </p>
       </div>
       <div>
@@ -252,7 +252,7 @@
   <div class="container">
     <div class="section-head">
       <span class="eyebrow">Die Optionen im Detail</span>
-      <h2 class="h2">Was steckt hinter den Optionen?</h2>
+      <h2 class="h2">Was hinter den drei Wegen steckt.</h2>
     </div>
     <div class="grid grid-3" style="margin-top:32px;">
       <div class="feature-card">
@@ -276,7 +276,7 @@
           <span class="material-symbols-outlined" style="color:var(--cyan);font-size:28px;">factory</span>
           <h3 style="margin:0;color:var(--cyan);">Manufacturing Execution System (MES)</h3>
         </div>
-        <p class="muted" style="font-size:15px;">Ein MES wie leanAM verbindet die lokale Druckersteuerung mit industrietauglicher Auftrags-, Material- und Ressourcenverwaltung. On-Premise installiert, ohne Cloud-Abhängigkeit, mit dokumentierter API-Anbindung an ERP und CAQ. Herstellerübergreifend: FFF-Drucker verschiedener Hersteller, SLS-/SLA-Anlagen, CNC-Bearbeitungszentren, Laser und Robotik in einem System.</p>
+        <p class="muted" style="font-size:15px;">Ein MES wie leanAM verbindet die lokale Druckersteuerung mit Auftrags-, Material- und Ressourcenverwaltung, wie sie ein produktiver Betrieb braucht. On-Premise installiert, ohne Cloud-Abhängigkeit, mit dokumentierter API-Anbindung an ERP und CAQ. Herstellerübergreifend: FFF-Drucker verschiedener Hersteller, SLS-/SLA-Anlagen, CNC-Bearbeitungszentren, Laser und Robotik in einem System.</p>
         <a href="/mes.html" class="btn btn-primary" style="margin-top:16px;display:inline-flex;align-items:center;gap:8px;font-size:14px;">Mehr zu leanAM MES</a>
       </div>
     </div>
@@ -294,7 +294,7 @@
           Viele moderne 3D-Drucker bieten Schnittstellen für die lokale Kommunikation: MQTT-Broker, REST-APIs, OctoPrint-kompatible Endpoints oder herstellerspezifische SDKs. Über diese Schnittstellen lassen sich Statusdaten wie Druckfortschritt, Temperaturen, Materialverbrauch und Fehlerzustände erfassen, ohne dass die Informationen das Firmennetz verlassen.
         </p>
         <p class="body muted mt-2">
-          Welche Operationen lokal möglich sind, hängt vom konkreten Drucker, der eingesetzten Firmware-Version und der Autorisierungs-Architektur des Herstellers ab. Lese-Zugriffe sind in der Regel breit verfügbar; aktive Steuerbefehle sind bei einigen Herstellern an herstellereigene Autorisierungsmechanismen gebunden.
+          Welche Operationen lokal möglich sind, hängt vom konkreten Drucker, der eingesetzten Firmware-Version und der Autorisierungs-Architektur des Herstellers ab. Lese-Zugriffe sind in der Regel breit verfügbar. Aktive Steuerbefehle sind bei einigen Herstellern an herstellereigene Autorisierungsmechanismen gebunden.
         </p>
         <p class="body muted mt-2">
           leanAM MES bündelt diese unterschiedlichen Protokolle und Restriktionen in einer einheitlichen MES-Schicht. In der Discovery-Phase prüfen wir für den konkreten Maschinenpark, welche Operationen vollständig lokal abbildbar sind, wo autorisierte Schnittstellen genutzt werden und wo Workflow-Anpassungen sinnvoll sind.
@@ -330,11 +330,11 @@
       </details>
       <details style="background:rgba(255,255,255,0.07);border-radius:0;overflow:hidden;">
         <summary style="padding:18px 20px;cursor:pointer;font-weight:600;list-style:none;display:flex;justify-content:space-between;align-items:center;">Sind cloud-gebundene Druckerlösungen DSGVO-relevant?</summary>
-        <p style="padding:0 20px 18px;margin:0;opacity:.85;line-height:1.7;">Wenn personenbezogene Daten (z. B. Benutzer-Accounts, IP-Adressen, Auftragszuordnungen zu Mitarbeitenden) durch die Cloud verarbeitet werden, gelten die üblichen DSGVO-Anforderungen: Rechtsgrundlage, Auftragsverarbeitungsvertrag, Drittlandtransfer-Bewertung. Welche Daten konkret übertragen werden und wo sie verarbeitet werden, regelt die Datenschutzerklärung des jeweiligen Anbieters. Eine pauschale Aussage „cloud-basiert = nicht datenschutzkonform" ist unzutreffend. Die Bewertung muss im Einzelfall erfolgen.</p>
+        <p style="padding:0 20px 18px;margin:0;opacity:.85;line-height:1.7;">Wenn personenbezogene Daten (z. B. Benutzer-Accounts, IP-Adressen, Auftragszuordnungen zu Mitarbeitenden) durch die Cloud verarbeitet werden, gelten die üblichen DSGVO-Anforderungen, also Rechtsgrundlage, Auftragsverarbeitungsvertrag und gegebenenfalls eine Drittlandtransfer-Bewertung. Welche Daten konkret übertragen und wo sie verarbeitet werden, regelt die Datenschutzerklärung des jeweiligen Anbieters. Die pauschale Gleichung „cloud-basiert = nicht datenschutzkonform" stimmt so nicht, das lässt sich nur im Einzelfall beurteilen.</p>
       </details>
       <details style="background:rgba(255,255,255,0.07);border-radius:0;overflow:hidden;">
         <summary style="padding:18px 20px;cursor:pointer;font-weight:600;list-style:none;display:flex;justify-content:space-between;align-items:center;">Was ist der Unterschied zwischen Community-Tools und einem MES?</summary>
-        <p style="padding:0 20px 18px;margin:0;opacity:.85;line-height:1.7;">Community-Tools wie OctoPrint, Mainsail oder hersteller-spezifische Open-Source-Forks ermöglichen die lokale Steuerung einzelner Drucker, bieten aber keine integrierte Auftrags-, Material- und Ressourcenverwaltung, keine ERP-Anbindung und keinen kommerziellen Support. leanAM MES ergänzt die Druckersteuerung um genau diese industrietauglichen Funktionen und ist auf den produktiven Betrieb in Unternehmen ausgelegt.</p>
+        <p style="padding:0 20px 18px;margin:0;opacity:.85;line-height:1.7;">Community-Tools wie OctoPrint, Mainsail oder hersteller-spezifische Open-Source-Forks ermöglichen die lokale Steuerung einzelner Drucker, bieten aber keine integrierte Auftrags-, Material- und Ressourcenverwaltung, keine ERP-Anbindung und keinen kommerziellen Support. leanAM MES ergänzt die Druckersteuerung um genau diese Funktionen und ist auf den produktiven Betrieb in Unternehmen ausgelegt.</p>
       </details>
       <details style="background:rgba(255,255,255,0.07);border-radius:0;overflow:hidden;">
         <summary style="padding:18px 20px;cursor:pointer;font-weight:600;list-style:none;display:flex;justify-content:space-between;align-items:center;">Welche Druckerhersteller unterstützt leanAM MES?</summary>
@@ -353,7 +353,7 @@
   <div class="container" style="text-align:center;max-width:700px;margin:0 auto;">
     <span class="eyebrow">Nächster Schritt</span>
     <h2 class="h2">Maschinenpark cloud-unabhängig betreiben — <span class="cyan">wir zeigen wie.</span></h2>
-    <p>In einer kostenfreien Demo zeigen wir leanAM MES live mit angebundenen Druckern und ergänzenden Anlagen, On-Premise auf Ihrem Server oder unserer Demo-Instanz. Im Anschluss erhalten Sie eine konkrete Einschätzung, welche Optionen für Ihren Maschinenpark sinnvoll sind.</p>
+    <p>In einer kostenfreien Demo zeigen wir leanAM MES live mit angebundenen Druckern und ergänzenden Anlagen, On-Premise auf Ihrem Server oder unserer Demo-Instanz. Danach sagen wir Ihnen, welche Optionen für Ihren Maschinenpark sinnvoll sind und welche nicht.</p>
     <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;margin-top:24px;">
       <a href="https://calendly.com/hq-leanam/30min" target="_blank" rel="noopener" class="btn btn-primary" style="display:inline-flex;align-items:center;gap:8px;">Demo anfragen</a>
       <a href="/mes.html" class="btn btn-outline" style="display:inline-flex;align-items:center;gap:8px;">leanAM MES ansehen</a>
