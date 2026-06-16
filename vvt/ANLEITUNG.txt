@@ -1,0 +1,30 @@
+VVT – Verzeichnis von Verarbeitungstätigkeiten
+==============================================
+
+Was ist das?
+  Pflicht-Dokument nach Art. 30 DSGVO: die Liste aller Tools/Dienste,
+  die personenbezogene Daten verarbeiten. Interne Doku – nicht öffentlich.
+
+Welche Datei nehme ich?  (zwei Formate, gleicher Inhalt – nimm, was du magst)
+  - VVT.md   ... Lesefreundliches Dokument. Öffnen mit jedem Editor;
+                 am schönsten in VS Code (Preview) oder als Markdown.
+                 Zum Bearbeiten: einfach reinschreiben, speichern. FERTIG.
+  - VVT.csv  ... Tabelle für Excel. Doppelklick öffnet Excel.
+                 Pro Tool eine Zeile. Neue Zeile ergänzen, speichern. FERTIG.
+
+  >> Kein Skript, kein Programmieren. Direkt bearbeiten und speichern.
+
+Neuen Dienst hinzufügen (Beispiel):
+  Du bindest ein neues Tool ein, das Nutzerdaten verarbeitet?
+  -> In VVT.md einen neuen Abschnitt "VT-05 · <Name>" anlegen ODER
+     in VVT.csv eine neue Zeile ergänzen. Felder ausfüllen:
+     Zweck, Rechtsgrundlage, welche Daten, Empfänger/Dienstleister,
+     Drittland (ja/nein), Löschfrist, Schutzmaßnahmen, Status.
+  -> Oben das Datum (Stand) aktualisieren.
+
+Bei einer Behördenprüfung:
+  VVT.md oder VVT.csv ausdrucken bzw. als PDF speichern. Das genügt.
+
+Offene Lücken (bitte ausfüllen):
+  - VT-01: Datum, an dem das Formcarry-DPA-PDF abgelegt wurde.
+  - VT-04: Name + Sitz eures E-Mail-/Server-Hosters (z. B. Plesk-Anbieter).

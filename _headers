@@ -18,5 +18,5 @@
 /*.js
   Cache-Control: public, max-age=86400
 
-/intern/*
+/vvt/*
   X-Robots-Tag: noindex, nofollow
