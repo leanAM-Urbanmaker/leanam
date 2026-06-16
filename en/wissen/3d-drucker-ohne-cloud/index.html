@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<meta name="theme-color" content="#0A1628">
+<title>Running 3D Printers Without the Cloud: On-Premise Options for Manufacturers | leanAM</title>
+<meta name="description" content="How companies run 3D printers without a cloud mandate: data sovereignty, compliance and production-grade management with leanAM MES.">
+<link rel="canonical" href="https://leanam.com/en/wissen/3d-drucker-ohne-cloud/">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://leanam.com/en/wissen/3d-drucker-ohne-cloud/">
+<meta property="og:title" content="3D Printers Without the Cloud — On-Premise Operation for Manufacturers | leanAM">
+<meta property="og:description" content="How companies run 3D printers without a cloud mandate: data sovereignty, compliance and production-grade management with leanAM MES.">
+<meta property="og:image" content="https://leanam.com/images/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="leanAM">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="3D Printers Without the Cloud — On-Premise Operation for Manufacturers | leanAM">
+<meta name="twitter:description" content="How companies run 3D printers without a cloud mandate: data sovereignty, compliance, production-grade management.">
+<meta name="twitter:image" content="https://leanam.com/images/og-image.png">
+<link rel="alternate" hreflang="de" href="https://leanam.com/wissen/3d-drucker-ohne-cloud/">
+<link rel="alternate" hreflang="en" href="https://leanam.com/en/wissen/3d-drucker-ohne-cloud/">
+<link rel="alternate" hreflang="x-default" href="https://leanam.com/wissen/3d-drucker-ohne-cloud/">
+<link rel="preload" as="font" type="font/woff2" href="/fonts/inter-latin.woff2" crossorigin>
+<link rel="preload" as="font" type="font/woff2" href="/fonts/jetbrains-mono-latin.woff2" crossorigin>
+<link rel="preload" as="image" href="/images/leanam-logo.png" fetchpriority="high">
+<link rel="stylesheet" href="/styles/leanam-system.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://leanam.com/en/" },
+        { "@type": "ListItem", "position": 2, "name": "Knowledge", "item": "https://leanam.com/en/wissen/" },
+        { "@type": "ListItem", "position": 3, "name": "3D Printers Without the Cloud", "item": "https://leanam.com/en/wissen/3d-drucker-ohne-cloud/" }
+      ]
+    },
+    {
+      "@type": "Article",
+      "url": "https://leanam.com/en/wissen/3d-drucker-ohne-cloud/",
+      "headline": "Running 3D Printers Without the Cloud: On-Premise Options for Manufacturers",
+      "description": "How companies run 3D printers without a cloud mandate: data sovereignty, compliance and production-grade management with leanAM MES.",
+      "author": { "@type": "Organization", "name": "leanAM", "url": "https://leanam.com/" },
+      "publisher": { "@type": "Organization", "name": "leanAM", "url": "https://leanam.com/" },
+      "datePublished": "2026-06-09",
+      "dateModified": "2026-06-09",
+      "inLanguage": "en"
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Which 3D printers can run without the cloud?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Most modern FFF, SLS and SLA printers offer at least read interfaces for local operation. Full control without a manufacturer cloud depends on the model and firmware and should be checked before purchase. leanAM MES supports printers from leading manufacturers — we clarify the exact scope of functions in a discovery workshop." }
+        },
+        {
+          "@type": "Question",
+          "name": "Are cloud-bound printer solutions relevant under GDPR?",
+          "acceptedAnswer": { "@type": "Answer", "text": "If personal data is processed through the cloud, the usual GDPR requirements apply. Which data is actually transmitted and where it is processed is set out in each provider's privacy policy. A blanket statement is inaccurate — the assessment has to be made case by case." }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the difference between community tools and an MES?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Community tools such as OctoPrint or manufacturer-specific open-source forks allow local control of individual printers, but offer no integrated order, material and resource management and no commercial support. An MES like leanAM adds industrial-grade functions for production use to the printer control." }
+        },
+        {
+          "@type": "Question",
+          "name": "Which printer manufacturers does leanAM MES support?",
+          "acceptedAnswer": { "@type": "Answer", "text": "leanAM MES is designed to work across manufacturers and integrates FFF, SLS and SLA systems from different vendors as well as complementary equipment such as CNC mills, lasers and robotics. Which interfaces are available in a given case is something we clarify up front." }
+        },
+        {
+          "@type": "Question",
+          "name": "How much effort does introducing an MES involve?",
+          "acceptedAnswer": { "@type": "Answer", "text": "An MES rollout typically covers discovery, technical integration, pilot operation and rollout. In most cases, initial production use can be reached within a few weeks — depending on the machine fleet, ERP integration and compliance requirements." }
+        }
+      ]
+    }
+  ]
+}
+</script>
+<link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+</head>
+<body data-screen-label="Knowledge 3D Printers Without the Cloud">
+
+<header class="lam-header">
+  <div class="lam-header__inner">
+    <a href="/en/index.html" class="lam-header__logo">
+      <img src="/images/leanam-logo.png" alt="leanAM" height="38" loading="eager">
+    </a>
+    <nav class="lam-header__nav" aria-label="Main navigation">
+      <a href="/en/index.html">Home</a>
+      <a href="/en/mes.html">leanAM MES</a>
+      <a href="/en/prozessberatung.html">Consulting</a>
+      <a href="/en/entwicklung.html">Development</a>
+      <a href="/en/ueber-uns.html">About us</a>
+      <a href="/en/wissen/" class="active">Knowledge</a>
+    </nav>
+    <div class="lam-header__right">
+      <span class="lam-header__lang">
+        <a href="/wissen/3d-drucker-ohne-cloud/">DE</a>
+        <span class="sep">|</span>
+        <a href="/en/wissen/3d-drucker-ohne-cloud/" class="active">EN</a>
+      </span>
+      <a href="/en/kontakt.html" class="lam-btn lam-btn--primary">
+        <span class="material-icons">mail</span>Contact
+      </a>
+    </div>
+    <button class="nav-toggle" aria-label="Open navigation" aria-expanded="false" aria-controls="mobile-nav">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="lam-mobile-nav" id="mobile-nav" hidden>
+    <nav aria-label="Mobile navigation">
+      <a href="/en/index.html">Home</a>
+      <a href="/en/mes.html">leanAM MES</a>
+      <a href="/en/prozessberatung.html">Consulting</a>
+      <a href="/en/entwicklung.html">Development</a>
+      <a href="/en/ueber-uns.html">About us</a>
+      <a href="/en/wissen/" class="active">Knowledge</a>
+      <a href="/en/kontakt.html" class="mobile-cta">Contact / Demo</a>
+    </nav>
+  </div>
+</header>
+
+<!-- Section 1 — Hero -->
+<section class="page-hero">
+  <div class="container">
+    <div class="breadcrumb"><a href="/en/index.html">Home</a><span class="material-symbols-outlined">chevron_right</span><a href="/en/wissen/">Knowledge</a><span class="material-symbols-outlined">chevron_right</span><span>3D Printers Without the Cloud</span></div>
+    <span class="eyebrow">Knowledge · On-Premise · Data sovereignty</span>
+    <h1>3D Printers Without the Cloud — <span class="accent">data sovereignty in additive manufacturing.</span></h1>
+    <p class="lead">Cloud-based printer management is convenient for private users. For manufacturers it creates compliance and availability risks. This article looks at the options for on-premise operation, where their limits are and when an MES starts to make sense.</p>
+  </div>
+</section>
+
+<!-- Section 2 — The Problem -->
+<section class="section light">
+  <div class="container">
+    <div class="split">
+      <div>
+        <span class="eyebrow">The problem</span>
+        <h2 class="h2">Why cloud-based printer control is a concern in industry.</h2>
+        <p class="body muted mt-2">
+          Many current 3D printers ship with cloud connectivity out of the box. Print jobs, status data, camera streams and material information travel to the respective manufacturer's servers. Where this data is processed depends on the manufacturer, the region and the contractual terms.
+        </p>
+        <p class="body muted mt-2">
+          For private users this is uncritical. In a manufacturing environment, however, it raises requirements around data sovereignty, order management and availability that a pure cloud model rarely meets. In regulated industries such as medical technology, aerospace or defence, cloud-bound production data is often not permitted at all.
+        </p>
+      </div>
+      <div>
+        <div class="feature-card" style="background:var(--navy-light, #1a2f3f);border:1px solid rgba(0,212,232,0.2);">
+          <h3 style="margin-bottom:16px;font-size:16px;text-transform:uppercase;letter-spacing:.08em;opacity:.7;">Typical requirements of manufacturers</h3>
+          <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:12px;">
+            <li style="display:flex;gap:12px;align-items:flex-start;"><span class="material-symbols-outlined" style="color:var(--cyan);flex-shrink:0;margin-top:2px;">check_circle</span><span>Production data stays on the company's own network</span></li>
+            <li style="display:flex;gap:12px;align-items:flex-start;"><span class="material-symbols-outlined" style="color:var(--cyan);flex-shrink:0;margin-top:2px;">check_circle</span><span>Independence from external service availability</span></li>
+            <li style="display:flex;gap:12px;align-items:flex-start;"><span class="material-symbols-outlined" style="color:var(--cyan);flex-shrink:0;margin-top:2px;">check_circle</span><span>Multi-user and role management</span></li>
+            <li style="display:flex;gap:12px;align-items:flex-start;"><span class="material-symbols-outlined" style="color:var(--cyan);flex-shrink:0;margin-top:2px;">check_circle</span><span>Order, material and cost tracking</span></li>
+            <li style="display:flex;gap:12px;align-items:flex-start;"><span class="material-symbols-outlined" style="color:var(--cyan);flex-shrink:0;margin-top:2px;">check_circle</span><span>Connection to ERP, MES and CAQ systems</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Section 3 — Comparison -->
+<section class="section offwhite">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Comparison</span>
+      <h2 class="h2">Three routes to cloud-independent printing.</h2>
+      <p>Depending on the machine fleet, scale and compliance requirements, different architectures come into play. The choice is less about the manufacturer brand than about the level of maturity you need for your operation.</p>
+    </div>
+
+    <div class="comparison-table-wrap" style="overflow-x:auto;margin-top:32px;">
+      <table style="width:100%;border-collapse:collapse;font-size:15px;min-width:640px;">
+        <thead>
+          <tr style="background:var(--navy);color:var(--white);">
+            <th style="padding:14px 16px;text-align:left;font-weight:600;width:28%;">Criterion</th>
+            <th style="padding:14px 16px;text-align:center;font-weight:600;width:24%;">Manufacturer cloud</th>
+            <th style="padding:14px 16px;text-align:center;font-weight:600;width:24%;">Community solutions</th>
+            <th style="padding:14px 16px;text-align:center;font-weight:600;width:24%;color:var(--cyan);">MES platform</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr style="border-bottom:1px solid #e5e7eb;">
+            <td style="padding:12px 16px;font-weight:500;">Setup effort</td>
+            <td style="padding:12px 16px;text-align:center;">Very low</td>
+            <td style="padding:12px 16px;text-align:center;">Medium to high</td>
+            <td style="padding:12px 16px;text-align:center;font-weight:600;">Low to medium</td>
+          </tr>
+          <tr style="border-bottom:1px solid #e5e7eb;background:#f9fafb;">
+            <td style="padding:12px 16px;font-weight:500;">Data sovereignty</td>
+            <td style="padding:12px 16px;text-align:center;">Depends on the provider</td>
+            <td style="padding:12px 16px;text-align:center;color:#22c55e;">On the company's own network</td>
+            <td style="padding:12px 16px;text-align:center;color:#22c55e;font-weight:600;">Fully on site</td>
+          </tr>
+          <tr style="border-bottom:1px solid #e5e7eb;">
+            <td style="padding:12px 16px;font-weight:500;">Multi-printer management</td>
+            <td style="padding:12px 16px;text-align:center;">Limited, manufacturer-bound</td>
+            <td style="padding:12px 16px;text-align:center;">Basic, project-dependent</td>
+            <td style="padding:12px 16px;text-align:center;font-weight:600;">Across manufacturers</td>
+          </tr>
+          <tr style="border-bottom:1px solid #e5e7eb;">
+            <td style="padding:12px 16px;font-weight:500;">Order management</td>
+            <td style="padding:12px 16px;text-align:center;color:#ef4444;">Rarely</td>
+            <td style="padding:12px 16px;text-align:center;color:#ef4444;">No</td>
+            <td style="padding:12px 16px;text-align:center;color:#22c55e;font-weight:600;">Yes</td>
+          </tr>
+          <tr style="border-bottom:1px solid #e5e7eb;">
+            <td style="padding:12px 16px;font-weight:500;">Material tracking</td>
+            <td style="padding:12px 16px;text-align:center;">Basic</td>
+            <td style="padding:12px 16px;text-align:center;color:#ef4444;">No</td>
+            <td style="padding:12px 16px;text-align:center;color:#22c55e;font-weight:600;">Yes</td>
+          </tr>
+          <tr style="border-bottom:1px solid #e5e7eb;background:#f9fafb;">
+            <td style="padding:12px 16px;font-weight:500;">Reporting &amp; utilisation</td>
+            <td style="padding:12px 16px;text-align:center;">Limited</td>
+            <td style="padding:12px 16px;text-align:center;color:#ef4444;">No</td>
+            <td style="padding:12px 16px;text-align:center;color:#22c55e;font-weight:600;">Yes</td>
+          </tr>
+          <tr style="border-bottom:1px solid #e5e7eb;">
+            <td style="padding:12px 16px;font-weight:500;">ERP / CAQ integration</td>
+            <td style="padding:12px 16px;text-align:center;color:#ef4444;">Rarely</td>
+            <td style="padding:12px 16px;text-align:center;">Demanding, custom</td>
+            <td style="padding:12px 16px;text-align:center;color:#22c55e;font-weight:600;">Yes, via API</td>
+          </tr>
+          <tr style="border-bottom:1px solid #e5e7eb;background:#f9fafb;">
+            <td style="padding:12px 16px;font-weight:500;">Support</td>
+            <td style="padding:12px 16px;text-align:center;">Manufacturer</td>
+            <td style="padding:12px 16px;text-align:center;">Community</td>
+            <td style="padding:12px 16px;text-align:center;font-weight:600;">Professional</td>
+          </tr>
+          <tr style="background:#f9fafb;">
+            <td style="padding:12px 16px;font-weight:500;">Suitability for production environments</td>
+            <td style="padding:12px 16px;text-align:center;color:#f59e0b;">Conditional</td>
+            <td style="padding:12px 16px;text-align:center;color:#f59e0b;">Conditional</td>
+            <td style="padding:12px 16px;text-align:center;color:#22c55e;font-weight:600;">Production-ready</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- Section 4 — The Options in Detail -->
+<section class="section light">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">The options in detail</span>
+      <h2 class="h2">What sits behind the three routes.</h2>
+    </div>
+    <div class="grid grid-3" style="margin-top:32px;">
+      <div class="feature-card">
+        <div style="display:flex;align-items:center;gap:12px;margin-bottom:16px;">
+          <span class="material-symbols-outlined" style="color:#f59e0b;font-size:28px;">cloud</span>
+          <h3 style="margin:0;">Manufacturer clouds</h3>
+        </div>
+        <p class="muted" style="font-size:15px;">Most consumer-oriented 3D printers ship with a cloud platform from the manufacturer. Convenient setup, smartphone app, remote access. Which data is processed where depends on the manufacturer, the chosen regional endpoint and the relevant privacy policy.</p>
+        <p class="muted" style="font-size:15px;margin-top:12px;"><strong>Note:</strong> before putting a printer into production use, it is worth reviewing the data-processing and data-transfer terms.</p>
+      </div>
+      <div class="feature-card">
+        <div style="display:flex;align-items:center;gap:12px;margin-bottom:16px;">
+          <span class="material-symbols-outlined" style="color:#7debf3;font-size:28px;">terminal</span>
+          <h3 style="margin:0;">Community and open-source solutions</h3>
+        </div>
+        <p class="muted" style="font-size:15px;">Tools such as OctoPrint, Mainsail or Klipper allow operation without a vendor cloud. They require in-house operating know-how, offer no commercial support and no standard interfaces to ERP or CAQ systems. They make sense for development and pilot environments; for series production with documentation requirements they are not enough.</p>
+        <p class="muted" style="font-size:15px;margin-top:12px;"><strong>Note on firmware restrictions:</strong> some manufacturers (incl. Bambu Lab, Prusa, Ultimaker) have built in authentication and authorisation mechanisms that limit direct third-party software access. The scope of functions should be checked case by case before an investment decision.</p>
+      </div>
+      <div class="feature-card" style="border:2px solid var(--cyan);">
+        <div style="display:flex;align-items:center;gap:12px;margin-bottom:16px;">
+          <span class="material-symbols-outlined" style="color:var(--cyan);font-size:28px;">factory</span>
+          <h3 style="margin:0;color:var(--cyan);">Manufacturing Execution System (MES)</h3>
+        </div>
+        <p class="muted" style="font-size:15px;">An MES like leanAM connects local printer control with the order, material and resource management that a production operation needs. Installed on premise, with no cloud dependency, and with a documented API connection to ERP and CAQ. Across manufacturers: FFF printers from different vendors, SLS/SLA systems, CNC machining centres, lasers and robotics in one system.</p>
+        <a href="/en/mes.html" class="btn btn-primary" style="margin-top:16px;display:inline-flex;align-items:center;gap:8px;font-size:14px;">More on leanAM MES</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Section 5 — Technical Background -->
+<section class="section offwhite">
+  <div class="container">
+    <div class="split">
+      <div>
+        <span class="eyebrow">Technical background</span>
+        <h2 class="h2">How does on-premise operation across manufacturers work?</h2>
+        <p class="body muted mt-2">
+          Many modern 3D printers offer interfaces for local communication: MQTT brokers, REST APIs, OctoPrint-compatible endpoints or manufacturer-specific SDKs. Through these interfaces you can capture status data such as print progress, temperatures, material consumption and error states without the information leaving the company network.
+        </p>
+        <p class="body muted mt-2">
+          Which operations are possible locally depends on the specific printer, the firmware version in use and the manufacturer's authorisation architecture. Read access is usually broadly available. Active control commands are, with some manufacturers, tied to the manufacturer's own authorisation mechanisms.
+        </p>
+        <p class="body muted mt-2">
+          leanAM MES brings these different protocols and restrictions together in a single MES layer. In the discovery phase we check, for the specific machine fleet, which operations can be handled entirely locally, where authorised interfaces are used and where workflow adjustments make sense.
+        </p>
+      </div>
+      <div>
+        <div class="feature-card">
+          <h3 style="margin-bottom:16px;font-size:16px;">Typical prerequisites for on-premise integration</h3>
+          <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:10px;">
+            <li style="display:flex;gap:10px;align-items:flex-start;"><span class="material-symbols-outlined" style="color:var(--cyan);flex-shrink:0;font-size:20px;">check_circle</span><span>Printer with a documented network interface (LAN, MQTT, REST, OctoPrint or similar)</span></li>
+            <li style="display:flex;gap:10px;align-items:flex-start;"><span class="material-symbols-outlined" style="color:var(--cyan);flex-shrink:0;font-size:20px;">check_circle</span><span>Printer and MES server on the same network segment or connected via VPN</span></li>
+            <li style="display:flex;gap:10px;align-items:flex-start;"><span class="material-symbols-outlined" style="color:var(--cyan);flex-shrink:0;font-size:20px;">check_circle</span><span>Local server (Windows or Linux) for the MES instance</span></li>
+            <li style="display:flex;gap:10px;align-items:flex-start;"><span class="material-symbols-outlined" style="color:var(--cyan);flex-shrink:0;font-size:20px;">check_circle</span><span>Optional: ERP/CAQ system with a documented API for integration</span></li>
+            <li style="display:flex;gap:10px;align-items:flex-start;"><span class="material-symbols-outlined" style="color:var(--cyan);flex-shrink:0;font-size:20px;">check_circle</span><span>Clarification of firmware levels and authorisation requirements up front</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Section 6 — FAQ -->
+<section class="section teal">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow" style="color:#7debf3;">FAQ</span>
+      <h2 class="h2">Common questions about cloud-independent printing.</h2>
+    </div>
+    <div style="max-width:800px;margin:0 auto;display:flex;flex-direction:column;gap:4px;">
+      <details style="background:rgba(255,255,255,0.07);border-radius:0;overflow:hidden;">
+        <summary style="padding:18px 20px;cursor:pointer;font-weight:600;list-style:none;display:flex;justify-content:space-between;align-items:center;">Which 3D printers can run without the cloud?</summary>
+        <p style="padding:0 20px 18px;margin:0;opacity:.85;line-height:1.7;">Most modern FFF, SLS and SLA printers offer at least read interfaces for local operation. Full control without a manufacturer cloud depends on the model and firmware and should be checked before purchase. leanAM MES supports printers from leading manufacturers (incl. Bambu Lab, Prusa, Ultimaker, Formlabs, EOS). We clarify the exact scope of functions in a discovery workshop.</p>
+      </details>
+      <details style="background:rgba(255,255,255,0.07);border-radius:0;overflow:hidden;">
+        <summary style="padding:18px 20px;cursor:pointer;font-weight:600;list-style:none;display:flex;justify-content:space-between;align-items:center;">Are cloud-bound printer solutions relevant under GDPR?</summary>
+        <p style="padding:0 20px 18px;margin:0;opacity:.85;line-height:1.7;">If personal data (e.g. user accounts, IP addresses, assignment of jobs to staff) is processed through the cloud, the usual GDPR requirements apply: legal basis, data-processing agreement and, where relevant, a third-country transfer assessment. Which data is actually transmitted and where it is processed is set out in each provider's privacy policy. The blanket equation "cloud-based = not data-protection compliant" does not hold; it can only be judged case by case.</p>
+      </details>
+      <details style="background:rgba(255,255,255,0.07);border-radius:0;overflow:hidden;">
+        <summary style="padding:18px 20px;cursor:pointer;font-weight:600;list-style:none;display:flex;justify-content:space-between;align-items:center;">What is the difference between community tools and an MES?</summary>
+        <p style="padding:0 20px 18px;margin:0;opacity:.85;line-height:1.7;">Community tools such as OctoPrint, Mainsail or manufacturer-specific open-source forks allow local control of individual printers, but offer no integrated order, material and resource management, no ERP connection and no commercial support. leanAM MES adds exactly these functions to the printer control and is built for production use in companies.</p>
+      </details>
+      <details style="background:rgba(255,255,255,0.07);border-radius:0;overflow:hidden;">
+        <summary style="padding:18px 20px;cursor:pointer;font-weight:600;list-style:none;display:flex;justify-content:space-between;align-items:center;">Which printer manufacturers does leanAM MES support?</summary>
+        <p style="padding:0 20px 18px;margin:0;opacity:.85;line-height:1.7;">leanAM MES is designed to work across manufacturers and integrates FFF, SLS and SLA systems from different vendors (incl. Bambu Lab, Prusa, Ultimaker, Formlabs, EOS) as well as complementary equipment such as CNC mills, lasers and robotics. We retrofit older or analogue machines digitally with leanCONNECT. Which interfaces are available in a given case is something we clarify up front.</p>
+      </details>
+      <details style="background:rgba(255,255,255,0.07);border-radius:0;overflow:hidden;">
+        <summary style="padding:18px 20px;cursor:pointer;font-weight:600;list-style:none;display:flex;justify-content:space-between;align-items:center;">How much effort does the rollout involve?</summary>
+        <p style="padding:0 20px 18px;margin:0;opacity:.85;line-height:1.7;">An MES rollout typically covers discovery, technical integration, pilot operation and rollout. The time required depends on the size of the machine fleet, the depth of the ERP/CAQ integration and the compliance requirements. In most cases, initial production use can be reached within a few weeks.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- Section 7 — CTA -->
+<section class="section light">
+  <div class="container" style="text-align:center;max-width:700px;margin:0 auto;">
+    <span class="eyebrow">Next step</span>
+    <h2 class="h2">Run your machine fleet without the cloud — <span class="cyan">we'll show you how.</span></h2>
+    <p>In a free demo we show leanAM MES live with connected printers and complementary equipment, on premise on your server or our demo instance. Afterwards we tell you which options make sense for your machine fleet and which don't.</p>
+    <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;margin-top:24px;">
+      <a href="https://calendly.com/hq-leanam/30min" target="_blank" rel="noopener" class="btn btn-primary" style="display:inline-flex;align-items:center;gap:8px;">Request a demo</a>
+      <a href="/en/mes.html" class="btn btn-outline" style="display:inline-flex;align-items:center;gap:8px;">See leanAM MES</a>
+    </div>
+  </div>
+</section>
+
+<footer class="lam-footer">
+  <div class="lam-footer__inner">
+    <div class="lam-footer__grid">
+      <div>
+        <a href="/en/index.html"><img src="/images/leanam-logo.png" alt="leanAM" height="34" loading="lazy"></a>
+        <p class="lam-footer__tagline">Software, consulting and development for additive manufacturing.<br>Made in Germany — Data-sovereign — On-Premise.</p>
+      </div>
+      <div>
+        <span class="lam-footer__col-title">Product</span>
+        <ul class="lam-footer__list">
+          <li><a href="/en/mes.html">leanAM MES</a></li>
+          <li><a href="/en/entwicklung.html">Custom Development</a></li>
+          <li><a href="https://calendly.com/hq-leanam/30min" target="_blank" rel="noopener">Request a demo</a></li>
+        </ul>
+      </div>
+      <div>
+        <span class="lam-footer__col-title">Services</span>
+        <ul class="lam-footer__list">
+          <li><a href="/en/prozessberatung.html">Consulting</a></li>
+          <li><a href="/en/entwicklung.html">Development</a></li>
+          <li><a href="/en/prozessberatung.html">B2B Print Service</a></li>
+          <li><a href="/en/prozessberatung.html">Implementation</a></li>
+        </ul>
+      </div>
+      <div>
+        <span class="lam-footer__col-title">Company</span>
+        <ul class="lam-footer__list">
+          <li><a href="/en/ueber-uns.html">About us</a></li>
+          <li><a href="/en/ueber-uns.html">Careers</a></li>
+          <li><a href="/en/kontakt.html">Contact</a></li>
+          <li><a href="/en/kontakt.html">Location</a></li>
+        </ul>
+      </div>
+    </div>
+    <p style="font-size:11px;color:rgba(255,255,255,.25);line-height:1.6;padding-top:16px;border-top:1px solid rgba(111,216,241,.08);margin-bottom:16px;">Third-party brand and product names (e.g. Bambu Lab, Prusa, Ultimaker) are the property of their respective owners. They are named solely to describe compatibility. No official partnerships or authorisations exist unless expressly stated otherwise.</p>
+    <div class="lam-footer__bottom">
+      <span class="lam-footer__copy">© 2026 URBANMAKER UG (haftungsbeschränkt) · leanAM is a brand of URBANMAKER UG · Münster, Germany</span>
+      <div class="lam-footer__legal">
+        <a href="/impressum.html">Imprint</a>
+        <a href="/datenschutz.html">Privacy Policy</a>
+        <a href="/agb.html">Terms</a>
+      </div>
+    </div>
+  </div>
+</footer>
+<script src="/nav.js" defer></script>
+</body>
+</html>
