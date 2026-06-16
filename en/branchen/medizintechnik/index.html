@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<meta name="theme-color" content="#0A1628">
+<title>3D Printing in Medical Technology — Documentation, GDPR, On-Premise | leanAM</title>
+<meta name="description" content="Additive manufacturing in medical technology: documentation, traceability and local data storage with leanAM MES. On-premise, no forced cloud, data-sovereign.">
+<link rel="canonical" href="https://leanam.com/en/branchen/medizintechnik/">
+<link rel="alternate" hreflang="de" href="https://leanam.com/branchen/medizintechnik/">
+<link rel="alternate" hreflang="en" href="https://leanam.com/en/branchen/medizintechnik/">
+<link rel="alternate" hreflang="x-default" href="https://leanam.com/branchen/medizintechnik/">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://leanam.com/en/branchen/medizintechnik/">
+<meta property="og:title" content="3D Printing for Medical Technology — Data-Sovereign & On-Premise | leanAM">
+<meta property="og:description" content="AM software for medical technology: full traceability, local data storage, data-sovereign. On-premise, Made in Germany.">
+<meta property="og:image" content="https://leanam.com/images/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="leanAM">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="3D Printing for Medical Technology — Data-Sovereign & On-Premise | leanAM">
+<meta name="twitter:description" content="AM software for medical technology: full traceability, local data storage, on-premise.">
+<meta name="twitter:image" content="https://leanam.com/images/og-image.png">
+<link rel="preload" as="font" type="font/woff2" href="/fonts/inter-latin.woff2" crossorigin>
+<link rel="preload" as="font" type="font/woff2" href="/fonts/jetbrains-mono-latin.woff2" crossorigin>
+<link rel="preload" as="image" href="/images/leanam-logo.png" fetchpriority="high">
+<link rel="stylesheet" href="/styles/leanam-system.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://leanam.com/en/" },
+        { "@type": "ListItem", "position": 2, "name": "Industries", "item": "https://leanam.com/en/branchen/" },
+        { "@type": "ListItem", "position": 3, "name": "Medical technology", "item": "https://leanam.com/en/branchen/medizintechnik/" }
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://leanam.com/en/branchen/medizintechnik/",
+      "name": "3D Printing in Medical Technology — Documentation, GDPR, On-Premise",
+      "description": "leanAM MES for medical technology companies: full traceability, local data storage, data-sovereign operation.",
+      "publisher": { "@type": "Organization", "name": "leanAM", "url": "https://leanam.com/" }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Does leanAM MES support MDR requirements?",
+          "acceptedAnswer": { "@type": "Answer", "text": "leanAM MES provides documentation, traceability and auditable logs — technical building blocks that make MDR-supporting processes easier. System conformity under the MDR remains the responsibility of the user company." }
+        },
+        {
+          "@type": "Question",
+          "name": "Why is cloud-based AM software a problem in medical technology?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Cloud software sends production data — geometries, process parameters, material batches — to external servers. In medical technology this is often sensitive data on patient-care products or proprietary designs. The GDPR and internal data protection policies require local data storage in many cases." }
+        },
+        {
+          "@type": "Question",
+          "name": "Which AM use cases exist in medical technology?",
+          "acceptedAnswer": { "@type": "Answer", "text": "The most common AM applications in medical technology: prototypes and development samples (no patient contact, fast iteration), production aids such as jigs and fixtures, patient-specific models for planning and training, plus packaging and handling aids. Implants and patient-specific implants require certified processes under the relevant standards." }
+        }
+      ]
+    }
+  ]
+}
+</script>
+<link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+</head>
+<body data-screen-label="Branchen Medizintechnik">
+
+<header class="lam-header">
+  <div class="lam-header__inner">
+    <a href="/en/index.html" class="lam-header__logo">
+      <img src="/images/leanam-logo.png" alt="leanAM" height="38" loading="eager">
+    </a>
+    <nav class="lam-header__nav" aria-label="Main navigation">
+      <a href="/en/index.html">Home</a>
+      <a href="/en/mes.html">leanAM MES</a>
+      <a href="/en/prozessberatung.html">Consulting</a>
+      <a href="/en/entwicklung.html">Development</a>
+      <a href="/en/ueber-uns.html">About us</a>
+      <a href="/en/wissen/">Knowledge</a>
+    </nav>
+    <div class="lam-header__right">
+      <span class="lam-header__lang">
+        <a href="/branchen/medizintechnik/">DE</a>
+        <span class="sep">|</span>
+        <a href="/en/branchen/medizintechnik/" class="active">EN</a>
+      </span>
+      <a href="/en/kontakt.html" class="lam-btn lam-btn--primary">
+        <span class="material-icons">mail</span>Contact
+      </a>
+    </div>
+    <button class="nav-toggle" aria-label="Open navigation" aria-expanded="false" aria-controls="mobile-nav">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="lam-mobile-nav" id="mobile-nav" hidden>
+    <nav aria-label="Mobile navigation">
+      <a href="/en/index.html">Home</a>
+      <a href="/en/mes.html">leanAM MES</a>
+      <a href="/en/prozessberatung.html">Consulting</a>
+      <a href="/en/entwicklung.html">Development</a>
+      <a href="/en/ueber-uns.html">About us</a>
+      <a href="/en/wissen/">Knowledge</a>
+      <a href="/en/kontakt.html" class="mobile-cta">Contact / Demo</a>
+    </nav>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="container">
+    <div class="breadcrumb"><a href="/en/index.html">Home</a><span class="material-symbols-outlined" aria-hidden="true">chevron_right</span><span>Industries</span><span class="material-symbols-outlined" aria-hidden="true">chevron_right</span><span>Medical technology</span></div>
+    <span class="eyebrow">Documentation · Traceability · GDPR · On-Premise</span>
+    <h1>3D printing in medical technology: <span class="accent">local, auditable, compliant.</span></h1>
+    <p class="lead">Additive manufacturing in regulated medtech environments comes with different demands than in general industry. leanAM MES provides the infrastructure for an AM production that can be audited and whose data never leaves the company network.</p>
+  </div>
+</section>
+
+<section class="section light">
+  <div class="container">
+
+    <div style="background:#fff8e1;border-left:3px solid #f59e0b;padding:16px 20px;margin-bottom:32px;font-size:14px;color:#78350f;">
+      <strong>Note:</strong> leanAM is not a certified QM system under ISO 13485 or MDR. The software supports documentation and traceability — validation and regulatory clearance are the responsibility of the user company.
+    </div>
+    <div class="section-head">
+      <span class="eyebrow">Requirements</span>
+      <h2 class="h2">What regulated medtech environments require from AM software.</h2>
+    </div>
+    <div class="grid grid-3" style="margin-top:32px;">
+      <div class="feature-card">
+        <span class="material-symbols-outlined" style="color:var(--cyan);font-size:32px;margin-bottom:12px;display:block;">verified_user</span>
+        <h3 style="margin-bottom:8px;">Full traceability</h3>
+        <p class="muted" style="font-size:15px;">Regulatory requirements and best practice call for complete documentation of who printed what, when, with which material and which parameters. leanAM MES logs every job in an audit-proof way.</p>
+      </div>
+      <div class="feature-card">
+        <span class="material-symbols-outlined" style="color:var(--cyan);font-size:32px;margin-bottom:12px;display:block;">shield_lock</span>
+        <h3 style="margin-bottom:8px;">Local data storage</h3>
+        <p class="muted" style="font-size:15px;">CAD geometries, process parameters and production data never leave the company network. On-premise installation on your own infrastructure, no cloud connection required.</p>
+      </div>
+      <div class="feature-card">
+        <span class="material-symbols-outlined" style="color:var(--cyan);font-size:32px;margin-bottom:12px;display:block;">manage_accounts</span>
+        <h3 style="margin-bottom:8px;">Access control & roles</h3>
+        <p class="muted" style="font-size:15px;">Approval workflows, role concepts and four-eyes principle for print releases. The system governs who may start a job and who has to check it beforehand.</p>
+      </div>
+      <div class="feature-card">
+        <span class="material-symbols-outlined" style="color:var(--cyan);font-size:32px;margin-bottom:12px;display:block;">inventory_2</span>
+        <h3 style="margin-bottom:8px;">Material batch tracking</h3>
+        <p class="muted" style="font-size:15px;">Every batch, every spool, every material is tied to a print job. Indispensable for recall scenarios and audit requirements.</p>
+      </div>
+      <div class="feature-card">
+        <span class="material-symbols-outlined" style="color:var(--cyan);font-size:32px;margin-bottom:12px;display:block;">description</span>
+        <h3 style="margin-bottom:8px;">Audit logs</h3>
+        <p class="muted" style="font-size:15px;">Every action in the system is logged with a timestamp and user. The logs are immutable and exportable, ready for internal and external audits.</p>
+      </div>
+      <div class="feature-card">
+        <span class="material-symbols-outlined" style="color:var(--cyan);font-size:32px;margin-bottom:12px;display:block;">lan</span>
+        <h3 style="margin-bottom:8px;">Network isolation possible</h3>
+        <p class="muted" style="font-size:15px;">leanAM MES runs entirely on the intranet. Printers and servers can be operated disconnected from the internet, which matters for safety-critical production environments.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section offwhite">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Use cases</span>
+      <h2 class="h2">Where AM is used in medical technology today.</h2>
+      <p>Three fields where additive manufacturing already pays off, without the regulatory effort of patient contact.</p>
+    </div>
+    <div class="grid grid-3" style="margin-top:32px;">
+      <div class="feature-card">
+        <div style="display:flex;align-items:center;gap:10px;margin-bottom:12px;">
+          <span class="badge solid" style="font-size:12px;padding:4px 10px;">Today · Widely used</span>
+        </div>
+        <h3 style="margin-bottom:8px;">Prototypes & development samples</h3>
+        <p class="muted" style="font-size:15px;">Fast iteration of housings, mounts, grip geometries and functional models without patient contact. This is where AM is most widespread and immediately economical.</p>
+      </div>
+      <div class="feature-card">
+        <div style="display:flex;align-items:center;gap:10px;margin-bottom:12px;">
+          <span class="badge solid" style="font-size:12px;padding:4px 10px;">Today · Growing</span>
+        </div>
+        <h3 style="margin-bottom:8px;">Jigs, fixtures & production aids</h3>
+        <p class="muted" style="font-size:15px;">Assembly fixtures, calibration holders and inspection gauges can be tailored to a product line and produced cheaply. No patient contact, low regulatory effort.</p>
+      </div>
+      <div class="feature-card">
+        <div style="display:flex;align-items:center;gap:10px;margin-bottom:12px;">
+          <span class="badge solid" style="font-size:12px;padding:4px 10px;">Today · Specialized</span>
+        </div>
+        <h3 style="margin-bottom:8px;">Anatomical models & planning</h3>
+        <p class="muted" style="font-size:15px;">Patient-specific planning models from CT/MRI data for surgical preparation and training. Clear medical value, no direct patient contact.</p>
+      </div>
+    </div>
+    <div style="background:rgba(0,212,232,0.08);border:1px solid rgba(0,212,232,0.2);border-radius:0;padding:24px;margin-top:24px;display:flex;gap:16px;align-items:flex-start;">
+      <span class="material-symbols-outlined" style="color:var(--cyan);flex-shrink:0;margin-top:2px;">info</span>
+      <div>
+        <strong>Implants and Class III products</strong>
+        <p style="margin:6px 0 0;opacity:.8;font-size:15px;line-height:1.6;">Patient-specific implants made by AM require ISO 13485 certification, biocompatibility evidence (ISO 10993) and MDR conformity assessment. That is a regulatory project in its own right. leanAM supports it, but the certification path stays with the company.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section teal">
+  <div class="container">
+    <div class="split" style="align-items:center;">
+      <div>
+        <span class="eyebrow" style="color:#7debf3;">Why on-premise</span>
+        <h2 class="h2">In medical technology, there is no way around data sovereignty.</h2>
+        <p style="opacity:.85;line-height:1.7;margin-top:16px;">
+          Production data in medical technology — geometries, parameter sets and material batches — is business-critical and in part personal data (patient-specific parts). Cloud services with servers outside the EU do not meet GDPR requirements without considerable additional effort.
+        </p>
+        <p style="opacity:.85;line-height:1.7;margin-top:12px;">
+          leanAM MES runs on your server in your network. The data stays within the company, and updates happen on your schedule.
+        </p>
+        <div class="badge-row" style="margin-top:20px;">
+          <span class="badge solid"><span class="material-symbols-outlined">verified</span>Made in Germany</span>
+          <span class="badge"><span class="material-symbols-outlined">shield_lock</span>Data-sovereign</span>
+          <span class="badge"><span class="material-symbols-outlined">cloud_off</span>On-Premise</span>
+        </div>
+      </div>
+      <div>
+        <div style="background:rgba(255,255,255,0.08);border-radius:0;padding:28px;">
+          <h3 style="margin-bottom:20px;font-size:16px;opacity:.7;text-transform:uppercase;letter-spacing:.08em;">FAQ</h3>
+          <details style="border-bottom:1px solid rgba(255,255,255,0.12);padding-bottom:16px;margin-bottom:16px;">
+            <summary style="cursor:pointer;font-weight:600;list-style:none;line-height:1.5;">Does leanAM MES support MDR requirements?</summary>
+            <p style="margin:12px 0 0;opacity:.8;font-size:14px;line-height:1.6;">leanAM MES provides traceability, auditable logs and local data storage: building blocks for processes that support MDR requirements. System conformity remains the responsibility of the user company.</p>
+          </details>
+          <details style="border-bottom:1px solid rgba(255,255,255,0.12);padding-bottom:16px;margin-bottom:16px;">
+            <summary style="cursor:pointer;font-weight:600;list-style:none;line-height:1.5;">Why is cloud AM a problem in medtech?</summary>
+            <p style="margin:12px 0 0;opacity:.8;font-size:14px;line-height:1.6;">Cloud software sends production data to external servers. In medical technology this is often sensitive geometries and proprietary designs. The GDPR and regulatory requirements call for local data storage in many cases.</p>
+          </details>
+          <details>
+            <summary style="cursor:pointer;font-weight:600;list-style:none;line-height:1.5;">Which printers are supported?</summary>
+            <p style="margin:12px 0 0;opacity:.8;font-size:14px;line-height:1.6;">leanAM MES supports several ways of controlling printers directly on the local network, without an external cloud and without a mandatory account. Print data stays entirely within your infrastructure. Whether and to what extent your production environment can be supported is something we can review in a conversation. <a href="/en/kontakt.html" style="color:var(--lam-cyan, #6FD8F1);text-decoration:underline;">Feel free to get in touch with us.</a></p>
+          </details>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section light">
+  <div class="container" style="text-align:center;max-width:700px;margin:0 auto;">
+    <span class="eyebrow">Next step</span>
+    <h2 class="h2">AM in your medtech environment — <span class="cyan">let's talk about your specific case.</span></h2>
+    <p>Regulatory requirements, machine selection and MES integration are best clarified against your specific use case, in a conversation with no strings attached.</p>
+    <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;margin-top:24px;">
+      <a href="https://calendly.com/hq-leanam/leanam-erstgesprach-30-min" target="_blank" rel="noopener" class="btn btn-primary" style="display:inline-flex;align-items:center;gap:8px;">Request a conversation<span class="material-symbols-outlined">arrow_forward</span></a>
+      <a href="/en/mes.html" class="btn btn-outline" style="display:inline-flex;align-items:center;gap:8px;">See leanAM MES</a>
+    </div>
+  </div>
+</section>
+
+<footer class="lam-footer">
+  <div class="lam-footer__inner">
+    <div class="lam-footer__grid">
+      <div>
+        <a href="/en/index.html"><img src="/images/leanam-logo.png" alt="leanAM" height="34" loading="lazy"></a>
+        <p class="lam-footer__tagline">Software, consulting and development for additive manufacturing.<br>Made in Germany — Data-sovereign — On-Premise.</p>
+      </div>
+      <div>
+        <span class="lam-footer__col-title">Product</span>
+        <ul class="lam-footer__list">
+          <li><a href="/en/mes.html">leanAM MES</a></li>
+          <li><a href="/en/entwicklung.html">Custom Development</a></li>
+          <li><a href="https://calendly.com/hq-leanam/30min" target="_blank" rel="noopener">Request a demo</a></li>
+        </ul>
+      </div>
+      <div>
+        <span class="lam-footer__col-title">Services</span>
+        <ul class="lam-footer__list">
+          <li><a href="/en/prozessberatung.html">Consulting</a></li>
+          <li><a href="/en/entwicklung.html">Development</a></li>
+          <li><a href="/en/prozessberatung.html">B2B Print Service</a></li>
+          <li><a href="/en/prozessberatung.html">Implementation</a></li>
+        </ul>
+      </div>
+      <div>
+        <span class="lam-footer__col-title">Company</span>
+        <ul class="lam-footer__list">
+          <li><a href="/en/ueber-uns.html">About us</a></li>
+          <li><a href="/en/ueber-uns.html">Careers</a></li>
+          <li><a href="/en/kontakt.html">Contact</a></li>
+          <li><a href="/en/kontakt.html">Location</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="lam-footer__bottom">
+      <span class="lam-footer__copy">© 2026 URBANMAKER UG (haftungsbeschränkt) · leanAM is a brand of URBANMAKER UG · Münster, Germany</span>
+      <div class="lam-footer__legal">
+        <a href="/impressum.html">Imprint</a>
+        <a href="/datenschutz.html">Privacy Policy</a>
+        <a href="/agb.html">Terms</a>
+      </div>
+      <span style="display:block;margin-top:12px;font-size:11px;opacity:0.55;line-height:1.5;">Legal documents (Imprint, Privacy Policy, Terms) are provided in German and are governed by German law.</span>
+    </div>
+  </div>
+</footer>
+<script src="/nav.js" defer></script>
+</body>
+</html>
