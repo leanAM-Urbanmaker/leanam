@@ -591,11 +591,9 @@
       <div class="lc-panel lc-panel--right">
 
         <form id="lc-form" novalidate>
-          <input type="hidden" name="access_key" value="c30aecf0-fbf3-49b8-b605-2b04861417f8">
           <input type="hidden" name="subject" value="Einspar-Rechner Lead — leanAM">
           <input type="hidden" name="from_name" value="leanAM Einspar-Rechner">
           <input type="hidden" name="calc_data" id="lc-calc-data" value="">
-          <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off">
 
           <p class="lc-form-title">Individuelle Auswertung anfordern</p>
           <p class="lc-form-sub">Wir prüfen Ihre Angaben und senden Ihnen eine persönliche Einschätzung für Ihren Betrieb per E-Mail — kostenlos, kein Verkaufsgespräch.</p>
@@ -618,7 +616,7 @@
             <label for="lc-consent">Ich stimme zu, dass meine Angaben zur Bearbeitung meiner Anfrage gespeichert und genutzt werden. Weitere Informationen in der <a href="/datenschutz.html">Datenschutzerklärung.</a></label>
           </div>
           <button class="lc-submit" id="lc-submit" type="submit">Auswertung anfordern</button>
-          <p class="lc-privacy">Kein Spam. Keine Weitergabe. Datenverarbeitung über Web3Forms.</p>
+          <p class="lc-privacy">Kein Spam. Keine Weitergabe. Datenverarbeitung über einen EU-Dienstleister (Frankfurt).</p>
         </form>
 
         <div id="lc-success" hidden>
@@ -714,7 +712,7 @@
     var payload = {};
     new FormData(this).forEach(function(v, k){ payload[k] = v; });
 
-    fetch('https://api.web3forms.com/submit', {
+    fetch('https://formcarry.com/s/YeWdKCck38z', {
       method:  'POST',
       headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
       body:    JSON.stringify(payload)

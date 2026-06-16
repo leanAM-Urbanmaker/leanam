@@ -22,11 +22,11 @@
       "betroffene_personen": "Interessenten, (potenzielle) Kunden, deren Ansprechpartner.",
       "datenkategorien": ["Vor- und Nachname", "Unternehmen", "E-Mail-Adresse", "Telefonnummer (optional)", "Funktion (optional)", "Thema", "Nachrichteninhalt"],
       "empfaenger": ["Formcarry (Formular-Backend, Auftragsverarbeiter)", "interne Bearbeitung per E-Mail (hq@leanam.com)"],
-      "auftragsverarbeiter": "Formcarry – Speicherung in EU-Rechenzentrum (Frankfurt am Main, AWS). AVV nach Art. 28 DSGVO als elektronisch einbezogener Vertrag (DPA: https://formcarry.com/legal/data-processing-agreement, PDF abgelegt am: TODO-Datum).",
+      "auftragsverarbeiter": "Formcarry – Speicherung in EU-Rechenzentrum (Frankfurt am Main, AWS). AVV nach Art. 28 DSGVO als elektronisch einbezogener Vertrag (DPA: https://formcarry.com/legal/data-processing-agreement, PDF abgelegt am: TODO-Datum eintragen).",
       "drittlandtransfer": "Nein – Verarbeitung innerhalb der EU.",
       "loeschfrist": "Löschung, sobald die Anfrage abschließend bearbeitet ist und keine gesetzlichen Aufbewahrungspflichten (z. B. § 257 HGB, § 147 AO) entgegenstehen.",
-      "tom": "TLS/HTTPS-Übertragung; Zugriff nur durch berechtigte Personen; Spam-Schutz per Honeypot; keine externe Captcha-Einbindung.",
-      "status": "geplant – löst den bisherigen Anbieter Web3Forms (Indien) ab. Bis zur Umstellung gilt der Eintrag für Web3Forms (siehe Hinweis am Dateiende)."
+      "tom": "TLS/HTTPS-Übertragung; Zugriff nur durch berechtigte Personen; Spam-Schutz per Honeypot (_gotcha); keine externe Captcha-Einbindung.",
+      "status": "aktiv (seit Umstellung von Web3Forms auf Formcarry, 2026-06-16)"
     },
     {
       "id": "VT-02",

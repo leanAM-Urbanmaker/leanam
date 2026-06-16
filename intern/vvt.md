@@ -17,7 +17,7 @@
 
 ### VT-01 — Bearbeitung von Kontakt- und Demo-Anfragen über das Website-Formular
 
-**Status:** geplant – löst den bisherigen Anbieter Web3Forms (Indien) ab. Bis zur Umstellung gilt der Eintrag für Web3Forms (siehe Hinweis am Dateiende).
+**Status:** aktiv (seit Umstellung von Web3Forms auf Formcarry, 2026-06-16)
 
 **Zwecke:** Beantwortung und Bearbeitung von Anfragen, Anbahnung von Geschäftsbeziehungen, Terminvereinbarung.
 
@@ -38,13 +38,13 @@
 - Formcarry (Formular-Backend, Auftragsverarbeiter)
 - interne Bearbeitung per E-Mail (hq@leanam.com)
 
-**Auftragsverarbeiter:** Formcarry – Speicherung in EU-Rechenzentrum (Frankfurt am Main, AWS). AVV nach Art. 28 DSGVO als elektronisch einbezogener Vertrag (DPA: https://formcarry.com/legal/data-processing-agreement, PDF abgelegt am: TODO-Datum).
+**Auftragsverarbeiter:** Formcarry – Speicherung in EU-Rechenzentrum (Frankfurt am Main, AWS). AVV nach Art. 28 DSGVO als elektronisch einbezogener Vertrag (DPA: https://formcarry.com/legal/data-processing-agreement, PDF abgelegt am: TODO-Datum eintragen).
 
 **Drittlandtransfer:** Nein – Verarbeitung innerhalb der EU.
 
 **Löschfrist:** Löschung, sobald die Anfrage abschließend bearbeitet ist und keine gesetzlichen Aufbewahrungspflichten (z. B. § 257 HGB, § 147 AO) entgegenstehen.
 
-**Technische & organisatorische Maßnahmen:** TLS/HTTPS-Übertragung; Zugriff nur durch berechtigte Personen; Spam-Schutz per Honeypot; keine externe Captcha-Einbindung.
+**Technische & organisatorische Maßnahmen:** TLS/HTTPS-Übertragung; Zugriff nur durch berechtigte Personen; Spam-Schutz per Honeypot (_gotcha); keine externe Captcha-Einbindung.
 
 ---
 
