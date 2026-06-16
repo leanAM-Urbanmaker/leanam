@@ -127,7 +127,7 @@
         <h2 class="h2 mt-0" style="margin-top:6px;">Tell us about your project</h2>
         <p class="body muted mt-2" style="margin-bottom:32px;">The more specific, the better, but a brief outline is enough. We'll suggest an appointment and clarify the details in conversation.</p>
 
-        <form class="form" action="https://formcarry.com/s/YeWdKCck38z" method="POST" accept-charset="UTF-8">
+        <form class="form" id="contactForm" action="https://formcarry.com/s/YeWdKCck38z" method="POST" accept-charset="UTF-8">
           <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px;" aria-hidden="true">
           <div class="form-row">
             <div class="field">
@@ -270,6 +270,25 @@
   </div>
 </footer>
 
+<script>
+(function(){
+  var form = document.getElementById('contactForm');
+  if(!form) return;
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    if(!form.checkValidity()){ form.reportValidity(); return; }
+    var btn = form.querySelector('button[type=submit]');
+    var orig = btn ? btn.innerHTML : '';
+    if(btn){ btn.disabled = true; btn.textContent = 'Sending …'; }
+    fetch(form.action, { method:'POST', body:new FormData(form), headers:{ 'Accept':'application/json' } })
+      .then(function(r){ if(r.ok){ window.location.href = '/danke.html'; } else { throw new Error('submit'); } })
+      .catch(function(){
+        if(btn){ btn.disabled = false; btn.innerHTML = orig; }
+        alert('There was a problem sending your message. Please try again or email hq@leanAM.com.');
+      });
+  });
+})();
+</script>
 <script src="/nav.js" defer></script>
 </body>
 </html>
