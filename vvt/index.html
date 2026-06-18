@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <title>VVT – Interne Übersicht | leanAM</title>
+  <style>
+    :root{
+      --ink:#0A1628; --ink-2:#102542; --ink-deep:#060E1C;
+      --cyan:#6FD8F1; --paper:#F4F8FB;
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{
+      background:var(--ink-deep); color:var(--paper);
+      font-family:'Inter',system-ui,-apple-system,Segoe UI,Roboto,sans-serif;
+      line-height:1.6; min-height:100vh;
+      display:flex; align-items:flex-start; justify-content:center;
+      padding:clamp(24px,6vw,80px) 20px;
+    }
+    .wrap{width:100%;max-width:760px}
+    .tag{
+      font-family:'JetBrains Mono',ui-monospace,monospace;
+      color:var(--cyan); font-size:.8rem; letter-spacing:.12em;
+      text-transform:uppercase; margin-bottom:14px;
+    }
+    h1{font-size:clamp(1.8rem,4vw,2.6rem);line-height:1.15;margin-bottom:10px}
+    h1 .c{color:var(--cyan)}
+    .lead{color:rgba(244,248,251,.7);margin-bottom:36px;max-width:60ch}
+    .files{display:grid;gap:14px;margin-bottom:40px}
+    a.file{
+      display:flex;align-items:center;gap:16px;
+      background:var(--ink-2);border:1px solid rgba(111,216,241,.15);
+      border-radius:14px;padding:20px 22px;text-decoration:none;color:var(--paper);
+      transition:border-color .15s ease, transform .15s ease;
+    }
+    a.file:hover{border-color:var(--cyan);transform:translateY(-2px)}
+    .file .ico{
+      font-family:'JetBrains Mono',monospace;font-size:.7rem;font-weight:700;
+      color:var(--ink-deep);background:var(--cyan);
+      border-radius:8px;padding:8px 10px;letter-spacing:.05em;white-space:nowrap;
+    }
+    .file .meta strong{display:block;font-size:1.05rem;margin-bottom:2px}
+    .file .meta span{color:rgba(244,248,251,.6);font-size:.9rem}
+    .note{
+      background:rgba(111,216,241,.07);border-left:3px solid var(--cyan);
+      border-radius:8px;padding:18px 22px;color:rgba(244,248,251,.8);font-size:.95rem;
+    }
+    .note strong{color:var(--cyan)}
+    .foot{margin-top:36px;font-size:.8rem;color:rgba(244,248,251,.4)}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="tag">// Intern · Art. 30 DSGVO</div>
+    <h1>Verzeichnis von <span class="c">Verarbeitungstätigkeiten</span></h1>
+    <p class="lead">Interne Dokumentation aller Dienste, die personenbezogene Daten verarbeiten. Dieser Bereich ist zugriffsgeschützt und nicht öffentlich.</p>
+
+    <div class="files">
+      <a class="file" href="/vvt/VVT.md">
+        <span class="ico">MD</span>
+        <span class="meta"><strong>VVT.md</strong><span>Lesefreundliches Dokument zum Ansehen &amp; Bearbeiten in jedem Editor.</span></span>
+      </a>
+      <a class="file" href="/vvt/VVT.csv">
+        <span class="ico">CSV</span>
+        <span class="meta"><strong>VVT.csv</strong><span>Tabellenformat – Doppelklick öffnet Excel. Pro Dienst eine Zeile.</span></span>
+      </a>
+      <a class="file" href="/vvt/ANLEITUNG.txt">
+        <span class="ico">TXT</span>
+        <span class="meta"><strong>ANLEITUNG.txt</strong><span>Kurzanleitung: Was ist das, welche Datei nehme ich, wie ergänzen.</span></span>
+      </a>
+    </div>
+
+    <div class="note">
+      <strong>Noch offen:</strong> VT-01 – Datum des abgelegten Formcarry-DPA-PDFs · VT-04 – Name &amp; Sitz des E-Mail-/Server-Hosters.
+    </div>
+
+    <p class="foot">URBANMAKER UG (haftungsbeschränkt) · leanAM · Interne Compliance-Doku</p>
+  </div>
+</body>
+</html>
