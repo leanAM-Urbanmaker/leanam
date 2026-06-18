@@ -709,10 +709,8 @@
         <div class="cc-title">Kostenloses Erstgespräch anfragen</div>
         <p class="cc-sub">Keine Verkaufspitch. 20 Minuten — wir schauen gemeinsam, was bei euch den größten Unterschied macht und welcher Schritt als nächstes sinnvoll ist.</p>
 
-        <form id="leadForm" action="https://api.web3forms.com/submit" method="POST" onsubmit="handleSubmit(event)">
-          <input type="hidden" name="access_key" value="c30aecf0-fbf3-49b8-b605-2b04861417f8">
+        <form id="leadForm" action="https://formcarry.com/s/YeWdKCck38z" method="POST" onsubmit="handleSubmit(event)">
           <input type="hidden" name="subject" value="Druckfarm-Check Lead — leanAM">
-          <input type="checkbox" name="botcheck" style="display:none;">
           <input type="hidden" name="funnel_drucker"  id="hDrucker">
           <input type="hidden" name="funnel_usecase"  id="hUsecase">
           <input type="hidden" name="funnel_problems" id="hProblems">
@@ -995,7 +993,7 @@ function fillInsight() {
   document.getElementById('ibHeadline').textContent = ins.headline;
   document.getElementById('ibText').textContent     = ins.text(d, u);
 
-  // pass funnel context to Web3Forms
+  // pass funnel context to the form backend
   document.getElementById('hDrucker').value  = state.drucker  || '';
   document.getElementById('hUsecase').value  = state.usecase  || '';
   document.getElementById('hProblems').value = state.problems.join(', ');
@@ -1009,7 +1007,7 @@ function handleSubmit(e) {
   e.preventDefault();
   const form = e.target;
 
-  fetch('https://api.web3forms.com/submit', {
+  fetch('https://formcarry.com/s/YeWdKCck38z', {
     method: 'POST',
     headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
     body: new URLSearchParams(new FormData(form)).toString(),
