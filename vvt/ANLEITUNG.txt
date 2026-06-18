@@ -25,6 +25,7 @@ Neuen Dienst hinzufügen (Beispiel):
 Bei einer Behördenprüfung:
   VVT.md oder VVT.csv ausdrucken bzw. als PDF speichern. Das genügt.
 
-Offene Lücken (bitte ausfüllen):
-  - VT-01: Datum, an dem das Formcarry-DPA-PDF abgelegt wurde.
-  - VT-04: Name + Sitz eures E-Mail-/Server-Hosters (z. B. Plesk-Anbieter).
+Offene Punkte (Stand 18.06.2026):
+  - VT-01: Formcarry-DPA als PDF tatsaechlich ablegen (Datum 18.06.2026 ist eingetragen).
+  - VT-04: AVV (Auftragsverarbeitungsvertrag) bei AIXIV (Raoul Koenig e.K.) anfragen
+           und nach Erhalt hier von "anzufragen" auf "vorhanden" aendern.
