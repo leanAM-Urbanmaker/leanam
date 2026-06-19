@@ -9,3 +9,7 @@ pitch-anton-paar.html
 pitch-anton-paar-standalone.html
 pitch/
 handoff/
+
+# Quell-Schrift fuer den Icon-Subset (3,9 MB) — nicht deployen.
+# Wiederherstellbar via tools/README.md
+tools/fonts-src/
