@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<meta name="theme-color" content="#0A1628">
+<title>Bambu Lab H2D ohne Cloud nutzen — LAN-Only-Modus | leanAM</title>
+<meta name="description" content="Bambu Lab H2D ohne Cloud betreiben: LAN-Only-Modus aktivieren, was bleibt und was entfällt — und wie Unternehmen mehrere H2D datensouverän ohne Cloud steuern.">
+<link rel="canonical" href="https://www.leanam.com/wissen/bambu-lab-h2d-ohne-cloud/">
+<link rel="alternate" hreflang="de" href="https://www.leanam.com/wissen/bambu-lab-h2d-ohne-cloud/">
+<link rel="alternate" hreflang="en" href="https://www.leanam.com/en/wissen/bambu-lab-h2d-ohne-cloud/">
+<link rel="alternate" hreflang="x-default" href="https://www.leanam.com/wissen/bambu-lab-h2d-ohne-cloud/">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://www.leanam.com/wissen/bambu-lab-h2d-ohne-cloud/">
+<meta property="og:title" content="Bambu Lab H2D ohne Cloud nutzen — LAN-Only-Modus | leanAM">
+<meta property="og:description" content="Bambu Lab H2D ohne Cloud betreiben: LAN-Only-Modus aktivieren, was bleibt und was entfällt — und wie Unternehmen mehrere H2D datensouverän ohne Cloud steuern.">
+<meta property="og:image" content="https://www.leanam.com/images/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="de_DE">
+<meta property="og:site_name" content="leanAM">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Bambu Lab H2D ohne Cloud nutzen — LAN-Only-Modus | leanAM">
+<meta name="twitter:description" content="Bambu Lab H2D ohne Cloud betreiben: LAN-Only-Modus aktivieren, was bleibt und was entfällt — und wie Unternehmen mehrere H2D datensouverän ohne Cloud steuern.">
+<meta name="twitter:image" content="https://www.leanam.com/images/og-image.png">
+<link rel="preload" as="font" type="font/woff2" href="/fonts/inter-latin.woff2" crossorigin>
+<link rel="preload" as="font" type="font/woff2" href="/fonts/jetbrains-mono-latin.woff2" crossorigin>
+<link rel="preload" as="image" href="/images/leanam-logo.png" fetchpriority="high">
+<link rel="stylesheet" href="/styles/leanam-system.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Start", "item": "https://www.leanam.com/" },
+        { "@type": "ListItem", "position": 2, "name": "Wissen", "item": "https://www.leanam.com/wissen/" },
+        { "@type": "ListItem", "position": 3, "name": "Bambu Lab H2D ohne Cloud", "item": "https://www.leanam.com/wissen/bambu-lab-h2d-ohne-cloud/" }
+      ]
+    },
+    {
+      "@type": "Article",
+      "url": "https://www.leanam.com/wissen/bambu-lab-h2d-ohne-cloud/",
+      "headline": "Bambu Lab H2D ohne Cloud nutzen — LAN-Only-Modus",
+      "description": "Bambu Lab H2D ohne Cloud betreiben: LAN-Only-Modus aktivieren, was bleibt und was entfällt — und wie Unternehmen mehrere H2D datensouverän ohne Cloud steuern.",
+      "author": { "@type": "Organization", "name": "leanAM", "url": "https://www.leanam.com/" },
+      "publisher": { "@type": "Organization", "name": "leanAM", "url": "https://www.leanam.com/" },
+      "datePublished": "2026-06-23",
+      "dateModified": "2026-06-23",
+      "inLanguage": "de"
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Kann man den Bambu Lab H2D ohne Cloud nutzen?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Ja. Der H2D unterstützt den LAN-Only-Modus und arbeitet dann ausschließlich im lokalen Netzwerk. Gedruckt wird über Bambu Studio oder OrcaSlicer im selben Netz oder per microSD-Karte. Cloud-Komfortfunktionen wie der Fernzugriff von außerhalb entfallen." }
+        },
+        {
+          "@type": "Question",
+          "name": "Funktionieren die erweiterten Funktionen des H2D ohne Cloud?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Druck und Überwachung im eigenen Netz sind nicht auf die Cloud angewiesen. Welche der erweiterten Funktionen rein lokal verfügbar sind, hängt von der installierten Firmware-Version ab und sollte vor dem produktiven Einsatz geprüft werden." }
+        },
+        {
+          "@type": "Question",
+          "name": "Wie betreibe ich mehrere H2D ohne Cloud im Unternehmen?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Für den zentralen Betrieb mehrerer H2D ergänzt ein On-Premise-MES wie leanAM die lokale Steuerung um Auftrags-, Material- und Nutzerverwaltung — ohne Cloud-Abhängigkeit." }
+        }
+      ]
+    }
+  ]
+}
+</script>
+<link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+</head>
+<body data-screen-label="Wissen Bambu Lab H2D ohne Cloud">
+
+<header class="lam-header">
+  <div class="lam-header__inner">
+    <a href="/index.html" class="lam-header__logo"><img src="/images/leanam-logo.png" alt="leanAM" height="38" loading="eager"></a>
+    <nav class="lam-header__nav" aria-label="Hauptnavigation">
+      <a href="/index.html">Start</a>
+      <a href="/mes.html">leanAM MES</a>
+      <a href="/prozessberatung.html">Prozessberatung</a>
+      <a href="/entwicklung.html">Entwicklung</a>
+      <a href="/ueber-uns.html">Über uns</a>
+      <a href="/wissen/" class="active">Wissen</a>
+    </nav>
+    <div class="lam-header__right">
+      <span class="lam-header__lang">
+        <a href="/wissen/bambu-lab-h2d-ohne-cloud/" class="active">DE</a>
+        <span class="sep">|</span>
+        <a href="/en/wissen/bambu-lab-h2d-ohne-cloud/">EN</a>
+      </span>
+      <a href="/kontakt.html" class="lam-btn lam-btn--primary"><span class="material-icons">mail</span>Kontakt</a>
+    </div>
+    <button class="nav-toggle" aria-label="Navigation öffnen" aria-expanded="false" aria-controls="mobile-nav"><span></span><span></span><span></span></button>
+  </div>
+  <div class="lam-mobile-nav" id="mobile-nav" hidden>
+    <nav aria-label="Mobile Navigation">
+      <a href="/index.html">Start</a>
+      <a href="/mes.html">leanAM MES</a>
+      <a href="/prozessberatung.html">Prozessberatung</a>
+      <a href="/entwicklung.html">Entwicklung</a>
+      <a href="/ueber-uns.html">Über uns</a>
+      <a href="/wissen/" class="active">Wissen</a>
+      <a href="/kontakt.html" class="mobile-cta">Kontakt / Demo</a>
+    </nav>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="container">
+    <div class="breadcrumb"><a href="/index.html">Start</a><span class="material-symbols-outlined" aria-hidden="true">chevron_right</span><a href="/wissen/">Wissen</a><span class="material-symbols-outlined" aria-hidden="true">chevron_right</span><span>Bambu Lab H2D ohne Cloud</span></div>
+    <span class="eyebrow">Wissen · Bambu Lab H2D · LAN-Only-Modus</span>
+    <h1>Bambu Lab H2D ohne Cloud — <span class="accent">LAN-Only-Modus für das größere High-End-System.</span></h1>
+    <p class="lead">Der H2D ist Bambu Labs größeres, höher positioniertes System mit Zwei-Düsen-Werkzeugkopf — auf anspruchsvolle, produktive Anwendungen ausgelegt. Gerade hier zählt Datenhoheit. So nutzen Sie den H2D im LAN-Only-Modus ohne Cloud.</p>
+    <p style="margin-top:18px;"><a href="/wissen/bambu-lab-ohne-cloud/" style="color:var(--cyan);font-weight:600;text-decoration:none;">Zum vollständigen Leitfaden: Bambu Lab ohne Cloud &rarr;</a></p>
+    <p class="body muted" style="font-size:13px;margin-top:14px;opacity:.7;max-width:760px;">Hinweis: leanAM ist ein unabhängiger MES-Anbieter und steht in keiner Verbindung zu Bambu Lab. „Bambu Lab" und genannte Produktnamen sind Marken ihrer jeweiligen Inhaber; die Nennung erfolgt ausschließlich beschreibend.</p>
+  </div>
+</section>
+
+<section class="section light">
+  <div class="container">
+    <div class="split">
+      <div>
+        <span class="eyebrow">Grundlagen</span>
+        <h2 class="h2">Was beim H2D im LAN-Only-Modus zu beachten ist.</h2>
+        <p class="body muted mt-2">Der H2D ist als größeres, leistungsfähigeres System konzipiert und richtet sich an anspruchsvolle Anwendungen. Auch hier trennt der LAN-Only-Modus den Drucker von der Hersteller-Cloud; gedruckt und überwacht wird lokal über den Slicer im eigenen Netzwerk.</p>
+        <p class="body muted mt-2">Wie bei den übrigen Modellen entfallen im LAN-Only-Modus der Fernzugriff von außerhalb des Netzwerks und cloud-gebundene Komfortdienste. Da der H2D einen größeren Funktionsumfang mitbringt, lohnt der Blick in die installierte Firmware, welche Funktionen rein lokal verfügbar sind.</p>
+        <ul style="list-style:none;padding:0;margin:16px 0 0;display:flex;flex-direction:column;gap:10px;">
+            <li style="display:flex;gap:10px;align-items:flex-start;"><span class="material-symbols-outlined" style="color:var(--cyan);flex-shrink:0;font-size:20px;">check_circle</span><span>Größeres High-End-System mit Zwei-Düsen-Werkzeugkopf</span></li>
+            <li style="display:flex;gap:10px;align-items:flex-start;"><span class="material-symbols-outlined" style="color:var(--cyan);flex-shrink:0;font-size:20px;">check_circle</span><span>Lokaler Druck und Überwachung im Netz bleiben nutzbar</span></li>
+            <li style="display:flex;gap:10px;align-items:flex-start;"><span class="material-symbols-outlined" style="color:var(--cyan);flex-shrink:0;font-size:20px;">check_circle</span><span>Fernzugriff von außerhalb des LAN und Cloud-Komfort entfallen</span></li>
+        </ul>
+      </div>
+      <div>
+        <div class="feature-card">
+          <h3 style="margin-bottom:16px;font-size:16px;">LAN-Only-Modus aktivieren — in Kürze</h3>
+          <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:12px;">
+            <li style="display:flex;gap:10px;align-items:flex-start;"><span class="material-symbols-outlined" style="color:var(--cyan);flex-shrink:0;font-size:20px;">looks_one</span><span>Am Drucker-Display: <strong>Einstellungen → Allgemein → LAN-Only-Modus</strong> aktivieren und bestätigen.</span></li>
+            <li style="display:flex;gap:10px;align-items:flex-start;"><span class="material-symbols-outlined" style="color:var(--cyan);flex-shrink:0;font-size:20px;">looks_two</span><span>Der Drucker zeigt <strong>Zugangscode</strong> und <strong>lokale IP-Adresse</strong> an.</span></li>
+            <li style="display:flex;gap:10px;align-items:flex-start;"><span class="material-symbols-outlined" style="color:var(--cyan);flex-shrink:0;font-size:20px;">looks_3</span><span>Im Slicer (<strong>Bambu Studio</strong> oder <strong>OrcaSlicer</strong>) den Drucker über IP und Zugangscode hinzufügen.</span></li>
+            <li style="display:flex;gap:10px;align-items:flex-start;"><span class="material-symbols-outlined" style="color:var(--cyan);flex-shrink:0;font-size:20px;">looks_4</span><span>Alternativ per <strong>microSD-Karte</strong> ganz ohne Netzwerk drucken.</span></li>
+          </ul>
+          <p class="muted" style="font-size:13px;margin-top:14px;">Die genaue Menüführung kann je nach Firmware-Version abweichen.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section offwhite">
+  <div class="container">
+    <div class="split">
+      <div>
+        <span class="eyebrow">Vom Einzeldrucker zur Flotte</span>
+        <h2 class="h2">Mehrere Bambu Lab H2D ohne Cloud — aber zentral gesteuert.</h2>
+        <p class="body muted mt-2">Der LAN-Only-Modus löst den cloud-freien Betrieb pro Gerät. Für mehrere Drucker im produktiven Umfeld braucht es zentrales Auftrags-, Material-, Nutzer- und Reporting-Management — datensouverän im eigenen Haus. Genau das ergänzt <strong>leanAM MES</strong> als On-Premise-System, herstellerübergreifend und ohne Cloud-Zwang.</p>
+        <a href="/mes.html" class="btn btn-primary" style="margin-top:20px;display:inline-flex;align-items:center;gap:8px;">Mehr zu leanAM MES<span class="material-symbols-outlined">arrow_forward</span></a>
+      </div>
+      <div>
+        <div class="feature-card" style="border:2px solid var(--cyan);">
+          <div style="display:flex;align-items:center;gap:12px;margin-bottom:16px;"><span class="material-symbols-outlined" style="color:var(--cyan);font-size:28px;">factory</span><h3 style="margin:0;color:var(--cyan);">leanAM MES — On-Premise</h3></div>
+          <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:12px;">
+            <li style="display:flex;gap:10px;align-items:flex-start;"><span class="material-symbols-outlined" style="color:var(--cyan);flex-shrink:0;font-size:20px;">check_circle</span><span>Zentrale Auftrags- und Warteschlangen-Steuerung über die Flotte</span></li>
+            <li style="display:flex;gap:10px;align-items:flex-start;"><span class="material-symbols-outlined" style="color:var(--cyan);flex-shrink:0;font-size:20px;">check_circle</span><span>Material-, Kosten- und Auslastungsverfolgung</span></li>
+            <li style="display:flex;gap:10px;align-items:flex-start;"><span class="material-symbols-outlined" style="color:var(--cyan);flex-shrink:0;font-size:20px;">check_circle</span><span>Benutzer- und Rollenverwaltung, Dokumentation</span></li>
+            <li style="display:flex;gap:10px;align-items:flex-start;"><span class="material-symbols-outlined" style="color:var(--cyan);flex-shrink:0;font-size:20px;">check_circle</span><span>Herstellerübergreifend, ERP-/CAQ-Anbindung per API</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section teal">
+  <div class="container">
+    <div class="section-head"><span class="eyebrow" style="color:#7debf3;">FAQ</span><h2 class="h2">Häufige Fragen — Bambu Lab H2D ohne Cloud.</h2></div>
+    <div style="max-width:800px;margin:0 auto;display:flex;flex-direction:column;gap:4px;">
+      <details style="background:rgba(255,255,255,0.07);border-radius:0;overflow:hidden;">
+        <summary style="padding:18px 20px;cursor:pointer;font-weight:600;list-style:none;display:flex;justify-content:space-between;align-items:center;">Kann man den Bambu Lab H2D ohne Cloud nutzen?</summary>
+        <p style="padding:0 20px 18px;margin:0;opacity:.85;line-height:1.7;">Ja. Der H2D unterstützt den LAN-Only-Modus und arbeitet dann ausschließlich im lokalen Netzwerk. Gedruckt wird über Bambu Studio oder OrcaSlicer im selben Netz oder per microSD-Karte. Cloud-Komfortfunktionen wie der Fernzugriff von außerhalb entfallen.</p>
+      </details>
+      <details style="background:rgba(255,255,255,0.07);border-radius:0;overflow:hidden;">
+        <summary style="padding:18px 20px;cursor:pointer;font-weight:600;list-style:none;display:flex;justify-content:space-between;align-items:center;">Funktionieren die erweiterten Funktionen des H2D ohne Cloud?</summary>
+        <p style="padding:0 20px 18px;margin:0;opacity:.85;line-height:1.7;">Druck und Überwachung im eigenen Netz sind nicht auf die Cloud angewiesen. Welche der erweiterten Funktionen rein lokal verfügbar sind, hängt von der installierten Firmware-Version ab und sollte vor dem produktiven Einsatz geprüft werden.</p>
+      </details>
+      <details style="background:rgba(255,255,255,0.07);border-radius:0;overflow:hidden;">
+        <summary style="padding:18px 20px;cursor:pointer;font-weight:600;list-style:none;display:flex;justify-content:space-between;align-items:center;">Wie betreibe ich mehrere H2D ohne Cloud im Unternehmen?</summary>
+        <p style="padding:0 20px 18px;margin:0;opacity:.85;line-height:1.7;">Für den zentralen Betrieb mehrerer H2D ergänzt ein On-Premise-MES wie leanAM die lokale Steuerung um Auftrags-, Material- und Nutzerverwaltung — ohne Cloud-Abhängigkeit.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<section class="section light">
+  <div class="container" style="text-align:center;max-width:700px;margin:0 auto;">
+    <span class="eyebrow">Nächster Schritt</span>
+    <h2 class="h2">Bambu Lab H2D-Flotte cloud-frei betreiben — <span class="cyan">wir zeigen wie.</span></h2>
+    <p>In einer kostenfreien Demo zeigen wir leanAM MES live mit angebundenen Druckern, On-Premise. Danach sagen wir Ihnen ehrlich, was sich für Ihren Maschinenpark lokal abbilden lässt.</p>
+    <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;margin-top:24px;">
+      <a href="https://calendly.com/hq-leanam/30min" target="_blank" rel="noopener" class="btn btn-primary" style="display:inline-flex;align-items:center;gap:8px;">Demo anfragen</a>
+      <a href="/wissen/bambu-lab-ohne-cloud/" class="btn btn-outline" style="display:inline-flex;align-items:center;gap:8px;">Vollständiger Leitfaden</a>
+    </div>
+  </div>
+</section>
+
+<footer class="lam-footer">
+  <div class="lam-footer__inner">
+    <div class="lam-footer__grid">
+      <div>
+        <a href="/index.html"><img src="/images/leanam-logo.png" alt="leanAM" height="34" loading="lazy"></a>
+        <p class="lam-footer__tagline">Software, Beratung und Entwicklung für additive Fertigung.<br>Made in Germany — Datensouverän — On-Premise.</p>
+      </div>
+      <div><span class="lam-footer__col-title">Produkt</span><ul class="lam-footer__list"><li><a href="/mes.html">leanAM MES</a></li><li><a href="/entwicklung.html">Custom Development</a></li><li><a href="https://calendly.com/hq-leanam/30min" target="_blank" rel="noopener">Demo anfragen</a></li></ul></div>
+      <div><span class="lam-footer__col-title">Leistungen</span><ul class="lam-footer__list"><li><a href="/prozessberatung.html">Prozessberatung</a></li><li><a href="/entwicklung.html">Entwicklung</a></li><li><a href="/prozessberatung.html">B2B Druckservice</a></li><li><a href="/prozessberatung.html">Implementierung</a></li></ul></div>
+      <div><span class="lam-footer__col-title">Unternehmen</span><ul class="lam-footer__list"><li><a href="/ueber-uns.html">Über uns</a></li><li><a href="/ueber-uns.html">Karriere</a></li><li><a href="/kontakt.html">Kontakt</a></li><li><a href="/kontakt.html">Standort</a></li></ul></div>
+    </div>
+    <p style="font-size:11px;color:rgba(255,255,255,.5);line-height:1.6;padding-top:16px;border-top:1px solid rgba(111,216,241,.08);margin-bottom:16px;">Marken- und Produktnamen Dritter (z. B. Bambu Lab, Prusa, Ultimaker) sind Eigentum der jeweiligen Inhaber. Die Nennung dient ausschließlich der Beschreibung von Kompatibilität und Sachverhalten. Es bestehen keine offiziellen Partnerschaften oder Autorisierungen, sofern nicht ausdrücklich anders angegeben.</p>
+    <div class="lam-footer__bottom">
+      <span class="lam-footer__copy">© 2026 URBANMAKER UG (haftungsbeschränkt) · leanAM ist eine Marke der URBANMAKER UG · Münster, Deutschland</span>
+      <div class="lam-footer__legal"><a href="/impressum.html">Impressum</a><a href="/datenschutz.html">Datenschutz</a><a href="/agb.html">AGB</a></div>
+    </div>
+  </div>
+</footer>
+<script src="/nav.js" defer></script>
+</body>
+</html>
