@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<meta name="theme-color" content="#0A1628">
+<title>Bambu Lab, Datenschutz & DSGVO im Unternehmen — datensouverän ohne Cloud | leanAM</title>
+<meta name="description" content="Bambu Lab und DSGVO im Unternehmen: Welche Datenschutz-Fragen der Cloud-Betrieb aufwirft, wann ein Drittlandtransfer relevant wird und wie LAN-Only-Modus plus On-Premise-MES Datenhoheit schaffen.">
+<link rel="canonical" href="https://www.leanam.com/wissen/bambu-lab-datenschutz-dsgvo/">
+<link rel="alternate" hreflang="de" href="https://www.leanam.com/wissen/bambu-lab-datenschutz-dsgvo/">
+<link rel="alternate" hreflang="en" href="https://www.leanam.com/en/wissen/bambu-lab-datenschutz-dsgvo/">
+<link rel="alternate" hreflang="x-default" href="https://www.leanam.com/wissen/bambu-lab-datenschutz-dsgvo/">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://www.leanam.com/wissen/bambu-lab-datenschutz-dsgvo/">
+<meta property="og:title" content="Bambu Lab, Datenschutz & DSGVO im Unternehmen | leanAM">
+<meta property="og:description" content="Welche Datenschutz-Fragen der Cloud-Betrieb von Bambu-Lab-Druckern aufwirft — und wie Unternehmen datensouverän ohne Cloud arbeiten.">
+<meta property="og:image" content="https://www.leanam.com/images/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="de_DE">
+<meta property="og:site_name" content="leanAM">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Bambu Lab, Datenschutz & DSGVO im Unternehmen | leanAM">
+<meta name="twitter:description" content="Datenschutz-Fragen beim Cloud-Betrieb von Bambu Lab — und wie Unternehmen datensouverän ohne Cloud arbeiten.">
+<meta name="twitter:image" content="https://www.leanam.com/images/og-image.png">
+<link rel="preload" as="font" type="font/woff2" href="/fonts/inter-latin.woff2" crossorigin>
+<link rel="preload" as="font" type="font/woff2" href="/fonts/jetbrains-mono-latin.woff2" crossorigin>
+<link rel="preload" as="image" href="/images/leanam-logo.png" fetchpriority="high">
+<link rel="stylesheet" href="/styles/leanam-system.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Start", "item": "https://www.leanam.com/" },
+        { "@type": "ListItem", "position": 2, "name": "Wissen", "item": "https://www.leanam.com/wissen/" },
+        { "@type": "ListItem", "position": 3, "name": "Bambu Lab Datenschutz & DSGVO", "item": "https://www.leanam.com/wissen/bambu-lab-datenschutz-dsgvo/" }
+      ]
+    },
+    {
+      "@type": "Article",
+      "url": "https://www.leanam.com/wissen/bambu-lab-datenschutz-dsgvo/",
+      "headline": "Bambu Lab, Datenschutz & DSGVO im Unternehmen — datensouverän ohne Cloud",
+      "description": "Welche Datenschutz-Fragen der Cloud-Betrieb von Bambu-Lab-Druckern aufwirft, wann ein Drittlandtransfer relevant wird und wie LAN-Only-Modus plus On-Premise-MES Datenhoheit schaffen.",
+      "author": { "@type": "Organization", "name": "leanAM", "url": "https://www.leanam.com/" },
+      "publisher": { "@type": "Organization", "name": "leanAM", "url": "https://www.leanam.com/" },
+      "datePublished": "2026-06-23",
+      "dateModified": "2026-06-23",
+      "inLanguage": "de"
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Ist Bambu Lab DSGVO-konform?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Ob der Betrieb DSGVO-konform ist, hängt vom Einzelfall ab: davon, welche personenbezogenen Daten verarbeitet werden, in welcher Betriebsart (Cloud oder LAN-Only) und auf welcher Rechtsgrundlage. Maßgeblich ist die Datenschutzerklärung des Herstellers sowie die konkrete Nutzung im Unternehmen. Eine pauschale Aussage „konform“ oder „nicht konform“ ist nicht möglich. Im LAN-Only-Modus verbleiben Druck- und Statusdaten im eigenen Netz, was die Bewertung erheblich vereinfacht." }
+        },
+        {
+          "@type": "Question",
+          "name": "Werden beim Cloud-Betrieb Daten in ein Drittland übertragen?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Wenn ein Hersteller personenbezogene Daten außerhalb der EU/des EWR verarbeitet, greifen die Anforderungen an Drittlandübermittlungen nach Art. 44 ff. DSGVO. Ob und wohin Daten übermittelt werden, ergibt sich aus der Datenschutzerklärung des jeweiligen Anbieters und sollte vor dem Unternehmenseinsatz geprüft werden. Im LAN-Only-Modus findet keine Übermittlung an Hersteller-Server statt." }
+        },
+        {
+          "@type": "Question",
+          "name": "Wie betreibe ich Bambu-Lab-Drucker DSGVO-konform im Unternehmen?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Pragmatisch: den LAN-Only-Modus nutzen, sodass keine Daten an externe Server gehen, die Datenschutzerklärung des Herstellers für jede genutzte Funktion prüfen und für mehrere Drucker ein On-Premise-System einsetzen, das Aufträge, Material und Nutzer datensouverän im eigenen Haus verwaltet. So wird die Druckerflotte unabhängig von Hersteller-Clouds betrieben." }
+        },
+        {
+          "@type": "Question",
+          "name": "Reicht der LAN-Only-Modus für DSGVO-Konformität?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Der LAN-Only-Modus entfernt die externe Datenübermittlung und vereinfacht die datenschutzrechtliche Bewertung erheblich — er ist aber kein Selbstläufer. Verantwortliche müssen weiterhin die übrigen DSGVO-Pflichten erfüllen (z. B. Verzeichnis der Verarbeitungstätigkeiten, technisch-organisatorische Maßnahmen). Für den Mehrgeräte-Betrieb empfiehlt sich ein On-Premise-MES, das diese Anforderungen unterstützt." }
+        }
+      ]
+    }
+  ]
+}
+</script>
+<link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+</head>
+<body data-screen-label="Wissen Bambu Lab Datenschutz DSGVO">
+
+<header class="lam-header">
+  <div class="lam-header__inner">
+    <a href="/index.html" class="lam-header__logo"><img src="/images/leanam-logo.png" alt="leanAM" height="38" loading="eager"></a>
+    <nav class="lam-header__nav" aria-label="Hauptnavigation">
+      <a href="/index.html">Start</a>
+      <a href="/mes.html">leanAM MES</a>
+      <a href="/prozessberatung.html">Prozessberatung</a>
+      <a href="/entwicklung.html">Entwicklung</a>
+      <a href="/ueber-uns.html">Über uns</a>
+      <a href="/wissen/" class="active">Wissen</a>
+    </nav>
+    <div class="lam-header__right">
+      <span class="lam-header__lang">
+        <a href="/wissen/bambu-lab-datenschutz-dsgvo/" class="active">DE</a>
+        <span class="sep">|</span>
+        <a href="/en/wissen/bambu-lab-datenschutz-dsgvo/">EN</a>
+      </span>
+      <a href="/kontakt.html" class="lam-btn lam-btn--primary"><span class="material-icons">mail</span>Kontakt</a>
+    </div>
+    <button class="nav-toggle" aria-label="Navigation öffnen" aria-expanded="false" aria-controls="mobile-nav"><span></span><span></span><span></span></button>
+  </div>
+  <div class="lam-mobile-nav" id="mobile-nav" hidden>
+    <nav aria-label="Mobile Navigation">
+      <a href="/index.html">Start</a>
+      <a href="/mes.html">leanAM MES</a>
+      <a href="/prozessberatung.html">Prozessberatung</a>
+      <a href="/entwicklung.html">Entwicklung</a>
+      <a href="/ueber-uns.html">Über uns</a>
+      <a href="/wissen/" class="active">Wissen</a>
+      <a href="/kontakt.html" class="mobile-cta">Kontakt / Demo</a>
+    </nav>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="container">
+    <div class="breadcrumb"><a href="/index.html">Start</a><span class="material-symbols-outlined" aria-hidden="true">chevron_right</span><a href="/wissen/">Wissen</a><span class="material-symbols-outlined" aria-hidden="true">chevron_right</span><span>Bambu Lab Datenschutz & DSGVO</span></div>
+    <span class="eyebrow">Wissen · Datenschutz · DSGVO</span>
+    <h1>Bambu Lab, Datenschutz & DSGVO im Unternehmen — <span class="accent">datensouverän ohne Cloud.</span></h1>
+    <p class="lead">Für Privatnutzer ist die Cloud-Frage Geschmackssache. Im Unternehmen wird daraus eine Compliance-Frage: Welche Daten verlassen das Werk, auf welcher Rechtsgrundlage, und wohin? Dieser Beitrag ordnet die Datenschutz-Aspekte sachlich ein — und zeigt den datensouveränen Weg.</p>
+    <p style="margin-top:18px;"><a href="/wissen/bambu-lab-ohne-cloud/" style="color:var(--cyan);font-weight:600;text-decoration:none;">Praxis-Anleitung: Bambu Lab ohne Cloud (LAN-Only-Modus) →</a></p>
+    <p class="body muted" style="font-size:13px;margin-top:14px;opacity:.7;max-width:760px;">Hinweis: Dieser Beitrag ist eine allgemeine Einordnung und keine Rechtsberatung. leanAM ist ein unabhängiger MES-Anbieter und steht in keiner Verbindung zu Bambu Lab. „Bambu Lab" und genannte Produktnamen sind Marken ihrer jeweiligen Inhaber; die Nennung erfolgt ausschließlich beschreibend.</p>
+  </div>
+</section>
+
+<section class="section light">
+  <div class="container">
+    <div class="split">
+      <div>
+        <span class="eyebrow">Komfort vs. Compliance</span>
+        <h2 class="h2">Warum die Cloud-Frage im Unternehmen eine Datenschutz-Frage ist.</h2>
+        <p class="body muted mt-2">
+          Cloud-gebundene Druckerverwaltung ist bequem: slicen, drucken, überwachen — alles per App, von überall. Sobald aber ein Unternehmen damit produziert, ändert sich die Perspektive. Es geht nicht mehr nur um Komfort, sondern um die Frage, welche Daten das Werk verlassen, wer sie verarbeitet und ob dafür eine tragfähige Rechtsgrundlage besteht.
+        </p>
+        <p class="body muted mt-2">
+          Relevant wird das immer dann, wenn mit den Druckdaten auch personenbezogene Daten verbunden sind — etwa Benutzerkonten, Zuordnungen von Aufträgen zu Mitarbeitenden, IP-Adressen oder Kamerabilder von Arbeitsplätzen. In regulierten Branchen wie Medizintechnik, Luft- und Raumfahrt oder Verteidigung kommt hinzu, dass produktionsnahe Daten oft ohnehin im Haus bleiben müssen.
+        </p>
+      </div>
+      <div>
+        <div class="feature-card" style="border:1px solid rgba(0,212,232,0.2);">
+          <h3 style="margin-bottom:16px;font-size:16px;text-transform:uppercase;letter-spacing:.08em;opacity:.7;">Datenschutz-Fragen, die Unternehmen klären sollten</h3>
+          <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:12px;">
+            <li style="display:flex;gap:12px;align-items:flex-start;"><span class="material-symbols-outlined" style="color:var(--cyan);flex-shrink:0;margin-top:2px;">help</span><span>Welche Daten überträgt der Drucker an die Hersteller-Cloud?</span></li>
+            <li style="display:flex;gap:12px;align-items:flex-start;"><span class="material-symbols-outlined" style="color:var(--cyan);flex-shrink:0;margin-top:2px;">help</span><span>Wo werden diese Daten verarbeitet — EU oder Drittland?</span></li>
+            <li style="display:flex;gap:12px;align-items:flex-start;"><span class="material-symbols-outlined" style="color:var(--cyan);flex-shrink:0;margin-top:2px;">help</span><span>Gibt es einen Auftragsverarbeitungsvertrag (Art. 28 DSGVO)?</span></li>
+            <li style="display:flex;gap:12px;align-items:flex-start;"><span class="material-symbols-outlined" style="color:var(--cyan);flex-shrink:0;margin-top:2px;">help</span><span>Welche Rechtsgrundlage trägt die Verarbeitung?</span></li>
+            <li style="display:flex;gap:12px;align-items:flex-start;"><span class="material-symbols-outlined" style="color:var(--cyan);flex-shrink:0;margin-top:2px;">help</span><span>Was passiert bei einem Ausfall des Cloud-Dienstes?</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section offwhite">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Drittlandtransfer</span>
+      <h2 class="h2">Wenn Daten die EU verlassen, wird es rechtlich anspruchsvoll.</h2>
+      <p>Ein Punkt verdient besondere Aufmerksamkeit — und er gilt für jeden Anbieter, dessen Verarbeitung außerhalb der EU stattfindet.</p>
+    </div>
+    <div class="grid grid-3" style="margin-top:32px;">
+      <div class="feature-card">
+        <div style="display:flex;align-items:center;gap:12px;margin-bottom:12px;"><span class="material-symbols-outlined" style="color:var(--cyan);font-size:26px;">public</span><h3 style="margin:0;font-size:17px;">Art. 44 ff. DSGVO</h3></div>
+        <p class="muted" style="font-size:15px;">Werden personenbezogene Daten außerhalb der EU/des EWR verarbeitet, ist dies nur unter zusätzlichen Voraussetzungen zulässig — etwa auf Basis eines Angemessenheitsbeschlusses oder geeigneter Garantien wie Standardvertragsklauseln.</p>
+      </div>
+      <div class="feature-card">
+        <div style="display:flex;align-items:center;gap:12px;margin-bottom:12px;"><span class="material-symbols-outlined" style="color:var(--cyan);font-size:26px;">description</span><h3 style="margin:0;font-size:17px;">Maßgeblich: die Datenschutzerklärung</h3></div>
+        <p class="muted" style="font-size:15px;">Ob und wohin ein Hersteller Daten übermittelt und welche Garantien er einsetzt, ergibt sich aus seiner Datenschutzerklärung und seinen vertraglichen Unterlagen. Diese sind vor dem Unternehmenseinsatz zu prüfen — eine pauschale Bewertung ist unzulässig.</p>
+      </div>
+      <div class="feature-card" style="border:1px solid rgba(0,212,232,0.2);">
+        <div style="display:flex;align-items:center;gap:12px;margin-bottom:12px;"><span class="material-symbols-outlined" style="color:var(--cyan);font-size:26px;">verified_user</span><h3 style="margin:0;font-size:17px;">Die einfache Antwort</h3></div>
+        <p class="muted" style="font-size:15px;">Wer die Frage des Drittlandtransfers gar nicht erst stellen will, betreibt die Drucker so, dass keine Daten an externe Server gehen: im LAN-Only-Modus, lokal im eigenen Netz.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section light">
+  <div class="container">
+    <div class="split">
+      <div>
+        <span class="eyebrow">Betriebsrisiko</span>
+        <h2 class="h2">Cloud-Abhängigkeit ist nicht nur Datenschutz — sondern Verfügbarkeit.</h2>
+        <p class="body muted mt-2">
+          Die Diskussion um cloud-gebundene 3D-Drucker hat in der Branche zuletzt Fahrt aufgenommen: Ein Server-Ausfall im Jahr 2024 und eine kontrovers diskutierte Firmware-Aktualisierung im Jahr 2025 haben vielen Anwendern vor Augen geführt, wie eng Betrieb und Hersteller-Cloud verzahnt sein können. Mehrere Nutzer sind daraufhin auf lokale Setups umgestiegen.
+        </p>
+        <p class="body muted mt-2">
+          Für ein produzierendes Unternehmen ist das mehr als eine Komfortfrage: Steht die Cloud, an der die Druckerverwaltung hängt, kann das den Betrieb ausbremsen. Datensouveränität und Verfügbarkeit sind hier zwei Seiten derselben Medaille — und beide sprechen für den lokalen Betrieb.
+        </p>
+        <p style="margin-top:18px;"><a href="/wissen/3d-drucker-ohne-cloud/" style="color:var(--cyan);font-weight:600;text-decoration:none;">Hintergrund: 3D-Drucker ohne Cloud betreiben →</a></p>
+      </div>
+      <div>
+        <div class="feature-card" style="border:2px solid var(--cyan);">
+          <div style="display:flex;align-items:center;gap:12px;margin-bottom:16px;"><span class="material-symbols-outlined" style="color:var(--cyan);font-size:28px;">verified_user</span><h3 style="margin:0;color:var(--cyan);">Datensouverän im Unternehmen</h3></div>
+          <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:12px;">
+            <li style="display:flex;gap:10px;align-items:flex-start;"><span class="material-symbols-outlined" style="color:var(--cyan);flex-shrink:0;font-size:20px;">check_circle</span><span>LAN-Only-Modus — keine Übermittlung an Hersteller-Server</span></li>
+            <li style="display:flex;gap:10px;align-items:flex-start;"><span class="material-symbols-outlined" style="color:var(--cyan);flex-shrink:0;font-size:20px;">check_circle</span><span>On-Premise-MES für Auftrag, Material, Nutzer &amp; Dokumentation</span></li>
+            <li style="display:flex;gap:10px;align-items:flex-start;"><span class="material-symbols-outlined" style="color:var(--cyan);flex-shrink:0;font-size:20px;">check_circle</span><span>Unabhängig von der Verfügbarkeit externer Dienste</span></li>
+            <li style="display:flex;gap:10px;align-items:flex-start;"><span class="material-symbols-outlined" style="color:var(--cyan);flex-shrink:0;font-size:20px;">check_circle</span><span>Produktionsdaten verlassen das Werk nicht</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section offwhite">
+  <div class="container">
+    <div class="split">
+      <div>
+        <span class="eyebrow">Die datensouveräne Antwort</span>
+        <h2 class="h2">LAN-Only-Modus plus On-Premise-MES.</h2>
+        <p class="body muted mt-2">
+          Der LAN-Only-Modus löst die Datenschutz-Frage für einzelne Drucker, weil keine Daten mehr an externe Server gehen. Für den produktiven Betrieb mehrerer Geräte fehlt ihm aber das übergreifende Management — und damit auch die strukturierte Grundlage für Dokumentation und Nachweisbarkeit, die regulierte Umgebungen verlangen.
+        </p>
+        <p class="body muted mt-2">
+          <strong>leanAM MES</strong> schließt diese Lücke: On-Premise installiert, verbindet es die lokale Druckersteuerung mit Auftrags-, Material- und Nutzerverwaltung, Rollenkonzept und Reporting — datensouverän im eigenen Haus und herstellerübergreifend. So lässt sich eine Bambu-Lab-Flotte cloud-frei und nachvollziehbar betreiben.
+        </p>
+        <a href="/mes.html" class="btn btn-primary" style="margin-top:20px;display:inline-flex;align-items:center;gap:8px;">Mehr zu leanAM MES<span class="material-symbols-outlined">arrow_forward</span></a>
+      </div>
+      <div>
+        <div class="feature-card">
+          <h3 style="margin-bottom:16px;font-size:16px;">DSGVO-relevante Bausteine, die ein MES unterstützt</h3>
+          <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:10px;">
+            <li style="display:flex;gap:10px;align-items:flex-start;"><span class="material-symbols-outlined" style="color:var(--cyan);flex-shrink:0;font-size:20px;">check_circle</span><span>Lokale Datenhaltung statt Cloud-Übermittlung</span></li>
+            <li style="display:flex;gap:10px;align-items:flex-start;"><span class="material-symbols-outlined" style="color:var(--cyan);flex-shrink:0;font-size:20px;">check_circle</span><span>Benutzer- und Rollenverwaltung, nachvollziehbare Zugriffe</span></li>
+            <li style="display:flex;gap:10px;align-items:flex-start;"><span class="material-symbols-outlined" style="color:var(--cyan);flex-shrink:0;font-size:20px;">check_circle</span><span>Dokumentation und Reporting für die Produktion</span></li>
+            <li style="display:flex;gap:10px;align-items:flex-start;"><span class="material-symbols-outlined" style="color:var(--cyan);flex-shrink:0;font-size:20px;">check_circle</span><span>Technisch-organisatorische Maßnahmen im eigenen Netz</span></li>
+          </ul>
+          <p class="muted" style="font-size:13px;margin-top:14px;">Die konkrete DSGVO-Bewertung bleibt Aufgabe des Verantwortlichen; ein MES schafft die technische Grundlage dafür.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section teal">
+  <div class="container">
+    <div class="section-head"><span class="eyebrow" style="color:#7debf3;">FAQ</span><h2 class="h2">Häufige Fragen zu Bambu Lab, Datenschutz & DSGVO.</h2></div>
+    <div style="max-width:800px;margin:0 auto;display:flex;flex-direction:column;gap:4px;">
+      <details style="background:rgba(255,255,255,0.07);border-radius:0;overflow:hidden;">
+        <summary style="padding:18px 20px;cursor:pointer;font-weight:600;list-style:none;display:flex;justify-content:space-between;align-items:center;">Ist Bambu Lab DSGVO-konform?</summary>
+        <p style="padding:0 20px 18px;margin:0;opacity:.85;line-height:1.7;">Ob der Betrieb DSGVO-konform ist, hängt vom Einzelfall ab: davon, welche personenbezogenen Daten verarbeitet werden, in welcher Betriebsart (Cloud oder LAN-Only) und auf welcher Rechtsgrundlage. Maßgeblich ist die Datenschutzerklärung des Herstellers sowie die konkrete Nutzung im Unternehmen. Eine pauschale Aussage „konform“ oder „nicht konform“ ist nicht möglich. Im LAN-Only-Modus verbleiben Druck- und Statusdaten im eigenen Netz, was die Bewertung erheblich vereinfacht.</p>
+      </details>
+      <details style="background:rgba(255,255,255,0.07);border-radius:0;overflow:hidden;">
+        <summary style="padding:18px 20px;cursor:pointer;font-weight:600;list-style:none;display:flex;justify-content:space-between;align-items:center;">Werden beim Cloud-Betrieb Daten in ein Drittland übertragen?</summary>
+        <p style="padding:0 20px 18px;margin:0;opacity:.85;line-height:1.7;">Wenn ein Hersteller personenbezogene Daten außerhalb der EU/des EWR verarbeitet, greifen die Anforderungen an Drittlandübermittlungen nach Art. 44 ff. DSGVO. Ob und wohin Daten übermittelt werden, ergibt sich aus der Datenschutzerklärung des jeweiligen Anbieters und sollte vor dem Unternehmenseinsatz geprüft werden. Im LAN-Only-Modus findet keine Übermittlung an Hersteller-Server statt.</p>
+      </details>
+      <details style="background:rgba(255,255,255,0.07);border-radius:0;overflow:hidden;">
+        <summary style="padding:18px 20px;cursor:pointer;font-weight:600;list-style:none;display:flex;justify-content:space-between;align-items:center;">Wie betreibe ich Bambu-Lab-Drucker DSGVO-konform im Unternehmen?</summary>
+        <p style="padding:0 20px 18px;margin:0;opacity:.85;line-height:1.7;">Pragmatisch: den LAN-Only-Modus nutzen, sodass keine Daten an externe Server gehen, die Datenschutzerklärung des Herstellers für jede genutzte Funktion prüfen und für mehrere Drucker ein On-Premise-System einsetzen, das Aufträge, Material und Nutzer datensouverän im eigenen Haus verwaltet. So wird die Druckerflotte unabhängig von Hersteller-Clouds betrieben.</p>
+      </details>
+      <details style="background:rgba(255,255,255,0.07);border-radius:0;overflow:hidden;">
+        <summary style="padding:18px 20px;cursor:pointer;font-weight:600;list-style:none;display:flex;justify-content:space-between;align-items:center;">Reicht der LAN-Only-Modus für DSGVO-Konformität?</summary>
+        <p style="padding:0 20px 18px;margin:0;opacity:.85;line-height:1.7;">Der LAN-Only-Modus entfernt die externe Datenübermittlung und vereinfacht die datenschutzrechtliche Bewertung erheblich — er ist aber kein Selbstläufer. Verantwortliche müssen weiterhin die übrigen DSGVO-Pflichten erfüllen (z. B. Verzeichnis der Verarbeitungstätigkeiten, technisch-organisatorische Maßnahmen). Für den Mehrgeräte-Betrieb empfiehlt sich ein On-Premise-MES, das diese Anforderungen unterstützt.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<section class="section light">
+  <div class="container" style="text-align:center;max-width:700px;margin:0 auto;">
+    <span class="eyebrow">Nächster Schritt</span>
+    <h2 class="h2">Bambu-Lab-Flotte datensouverän betreiben — <span class="cyan">wir zeigen wie.</span></h2>
+    <p>In einer kostenfreien Demo zeigen wir leanAM MES live mit angebundenen Druckern, On-Premise auf Ihrem Server oder unserer Demo-Instanz. Wir ordnen mit Ihnen ein, welche Datenschutz-Aspekte für Ihren Maschinenpark relevant sind und wie sich der cloud-freie Betrieb umsetzen lässt.</p>
+    <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;margin-top:24px;">
+      <a href="https://calendly.com/hq-leanam/leanam-erstgesprach-30-min" target="_blank" rel="noopener" class="btn btn-primary" style="display:inline-flex;align-items:center;gap:8px;">Erstgespräch buchen</a>
+      <a href="/wissen/bambu-lab-ohne-cloud/" class="btn btn-outline" style="display:inline-flex;align-items:center;gap:8px;">Praxis-Anleitung ansehen</a>
+    </div>
+  </div>
+</section>
+
+<footer class="lam-footer">
+  <div class="lam-footer__inner">
+    <div class="lam-footer__grid">
+      <div>
+        <a href="/index.html"><img src="/images/leanam-logo.png" alt="leanAM" height="34" loading="lazy"></a>
+        <p class="lam-footer__tagline">Software, Beratung und Entwicklung für additive Fertigung.<br>Made in Germany — Datensouverän — On-Premise.</p>
+      </div>
+      <div><span class="lam-footer__col-title">Produkt</span><ul class="lam-footer__list"><li><a href="/mes.html">leanAM MES</a></li><li><a href="/entwicklung.html">Custom Development</a></li><li><a href="https://calendly.com/hq-leanam/30min" target="_blank" rel="noopener">Demo anfragen</a></li></ul></div>
+      <div><span class="lam-footer__col-title">Leistungen</span><ul class="lam-footer__list"><li><a href="/prozessberatung.html">Prozessberatung</a></li><li><a href="/entwicklung.html">Entwicklung</a></li><li><a href="/prozessberatung.html">B2B Druckservice</a></li><li><a href="/prozessberatung.html">Implementierung</a></li></ul></div>
+      <div><span class="lam-footer__col-title">Unternehmen</span><ul class="lam-footer__list"><li><a href="/ueber-uns.html">Über uns</a></li><li><a href="/ueber-uns.html">Karriere</a></li><li><a href="/kontakt.html">Kontakt</a></li><li><a href="/kontakt.html">Standort</a></li></ul></div>
+    </div>
+    <p style="font-size:11px;color:rgba(255,255,255,.5);line-height:1.6;padding-top:16px;border-top:1px solid rgba(111,216,241,.08);margin-bottom:16px;">Marken- und Produktnamen Dritter (z. B. Bambu Lab, Prusa, Ultimaker) sind Eigentum der jeweiligen Inhaber. Die Nennung dient ausschließlich der Beschreibung von Kompatibilität und Sachverhalten. Es bestehen keine offiziellen Partnerschaften oder Autorisierungen, sofern nicht ausdrücklich anders angegeben. Dieser Beitrag ist keine Rechtsberatung.</p>
+    <div class="lam-footer__bottom">
+      <span class="lam-footer__copy">© 2026 URBANMAKER UG (haftungsbeschränkt) · leanAM ist eine Marke der URBANMAKER UG · Münster, Deutschland</span>
+      <div class="lam-footer__legal"><a href="/impressum.html">Impressum</a><a href="/datenschutz.html">Datenschutz</a><a href="/agb.html">AGB</a></div>
+    </div>
+  </div>
+</footer>
+<script src="/nav.js" defer></script>
+</body>
+</html>
