@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+<meta name="theme-color" content="#0A1628">
+<title>Checklist: Run a Bambu Lab Fleet Without the Cloud | leanAM</title>
+<meta name="description" content="Free 10-point checklist: how companies run a Bambu Lab printer fleet data-sovereign without the cloud — from LAN-Only mode to job and material management.">
+<link rel="canonical" href="https://www.leanam.com/en/wissen/bambu-lab-checkliste/">
+<link rel="alternate" hreflang="de" href="https://www.leanam.com/wissen/bambu-lab-checkliste/">
+<link rel="alternate" hreflang="en" href="https://www.leanam.com/en/wissen/bambu-lab-checkliste/">
+<link rel="alternate" hreflang="x-default" href="https://www.leanam.com/wissen/bambu-lab-checkliste/">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://www.leanam.com/en/wissen/bambu-lab-checkliste/">
+<meta property="og:title" content="Checklist: Run a Bambu Lab Fleet Without the Cloud | leanAM">
+<meta property="og:description" content="Free 10-point checklist for running a Bambu Lab fleet data-sovereign and cloud-free in a company.">
+<meta property="og:image" content="https://www.leanam.com/images/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="leanAM">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Checklist: Run a Bambu Lab Fleet Without the Cloud | leanAM">
+<meta name="twitter:description" content="Free 10-point checklist for running a Bambu Lab fleet cloud-free.">
+<meta name="twitter:image" content="https://www.leanam.com/images/og-image.png">
+<link rel="preload" as="font" type="font/woff2" href="/fonts/inter-latin.woff2" crossorigin>
+<link rel="preload" as="font" type="font/woff2" href="/fonts/jetbrains-mono-latin.woff2" crossorigin>
+<link rel="preload" as="image" href="/images/leanam-logo.png" fetchpriority="high">
+<link rel="stylesheet" href="/styles/leanam-system.css">
+<style>
+  @media print {
+    .lam-header, .lam-mobile-nav, .lam-footer, #cl-gate, .breadcrumb, .cl-noprint { display:none !important; }
+    body { background:#fff !important; color:#0A1628 !important; }
+    #cl-content { display:block !important; }
+    #cl-content * { color:#0A1628 !important; }
+  }
+  .cl-list { counter-reset: cl; list-style:none; padding:0; margin:0; display:flex; flex-direction:column; gap:14px; }
+  .cl-list li { display:flex; gap:14px; align-items:flex-start; }
+  .cl-list li::before { counter-increment: cl; content: counter(cl); flex-shrink:0; width:30px; height:30px; border-radius:8px; background:var(--lam-cyan); color:var(--lam-ink); font-weight:800; font-size:14px; display:flex; align-items:center; justify-content:center; }
+</style>
+<link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+</head>
+<body data-screen-label="Knowledge Bambu Lab Checklist">
+
+<header class="lam-header">
+  <div class="lam-header__inner">
+    <a href="/en/index.html" class="lam-header__logo"><img src="/images/leanam-logo.png" alt="leanAM" height="38" loading="eager"></a>
+    <nav class="lam-header__nav" aria-label="Main navigation">
+      <a href="/en/index.html">Home</a>
+      <a href="/en/mes.html">leanAM MES</a>
+      <a href="/en/prozessberatung.html">Consulting</a>
+      <a href="/en/entwicklung.html">Development</a>
+      <a href="/en/ueber-uns.html">About us</a>
+      <a href="/en/wissen/" class="active">Knowledge</a>
+    </nav>
+    <div class="lam-header__right">
+      <span class="lam-header__lang">
+        <a href="/wissen/bambu-lab-checkliste/">DE</a>
+        <span class="sep">|</span>
+        <a href="/en/wissen/bambu-lab-checkliste/" class="active">EN</a>
+      </span>
+      <a href="/en/kontakt.html" class="lam-btn lam-btn--primary"><span class="material-icons">mail</span>Contact</a>
+    </div>
+    <button class="nav-toggle" aria-label="Open navigation" aria-expanded="false" aria-controls="mobile-nav"><span></span><span></span><span></span></button>
+  </div>
+  <div class="lam-mobile-nav" id="mobile-nav" hidden>
+    <nav aria-label="Mobile navigation">
+      <a href="/en/index.html">Home</a>
+      <a href="/en/mes.html">leanAM MES</a>
+      <a href="/en/prozessberatung.html">Consulting</a>
+      <a href="/en/entwicklung.html">Development</a>
+      <a href="/en/ueber-uns.html">About us</a>
+      <a href="/en/wissen/" class="active">Knowledge</a>
+      <a href="/en/kontakt.html" class="mobile-cta">Contact / Demo</a>
+    </nav>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="container">
+    <div class="breadcrumb"><a href="/en/index.html">Home</a><span class="material-symbols-outlined" aria-hidden="true">chevron_right</span><a href="/en/wissen/">Knowledge</a><span class="material-symbols-outlined" aria-hidden="true">chevron_right</span><span>Checklist</span></div>
+    <span class="eyebrow">Free checklist · Bambu Lab</span>
+    <h1>Run a Bambu Lab Fleet Without the Cloud — <span class="accent">the 10-point checklist.</span></h1>
+    <p class="lead">From LAN-Only mode to job and material management: this compact checklist walks step by step through everything that matters when running multiple Bambu Lab printers data-sovereign and cloud-free in a company. Enter your details briefly — the checklist appears right after and can be saved as a PDF.</p>
+  </div>
+</section>
+
+<section class="section light" id="cl-gate">
+  <div class="container" style="max-width:620px;margin:0 auto;">
+    <div class="feature-card">
+      <h2 class="h2" style="font-size:22px;margin-bottom:8px;">Unlock the checklist</h2>
+      <p class="muted" style="font-size:15px;margin-bottom:20px;">Free, no newsletter obligation. We only get in touch if you ask us to in the form.</p>
+      <form class="form" id="cl-form" action="https://formcarry.com/s/YeWdKCck38z" method="POST" accept-charset="UTF-8">
+        <input type="hidden" name="topic" value="Lead magnet: Bambu Lab checklist (EN)">
+        <input type="text" name="_gotcha" style="display:none !important" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <div class="field" style="margin-bottom:14px;">
+          <label for="cl-name" style="display:block;font-size:13px;margin-bottom:6px;">Name *</label>
+          <input id="cl-name" type="text" name="name" required placeholder="First and last name" style="width:100%;">
+        </div>
+        <div class="field" style="margin-bottom:14px;">
+          <label for="cl-email" style="display:block;font-size:13px;margin-bottom:6px;">Email *</label>
+          <input id="cl-email" type="email" name="email" required placeholder="name@company.com" style="width:100%;">
+        </div>
+        <div class="field" style="margin-bottom:14px;">
+          <label for="cl-company" style="display:block;font-size:13px;margin-bottom:6px;">Company</label>
+          <input id="cl-company" type="text" name="company" placeholder="optional" style="width:100%;">
+        </div>
+        <div class="field" style="margin-bottom:14px;">
+          <label for="cl-printers" style="display:block;font-size:13px;margin-bottom:6px;">Number of 3D printers</label>
+          <select id="cl-printers" name="anzahl_drucker" style="width:100%;">
+            <option value="">Please select (optional)</option>
+            <option value="private / 1">Private / 1 printer</option>
+            <option value="2-5">2–5 printers</option>
+            <option value="6-20">6–20 printers</option>
+            <option value="20+">More than 20</option>
+          </select>
+        </div>
+        <label style="display:flex;gap:10px;align-items:flex-start;font-size:13px;margin:8px 0 18px;color:rgba(244,248,251,.8);">
+          <input type="checkbox" name="consent" required style="margin-top:3px;">
+          <span>I agree that my details may be processed to handle my request. <a href="/en/datenschutz.html" style="color:var(--lam-cyan);">Privacy</a>.</span>
+        </label>
+        <button type="submit" class="btn btn-primary" style="width:100%;display:inline-flex;align-items:center;justify-content:center;gap:8px;">Show the checklist<span class="material-symbols-outlined">arrow_forward</span></button>
+        <p id="cl-error" hidden style="color:#fca5a5;font-size:13px;margin-top:12px;">Something went wrong. Please try again or write to <a href="mailto:hq@leanam.com" style="color:var(--lam-cyan);">hq@leanam.com</a>.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<section class="section light" id="cl-content" hidden>
+  <div class="container" style="max-width:820px;margin:0 auto;">
+    <div style="display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;margin-bottom:24px;">
+      <div>
+        <span class="eyebrow" style="color:var(--lam-cyan);">Your checklist</span>
+        <h2 class="h2" style="font-size:26px;margin-top:6px;">Bambu Lab fleet without the cloud — 10 points</h2>
+      </div>
+      <button class="btn btn-outline cl-noprint" onclick="window.print()" style="display:inline-flex;align-items:center;gap:8px;white-space:nowrap;"><span class="material-symbols-outlined">download</span>Save as PDF</button>
+    </div>
+    <ol class="cl-list">
+      <li><span><strong>Enable LAN-Only mode.</strong> Switch on LAN-Only mode on every printer and document the access codes centrally.</span></li>
+      <li><span><strong>Connect the slicer locally.</strong> Configure Bambu Studio or OrcaSlicer to reach the printers via their local IP address.</span></li>
+      <li><span><strong>Plan the network.</strong> Connect printers and the management server in the same network segment or via VPN; segment access.</span></li>
+      <li><span><strong>Define a firmware strategy.</strong> Document firmware versions and define a controlled update process that can be run offline where possible.</span></li>
+      <li><span><strong>Check remaining cloud features.</strong> For every feature you use, review the manufacturer's privacy policy — what stays cloud-bound?</span></li>
+      <li><span><strong>Clarify data protection.</strong> If cloud features are used: assess legal basis, data processing agreement and third-country transfer.</span></li>
+      <li><span><strong>Control jobs centrally.</strong> Introduce central job and queue management across all printers instead of operating devices individually.</span></li>
+      <li><span><strong>Track material &amp; cost.</strong> Capture material consumption and cost per job — the basis for costing and proof.</span></li>
+      <li><span><strong>Govern users &amp; roles.</strong> Define user and role permissions and log access in a traceable way.</span></li>
+      <li><span><strong>Secure availability.</strong> Define a backup, availability and contingency concept for local operation.</span></li>
+    </ol>
+    <div class="feature-card cl-noprint" style="margin-top:32px;border:2px solid var(--cyan);">
+      <h3 style="margin:0 0 8px;color:var(--cyan);">Points 7–10 in one system</h3>
+      <p class="muted" style="font-size:15px;margin-bottom:16px;">Job, material, user and availability management across a whole fleet is exactly what leanAM MES delivers on-premise — across manufacturers and without cloud lock-in.</p>
+      <div style="display:flex;gap:12px;flex-wrap:wrap;">
+        <a href="https://calendly.com/hq-leanam/leanam-erstgesprach-30-min" target="_blank" rel="noopener" class="btn btn-primary" style="display:inline-flex;align-items:center;gap:8px;">Book an intro call</a>
+        <a href="/en/wissen/bambu-lab-ohne-cloud/" class="btn btn-outline" style="display:inline-flex;align-items:center;gap:8px;">Practical guide</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="lam-footer">
+  <div class="lam-footer__inner">
+    <div class="lam-footer__grid">
+      <div>
+        <a href="/en/index.html"><img src="/images/leanam-logo.png" alt="leanAM" height="34" loading="lazy"></a>
+        <p class="lam-footer__tagline">Software, consulting and development for additive manufacturing.<br>Made in Germany — Data-sovereign — On-Premise.</p>
+      </div>
+      <div><span class="lam-footer__col-title">Product</span><ul class="lam-footer__list"><li><a href="/en/mes.html">leanAM MES</a></li><li><a href="/en/entwicklung.html">Custom Development</a></li><li><a href="https://calendly.com/hq-leanam/30min" target="_blank" rel="noopener">Request a demo</a></li></ul></div>
+      <div><span class="lam-footer__col-title">Services</span><ul class="lam-footer__list"><li><a href="/en/prozessberatung.html">Consulting</a></li><li><a href="/en/entwicklung.html">Development</a></li><li><a href="/en/prozessberatung.html">B2B Print Service</a></li><li><a href="/en/prozessberatung.html">Implementation</a></li></ul></div>
+      <div><span class="lam-footer__col-title">Company</span><ul class="lam-footer__list"><li><a href="/en/ueber-uns.html">About us</a></li><li><a href="/en/ueber-uns.html">Careers</a></li><li><a href="/en/kontakt.html">Contact</a></li><li><a href="/en/kontakt.html">Location</a></li></ul></div>
+    </div>
+    <p style="font-size:11px;color:rgba(255,255,255,.5);line-height:1.6;padding-top:16px;border-top:1px solid rgba(111,216,241,.08);margin-bottom:16px;">Third-party brand and product names (e.g. Bambu Lab, Prusa, Ultimaker) are the property of their respective owners. They are named solely to describe compatibility and facts. No official partnerships or authorisations exist unless expressly stated otherwise.</p>
+    <div class="lam-footer__bottom">
+      <span class="lam-footer__copy">© 2026 URBANMAKER UG (haftungsbeschränkt) · leanAM is a brand of URBANMAKER UG · Münster, Germany</span>
+      <div class="lam-footer__legal"><a href="/en/impressum.html">Imprint</a><a href="/en/datenschutz.html">Privacy Policy</a><a href="/en/agb.html">Terms</a></div>
+      <span style="display:block;margin-top:12px;font-size:11px;opacity:0.55;line-height:1.5;">Legal documents (Imprint, Privacy Policy, Terms) are provided in German and are governed by German law.</span>
+    </div>
+  </div>
+</footer>
+<script src="/nav.js" defer></script>
+<script>
+(function(){
+  var form=document.getElementById('cl-form');
+  if(!form) return;
+  form.addEventListener('submit',function(e){
+    e.preventDefault();
+    var btn=form.querySelector('button[type=submit]');
+    var err=document.getElementById('cl-error');
+    err.hidden=true; btn.disabled=true; btn.style.opacity='0.6';
+    fetch(form.action,{method:'POST',body:new FormData(form),headers:{'Accept':'application/json'}})
+      .then(function(res){
+        if(res.ok){
+          document.getElementById('cl-gate').hidden=true;
+          var c=document.getElementById('cl-content');
+          c.hidden=false;
+          c.scrollIntoView({behavior:'smooth',block:'start'});
+        } else { throw new Error('bad status'); }
+      })
+      .catch(function(){ err.hidden=false; btn.disabled=false; btn.style.opacity='1'; });
+  });
+})();
+</script>
+</body>
+</html>
