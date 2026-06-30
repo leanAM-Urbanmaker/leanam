@@ -1157,6 +1157,13 @@ ul { margin: 0; padding: 0; list-style: none; }
 .stat-num   { font-size: 32px; font-weight: 800; color: var(--lam-cyan); letter-spacing: -.02em; }
 .stat-label { font-size: 12.5px; color: var(--lam-muted); margin-top: 6px; }
 
+/* Vergleichstabellen: durchgehend heller Tabellenhintergrund + dunkle Schrift.
+   Verhindert sowohl hell-auf-hell (helle Zebra-Zeilen) als auch dunkel-auf-dunkel
+   (transparente Zeilen über dunkler Sektion). Kopfzeile bleibt weiß auf dunkel;
+   farbig markierte Zellen behalten ihre Inline-Farbe. */
+.comparison-table-wrap table { background: #ffffff; color: var(--lam-ink); border-radius: 12px; overflow: hidden; }
+.comparison-table-wrap table thead th { color: #ffffff; }
+
 /* Cloud comparison (mes) */
 .problem-comparison { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
 .comparison-col { border: 1px solid var(--lam-line); padding: 24px; }
