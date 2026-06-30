@@ -103,6 +103,13 @@
   </url>
 
   <url>
+    <loc>https://www.leanam.com/wissen/bambu-lab-ohne-cloud/</loc>
+    <lastmod>2026-06-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
     <loc>https://www.leanam.com/wissen/make-or-buy-3d-druck/</loc>
     <lastmod>2026-05-12</lastmod>
     <changefreq>monthly</changefreq>
@@ -120,6 +127,13 @@
   <url>
     <loc>https://www.leanam.com/en/wissen/3d-drucker-ohne-cloud/</loc>
     <lastmod>2026-06-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.leanam.com/en/wissen/bambu-lab-ohne-cloud/</loc>
+    <lastmod>2026-06-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>

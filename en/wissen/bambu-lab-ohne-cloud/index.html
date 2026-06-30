@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<meta name="theme-color" content="#0A1628">
+<title>Bambu Lab Without the Cloud: LAN-Only Mode (X1C, P1S, A1 …) | leanAM</title>
+<meta name="description" content="Run Bambu Lab printers without the cloud: how to enable LAN-Only mode, what works and what doesn't — and how companies operate entire printer fleets cloud-free and data-sovereign.">
+<link rel="canonical" href="https://www.leanam.com/en/wissen/bambu-lab-ohne-cloud/">
+<link rel="alternate" hreflang="de" href="https://www.leanam.com/wissen/bambu-lab-ohne-cloud/">
+<link rel="alternate" hreflang="en" href="https://www.leanam.com/en/wissen/bambu-lab-ohne-cloud/">
+<link rel="alternate" hreflang="x-default" href="https://www.leanam.com/wissen/bambu-lab-ohne-cloud/">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://www.leanam.com/en/wissen/bambu-lab-ohne-cloud/">
+<meta property="og:title" content="Bambu Lab Without the Cloud — LAN-Only Mode explained | leanAM">
+<meta property="og:description" content="How to run Bambu Lab printers without the cloud (LAN-Only mode) — and how companies operate entire fleets cloud-free and data-sovereign.">
+<meta property="og:image" content="https://www.leanam.com/images/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="leanAM">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Bambu Lab Without the Cloud — LAN-Only Mode explained | leanAM">
+<meta name="twitter:description" content="How to run Bambu Lab printers without the cloud — and how companies operate entire fleets data-sovereign.">
+<meta name="twitter:image" content="https://www.leanam.com/images/og-image.png">
+<link rel="preload" as="font" type="font/woff2" href="/fonts/inter-latin.woff2" crossorigin>
+<link rel="preload" as="font" type="font/woff2" href="/fonts/jetbrains-mono-latin.woff2" crossorigin>
+<link rel="preload" as="image" href="/images/leanam-logo.png" fetchpriority="high">
+<link rel="stylesheet" href="/styles/leanam-system.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.leanam.com/en/" },
+        { "@type": "ListItem", "position": 2, "name": "Knowledge", "item": "https://www.leanam.com/en/wissen/" },
+        { "@type": "ListItem", "position": 3, "name": "Bambu Lab Without the Cloud", "item": "https://www.leanam.com/en/wissen/bambu-lab-ohne-cloud/" }
+      ]
+    },
+    {
+      "@type": "Article",
+      "url": "https://www.leanam.com/en/wissen/bambu-lab-ohne-cloud/",
+      "headline": "Bambu Lab Without the Cloud: LAN-Only Mode explained",
+      "description": "How to run Bambu Lab printers without the cloud (LAN-Only mode), what works and what doesn't — and how companies operate entire printer fleets cloud-free and data-sovereign.",
+      "author": { "@type": "Organization", "name": "leanAM", "url": "https://www.leanam.com/" },
+      "publisher": { "@type": "Organization", "name": "leanAM", "url": "https://www.leanam.com/" },
+      "datePublished": "2026-06-23",
+      "dateModified": "2026-06-23",
+      "inLanguage": "en"
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Can you use Bambu Lab printers without the cloud?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Yes. Current Bambu Lab printers offer a LAN-Only mode in which the printer operates exclusively on the local network and does not connect to the manufacturer cloud. Printing is then done via a slicer on the same network or via microSD card. Some convenience features (such as the Bambu Handy app and remote access from outside the network) are not available in LAN-Only mode." }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I enable LAN-Only mode on Bambu Lab?",
+          "acceptedAnswer": { "@type": "Answer", "text": "On the printer display, go to Settings → General and enable LAN-Only mode, then confirm. The printer then shows an access code and its local IP address. In your slicer (Bambu Studio or OrcaSlicer), add the printer using that IP address and access code. The exact menu wording may vary slightly depending on firmware version." }
+        },
+        {
+          "@type": "Question",
+          "name": "What does not work in LAN-Only mode?",
+          "acceptedAnswer": { "@type": "Answer", "text": "LAN-Only mode removes the cloud-bound convenience features: remote access from outside the local network, full use of the Bambu Handy app, and cloud-based slicing and convenience services. Printing, transferring and monitoring within your own network remain possible. Firmware updates may have to be applied manually." }
+        },
+        {
+          "@type": "Question",
+          "name": "Which Bambu Lab models support LAN-Only mode?",
+          "acceptedAnswer": { "@type": "Answer", "text": "LAN-Only mode is available on current Bambu Lab models, including the X1 Carbon (X1C), X1E, P1S, P1P, A1, A1 mini and H2D. The exact feature set depends on the firmware version and should be verified case by case before productive use." }
+        },
+        {
+          "@type": "Question",
+          "name": "Is Bambu Lab GDPR-compliant?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Whether and which personal data is processed depends on how the printer is operated. In cloud operation the usual GDPR requirements apply (legal basis, data processing agreement, and where relevant a third-country transfer assessment); the manufacturer's privacy policy is decisive. In LAN-Only mode, print and status data stay within your own network, which considerably simplifies the assessment. A blanket statement is not possible — each case must be assessed individually." }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I run multiple Bambu Lab printers in a company without the cloud?",
+          "acceptedAnswer": { "@type": "Answer", "text": "LAN-Only mode solves cloud-free operation for individual printers, but provides no central job, material, user and reporting management across multiple devices. For productive fleet operation, an on-premise MES such as leanAM combines local printer control with industrial-grade job and resource management — across manufacturers and without cloud dependency." }
+        }
+      ]
+    }
+  ]
+}
+</script>
+<link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+</head>
+<body data-screen-label="Knowledge Bambu Lab Without the Cloud">
+
+<header class="lam-header">
+  <div class="lam-header__inner">
+    <a href="/en/index.html" class="lam-header__logo">
+      <img src="/images/leanam-logo.png" alt="leanAM" height="38" loading="eager">
+    </a>
+    <nav class="lam-header__nav" aria-label="Main navigation">
+      <a href="/en/index.html">Home</a>
+      <a href="/en/mes.html">leanAM MES</a>
+      <a href="/en/prozessberatung.html">Consulting</a>
+      <a href="/en/entwicklung.html">Development</a>
+      <a href="/en/ueber-uns.html">About us</a>
+      <a href="/en/wissen/" class="active">Knowledge</a>
+    </nav>
+    <div class="lam-header__right">
+      <span class="lam-header__lang">
+        <a href="/wissen/bambu-lab-ohne-cloud/">DE</a>
+        <span class="sep">|</span>
+        <a href="/en/wissen/bambu-lab-ohne-cloud/" class="active">EN</a>
+      </span>
+      <a href="/en/kontakt.html" class="lam-btn lam-btn--primary">
+        <span class="material-icons">mail</span>Contact
+      </a>
+    </div>
+    <button class="nav-toggle" aria-label="Open navigation" aria-expanded="false" aria-controls="mobile-nav">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="lam-mobile-nav" id="mobile-nav" hidden>
+    <nav aria-label="Mobile navigation">
+      <a href="/en/index.html">Home</a>
+      <a href="/en/mes.html">leanAM MES</a>
+      <a href="/en/prozessberatung.html">Consulting</a>
+      <a href="/en/entwicklung.html">Development</a>
+      <a href="/en/ueber-uns.html">About us</a>
+      <a href="/en/wissen/" class="active">Knowledge</a>
+      <a href="/en/kontakt.html" class="mobile-cta">Contact / Demo</a>
+    </nav>
+  </div>
+</header>
+
+<!-- Section 1 — Hero -->
+<section class="page-hero">
+  <div class="container">
+    <div class="breadcrumb"><a href="/en/index.html">Home</a><span class="material-symbols-outlined" aria-hidden="true">chevron_right</span><a href="/en/wissen/">Knowledge</a><span class="material-symbols-outlined" aria-hidden="true">chevron_right</span><span>Bambu Lab Without the Cloud</span></div>
+    <span class="eyebrow">Knowledge · Bambu Lab · LAN-Only mode</span>
+    <h1>Use Bambu Lab Without the Cloud — <span class="accent">LAN-Only mode explained.</span></h1>
+    <p class="lead">Bambu Lab printers can also run without the manufacturer cloud: LAN-Only mode keeps print jobs and status data on your own network. This guide shows how to enable it, what works and what doesn't, which models support it — and when companies with multiple printers need more than LAN mode.</p>
+    <p class="body muted" style="font-size:13px;margin-top:16px;opacity:.7;max-width:760px;">Note: leanAM is an independent MES vendor and is not affiliated with Bambu Lab. "Bambu Lab" and the product names mentioned are trademarks of their respective owners; they are named for descriptive purposes only.</p>
+  </div>
+</section>
+
+<!-- Section 2 — What LAN-Only mode is -->
+<section class="section light">
+  <div class="container">
+    <div class="split">
+      <div>
+        <span class="eyebrow">Basics</span>
+        <h2 class="h2">What LAN-Only mode is — and how to enable it.</h2>
+        <p class="body muted mt-2">
+          Out of the box, Bambu Lab printers are built around the convenience of the manufacturer cloud: slicing, printing and monitoring all run smoothly via cloud services and the app. <strong>LAN-Only mode</strong> disconnects the printer from the cloud — it then communicates exclusively within your local network. Print data, status information and the camera feed do not leave your network.
+        </p>
+        <p class="body muted mt-2">
+          That matters if you value data sovereignty, want to be independent of cloud outages, or work in an environment with data-protection requirements.
+        </p>
+      </div>
+      <div>
+        <div class="feature-card">
+          <h3 style="margin-bottom:16px;font-size:16px;">Enable LAN-Only mode — in brief</h3>
+          <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:12px;">
+            <li style="display:flex;gap:10px;align-items:flex-start;"><span class="material-symbols-outlined" style="color:var(--cyan);flex-shrink:0;font-size:20px;">looks_one</span><span>On the printer display: <strong>Settings → General → LAN-Only mode</strong>, then confirm.</span></li>
+            <li style="display:flex;gap:10px;align-items:flex-start;"><span class="material-symbols-outlined" style="color:var(--cyan);flex-shrink:0;font-size:20px;">looks_two</span><span>The printer shows an <strong>access code</strong> and its <strong>local IP address</strong>.</span></li>
+            <li style="display:flex;gap:10px;align-items:flex-start;"><span class="material-symbols-outlined" style="color:var(--cyan);flex-shrink:0;font-size:20px;">looks_3</span><span>In your slicer (<strong>Bambu Studio</strong> or <strong>OrcaSlicer</strong>), add the printer via its IP address and access code.</span></li>
+            <li style="display:flex;gap:10px;align-items:flex-start;"><span class="material-symbols-outlined" style="color:var(--cyan);flex-shrink:0;font-size:20px;">looks_4</span><span>Or with no network at all: transfer the print file via <strong>microSD card</strong>.</span></li>
+          </ul>
+          <p class="muted" style="font-size:13px;margin-top:14px;">The exact menu wording may vary slightly depending on firmware version.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Section 3 — Model overview -->
+<section class="section offwhite">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Models</span>
+      <h2 class="h2">Which Bambu Lab printers support LAN-Only mode.</h2>
+      <p>LAN-Only mode is available on all current Bambu Lab models. The exact feature set depends on the firmware version — verify it case by case before productive use.</p>
+    </div>
+    <div class="comparison-table-wrap" style="overflow-x:auto;margin-top:32px;">
+      <table style="width:100%;border-collapse:collapse;font-size:15px;min-width:560px;">
+        <thead>
+          <tr style="background:var(--navy);color:var(--white);">
+            <th style="padding:14px 16px;text-align:left;font-weight:600;width:34%;">Model</th>
+            <th style="padding:14px 16px;text-align:center;font-weight:600;width:33%;">LAN-Only mode</th>
+            <th style="padding:14px 16px;text-align:left;font-weight:600;width:33%;">Note</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr style="border-bottom:1px solid #e5e7eb;"><td style="padding:12px 16px;font-weight:500;">X1 Carbon (X1C)</td><td style="padding:12px 16px;text-align:center;color:#22c55e;font-weight:600;">Available</td><td style="padding:12px 16px;">Local printing &amp; monitoring on the network</td></tr>
+          <tr style="border-bottom:1px solid #e5e7eb;background:#f9fafb;"><td style="padding:12px 16px;font-weight:500;">X1E</td><td style="padding:12px 16px;text-align:center;color:#22c55e;font-weight:600;">Available</td><td style="padding:12px 16px;">Designed for enterprise environments</td></tr>
+          <tr style="border-bottom:1px solid #e5e7eb;"><td style="padding:12px 16px;font-weight:500;">P1S</td><td style="padding:12px 16px;text-align:center;color:#22c55e;font-weight:600;">Available</td><td style="padding:12px 16px;">Cloud convenience features drop out</td></tr>
+          <tr style="border-bottom:1px solid #e5e7eb;background:#f9fafb;"><td style="padding:12px 16px;font-weight:500;">P1P</td><td style="padding:12px 16px;text-align:center;color:#22c55e;font-weight:600;">Available</td><td style="padding:12px 16px;">Cloud convenience features drop out</td></tr>
+          <tr style="border-bottom:1px solid #e5e7eb;"><td style="padding:12px 16px;font-weight:500;">A1</td><td style="padding:12px 16px;text-align:center;color:#22c55e;font-weight:600;">Available</td><td style="padding:12px 16px;">App remote access drops out</td></tr>
+          <tr style="border-bottom:1px solid #e5e7eb;background:#f9fafb;"><td style="padding:12px 16px;font-weight:500;">A1 mini</td><td style="padding:12px 16px;text-align:center;color:#22c55e;font-weight:600;">Available</td><td style="padding:12px 16px;">App remote access drops out</td></tr>
+          <tr><td style="padding:12px 16px;font-weight:500;">H2D</td><td style="padding:12px 16px;text-align:center;color:#22c55e;font-weight:600;">Available</td><td style="padding:12px 16px;">Verify feature set by firmware</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="muted" style="font-size:13px;margin-top:14px;">Information without warranty; manufacturers may change the feature set via firmware updates. The manufacturer's current state is decisive.</p>
+  </div>
+</section>
+
+<!-- Section 4 — Limits -->
+<section class="section light">
+  <div class="container">
+    <div class="split">
+      <div>
+        <span class="eyebrow">Honestly considered</span>
+        <h2 class="h2">What no longer works in LAN-Only mode.</h2>
+        <p class="body muted mt-2">
+          LAN-Only mode is a real gain in data sovereignty — but it costs convenience. If you enable it, you should know what you are giving up:
+        </p>
+        <ul style="list-style:none;padding:0;margin:16px 0 0;display:flex;flex-direction:column;gap:10px;">
+          <li style="display:flex;gap:10px;align-items:flex-start;"><span class="material-symbols-outlined" style="color:#f59e0b;flex-shrink:0;font-size:20px;">remove_circle</span><span class="muted">No remote access from outside the local network.</span></li>
+          <li style="display:flex;gap:10px;align-items:flex-start;"><span class="material-symbols-outlined" style="color:#f59e0b;flex-shrink:0;font-size:20px;">remove_circle</span><span class="muted">The Bambu Handy app is unavailable or limited.</span></li>
+          <li style="display:flex;gap:10px;align-items:flex-start;"><span class="material-symbols-outlined" style="color:#f59e0b;flex-shrink:0;font-size:20px;">remove_circle</span><span class="muted">Cloud-bound convenience and slicing services drop out.</span></li>
+          <li style="display:flex;gap:10px;align-items:flex-start;"><span class="material-symbols-outlined" style="color:#f59e0b;flex-shrink:0;font-size:20px;">remove_circle</span><span class="muted">Firmware updates may have to be applied manually.</span></li>
+        </ul>
+        <p class="body muted mt-2" style="margin-top:18px;">
+          For a single printer that is easy to live with. But as soon as several printers run in production, LAN-Only mode lacks exactly what holds operations together: central management.
+        </p>
+      </div>
+      <div>
+        <div class="feature-card" style="border:1px solid rgba(0,212,232,0.2);">
+          <h3 style="margin-bottom:16px;font-size:16px;text-transform:uppercase;letter-spacing:.08em;opacity:.7;">What LAN mode does not provide</h3>
+          <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:12px;">
+            <li style="display:flex;gap:12px;align-items:flex-start;"><span class="material-symbols-outlined" style="color:#f59e0b;flex-shrink:0;margin-top:2px;">cancel</span><span>Central job and queue management across multiple printers</span></li>
+            <li style="display:flex;gap:12px;align-items:flex-start;"><span class="material-symbols-outlined" style="color:#f59e0b;flex-shrink:0;margin-top:2px;">cancel</span><span>Material and cost tracking per job</span></li>
+            <li style="display:flex;gap:12px;align-items:flex-start;"><span class="material-symbols-outlined" style="color:#f59e0b;flex-shrink:0;margin-top:2px;">cancel</span><span>User and role management</span></li>
+            <li style="display:flex;gap:12px;align-items:flex-start;"><span class="material-symbols-outlined" style="color:#f59e0b;flex-shrink:0;margin-top:2px;">cancel</span><span>Reporting, utilisation and production documentation</span></li>
+            <li style="display:flex;gap:12px;align-items:flex-start;"><span class="material-symbols-outlined" style="color:#f59e0b;flex-shrink:0;margin-top:2px;">cancel</span><span>Integration with ERP, MES and CAQ systems</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Section 5 — Data protection -->
+<section class="section offwhite">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Data protection &amp; GDPR</span>
+      <h2 class="h2">Why "without the cloud" is more than convenience for companies.</h2>
+      <p>For private users the cloud question is a matter of taste. In a company it becomes a compliance question.</p>
+    </div>
+    <div class="grid grid-3" style="margin-top:32px;">
+      <div class="feature-card">
+        <div style="display:flex;align-items:center;gap:12px;margin-bottom:12px;"><span class="material-symbols-outlined" style="color:var(--cyan);font-size:26px;">shield_lock</span><h3 style="margin:0;font-size:17px;">Data sovereignty</h3></div>
+        <p class="muted" style="font-size:15px;">In LAN-Only mode, print and status data stay on your own network. That considerably simplifies the data-protection assessment because no transfer to external servers takes place.</p>
+      </div>
+      <div class="feature-card">
+        <div style="display:flex;align-items:center;gap:12px;margin-bottom:12px;"><span class="material-symbols-outlined" style="color:var(--cyan);font-size:26px;">gavel</span><h3 style="margin:0;font-size:17px;">GDPR in cloud operation</h3></div>
+        <p class="muted" style="font-size:15px;">If personal data is processed in cloud operation, the usual requirements apply: legal basis, data processing agreement and, where relevant, a third-country transfer assessment. The manufacturer's privacy policy is decisive.</p>
+      </div>
+      <div class="feature-card">
+        <div style="display:flex;align-items:center;gap:12px;margin-bottom:12px;"><span class="material-symbols-outlined" style="color:var(--cyan);font-size:26px;">cloud_off</span><h3 style="margin:0;font-size:17px;">Availability</h3></div>
+        <p class="muted" style="font-size:15px;">Cloud services can go down. If you print in production, you don't want to stop because an external server is unreachable. Local operation makes you independent of that.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Section 6 — B2B transition -->
+<section class="section light">
+  <div class="container">
+    <div class="split">
+      <div>
+        <span class="eyebrow">From single printer to fleet</span>
+        <h2 class="h2">Multiple Bambu Lab printers without the cloud — but centrally managed.</h2>
+        <p class="body muted mt-2">
+          LAN-Only mode solves cloud-free operation per device. In a production environment with several printers that is not enough: you need a single place where jobs are scheduled, material and costs are captured, users are managed and utilisation is evaluated — and all of it data-sovereign, in house.
+        </p>
+        <p class="body muted mt-2">
+          This is exactly where <strong>leanAM MES</strong> comes in: a Manufacturing Execution System installed on-premise that augments local printer control with industrial-grade job, material and resource management. Across manufacturers — Bambu Lab printers sit alongside systems from other vendors, SLS/SLA machines, CNC, laser and robotics in one system. No cloud lock-in, with a documented API to ERP and CAQ.
+        </p>
+        <p class="body muted mt-2">
+          Which operations can be fully mapped locally for your specific machine park we clarify up front in a discovery workshop — including the firmware and authorisation requirements of the printers in use.
+        </p>
+        <a href="/en/mes.html" class="btn btn-primary" style="margin-top:20px;display:inline-flex;align-items:center;gap:8px;">More about leanAM MES<span class="material-symbols-outlined">arrow_forward</span></a>
+      </div>
+      <div>
+        <div class="feature-card" style="border:2px solid var(--cyan);">
+          <div style="display:flex;align-items:center;gap:12px;margin-bottom:16px;"><span class="material-symbols-outlined" style="color:var(--cyan);font-size:28px;">factory</span><h3 style="margin:0;color:var(--cyan);">leanAM MES — On-Premise</h3></div>
+          <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:12px;">
+            <li style="display:flex;gap:10px;align-items:flex-start;"><span class="material-symbols-outlined" style="color:var(--cyan);flex-shrink:0;font-size:20px;">check_circle</span><span>Central job and queue control across the whole fleet</span></li>
+            <li style="display:flex;gap:10px;align-items:flex-start;"><span class="material-symbols-outlined" style="color:var(--cyan);flex-shrink:0;font-size:20px;">check_circle</span><span>Material, cost and utilisation tracking</span></li>
+            <li style="display:flex;gap:10px;align-items:flex-start;"><span class="material-symbols-outlined" style="color:var(--cyan);flex-shrink:0;font-size:20px;">check_circle</span><span>User and role management, documentation</span></li>
+            <li style="display:flex;gap:10px;align-items:flex-start;"><span class="material-symbols-outlined" style="color:var(--cyan);flex-shrink:0;font-size:20px;">check_circle</span><span>Cross-vendor, ERP/CAQ integration via API</span></li>
+            <li style="display:flex;gap:10px;align-items:flex-start;"><span class="material-symbols-outlined" style="color:var(--cyan);flex-shrink:0;font-size:20px;">check_circle</span><span>Production data never leaves your plant</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Section 7 — FAQ -->
+<section class="section teal">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow" style="color:#7debf3;">FAQ</span>
+      <h2 class="h2">Frequently asked questions about Bambu Lab without the cloud.</h2>
+    </div>
+    <div style="max-width:800px;margin:0 auto;display:flex;flex-direction:column;gap:4px;">
+      <details style="background:rgba(255,255,255,0.07);border-radius:0;overflow:hidden;">
+        <summary style="padding:18px 20px;cursor:pointer;font-weight:600;list-style:none;display:flex;justify-content:space-between;align-items:center;">Can you use Bambu Lab printers without the cloud?</summary>
+        <p style="padding:0 20px 18px;margin:0;opacity:.85;line-height:1.7;">Yes. Current Bambu Lab printers offer a LAN-Only mode in which the printer operates exclusively on the local network and does not connect to the manufacturer cloud. Printing is done via a slicer on the same network or via microSD card. Some convenience features (such as the Bambu Handy app and remote access from outside the network) are not available then.</p>
+      </details>
+      <details style="background:rgba(255,255,255,0.07);border-radius:0;overflow:hidden;">
+        <summary style="padding:18px 20px;cursor:pointer;font-weight:600;list-style:none;display:flex;justify-content:space-between;align-items:center;">How do I enable LAN-Only mode?</summary>
+        <p style="padding:0 20px 18px;margin:0;opacity:.85;line-height:1.7;">On the printer display, go to Settings → General and enable LAN-Only mode, then confirm. The printer then shows an access code and its local IP address. In your slicer (Bambu Studio or OrcaSlicer), add the printer using that IP address and access code. The exact menu wording may vary slightly depending on firmware version.</p>
+      </details>
+      <details style="background:rgba(255,255,255,0.07);border-radius:0;overflow:hidden;">
+        <summary style="padding:18px 20px;cursor:pointer;font-weight:600;list-style:none;display:flex;justify-content:space-between;align-items:center;">What does not work in LAN-Only mode?</summary>
+        <p style="padding:0 20px 18px;margin:0;opacity:.85;line-height:1.7;">The cloud-bound convenience features drop out: remote access from outside the local network, full use of the Bambu Handy app, and cloud-based slicing and convenience services. Printing, transferring and monitoring within your own network remain possible. Firmware updates may have to be applied manually.</p>
+      </details>
+      <details style="background:rgba(255,255,255,0.07);border-radius:0;overflow:hidden;">
+        <summary style="padding:18px 20px;cursor:pointer;font-weight:600;list-style:none;display:flex;justify-content:space-between;align-items:center;">Which Bambu Lab models support LAN-Only mode?</summary>
+        <p style="padding:0 20px 18px;margin:0;opacity:.85;line-height:1.7;">LAN-Only mode is available on current Bambu Lab models, including the X1 Carbon (X1C), X1E, P1S, P1P, A1, A1 mini and H2D. The exact feature set depends on the firmware version and should be verified case by case before productive use.</p>
+      </details>
+      <details style="background:rgba(255,255,255,0.07);border-radius:0;overflow:hidden;">
+        <summary style="padding:18px 20px;cursor:pointer;font-weight:600;list-style:none;display:flex;justify-content:space-between;align-items:center;">Is Bambu Lab GDPR-compliant?</summary>
+        <p style="padding:0 20px 18px;margin:0;opacity:.85;line-height:1.7;">Whether and which personal data is processed depends on how the printer is operated. In cloud operation the usual GDPR requirements apply (legal basis, data processing agreement, and where relevant a third-country transfer assessment); the manufacturer's privacy policy is decisive. In LAN-Only mode, print and status data stay within your own network, which considerably simplifies the assessment. A blanket statement is not possible — each case must be assessed individually.</p>
+      </details>
+      <details style="background:rgba(255,255,255,0.07);border-radius:0;overflow:hidden;">
+        <summary style="padding:18px 20px;cursor:pointer;font-weight:600;list-style:none;display:flex;justify-content:space-between;align-items:center;">How do I run multiple Bambu Lab printers in a company without the cloud?</summary>
+        <p style="padding:0 20px 18px;margin:0;opacity:.85;line-height:1.7;">LAN-Only mode solves cloud-free operation for individual printers, but provides no central job, material, user and reporting management across multiple devices. For productive fleet operation, an on-premise MES such as leanAM combines local printer control with industrial-grade job and resource management — across manufacturers and without cloud dependency.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- Section 8 — CTA -->
+<section class="section light">
+  <div class="container" style="text-align:center;max-width:700px;margin:0 auto;">
+    <span class="eyebrow">Next step</span>
+    <h2 class="h2">Run your Bambu Lab fleet cloud-free — <span class="cyan">we'll show you how.</span></h2>
+    <p>In a free demo we show leanAM MES live with connected printers, on-premise on your server or our demo instance. Afterwards we tell you honestly which operations can be fully mapped locally for your machine park — and which cannot.</p>
+    <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;margin-top:24px;">
+      <a href="https://calendly.com/hq-leanam/30min" target="_blank" rel="noopener" class="btn btn-primary" style="display:inline-flex;align-items:center;gap:8px;">Request a demo</a>
+      <a href="/en/wissen/3d-drucker-ohne-cloud/" class="btn btn-outline" style="display:inline-flex;align-items:center;gap:8px;">3D printers without the cloud — overview</a>
+    </div>
+  </div>
+</section>
+
+<footer class="lam-footer">
+  <div class="lam-footer__inner">
+    <div class="lam-footer__grid">
+      <div>
+        <a href="/en/index.html"><img src="/images/leanam-logo.png" alt="leanAM" height="34" loading="lazy"></a>
+        <p class="lam-footer__tagline">Software, consulting and development for additive manufacturing.<br>Made in Germany — Data-sovereign — On-Premise.</p>
+      </div>
+      <div>
+        <span class="lam-footer__col-title">Product</span>
+        <ul class="lam-footer__list">
+          <li><a href="/en/mes.html">leanAM MES</a></li>
+          <li><a href="/en/entwicklung.html">Custom Development</a></li>
+          <li><a href="https://calendly.com/hq-leanam/30min" target="_blank" rel="noopener">Request a demo</a></li>
+        </ul>
+      </div>
+      <div>
+        <span class="lam-footer__col-title">Services</span>
+        <ul class="lam-footer__list">
+          <li><a href="/en/prozessberatung.html">Consulting</a></li>
+          <li><a href="/en/entwicklung.html">Development</a></li>
+          <li><a href="/en/prozessberatung.html">B2B Print Service</a></li>
+          <li><a href="/en/prozessberatung.html">Implementation</a></li>
+        </ul>
+      </div>
+      <div>
+        <span class="lam-footer__col-title">Company</span>
+        <ul class="lam-footer__list">
+          <li><a href="/en/ueber-uns.html">About us</a></li>
+          <li><a href="/en/ueber-uns.html">Careers</a></li>
+          <li><a href="/en/kontakt.html">Contact</a></li>
+          <li><a href="/en/kontakt.html">Location</a></li>
+        </ul>
+      </div>
+    </div>
+    <p style="font-size:11px;color:rgba(255,255,255,.5);line-height:1.6;padding-top:16px;border-top:1px solid rgba(111,216,241,.08);margin-bottom:16px;">Third-party brand and product names (e.g. Bambu Lab, Prusa, Ultimaker) are the property of their respective owners. They are named solely to describe compatibility and facts. No official partnerships or authorisations exist unless expressly stated otherwise.</p>
+    <div class="lam-footer__bottom">
+      <span class="lam-footer__copy">© 2026 URBANMAKER UG (haftungsbeschränkt) · leanAM is a brand of URBANMAKER UG · Münster, Germany</span>
+      <div class="lam-footer__legal">
+        <a href="/en/impressum.html">Imprint</a>
+        <a href="/en/datenschutz.html">Privacy Policy</a>
+        <a href="/en/agb.html">Terms</a>
+      </div>
+      <span style="display:block;margin-top:12px;font-size:11px;opacity:0.55;line-height:1.5;">Legal documents (Imprint, Privacy Policy, Terms) are provided in German and are governed by German law.</span>
+    </div>
+  </div>
+</footer>
+<script src="/nav.js" defer></script>
+</body>
+</html>
