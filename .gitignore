@@ -5,7 +5,8 @@ node_modules/
 .netlify/
 
 # Private / interne Dateien — nicht deployen
-pitch-anton-paar.html
-pitch-anton-paar-standalone.html
+pitch-*.html
 pitch/
 handoff/
+sitemap-visual.html
+/druckfarm-rechner.html
